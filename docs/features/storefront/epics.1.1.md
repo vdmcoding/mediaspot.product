@@ -149,21 +149,23 @@ Un admin peut choisir quels contenus exposer lors de l'ajout d'un titre au store
 
 **Acceptance Criteria:**
 
-**Given** un admin dans le drawer d'ajout de titres
-**When** il clique sur "Add +" pour un titre
-**Then** un menu s'affiche avec les options de contenus : Feature, Trailer, Marketing, Episode
+```gherkin
+Given un admin dans le drawer d'ajout de titres
+When il clique sur "Add +" pour un titre
+Then un menu s'affiche avec les options de contenus : Feature, Trailer, Marketing, Episode
 
-**Given** un admin voyant les options de contenus
-**When** il coche/décoche les types de contenus
-**Then** seuls les contenus cochés seront visibles côté client pour ce titre
+Given un admin voyant les options de contenus
+When il coche/décoche les types de contenus
+Then seuls les contenus cochés seront visibles côté client pour ce titre
 
-**Given** un admin ayant sélectionné des contenus pour un titre
-**When** il valide l'ajout (clic sur "Save" ou "Done")
-**Then** le titre apparaît dans la liste du drawer avec des tags indiquant les contenus partagés (ex: "Feature", "Trailer", "+2")
+Given un admin ayant sélectionné des contenus pour un titre
+When il valide l'ajout (clic sur "Save" ou "Done")
+Then le titre apparaît dans la liste du drawer avec des tags indiquant les contenus partagés (ex: "Feature", "Trailer", "+2")
 
-**Given** un titre sans contenu d'un certain type dans la distribution
-**When** l'admin voit les options
-**Then** ce type de contenu n'est pas proposé ou est grisé
+Given un titre sans contenu d'un certain type dans la distribution
+When l'admin voit les options
+Then ce type de contenu n'est pas proposé ou est grisé
+```
 
 ---
 
@@ -175,22 +177,24 @@ Un admin peut choisir quels contenus exposer lors de l'ajout d'un titre au store
 
 **Acceptance Criteria:**
 
-**Given** un admin dans le drawer d'ajout avec une sélection de contenus
-**When** il clique sur "Save as default"
-**Then** cette configuration est sauvegardée comme défaut pour ce storefront
+```gherkin
+Given un admin dans le drawer d'ajout avec une sélection de contenus
+When il clique sur "Save as default"
+Then cette configuration est sauvegardée comme défaut pour ce storefront
 
-**Given** un admin ayant défini une configuration par défaut
-**When** il clique sur "Add +" pour un nouveau titre
-**Then** les contenus sont pré-cochés selon la configuration par défaut
+Given un admin ayant défini une configuration par défaut
+When il clique sur "Add +" pour un nouveau titre
+Then les contenus sont pré-cochés selon la configuration par défaut
 
-**Given** un admin avec des contenus pré-cochés par défaut
-**When** il modifie la sélection pour un titre spécifique
-**Then** la modification s'applique uniquement à ce titre
-**And** le défaut reste inchangé pour les prochains ajouts
+Given un admin avec des contenus pré-cochés par défaut
+When il modifie la sélection pour un titre spécifique
+Then la modification s'applique uniquement à ce titre
+And le défaut reste inchangé pour les prochains ajouts
 
-**Given** un admin sur un storefront sans configuration par défaut
-**When** il ajoute un titre
-**Then** tous les contenus disponibles sont cochés par défaut
+Given un admin sur un storefront sans configuration par défaut
+When il ajoute un titre
+Then tous les contenus disponibles sont cochés par défaut
+```
 
 ---
 
@@ -206,20 +210,25 @@ Un admin peut modifier les contenus exposés pour les titres déjà ajoutés, in
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Catalogue d'un storefront
-**When** il consulte la liste des titres
-**Then** il voit les colonnes suivantes :
-  | Colonne | Contenu |
-  |---------|---------|
-  | Title | Visuel + nom du titre |
-  | Shared contents | Tags des types de contenus exposés |
-  | Best Quality | Qualité maximale disponible (ex: 4K, HD) |
-  | Audio Languages | Langues audio disponibles |
-  | Subtitle Languages | Langues de sous-titres disponibles |
+```gherkin
+Given un admin sur l'onglet Catalogue d'un storefront
+When il consulte la liste des titres
+Then il voit les colonnes suivantes :
+```
 
-**Given** un admin voyant la colonne "Shared contents"
-**When** un titre a plusieurs contenus
-**Then** les tags principaux sont affichés (ex: "Feature", "Trailer") avec un indicateur du reste (ex: "+2")
+| Colonne | Contenu |
+|---------|---------|
+| Title | Visuel + nom du titre |
+| Shared contents | Tags des types de contenus exposés |
+| Best Quality | Qualité maximale disponible (ex: 4K, HD) |
+| Audio Languages | Langues audio disponibles |
+| Subtitle Languages | Langues de sous-titres disponibles |
+
+```gherkin
+Given un admin voyant la colonne "Shared contents"
+When un titre a plusieurs contenus
+Then les tags principaux sont affichés (ex: "Feature", "Trailer") avec un indicateur du reste (ex: "+2")
+```
 
 ---
 
@@ -231,23 +240,25 @@ Un admin peut modifier les contenus exposés pour les titres déjà ajoutés, in
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Catalogue
-**And** un titre déjà ajouté au storefront
-**When** il clique sur la ligne du titre
-**Then** un drawer s'ouvre avec les options de contenus
+```gherkin
+Given un admin sur l'onglet Catalogue
+And un titre déjà ajouté au storefront
+When il clique sur la ligne du titre
+Then un drawer s'ouvre avec les options de contenus
 
-**Given** un admin dans le drawer de modification
-**When** il voit les checkboxes Feature, Trailer, Marketing, Episode
-**Then** l'état actuel (coché/décoché) reflète la configuration existante
+Given un admin dans le drawer de modification
+When il voit les checkboxes Feature, Trailer, Marketing, Episode
+Then l'état actuel (coché/décoché) reflète la configuration existante
 
-**Given** un admin modifiant les contenus
-**When** il coche/décoche des options et clique sur "Save"
-**Then** les modifications sont sauvegardées
-**And** la liste se rafraîchit avec les nouveaux tags dans "Shared contents"
+Given un admin modifiant les contenus
+When il coche/décoche des options et clique sur "Save"
+Then les modifications sont sauvegardées
+And la liste se rafraîchit avec les nouveaux tags dans "Shared contents"
 
-**Given** un admin modifiant les contenus
-**When** il clique sur "Cancel" ou ferme le drawer
-**Then** les modifications sont annulées
+Given un admin modifiant les contenus
+When il clique sur "Cancel" ou ferme le drawer
+Then les modifications sont annulées
+```
 
 ---
 
@@ -259,28 +270,33 @@ Un admin peut modifier les contenus exposés pour les titres déjà ajoutés, in
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Catalogue
-**When** il sélectionne plusieurs titres via les checkboxes du tableau
-**Then** un bouton "Manage contents" devient visible
+```gherkin
+Given un admin sur l'onglet Catalogue
+When il clique sur "Manage contents"
+Then une modal s'ouvre avec les options : Feature, Trailer, Marketing, Episode
 
-**Given** un admin ayant sélectionné des titres
-**When** il clique sur "Manage contents"
-**Then** une modal s'ouvre avec les options : Feature, Trailer, Marketing, Episode
+Given un admin ayant sélectionné des titres
+Then une bannière multi-select avec un bouton "Manage Contents" s'affiche
 
-**Given** un admin dans la modal bulk
-**When** il voit le message explicatif
-**Then** il lit "Edit the shared contents in bulk. This will replace your current selection."
+Given un admin cliquant sur le bouton "Manage contents" de la bannière de Multi-sélection
+Then la modal bulk s'ouvre
+And il voit un message indiquant le nombre de titres sélectionnés
 
-**Given** un admin configurant les contenus en bulk
-**When** il coche les options souhaitées et clique sur "Apply to all"
-**Then** les contenus sélectionnés sont activés en best effort sur tous les titres du tableau
-**And** si un type de contenu n'existe pas pour un titre donné, il est ignoré pour ce titre
-**And** les autres contenus (non cochés) sont désactivés
+Given un admin dans la modal bulk
+When il voit le message explicatif
+Then il lit "Edit the shared contents in bulk. This will replace your current selection."
 
-**Given** un admin dans la modal bulk
-**When** il clique sur "Cancel"
-**Then** aucune modification n'est appliquée
-**And** la modal se ferme
+Given un admin configurant les contenus en bulk
+When il coche les options souhaitées et clique sur "Apply to all"
+Then les contenus sélectionnés sont activés en best effort sur tous les titres du tableau
+And si un type de contenu n'existe pas pour un titre donné, il est ignoré pour ce titre
+And les autres contenus (non cochés) sont désactivés
+
+Given un admin dans la modal bulk
+When il clique sur "Cancel"
+Then aucune modification n'est appliquée
+And la modal se ferme
+```
 
 ---
 
@@ -296,21 +312,23 @@ Un client ne voit dans le player que les contenus que l'admin a choisi d'exposer
 
 **Acceptance Criteria:**
 
-**Given** un client connecté au storefront
-**And** un titre avec Feature et Trailer exposés (Marketing et Episode non exposés)
-**When** il accède à la page du titre
-**Then** le player propose uniquement Feature et Trailer
-**And** Marketing et Episode n'apparaissent pas dans le player
+```gherkin
+Given un client connecté au storefront
+And un titre avec Feature et Trailer exposés (Marketing et Episode non exposés)
+When il accède à la page du titre
+Then le player propose uniquement Feature et Trailer
+And Marketing et Episode n'apparaissent pas dans le player
 
-**Given** un client sur une page titre
-**When** des contenus sont disponibles dans le player
-**Then** il peut sélectionner et visionner chaque contenu exposé
+Given un client sur une page titre
+When des contenus sont disponibles dans le player
+Then il peut sélectionner et visionner chaque contenu exposé
 
-**Given** un client sur une page titre
-**And** seul le Trailer est exposé (pas de Feature)
-**When** il utilise le player
-**Then** seul le Trailer est disponible à la lecture
-**And** aucune option ne permet d'accéder au Feature
+Given un client sur une page titre
+And seul le Trailer est exposé (pas de Feature)
+When il utilise le player
+Then seul le Trailer est disponible à la lecture
+And aucune option ne permet d'accéder au Feature
+```
 
 ---
 
@@ -322,20 +340,22 @@ Un client ne voit dans le player que les contenus que l'admin a choisi d'exposer
 
 **Acceptance Criteria:**
 
-**Given** un client sur une page titre
-**And** le contenu Feature n'est PAS exposé pour ce titre
-**Then** le Feature n'apparaît pas dans le player
-**And** aucun contrôle ne permet d'y accéder
+```gherkin
+Given un client sur une page titre
+And le contenu Feature n'est PAS exposé pour ce titre
+Then le Feature n'apparaît pas dans le player
+And aucun contrôle ne permet d'y accéder
 
-**Given** un client tentant d'accéder directement à un contenu non exposé (URL directe ou manipulation)
-**When** il essaie de charger le contenu
-**Then** une erreur 403 ou 404 est retournée
-**And** le contenu n'est pas servi
+Given un client tentant d'accéder directement à un contenu non exposé (URL directe ou manipulation)
+When il essaie de charger le contenu
+Then une erreur 403 ou 404 est retournée
+And le contenu n'est pas servi
 
-**Given** un titre avec aucun contenu exposé
-**When** un client accède à la page titre
-**Then** le player est vide ou masqué
-**And** les métadonnées du titre restent visibles
+Given un titre avec aucun contenu exposé
+When un client accède à la page titre
+Then le player est vide ou masqué
+And les métadonnées du titre restent visibles
+```
 
 ---
 

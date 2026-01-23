@@ -508,14 +508,16 @@ Un admin peut créer un storefront brandé avec sa homepage personnalisée et pr
 
 **Acceptance Criteria:**
 
-**Given** un admin storefront authentifié
-**When** il accède à la page liste des storefronts
-**Then** il voit tous les storefronts auxquels il a accès
-**And** chaque storefront affiche son nom, subdomain, nombre d'utilisateurs et nombre de demandes pending
+```gherkin
+Given un admin storefront authentifié
+When il accède à la page liste des storefronts
+Then il voit tous les storefronts auxquels il a accès
+And chaque storefront affiche son nom, subdomain, nombre d'utilisateurs et nombre de demandes pending
 
-**Given** un admin avec plusieurs storefronts
-**When** il clique sur un storefront dans la liste
-**Then** il est redirigé vers la page de configuration de ce storefront
+Given un admin avec plusieurs storefronts
+When il clique sur un storefront dans la liste
+Then il est redirigé vers la page de configuration de ce storefront
+```
 
 ---
 
@@ -527,23 +529,25 @@ Un admin peut créer un storefront brandé avec sa homepage personnalisée et pr
 
 **Acceptance Criteria:**
 
-**Given** un admin sur la liste des storefronts
-**When** il clique sur "Créer un storefront"
-**Then** un formulaire s'affiche demandant le nom et le subdomain
+```gherkin
+Given un admin sur la liste des storefronts
+When il clique sur "Créer un storefront"
+Then un formulaire s'affiche demandant le nom et le subdomain
 
-**Given** un admin remplissant le formulaire de création
-**When** il entre un nom valide (2-100 caractères, lettres et espaces uniquement)
-**And** un subdomain valide (3-50 caractères, lowercase, chiffres, tirets)
-**Then** le storefront est créé
-**And** il est accessible via app.mediaspot.io/store/{subdomain}
+Given un admin remplissant le formulaire de création
+When il entre un nom valide (2-100 caractères, lettres et espaces uniquement)
+And un subdomain valide (3-50 caractères, lowercase, chiffres, tirets)
+Then le storefront est créé
+And il est accessible via app.mediaspot.io/store/{subdomain}
 
-**Given** un admin avec un sous-domaine client personnalisé
-**When** il crée un storefront
-**Then** le storefront est aussi accessible via {client}.mediaspot.io/store/{subdomain}
+Given un admin avec un sous-domaine client personnalisé
+When il crée un storefront
+Then le storefront est aussi accessible via {client}.mediaspot.io/store/{subdomain}
 
-**Given** un subdomain déjà utilisé
-**When** l'admin tente de créer un storefront avec ce subdomain
-**Then** une erreur de validation s'affiche
+Given un subdomain déjà utilisé
+When l'admin tente de créer un storefront avec ce subdomain
+Then une erreur de validation s'affiche
+```
 
 ---
 
@@ -555,21 +559,23 @@ Un admin peut créer un storefront brandé avec sa homepage personnalisée et pr
 
 **Acceptance Criteria:**
 
-**Given** un admin sur la page de configuration d'un storefront
-**When** il accède à l'onglet Branding
-**Then** il voit les champs logo, cover et catchphrase
+```gherkin
+Given un admin sur la page de configuration d'un storefront
+When il accède à l'onglet Branding
+Then il voit les champs logo, cover et catchphrase
 
-**Given** un admin configurant le branding
-**When** il uploade un logo (image)
-**Then** le logo est sauvegardé et associé au storefront
+Given un admin configurant le branding
+When il uploade un logo (image)
+Then le logo est sauvegardé et associé au storefront
 
-**Given** un admin configurant le branding
-**When** il uploade une image de cover
-**Then** la cover est sauvegardée et sera affichée sur la homepage client
+Given un admin configurant le branding
+When il uploade une image de cover
+Then la cover est sauvegardée et sera affichée sur la homepage client
 
-**Given** un admin configurant le branding
-**When** il définit une catchphrase
-**Then** la catchphrase est sauvegardée et sera affichée sur la homepage client
+Given un admin configurant le branding
+When il définit une catchphrase
+Then la catchphrase est sauvegardée et sera affichée sur la homepage client
+```
 
 ---
 
@@ -581,18 +587,20 @@ Un admin peut créer un storefront brandé avec sa homepage personnalisée et pr
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Homepage d'un storefront
-**When** il configure le hero slider
-**Then** il peut sélectionner des titres parmi ceux ajoutés au catalogue du storefront
-**And** les titres sélectionnés s'afficheront en rotation sur la homepage
+```gherkin
+Given un admin sur l'onglet Homepage d'un storefront
+When il configure le hero slider
+Then il peut sélectionner des titres parmi ceux ajoutés au catalogue du storefront
+And les titres sélectionnés s'afficheront en rotation sur la homepage
 
-**Given** un admin sur l'onglet Homepage
-**When** il sélectionne des genres à mettre en avant
-**Then** ces genres seront affichés comme sections sur la homepage
+Given un admin sur l'onglet Homepage
+When il sélectionne des genres à mettre en avant
+Then ces genres seront affichés comme sections sur la homepage
 
-**Given** un admin sur l'onglet Homepage
-**When** il sélectionne des collections à showcaser
-**Then** ces collections seront mises en avant sur la homepage
+Given un admin sur l'onglet Homepage
+When il sélectionne des collections à showcaser
+Then ces collections seront mises en avant sur la homepage
+```
 
 ---
 
@@ -604,16 +612,18 @@ Un admin peut créer un storefront brandé avec sa homepage personnalisée et pr
 
 **Acceptance Criteria:**
 
-**Given** un admin configurant la homepage ou le branding
-**Then** un panel de preview est visible à droite du formulaire
+```gherkin
+Given un admin configurant la homepage ou le branding
+Then un panel de preview est visible à droite du formulaire
 
-**Given** un admin modifiant la catchphrase
-**When** il tape du texte
-**Then** le panel de preview affiche la modification en temps réel
+Given un admin modifiant la catchphrase
+When il tape du texte
+Then le panel de preview affiche la modification en temps réel
 
-**Given** un admin ajoutant un titre au hero slider
-**When** il sélectionne le titre
-**Then** le panel de preview affiche immédiatement le titre dans le slider
+Given un admin ajoutant un titre au hero slider
+When il sélectionne le titre
+Then le panel de preview affiche immédiatement le titre dans le slider
+```
 
 ---
 
@@ -625,14 +635,16 @@ Un admin peut créer un storefront brandé avec sa homepage personnalisée et pr
 
 **Acceptance Criteria:**
 
-**Given** un admin sur la page d'un storefront
-**When** il clique sur le bouton "Preview"
-**Then** il est redirigé vers l'URL publique du storefront
+```gherkin
+Given un admin sur la page d'un storefront
+When il clique sur le bouton "Preview"
+Then il est redirigé vers l'URL publique du storefront
 
-**Given** un admin en mode preview
-**When** il navigue sur le storefront
-**Then** il voit exactement la même interface qu'un client connecté
-**And** il peut naviguer homepage, catalogue, collections, pages titres
+Given un admin en mode preview
+When il navigue sur le storefront
+Then il voit exactement la même interface qu'un client connecté
+And il peut naviguer homepage, catalogue, collections, pages titres
+```
 
 ---
 
@@ -644,15 +656,17 @@ Un admin peut créer un storefront brandé avec sa homepage personnalisée et pr
 
 **Acceptance Criteria:**
 
-**Given** un admin sur un storefront existant
-**When** il clique sur "Dupliquer"
-**Then** un formulaire s'affiche demandant un nouveau nom et subdomain
+```gherkin
+Given un admin sur un storefront existant
+When il clique sur "Dupliquer"
+Then un formulaire s'affiche demandant un nouveau nom et subdomain
 
-**Given** un admin validant la duplication
-**When** il entre un nom et subdomain valides
-**Then** un nouveau storefront est créé
-**And** il contient toutes les données du storefront source (branding, catalogue, homepage, documents, contacts)
-**And** les utilisateurs clients ne sont PAS copiés
+Given un admin validant la duplication
+When il entre un nom et subdomain valides
+Then un nouveau storefront est créé
+And il contient toutes les données du storefront source (branding, catalogue, homepage, documents, contacts)
+And les utilisateurs clients ne sont PAS copiés
+```
 
 ---
 
@@ -664,15 +678,17 @@ Un admin peut créer un storefront brandé avec sa homepage personnalisée et pr
 
 **Acceptance Criteria:**
 
-**Given** un admin sur un storefront existant
-**When** il clique sur "Supprimer"
-**Then** une confirmation est demandée
+```gherkin
+Given un admin sur un storefront existant
+When il clique sur "Supprimer"
+Then une confirmation est demandée
 
-**Given** un admin confirmant la suppression
-**When** il valide
-**Then** le storefront est supprimé
-**And** toutes ses données associées sont supprimées (branding, catalogue, users, wishlists, documents, contacts)
-**And** l'URL devient inaccessible
+Given un admin confirmant la suppression
+When il valide
+Then le storefront est supprimé
+And toutes ses données associées sont supprimées (branding, catalogue, users, wishlists, documents, contacts)
+And l'URL devient inaccessible
+```
 
 ---
 
@@ -688,29 +704,31 @@ Un admin peut sélectionner précisément les titres et collections à exposer s
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Catalogue d'un storefront
-**When** il clique sur "Ajouter des titres"
-**Then** un drawer s'ouvre avec une interface de recherche
+```gherkin
+Given un admin sur l'onglet Catalogue d'un storefront
+When il clique sur "Ajouter des titres"
+Then un drawer s'ouvre avec une interface de recherche
 
-**Given** un admin dans le drawer d'ajout
-**When** il saisit une chaîne de recherche
-**Then** les titres correspondants de sa distribution s'affichent
+Given un admin dans le drawer d'ajout
+When il saisit une chaîne de recherche
+Then les titres correspondants de sa distribution s'affichent
 
-**Given** un admin dans le drawer d'ajout
-**When** il applique des filtres (genre, langue, qualité)
-**Then** les résultats sont filtrés en conséquence
+Given un admin dans le drawer d'ajout
+When il applique des filtres (genre, langue, qualité)
+Then les résultats sont filtrés en conséquence
 
-**Given** un admin voyant les résultats de recherche
-**When** il sélectionne des titres individuellement
-**Then** les titres sélectionnés sont marqués visuellement
+Given un admin voyant les résultats de recherche
+When il sélectionne des titres individuellement
+Then les titres sélectionnés sont marqués visuellement
 
-**Given** un admin avec une recherche active
-**When** il clique sur "Ajouter tous"
-**Then** tous les titres de la recherche actuelle sont ajoutés au storefront
+Given un admin avec une recherche active
+When il clique sur "Ajouter tous"
+Then tous les titres de la recherche actuelle sont ajoutés au storefront
 
-**Given** un admin avec une recherche active
-**When** il clique sur "Retirer tous"
-**Then** tous les titres de la recherche actuelle sont retirés du storefront
+Given un admin avec une recherche active
+When il clique sur "Retirer tous"
+Then tous les titres de la recherche actuelle sont retirés du storefront
+```
 
 ---
 
@@ -722,15 +740,17 @@ Un admin peut sélectionner précisément les titres et collections à exposer s
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Catalogue d'un storefront
-**When** il voit la liste des titres sélectionnés
-**Then** chaque titre a une action de retrait
+```gherkin
+Given un admin sur l'onglet Catalogue d'un storefront
+When il voit la liste des titres sélectionnés
+Then chaque titre a une action de retrait
 
-**Given** un admin sur l'onglet Catalogue
-**When** il clique sur "Retirer" pour un titre
-**Then** le titre est retiré du storefront
-**And** il n'est plus visible côté client
-**And** il disparaît du hero slider s'il y était
+Given un admin sur l'onglet Catalogue
+When il clique sur "Retirer" pour un titre
+Then le titre est retiré du storefront
+And il n'est plus visible côté client
+And il disparaît du hero slider s'il y était
+```
 
 ---
 
@@ -742,19 +762,21 @@ Un admin peut sélectionner précisément les titres et collections à exposer s
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Collections d'un storefront
-**When** il clique sur "Ajouter des collections"
-**Then** il voit la liste des collections disponibles sur la plateforme
+```gherkin
+Given un admin sur l'onglet Collections d'un storefront
+When il clique sur "Ajouter des collections"
+Then il voit la liste des collections disponibles sur la plateforme
 
-**Given** un admin sélectionnant une collection
-**When** il l'ajoute au storefront
-**Then** la collection devient visible côté client
-**And** tous les titres de la collection sont accessibles
+Given un admin sélectionnant une collection
+When il l'ajoute au storefront
+Then la collection devient visible côté client
+And tous les titres de la collection sont accessibles
 
-**Given** un admin sur l'onglet Collections
-**When** il retire une collection
-**Then** la collection n'est plus visible côté client
-**And** elle disparaît des collections showcasées si elle y était
+Given un admin sur l'onglet Collections
+When il retire une collection
+Then la collection n'est plus visible côté client
+And elle disparaît des collections showcasées si elle y était
+```
 
 ---
 
@@ -770,20 +792,22 @@ Un admin peut configurer les points de contact commerciaux et les documents tél
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Documents d'un storefront
-**When** il clique sur "Ajouter un document"
-**Then** il peut sélectionner un fichier (Doc, Docx, Pdf, Ppt, Pptx)
-**And** définir un nom pour le document
+```gherkin
+Given un admin sur l'onglet Documents d'un storefront
+When il clique sur "Ajouter un document"
+Then il peut sélectionner un fichier (Doc, Docx, Pdf, Ppt, Pptx)
+And définir un nom pour le document
 
-**Given** un admin uploadant un document
-**When** l'upload est terminé
-**Then** le document apparaît dans la liste
-**And** il est disponible au téléchargement pour les clients connectés
+Given un admin uploadant un document
+When l'upload est terminé
+Then le document apparaît dans la liste
+And il est disponible au téléchargement pour les clients connectés
 
-**Given** un admin sur l'onglet Documents
-**When** il supprime un document
-**Then** le document est retiré de la liste
-**And** il n'est plus accessible aux clients
+Given un admin sur l'onglet Documents
+When il supprime un document
+Then le document est retiré de la liste
+And il n'est plus accessible aux clients
+```
 
 ---
 
@@ -795,27 +819,29 @@ Un admin peut configurer les points de contact commerciaux et les documents tél
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Contacts d'un storefront
-**When** il clique sur "Ajouter un contact"
-**Then** un formulaire s'affiche avec les champs : nom complet, rôle, description, email, téléphone, avatar
+```gherkin
+Given un admin sur l'onglet Contacts d'un storefront
+When il clique sur "Ajouter un contact"
+Then un formulaire s'affiche avec les champs : nom complet, rôle, description, email, téléphone, avatar
 
-**Given** un admin remplissant le formulaire de contact
-**When** il définit le nom (2-100 caractères) et le rôle (2-100 caractères)
-**Then** ces champs sont obligatoires
+Given un admin remplissant le formulaire de contact
+When il définit le nom (2-100 caractères) et le rôle (2-100 caractères)
+Then ces champs sont obligatoires
 
-**Given** un admin ajoutant un contact
-**When** il uploade un avatar (image)
-**Then** l'avatar est associé au contact et affiché côté client
+Given un admin ajoutant un contact
+When il uploade un avatar (image)
+Then l'avatar est associé au contact et affiché côté client
 
-**Given** un admin sur l'onglet Contacts
-**When** il modifie un contact existant
-**Then** les modifications sont sauvegardées
-**And** elles sont visibles côté client
+Given un admin sur l'onglet Contacts
+When il modifie un contact existant
+Then les modifications sont sauvegardées
+And elles sont visibles côté client
 
-**Given** un admin sur l'onglet Contacts
-**When** il supprime un contact
-**Then** le contact est retiré
-**And** il n'apparaît plus côté client
+Given un admin sur l'onglet Contacts
+When il supprime un contact
+Then le contact est retiré
+And il n'apparaît plus côté client
+```
 
 ---
 
@@ -831,19 +857,21 @@ Un admin peut contrôler qui accède à son storefront. Un visiteur peut demande
 
 **Acceptance Criteria:**
 
-**Given** un visiteur non authentifié sur la page Welcome d'un storefront
-**When** il accède à la page
-**Then** il voit un formulaire de demande d'accès
+```gherkin
+Given un visiteur non authentifié sur la page Welcome d'un storefront
+When il accède à la page
+Then il voit un formulaire de demande d'accès
 
-**Given** un visiteur sur le formulaire de demande
-**When** il remplit les champs obligatoires (prénom, nom, email, société)
-**And** soumet le formulaire
-**Then** sa demande est enregistrée avec le statut PENDING
-**And** il voit un message "Account requested — pending approval"
+Given un visiteur sur le formulaire de demande
+When il remplit les champs obligatoires (prénom, nom, email, société)
+And soumet le formulaire
+Then sa demande est enregistrée avec le statut PENDING
+And il voit un message "Account requested — pending approval"
 
-**Given** un visiteur avec un email déjà utilisé pour ce storefront
-**When** il tente de soumettre une demande
-**Then** une erreur s'affiche indiquant que l'email est déjà enregistré
+Given un visiteur avec un email déjà utilisé pour ce storefront
+When il tente de soumettre une demande
+Then une erreur s'affiche indiquant que l'email est déjà enregistré
+```
 
 ---
 
@@ -855,19 +883,21 @@ Un admin peut contrôler qui accède à son storefront. Un visiteur peut demande
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Users d'un storefront
-**When** il accède à la liste
-**Then** il voit les demandes PENDING avec nom, email, société
+```gherkin
+Given un admin sur l'onglet Users d'un storefront
+When il accède à la liste
+Then il voit les demandes PENDING avec nom, email, société
 
-**Given** un admin voyant une demande PENDING
-**When** il clique sur "Approuver"
-**Then** il peut optionnellement définir une date d'expiration
-**And** le client reçoit un email avec un lien pour définir son mot de passe
+Given un admin voyant une demande PENDING
+When il clique sur "Approuver"
+Then il peut optionnellement définir une date d'expiration
+And le client reçoit un email avec un lien pour définir son mot de passe
 
-**Given** un admin voyant une demande PENDING
-**When** il clique sur "Rejeter"
-**Then** la demande est supprimée
-**And** le client n'est PAS notifié
+Given un admin voyant une demande PENDING
+When il clique sur "Rejeter"
+Then la demande est supprimée
+And le client n'est PAS notifié
+```
 
 ---
 
@@ -879,23 +909,25 @@ Un admin peut contrôler qui accède à son storefront. Un visiteur peut demande
 
 **Acceptance Criteria:**
 
-**Given** un client ayant reçu l'email de confirmation
-**When** il clique sur le lien
-**Then** il accède à une page pour définir son mot de passe
+```gherkin
+Given un client ayant reçu l'email de confirmation
+When il clique sur le lien
+Then il accède à une page pour définir son mot de passe
 
-**Given** un client sur la page de définition de mot de passe
-**When** il entre un mot de passe et le confirme
-**Then** son compte passe au statut ACTIVE
-**And** il est redirigé vers la page de login
+Given un client sur la page de définition de mot de passe
+When il entre un mot de passe et le confirme
+Then son compte passe au statut ACTIVE
+And il est redirigé vers la page de login
 
-**Given** un client avec un compte ACTIVE
-**When** il se connecte avec email et mot de passe
-**Then** il accède au storefront
-**And** sa session est persistée via JWT
+Given un client avec un compte ACTIVE
+When il se connecte avec email et mot de passe
+Then il accède au storefront
+And sa session est persistée via JWT
 
-**Given** un client avec des credentials invalides
-**When** il tente de se connecter
-**Then** une erreur s'affiche
+Given un client avec des credentials invalides
+When il tente de se connecter
+Then une erreur s'affiche
+```
 
 ---
 
@@ -907,23 +939,25 @@ Un admin peut contrôler qui accède à son storefront. Un visiteur peut demande
 
 **Acceptance Criteria:**
 
-**Given** un admin sur l'onglet Users
-**When** il voit un utilisateur ACTIVE
-**Then** il peut le désactiver
+```gherkin
+Given un admin sur l'onglet Users
+When il voit un utilisateur ACTIVE
+Then il peut le désactiver
 
-**Given** un admin désactivant un utilisateur
-**When** il confirme
-**Then** l'utilisateur passe au statut DISABLED
-**And** il ne peut plus se connecter au storefront
+Given un admin désactivant un utilisateur
+When il confirme
+Then l'utilisateur passe au statut DISABLED
+And il ne peut plus se connecter au storefront
 
-**Given** un utilisateur avec une date d'expiration définie
-**When** la date est atteinte
-**Then** l'utilisateur passe automatiquement au statut EXPIRED
-**And** il ne peut plus accéder au storefront
+Given un utilisateur avec une date d'expiration définie
+When la date est atteinte
+Then l'utilisateur passe automatiquement au statut EXPIRED
+And il ne peut plus accéder au storefront
 
-**Given** un admin sur l'onglet Users
-**When** il voit un utilisateur DISABLED ou EXPIRED
-**Then** il peut le réactiver si nécessaire
+Given un admin sur l'onglet Users
+When il voit un utilisateur DISABLED ou EXPIRED
+Then il peut le réactiver si nécessaire
+```
 
 ---
 
@@ -939,21 +973,23 @@ Un client connecté peut naviguer librement dans le catalogue, découvrir des ti
 
 **Acceptance Criteria:**
 
-**Given** un client connecté au storefront
-**When** il accède à la homepage
-**Then** il voit le branding (logo, cover, catchphrase)
+```gherkin
+Given un client connecté au storefront
+When il accède à la homepage
+Then il voit le branding (logo, cover, catchphrase)
 
-**Given** un client sur la homepage
-**When** des titres sont configurés dans le hero slider
-**Then** il voit les titres en rotation avec leurs visuels
+Given un client sur la homepage
+When des titres sont configurés dans le hero slider
+Then il voit les titres en rotation avec leurs visuels
 
-**Given** un client sur la homepage
-**When** des genres sont mis en avant
-**Then** il voit des sections par genre avec les titres correspondants
+Given un client sur la homepage
+When des genres sont mis en avant
+Then il voit des sections par genre avec les titres correspondants
 
-**Given** un client sur la homepage
-**When** des collections sont showcasées
-**Then** il voit les collections mises en avant avec accès direct
+Given un client sur la homepage
+When des collections sont showcasées
+Then il voit les collections mises en avant avec accès direct
+```
 
 ---
 
@@ -965,25 +1001,27 @@ Un client connecté peut naviguer librement dans le catalogue, découvrir des ti
 
 **Acceptance Criteria:**
 
-**Given** un client connecté au storefront
-**When** il accède au catalogue
-**Then** il voit tous les titres disponibles sur le storefront
+```gherkin
+Given un client connecté au storefront
+When il accède au catalogue
+Then il voit tous les titres disponibles sur le storefront
 
-**Given** un client sur le catalogue
-**When** il saisit une recherche (pattern)
-**Then** les titres correspondants s'affichent
+Given un client sur le catalogue
+When il saisit une recherche (pattern)
+Then les titres correspondants s'affichent
 
-**Given** un client sur le catalogue
-**When** il applique des filtres (genre, catalogue type, qualité, picture format)
-**Then** les résultats sont filtrés en conséquence
+Given un client sur le catalogue
+When il applique des filtres (genre, catalogue type, qualité, picture format)
+Then les résultats sont filtrés en conséquence
 
-**Given** un client sur le catalogue
-**When** il sélectionne un genre ou une sous-catégorie
-**Then** il voit uniquement les titres correspondants
+Given un client sur le catalogue
+When il sélectionne un genre ou une sous-catégorie
+Then il voit uniquement les titres correspondants
 
-**Given** un client naviguant le catalogue
-**When** il combine recherche et filtres
-**Then** les critères s'appliquent ensemble
+Given un client naviguant le catalogue
+When il combine recherche et filtres
+Then les critères s'appliquent ensemble
+```
 
 ---
 
@@ -995,21 +1033,23 @@ Un client connecté peut naviguer librement dans le catalogue, découvrir des ti
 
 **Acceptance Criteria:**
 
-**Given** un client naviguant le catalogue
-**When** il clique sur un titre
-**Then** il accède à la page détaillée du titre
+```gherkin
+Given un client naviguant le catalogue
+When il clique sur un titre
+Then il accède à la page détaillée du titre
 
-**Given** un client sur une page titre
-**When** il consulte les informations
-**Then** il voit les métadonnées : synopsis, durée, nombre d'épisodes, langues disponibles, qualités
+Given un client sur une page titre
+When il consulte les informations
+Then il voit les métadonnées : synopsis, durée, nombre d'épisodes, langues disponibles, qualités
 
-**Given** un client sur une page titre
-**When** des contenus vidéo sont disponibles (trailer, screener)
-**Then** il peut les visionner via le player intégré
+Given un client sur une page titre
+When des contenus vidéo sont disponibles (trailer, screener)
+Then il peut les visionner via le player intégré
 
-**Given** un client visionnant une vidéo
-**When** il utilise le player
-**Then** il dispose des contrôles standards (play, pause, volume, fullscreen)
+Given un client visionnant une vidéo
+When il utilise le player
+Then il dispose des contrôles standards (play, pause, volume, fullscreen)
+```
 
 ---
 
@@ -1021,18 +1061,20 @@ Un client connecté peut naviguer librement dans le catalogue, découvrir des ti
 
 **Acceptance Criteria:**
 
-**Given** un client connecté au storefront
-**When** il accède à la liste des collections
-**Then** il voit toutes les collections disponibles sur le storefront
+```gherkin
+Given un client connecté au storefront
+When il accède à la liste des collections
+Then il voit toutes les collections disponibles sur le storefront
 
-**Given** un client sur la liste des collections
-**When** il clique sur une collection
-**Then** il accède à la page détaillée de la collection
+Given un client sur la liste des collections
+When il clique sur une collection
+Then il accède à la page détaillée de la collection
 
-**Given** un client sur une page collection
-**When** il consulte le contenu
-**Then** il voit tous les titres de la collection
-**And** il peut accéder à chaque titre
+Given un client sur une page collection
+When il consulte le contenu
+Then il voit tous les titres de la collection
+And il peut accéder à chaque titre
+```
 
 ---
 
@@ -1044,17 +1086,19 @@ Un client connecté peut naviguer librement dans le catalogue, découvrir des ti
 
 **Acceptance Criteria:**
 
-**Given** un client connecté au storefront
-**When** il consulte les points de contact
-**Then** il voit les coordonnées des commerciaux (nom, rôle, email, téléphone, avatar)
+```gherkin
+Given un client connecté au storefront
+When il consulte les points de contact
+Then il voit les coordonnées des commerciaux (nom, rôle, email, téléphone, avatar)
 
-**Given** un client connecté au storefront
-**When** il accède aux documents
-**Then** il voit la liste des documents disponibles
+Given un client connecté au storefront
+When il accède aux documents
+Then il voit la liste des documents disponibles
 
-**Given** un client sur la page documents
-**When** il clique sur un document
-**Then** le document est téléchargé sur son appareil
+Given un client sur la page documents
+When il clique sur un document
+Then le document est téléchargé sur son appareil
+```
 
 ---
 
@@ -1070,22 +1114,24 @@ Un client peut organiser sa sélection de titres dans des wishlists pour prépar
 
 **Acceptance Criteria:**
 
-**Given** un client connecté au storefront
-**When** il accède à la section Wishlists
-**Then** il voit la liste de ses wishlists existantes
+```gherkin
+Given un client connecté au storefront
+When il accède à la section Wishlists
+Then il voit la liste de ses wishlists existantes
 
-**Given** un client sur la page Wishlists
-**When** il clique sur "Créer une wishlist"
-**Then** il peut nommer sa nouvelle wishlist
-**And** la wishlist est créée vide
+Given un client sur la page Wishlists
+When il clique sur "Créer une wishlist"
+Then il peut nommer sa nouvelle wishlist
+And la wishlist est créée vide
 
-**Given** un client avec des wishlists
-**When** il clique sur une wishlist
-**Then** il voit le détail de la wishlist avec tous ses titres
+Given un client avec des wishlists
+When il clique sur une wishlist
+Then il voit le détail de la wishlist avec tous ses titres
 
-**Given** un client consultant une wishlist
-**When** il clique sur un titre
-**Then** il accède à la page détaillée du titre
+Given un client consultant une wishlist
+When il clique sur un titre
+Then il accède à la page détaillée du titre
+```
 
 ---
 
@@ -1097,22 +1143,24 @@ Un client peut organiser sa sélection de titres dans des wishlists pour prépar
 
 **Acceptance Criteria:**
 
-**Given** un client sur une page titre
-**When** il clique sur "Ajouter à une wishlist"
-**Then** il peut sélectionner une wishlist existante ou en créer une nouvelle
-**And** le titre est ajouté à la wishlist
+```gherkin
+Given un client sur une page titre
+When il clique sur "Ajouter à une wishlist"
+Then il peut sélectionner une wishlist existante ou en créer une nouvelle
+And le titre est ajouté à la wishlist
 
-**Given** un client sur une page collection
-**When** il clique sur "Ajouter à une wishlist" pour un titre
-**Then** le titre est ajouté à la wishlist sélectionnée
+Given un client sur une page collection
+When il clique sur "Ajouter à une wishlist" pour un titre
+Then le titre est ajouté à la wishlist sélectionnée
 
-**Given** un client sur le catalogue
-**When** il clique sur "Ajouter à une wishlist" pour un titre
-**Then** le titre est ajouté à la wishlist sélectionnée
+Given un client sur le catalogue
+When il clique sur "Ajouter à une wishlist" pour un titre
+Then le titre est ajouté à la wishlist sélectionnée
 
-**Given** un client sur le catalogue ou une collection
-**When** il sélectionne plusieurs titres
-**Then** il peut les ajouter en lot à une wishlist
+Given un client sur le catalogue ou une collection
+When il sélectionne plusieurs titres
+Then il peut les ajouter en lot à une wishlist
+```
 
 ---
 
@@ -1124,19 +1172,21 @@ Un client peut organiser sa sélection de titres dans des wishlists pour prépar
 
 **Acceptance Criteria:**
 
-**Given** un client sur une wishlist
-**When** il clique sur "Retirer" pour un titre
-**Then** le titre est retiré de la wishlist
-**And** il reste dans le catalogue (juste retiré de cette wishlist)
+```gherkin
+Given un client sur une wishlist
+When il clique sur "Retirer" pour un titre
+Then le titre est retiré de la wishlist
+And il reste dans le catalogue (juste retiré de cette wishlist)
 
-**Given** un client sur la liste des wishlists
-**When** il clique sur "Supprimer" pour une wishlist
-**Then** une confirmation est demandée
+Given un client sur la liste des wishlists
+When il clique sur "Supprimer" pour une wishlist
+Then une confirmation est demandée
 
-**Given** un client confirmant la suppression
-**When** il valide
-**Then** la wishlist et son contenu sont supprimés
+Given un client confirmant la suppression
+When il valide
+Then la wishlist et son contenu sont supprimés
 
-**Given** un client avec des wishlists
-**When** il se déconnecte puis se reconnecte
-**Then** il retrouve toutes ses wishlists intactes avec leur contenu
+Given un client avec des wishlists
+When il se déconnecte puis se reconnecte
+Then il retrouve toutes ses wishlists intactes avec leur contenu
+```
