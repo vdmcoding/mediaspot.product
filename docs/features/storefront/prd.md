@@ -31,10 +31,19 @@ inputDocuments:
   - docs/features/storefront/mockups/Browsing/AccountCreation/Signup/Create an account-2.png
   - docs/features/storefront/mockups/Browsing/AccountCreation/Signup/Create an account-3.png
   - docs/features/storefront/mockups/Browsing/AccountCreation/Signup/Request confirmed.png
+  # Growth mockups
+  - docs/features/storefront/mockups/growth/Storefront/Admin/Catalog.png
+  - docs/features/storefront/mockups/growth/Add titles Drawer.png
+  - docs/features/storefront/mockups/growth/Add titles Drawer/Adding.png
+  - docs/features/storefront/mockups/growth/Drawer.png
+  - docs/features/storefront/mockups/growth/Drawer-1.png
+  - docs/features/storefront/mockups/growth/Browsing/Single title.png
+  - docs/features/storefront/mockups/growth/Bulk manage contents.png
 workflowType: 'prd'
+version: '1.1'
 documentCounts:
   sourceFiles: 8
-  mockups: 17
+  mockups: 24
   briefs: 0
   research: 0
 ---
@@ -354,6 +363,84 @@ Scenario: Retrait de collections du storefront
   And des collections déjà ajoutées
   When il retire une collection
   Then la collection n'est plus visible sur le storefront
+```
+
+### Granular Content Selection (Growth)
+
+**Feature: Sélection granulaire des contenus à l'ajout**
+
+```gherkin
+Scenario: Ajout d'un titre avec sélection des contenus
+  Given un admin dans le drawer d'ajout de titres
+  When il ajoute un titre au storefront
+  Then il peut sélectionner les types de contenus à exposer parmi :
+    | Type      | Description                              |
+    | Feature   | Contenu principal (film, épisodes)       |
+    | Trailer   | Bande-annonce                            |
+    | Marketing | Matériel promotionnel                    |
+    | Episode   | Épisodes individuels (pour les séries)   |
+  And les contenus sélectionnés sont affichés comme tags sur le titre dans la liste
+
+Scenario: Définition d'une sélection par défaut
+  Given un admin dans le drawer d'ajout de titres
+  When il configure une sélection de contenus pour un titre
+  Then il peut cliquer sur "Save as default"
+  And cette configuration s'appliquera automatiquement aux prochains titres ajoutés
+
+Scenario: Ajout de titre avec configuration par défaut
+  Given un admin ayant défini une configuration par défaut
+  When il ajoute un nouveau titre
+  Then les contenus sont pré-sélectionnés selon la configuration par défaut
+  And il peut modifier cette sélection avant de valider
+```
+
+**Feature: Modification des contenus exposés**
+
+```gherkin
+Scenario: Vue des contenus partagés dans le catalogue admin
+  Given un admin sur l'onglet Catalogue d'un storefront
+  When il consulte la liste des titres
+  Then il voit pour chaque titre les colonnes :
+    | Colonne            | Description                                    |
+    | Title              | Nom du titre avec visuel                       |
+    | Shared contents    | Tags des types de contenus exposés             |
+    | Best Quality       | Qualité maximale disponible                    |
+    | Audio Languages    | Langues audio disponibles                      |
+    | Subtitle Languages | Langues de sous-titres disponibles             |
+
+Scenario: Modification des contenus d'un titre individuel
+  Given un admin sur l'onglet Catalogue d'un storefront
+  And un titre déjà ajouté au storefront
+  When il clique sur la ligne du titre
+  Then un drawer s'ouvre avec les options de contenus
+  And il peut cocher/décocher Feature, Trailer, Marketing, Episode
+  And les modifications sont sauvegardées au clic sur "Save"
+
+Scenario: Modification bulk des contenus
+  Given un admin sur l'onglet Catalogue d'un storefront
+  And plusieurs titres sélectionnés dans le tableau
+  When il clique sur "Manage contents"
+  Then une modal s'ouvre avec les types de contenus disponibles
+  And il peut cocher/décocher Feature, Trailer, Marketing, Episode
+  And au clic sur "Apply to all", les contenus sélectionnés sont activés en best effort sur tous les titres du tableau
+  And si un type de contenu n'existe pas pour un titre, il est ignoré pour ce titre
+```
+
+**Feature: Affichage client des contenus sélectionnés**
+
+```gherkin
+Scenario: Player filtré selon les contenus exposés
+  Given un client connecté au storefront
+  And un titre avec uniquement certains contenus exposés (ex: Trailer uniquement)
+  When il accède à la page du titre
+  Then le player n'affiche que les contenus qui ont été ajoutés par l'admin
+  And les contenus non exposés ne sont pas disponibles dans le player
+
+Scenario: Contenus non exposés inaccessibles
+  Given un client sur une page titre
+  And le contenu Feature n'est PAS exposé pour ce titre
+  Then le Feature n'apparaît pas dans le player
+  And le client ne peut pas le visionner
 ```
 
 ### Documents & Contacts
