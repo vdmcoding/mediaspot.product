@@ -65,7 +65,7 @@ _Document focalisé sur le contrat API. Les choix d'implémentation backend sont
 |---------|----------|------------------|-------|
 | **Admin API** | `storefront-service/api/admin` | Basic Auth (authKey) | Gestion storefronts, users, documents |
 | **Public API** | `storefront-service/api/public` | Aucune | Account flow, login |
-| **User API** | `storefront-service/api/user` | Basic Auth + X-Origin-Url | Browsing client, wishlists |
+| **Browsing API** | `storefront-service/api/browsing` | Basic Auth + X-Origin-Url | Browsing client, wishlists |
 
 ### Routes Frontend
 
@@ -98,7 +98,7 @@ _Document focalisé sur le contrat API. Les choix d'implémentation backend sont
 
 Toutes les URLs API doivent inclure l'identifiant de contexte en premier segment du path :
 - **Admin API** : `/{storefrontId}/...` - identifie le storefront sur lequel on agit
-- **Public/User API** : `/{subdomain}/...` - identifie le storefront par son subdomain
+- **Public/Browsing API** : `/{subdomain}/...` - identifie le storefront par son subdomain
 
 **Avantages :**
 - Lisibilité immédiate du contexte d'action
@@ -128,7 +128,7 @@ Toutes les URLs API doivent inclure l'identifiant de contexte en premier segment
 | `GET /get-by-subdomain/{subdomain}` | Préfixe redondant | `GET /{subdomain}` |
 | `GET /get-by-subdomain/{subdomain}/images/{fileId}` | Préfixe redondant | `GET /{subdomain}/images/{fileId}` |
 
-### Migration Endpoints User API
+### Migration Endpoints Browsing API
 
 | Endpoint actuel | Problème | Endpoint cible |
 |-----------------|----------|----------------|
@@ -570,9 +570,9 @@ Base URL: `storefront-service/api/public`
 
 ---
 
-## Endpoints User API (Browsing)
+## Endpoints Browsing API
 
-Base URL: `storefront-service/api/user`
+Base URL: `storefront-service/api/browsing`
 
 ### Storefront & Catalogue
 
@@ -679,7 +679,7 @@ Base URL: `storefront-service/api/user`
 |---|-------|-------|--------------|
 | R34 | Isolation complète entre storefronts | Global | Données jamais partagées |
 | R35 | Admin voit uniquement storefronts assignés | Admin API | ACL check |
-| R36 | Client accède uniquement storefront invité | User API | Header X-Origin-Url + subdomain |
+| R36 | Client accède uniquement storefront invité | Browsing API | Header X-Origin-Url + subdomain |
 | R37 | JWT avec expiration appropriée | Auth | Token refresh |
 | R38 | Contenus vidéo accessibles uniquement si ACTIVE | Player | 401/403 |
 
