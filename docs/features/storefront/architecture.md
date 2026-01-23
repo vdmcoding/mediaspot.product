@@ -143,10 +143,7 @@ Toutes les URLs API doivent inclure l'identifiant de contexte en premier segment
 
 ### Stratégie de Migration
 
-1. **Nouvelles URLs** : Implémenter les nouveaux patterns
-2. **Backward compatibility** : Maintenir les anciens endpoints temporairement (deprecated)
-3. **Migration frontend** : Mettre à jour les appels API côté client
-4. **Suppression** : Retirer les anciens endpoints après migration complète
+1. **Modification des URLs en direct** : Remplacer les anciens patterns par les nouveaux en parallèle front & back
 
 ---
 
@@ -790,7 +787,7 @@ interface BulkContentUpdateRequest {
 | Méthode | Endpoint | Action | Request | Response |
 |---------|----------|--------|---------|----------|
 | **GET** | `/{storefrontId}/titles` | Lister titres avec contenus | Query params | `StorefrontCatalogItem[]` |
-| **GET** | `/{storefrontId}/titles/{titleId}/contents` | Contenus d'un titre | - | `StorefrontTitleContent` |
+| **GET** | `/{storefrontId}/titles/{titleId}` | Title single pour le Drawer | - | `StorefrontCatalogItem` |
 | **PUT** | `/{storefrontId}/titles/{titleId}/contents` | Modifier contenus d'un titre (par IDs) | `{ exposedContentIds: number[] }` | `StorefrontTitleContent` |
 | **PATCH** | `/{storefrontId}/titles/contents` | Modification bulk (par types) | `BulkContentUpdateRequest` | `StorefrontTitleContent[]` |
 
@@ -817,13 +814,13 @@ interface UpdateStorefrontRequest {
 }
 ```
 
-### POST /{storefrontId}/titles - Ajout de titres (étendu)
+### PATCH /{storefrontId}/titles - Ajout de titres (étendu)
 
 ```typescript
 interface AddTitlesRequest {
   titles: Array<{
     titleId: number
-    exposedContentIds?: number[]  // Optionnel, si absent → tous contenus exposés
+    exposedContentIds?: number[]  // Mandatory, if null > no content exposed (i.e no player)
   }>
 }
 ```
@@ -854,6 +851,9 @@ interface AvailableContent {
   contentType: string        // Type du contenu (Feature, Trailer, etc.)
   duration: string
   streamId: number
+  availableQualities: string[]
+  availableAudioLanguages: string[]
+  availableSubtitles: string[]
 }
 ```
 
@@ -865,7 +865,7 @@ interface AvailableContent {
 
 | # | Règle | Endpoint | Comportement |
 |---|-------|----------|--------------|
-| R39 | Ajout titre sans `exposedContentIds` → tous contenus exposés par défaut | POST `/{id}/titles` | Backend logic |
+| R39 | Ajout titre sans `exposedContentIds` → aucun contenu | POST `/{id}/titles` | Backend logic |
 | R40 | `contentId` doit exister sur le titre | POST `/{id}/titles`, PUT contents | 400 Bad Request |
 
 ### Vue catalogue admin
