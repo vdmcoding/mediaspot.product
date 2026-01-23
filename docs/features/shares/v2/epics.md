@@ -3,6 +3,7 @@ stepsCompleted:
   - step-01-validate-prerequisites
   - step-02-design-epics
   - step-03-create-stories
+  - step-04-final-validation
 inputDocuments:
   - docs/features/shares/v2/prd.md
 figmaLinks:
@@ -166,10 +167,12 @@ Afin de créer rapidement un screening sans passer par la sélection de Title.
 
 **Acceptance Criteria:**
 
-**Given** un créateur avec le droit "aclShareCreate" sur la page d'un Asset
-**When** il clique sur le bouton "Partager"
-**Then** la modale de création s'ouvre directement à l'étape 3 (configuration)
-**And** l'Asset est pré-sélectionné pour le screening
+```gherkin
+Given un créateur avec le droit "aclShareCreate" sur la page d'un Asset
+When il clique sur le bouton "Partager"
+Then la modale de création s'ouvre directement à l'étape 3 (configuration)
+And l'Asset est pré-sélectionné pour le screening
+```
 
 ---
 
@@ -181,15 +184,19 @@ Afin de créer un screening groupé sans passer par la sélection de Titles.
 
 **Acceptance Criteria:**
 
-**Given** un créateur avec le droit "aclShareCreate" sur une liste d'Assets
-**When** il sélectionne plusieurs Assets et clique sur "Partager la sélection"
-**Then** la modale s'ouvre à l'étape 3 (configuration)
-**And** tous les Assets sélectionnés sont inclus dans le screening
+```gherkin
+Given un créateur avec le droit "aclShareCreate" sur une liste d'Assets
+When il sélectionne plusieurs Assets et clique sur "Partager la sélection"
+Then la modale s'ouvre à l'étape 3 (configuration)
+And tous les Assets sélectionnés sont inclus dans le screening
+```
 
-**Given** un créateur ayant sélectionné 20 Assets
-**When** il tente de sélectionner un 21ème Asset
-**Then** la sélection est bloquée
-**And** le système affiche "Maximum 20 Assets par sélection"
+```gherkin
+Given un créateur ayant sélectionné 20 Assets
+When il tente de sélectionner un 21ème Asset
+Then la sélection est bloquée
+And le système affiche "Maximum 20 Assets par sélection"
+```
 
 ---
 
@@ -201,10 +208,12 @@ Afin de sélectionner rapidement les Contents à inclure.
 
 **Acceptance Criteria:**
 
-**Given** un créateur avec le droit "aclShareCreate" sur la page d'un Title
-**When** il clique sur le bouton "Partager"
-**Then** la modale s'ouvre à l'étape 2 (attribution langues)
-**And** les Contents du Title sont affichés pour sélection
+```gherkin
+Given un créateur avec le droit "aclShareCreate" sur la page d'un Title
+When il clique sur le bouton "Partager"
+Then la modale s'ouvre à l'étape 2 (attribution langues)
+And les Contents du Title sont affichés pour sélection
+```
 
 ---
 
@@ -216,14 +225,18 @@ Afin de constituer un screening à partir de zéro.
 
 **Acceptance Criteria:**
 
-**Given** un créateur avec le droit "aclShareCreate" accédant à la création de screening vide
-**When** la modale s'ouvre
-**Then** elle affiche l'étape 1 avec un champ de recherche
+```gherkin
+Given un créateur avec le droit "aclShareCreate" accédant à la création de screening vide
+When la modale s'ouvre
+Then elle affiche l'étape 1 avec un champ de recherche
+```
 
-**Given** la modale ouverte à l'étape 1
-**When** le créateur saisit "Avatar" dans le champ de recherche
-**Then** le système affiche les Titles correspondants
-**And** les résultats incluent titre, année et poster
+```gherkin
+Given la modale ouverte à l'étape 1
+When le créateur saisit "Avatar" dans le champ de recherche
+Then le système affiche les Titles correspondants
+And les résultats incluent titre, année et poster
+```
 
 ---
 
@@ -235,15 +248,19 @@ Afin de créer une playlist de contenus pour le destinataire.
 
 **Acceptance Criteria:**
 
-**Given** la modale à l'étape 1 avec des résultats de recherche
-**When** le créateur sélectionne "Avatar" et "Titanic"
-**Then** les deux Titles sont ajoutés au screening
-**And** le créateur peut poursuivre vers l'étape 2
+```gherkin
+Given la modale à l'étape 1 avec des résultats de recherche
+When le créateur sélectionne "Avatar" et "Titanic"
+Then les deux Titles sont ajoutés au screening
+And le créateur peut poursuivre vers l'étape 2
+```
 
-**Given** un screening avec 10 Titles déjà sélectionnés
-**When** le créateur tente d'ajouter un 11ème Title
-**Then** l'ajout est bloqué
-**And** le système affiche "Maximum 10 Titles par screening"
+```gherkin
+Given un screening avec 10 Titles déjà sélectionnés
+When le créateur tente d'ajouter un 11ème Title
+Then l'ajout est bloqué
+And le système affiche "Maximum 10 Titles par screening"
+```
 
 ---
 
@@ -255,10 +272,12 @@ Afin de cibler précisément ce que le destinataire verra.
 
 **Acceptance Criteria:**
 
-**Given** un Title "Avatar" avec Contents: "Feature", "Trailer", "Making-of"
-**When** le créateur sélectionne "Feature" et "Trailer"
-**Then** seuls ces Contents seront inclus pour ce Title
-**And** "Making-of" n'apparaîtra pas dans le screening final
+```gherkin
+Given un Title "Avatar" avec Contents: "Feature", "Trailer", "Making-of"
+When le créateur sélectionne "Feature" et "Trailer"
+Then seuls ces Contents seront inclus pour ce Title
+And "Making-of" n'apparaîtra pas dans le screening final
+```
 
 ---
 
@@ -274,17 +293,23 @@ Afin que le destinataire visionne dans la langue souhaitée.
 
 **Acceptance Criteria:**
 
-**Given** un Content MEZZ avec tracks audio: "Français", "Anglais", "Allemand"
-**When** le créateur sélectionne "Français"
-**Then** le screening sera généré avec la piste audio française
+```gherkin
+Given un Content MEZZ avec tracks audio: "Français", "Anglais", "Allemand"
+When le créateur sélectionne "Français"
+Then le screening sera généré avec la piste audio française
+```
 
-**Given** un Content MEZZ avec sous-titres QC: "Français", "Anglais", "Espagnol"
-**When** le créateur sélectionne "Anglais"
-**Then** le screening affichera les sous-titres anglais
+```gherkin
+Given un Content MEZZ avec sous-titres QC: "Français", "Anglais", "Espagnol"
+When le créateur sélectionne "Anglais"
+Then le screening affichera les sous-titres anglais
+```
 
-**Given** un Content MEZZ avec audio "VO Anglais" et sous-titres disponibles
-**When** le créateur sélectionne audio "Anglais" et sous-titres "Français"
-**Then** le destinataire verra la VO avec sous-titres français
+```gherkin
+Given un Content MEZZ avec audio "VO Anglais" et sous-titres disponibles
+When le créateur sélectionne audio "Anglais" et sous-titres "Français"
+Then le destinataire verra la VO avec sous-titres français
+```
 
 ---
 
@@ -296,15 +321,19 @@ Afin de partager l'asset correspondant à la langue souhaitée.
 
 **Acceptance Criteria:**
 
-**Given** un Content RAW avec assets vidéo associés à différentes langues audio
-**When** le créateur sélectionne "Français" comme langue
-**Then** le système identifie et sélectionne l'asset correspondant
-**And** le partage sera effectué sur cet asset spécifique
+```gherkin
+Given un Content RAW avec assets vidéo associés à différentes langues audio
+When le créateur sélectionne "Français" comme langue
+Then le système identifie et sélectionne l'asset correspondant
+And le partage sera effectué sur cet asset spécifique
+```
 
-**Given** un Content RAW
-**When** le créateur arrive sur l'attribution langues
-**Then** seul le choix audio est affiché
-**And** le choix sous-titres est absent (pas grisé, absent)
+```gherkin
+Given un Content RAW
+When le créateur arrive sur l'attribution langues
+Then seul le choix audio est affiché
+And le choix sous-titres est absent (pas grisé, absent)
+```
 
 ---
 
@@ -320,11 +349,13 @@ Afin d'identifier visuellement le contenu partagé.
 
 **Acceptance Criteria:**
 
-**Given** un créateur sur l'étape 3 de la modale (configuration)
-**When** il active l'option "burn texte"
-**And** saisit le texte "CONFIDENTIEL - Acheteur X"
-**Then** le texte sera incrusté visiblement sur la vidéo
-**And** l'aperçu affiche le texte en surimpression
+```gherkin
+Given un créateur sur l'étape 3 de la modale (configuration)
+When il active l'option "burn texte"
+And saisit le texte "CONFIDENTIEL - Acheteur X"
+Then le texte sera incrusté visiblement sur la vidéo
+And l'aperçu affiche le texte en surimpression
+```
 
 ---
 
@@ -336,16 +367,20 @@ Afin de tracer individuellement chaque visionnage.
 
 **Acceptance Criteria:**
 
-**Given** un créateur sur l'étape 3 de la modale
-**When** il active l'option "burn email destinataire"
-**Then** l'email de chaque destinataire sera incrusté sur sa vidéo
-**And** l'option "partage par lien" est désactivée
-**And** un message explique "Lien désactivé : chaque destinataire voit son email incrusté"
+```gherkin
+Given un créateur sur l'étape 3 de la modale
+When il active l'option "burn email destinataire"
+Then l'email de chaque destinataire sera incrusté sur sa vidéo
+And l'option "partage par lien" est désactivée
+And un message explique "Lien désactivé : chaque destinataire voit son email incrusté"
+```
 
-**Given** l'option "burn email destinataire" est activée
-**When** le créateur tente d'activer "partage par lien"
-**Then** l'option reste désactivée
-**And** le système affiche "Incompatible avec burn email"
+```gherkin
+Given l'option "burn email destinataire" est activée
+When le créateur tente d'activer "partage par lien"
+Then l'option reste désactivée
+And le système affiche "Incompatible avec burn email"
+```
 
 ---
 
@@ -357,25 +392,33 @@ Afin de protéger les contenus sensibles selon la politique plateforme.
 
 **Acceptance Criteria:**
 
-**Given** un Title avec une date de sortie inférieure au seuil forensic plateforme
-**When** le créateur sélectionne ce Title pour un screening
-**Then** le watermark forensic est automatiquement activé
+```gherkin
+Given un Title avec une date de sortie inférieure au seuil forensic plateforme
+When le créateur sélectionne ce Title pour un screening
+Then le watermark forensic est automatiquement activé
+```
 
-**Given** un Title récent déclenchant le watermark forensic
-**When** le créateur arrive sur l'étape 3 de la modale
-**Then** une alerte est affichée "Protection forensic active sur ce screening"
-**And** l'alerte explique les restrictions associées
+```gherkin
+Given un Title récent déclenchant le watermark forensic
+When le créateur arrive sur l'étape 3 de la modale
+Then une alerte est affichée "Protection forensic active sur ce screening"
+And l'alerte explique les restrictions associées
+```
 
-**Given** un screening avec watermark forensic activé
-**When** le créateur configure les options de partage
-**Then** l'option "partage par lien" est désactivée et grisée
-**And** seul l'envoi par email nominatif est disponible
+```gherkin
+Given un screening avec watermark forensic activé
+When le créateur configure les options de partage
+Then l'option "partage par lien" est désactivée et grisée
+And seul l'envoi par email nominatif est disponible
+```
 
-**Given** un screening avec watermark forensic activé
-**And** 10 destinataires déjà ajoutés
-**When** le créateur tente d'ajouter un 11ème destinataire
-**Then** l'ajout est bloqué
-**And** le système affiche "Maximum 10 destinataires avec protection forensic"
+```gherkin
+Given un screening avec watermark forensic activé
+And 10 destinataires déjà ajoutés
+When le créateur tente d'ajouter un 11ème destinataire
+Then l'ajout est bloqué
+And le système affiche "Maximum 10 destinataires avec protection forensic"
+```
 
 ---
 
@@ -387,20 +430,26 @@ Afin de contrôler la diffusion du contenu.
 
 **Acceptance Criteria:**
 
-**Given** un créateur sur l'étape 3 de la modale
-**When** il définit "Max vues" à 5
-**Then** le screening expirera après 5 visionnages
-**And** le compteur de vues sera visible dans le suivi
+```gherkin
+Given un créateur sur l'étape 3 de la modale
+When il définit "Max vues" à 5
+Then le screening expirera après 5 visionnages
+And le compteur de vues sera visible dans le suivi
+```
 
-**Given** un créateur sur l'étape 3 de la modale
-**When** il définit la date d'expiration au "2026-02-28"
-**Then** le screening sera inaccessible après cette date
-**And** le destinataire verra "Ce lien a expiré"
+```gherkin
+Given un créateur sur l'étape 3 de la modale
+When il définit la date d'expiration au "2026-02-28"
+Then le screening sera inaccessible après cette date
+And le destinataire verra "Ce lien a expiré"
+```
 
-**Given** un créateur sur l'étape 3 de la modale
-**When** il définit "Max IPs" à 3
-**Then** le screening bloquera l'accès après 3 IPs différentes
-**And** le système affiche "Accès limité atteint" à la 4ème IP
+```gherkin
+Given un créateur sur l'étape 3 de la modale
+When il définit "Max IPs" à 3
+Then le screening bloquera l'accès après 3 IPs différentes
+And le système affiche "Accès limité atteint" à la 4ème IP
+```
 
 ---
 
@@ -412,10 +461,12 @@ Afin de noter des informations visibles uniquement par moi.
 
 **Acceptance Criteria:**
 
-**Given** un créateur sur l'étape 3 de la modale
-**When** il saisit un commentaire "Pour review Q1 - client VIP"
-**Then** le commentaire est enregistré avec le screening
-**And** il est visible uniquement côté créateur (pas destinataire)
+```gherkin
+Given un créateur sur l'étape 3 de la modale
+When il saisit un commentaire "Pour review Q1 - client VIP"
+Then le commentaire est enregistré avec le screening
+And il est visible uniquement côté créateur (pas destinataire)
+```
 
 ---
 
@@ -427,17 +478,21 @@ Afin de diffuser le screening facilement.
 
 **Acceptance Criteria:**
 
-**Given** un créateur sur l'étape 3 de la modale
-**When** il ajoute "client@studio.com" comme destinataire
-**And** coche "Envoyer email automatique"
-**Then** un email est envoyé à cette adresse avec le lien
-**And** le destinataire apparaît dans la liste de suivi
+```gherkin
+Given un créateur sur l'étape 3 de la modale
+When il ajoute "client@studio.com" comme destinataire
+And coche "Envoyer email automatique"
+Then un email est envoyé à cette adresse avec le lien
+And le destinataire apparaît dans la liste de suivi
+```
 
-**Given** un screening sans watermark forensic
-**And** 50 destinataires déjà ajoutés
-**When** le créateur tente d'ajouter un 51ème destinataire
-**Then** l'ajout est bloqué
-**And** le système affiche "Maximum 50 destinataires par screening"
+```gherkin
+Given un screening sans watermark forensic
+And 50 destinataires déjà ajoutés
+When le créateur tente d'ajouter un 51ème destinataire
+Then l'ajout est bloqué
+And le système affiche "Maximum 50 destinataires par screening"
+```
 
 ---
 
@@ -449,15 +504,19 @@ Afin de l'envoyer moi-même via un autre canal (Slack, etc.).
 
 **Acceptance Criteria:**
 
-**Given** aucune option bloquant le lien (burn email, forensic)
-**When** le créateur clique "Générer le lien"
-**Then** un lien unique est créé
-**And** le créateur peut le copier pour envoi manuel
+```gherkin
+Given aucune option bloquant le lien (burn email, forensic)
+When le créateur clique "Générer le lien"
+Then un lien unique est créé
+And le créateur peut le copier pour envoi manuel
+```
 
-**Given** l'option burn email activée
-**When** le créateur regarde la zone "Lien de partage"
-**Then** le bouton est grisé
-**And** un tooltip explique "Lien indisponible : burn email actif"
+```gherkin
+Given l'option burn email activée
+When le créateur regarde la zone "Lien de partage"
+Then le bouton est grisé
+And un tooltip explique "Lien indisponible : burn email actif"
+```
 
 ---
 
@@ -473,20 +532,26 @@ Afin de visionner les médias partagés.
 
 **Acceptance Criteria:**
 
-**Given** un screening actif avec lien unique
-**When** le destinataire ouvre ce lien
-**Then** la page viewlink s'affiche
-**And** le contenu est prêt à être visionné
+```gherkin
+Given un screening actif avec lien unique
+When le destinataire ouvre ce lien
+Then la page viewlink s'affiche
+And le contenu est prêt à être visionné
+```
 
-**Given** un screening dont la date d'expiration est passée
-**When** le destinataire ouvre le lien
-**Then** une page d'erreur s'affiche
-**And** le message indique "Ce screening a expiré"
+```gherkin
+Given un screening dont la date d'expiration est passée
+When le destinataire ouvre le lien
+Then une page d'erreur s'affiche
+And le message indique "Ce screening a expiré"
+```
 
-**Given** un screening ayant atteint son max de vues
-**When** le destinataire ouvre le lien
-**Then** une page d'erreur s'affiche
-**And** le message indique "Nombre de visionnages atteint"
+```gherkin
+Given un screening ayant atteint son max de vues
+When le destinataire ouvre le lien
+Then une page d'erreur s'affiche
+And le message indique "Nombre de visionnages atteint"
+```
 
 ---
 
@@ -498,20 +563,26 @@ Afin d'accéder à tous les médias partagés.
 
 **Acceptance Criteria:**
 
-**Given** un screening multi-title avec "Avatar" et "Titanic"
-**When** le destinataire ouvre le dropdown de navigation
-**Then** il voit la liste des Titles disponibles
-**And** peut sélectionner "Titanic" pour changer de contenu
+```gherkin
+Given un screening multi-title avec "Avatar" et "Titanic"
+When le destinataire ouvre le dropdown de navigation
+Then il voit la liste des Titles disponibles
+And peut sélectionner "Titanic" pour changer de contenu
+```
 
-**Given** un Title "Avatar" avec Contents "Feature" et "Trailer"
-**When** le destinataire sélectionne ce Title
-**Then** il voit les Contents disponibles
-**And** peut naviguer entre eux via le dropdown
+```gherkin
+Given un Title "Avatar" avec Contents "Feature" et "Trailer"
+When le destinataire sélectionne ce Title
+Then il voit les Contents disponibles
+And peut naviguer entre eux via le dropdown
+```
 
-**Given** un screening avec plusieurs Assets
-**When** le destinataire arrive sur la page
-**Then** les Assets sont affichés en cartes cliquables
-**And** cliquer sur une carte charge cet Asset dans le player
+```gherkin
+Given un screening avec plusieurs Assets
+When le destinataire arrive sur la page
+Then les Assets sont affichés en cartes cliquables
+And cliquer sur une carte charge cet Asset dans le player
+```
 
 ---
 
@@ -523,10 +594,12 @@ Afin de consulter les médias confortablement.
 
 **Acceptance Criteria:**
 
-**Given** un screening accessible
-**When** le destinataire lance la lecture
-**Then** le player affiche le contenu avec les langues configurées
-**And** les contrôles standard sont disponibles (play, pause, seek, volume)
+```gherkin
+Given un screening accessible
+When le destinataire lance la lecture
+Then le player affiche le contenu avec les langues configurées
+And les contrôles standard sont disponibles (play, pause, seek, volume)
+```
 
 ---
 
@@ -538,11 +611,13 @@ Afin de marquer des passages intéressants avec un commentaire.
 
 **Acceptance Criteria:**
 
-**Given** le destinataire en train de visionner un contenu
-**When** il définit un point d'entrée et un point de sortie
-**And** clique "Créer clip"
-**Then** le clip est enregistré avec les timecodes
-**And** il peut ajouter un commentaire au clip
+```gherkin
+Given le destinataire en train de visionner un contenu
+When il définit un point d'entrée et un point de sortie
+And clique "Créer clip"
+Then le clip est enregistré avec les timecodes
+And il peut ajouter un commentaire au clip
+```
 
 ---
 
@@ -558,18 +633,24 @@ Afin de savoir précisément ce que le destinataire a regardé.
 
 **Acceptance Criteria:**
 
-**Given** un destinataire visionnant un contenu de 60 minutes
-**When** il regarde de 0:00 à 15:00, puis saute à 45:00 jusqu'à 60:00
-**Then** le système enregistre les segments [0:00-15:00] et [45:00-60:00]
-**And** ces marqueurs sont visibles sur une timeline
+```gherkin
+Given un destinataire visionnant un contenu de 60 minutes
+When il regarde de 0:00 à 15:00, puis saute à 45:00 jusqu'à 60:00
+Then le système enregistre les segments [0:00-15:00] et [45:00-60:00]
+And ces marqueurs sont visibles sur une timeline
+```
 
-**Given** une session avec segments [0:00-15:00] et [45:00-60:00]
-**Then** le temps total visionné est 30 minutes
-**And** cette valeur est affichée dans les analytics
+```gherkin
+Given une session avec segments [0:00-15:00] et [45:00-60:00]
+Then le temps total visionné est 30 minutes
+And cette valeur est affichée dans les analytics
+```
 
-**Given** un contenu de 60 minutes
-**And** des segments visionnés totalisant 30 minutes uniques
-**Then** le pourcentage affiché est 50%
+```gherkin
+Given un contenu de 60 minutes
+And des segments visionnés totalisant 30 minutes uniques
+Then le pourcentage affiché est 50%
+```
 
 ---
 
@@ -581,10 +662,12 @@ Afin de détecter les accès multiples.
 
 **Acceptance Criteria:**
 
-**Given** deux sessions depuis des IPs différentes
-**When** le créateur consulte les analytics
-**Then** chaque session est identifiée par son IP
-**And** le nombre d'IPs uniques est affiché
+```gherkin
+Given deux sessions depuis des IPs différentes
+When le créateur consulte les analytics
+Then chaque session est identifiée par son IP
+And le nombre d'IPs uniques est affiché
+```
 
 ---
 
@@ -596,14 +679,18 @@ Afin de mesurer l'engagement individuel.
 
 **Acceptance Criteria:**
 
-**Given** un screening envoyé à "client@studio.com"
-**When** le créateur ouvre le détail de ce destinataire
-**Then** il voit les métriques: dernière vue, temps total, pourcentage vu, nombre de sessions
+```gherkin
+Given un screening envoyé à "client@studio.com"
+When le créateur ouvre le détail de ce destinataire
+Then il voit les métriques: dernière vue, temps total, pourcentage vu, nombre de sessions
+```
 
-**Given** un screening multi-title avec "Avatar" (5 vues) et "Titanic" (3 vues)
-**When** le créateur consulte les analytics
-**Then** il voit le total global (8 vues)
-**And** le détail par Title avec les vues respectives
+```gherkin
+Given un screening multi-title avec "Avatar" (5 vues) et "Titanic" (3 vues)
+When le créateur consulte les analytics
+Then il voit le total global (8 vues)
+And le détail par Title avec les vues respectives
+```
 
 ---
 
@@ -615,12 +702,16 @@ Afin de récupérer leurs feedbacks dans la plateforme.
 
 **Acceptance Criteria:**
 
-**Given** un destinataire ayant créé 2 clips sur un screening
-**When** le créateur consulte le screening
-**Then** il voit la liste des clips créés
-**And** chaque clip affiche: timecodes, commentaire, auteur
+```gherkin
+Given un destinataire ayant créé 2 clips sur un screening
+When le créateur consulte le screening
+Then il voit la liste des clips créés
+And chaque clip affiche: timecodes, commentaire, auteur
+```
 
-**Given** un clip créé par un destinataire sur un asset
-**When** le créateur clique "Importer dans Mediaspot"
-**Then** le clip est créé sur l'asset source dans la plateforme
-**And** il est lié au screening d'origine pour traçabilité
+```gherkin
+Given un clip créé par un destinataire sur un asset
+When le créateur clique "Importer dans Mediaspot"
+Then le clip est créé sur l'asset source dans la plateforme
+And il est lié au screening d'origine pour traçabilité
+```
