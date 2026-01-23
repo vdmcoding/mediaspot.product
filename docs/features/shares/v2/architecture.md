@@ -161,7 +161,6 @@ interface CreateShareRequest {
 
   // === DESTINATAIRES ===
   recipientEmails?: string[]
-  sendEmailNotification?: boolean
   generateLink?: boolean
 }
 ```
@@ -189,12 +188,10 @@ interface ShareResponse {
   type: 'StreamingBasic' | 'StreamingTagSecure'
   expirationDate: string
   maxViews: number
-  maxIPs: number | null
 
   // === ÉTAT ===
   isActive: boolean
   viewsRemaining: number
-  ipsRemaining: number | null
   daysRemaining: number
 
   // === CLIPS ===
@@ -234,6 +231,8 @@ interface ShareAssetView {
 ---
 
 ### GET /shares - ShareListResponse
+
+> ⚠️ **À valider avec l'équipe dev** : paramètres de filtrage & de sorting
 
 Query params: `?page=&size=&objectId=&titleId=&status=&sort=`
 
@@ -338,8 +337,9 @@ interface SessionStats {
   watchMarkers: WatchMarker[]
 }
 
+// À valider : timecode ou frame
 interface WatchMarker {
-  start: string                      // Timecode "HH:mm:ss"
+  start: string                      
   end: string
 }
 
@@ -363,6 +363,8 @@ interface ClipInfo {
 > ⚠️ **À valider avec l'équipe dev** : préfixe et structure des endpoints
 
 ### GET - Recherche Titles
+
+> ⚠️ **À valider avec l'équipe dev** : Capacité de la recherche (pagination, filtering, sorting)
 
 ```typescript
 // Query: ?q=avatar&page=&size=
