@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeliveryIdentity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+  <ProviderInfos>
+    <Name>Amazon Package</Name>
+    <Territory></Territory><!-- FR / DE / GB / AUS -->
+    <Id>B0001</Id>
+    <Category>Bundle</Category><!-- Broadcaster / Bundle -->
+    <PackageType>AmazonGlobal</PackageType>
+    <NeedExternalId>true</NeedExternalId>
+    <LanguageCode></LanguageCode>
+    <ManifestSessionName />
+	<PartnerId>pathe</PartnerId>
+	<DoNotCutMediaFiles>true</DoNotCutMediaFiles>
+	<ManualTaskTemplate>BundleMaker Amazon Global</ManualTaskTemplate>
+	<IsDeliveryManual>true</IsDeliveryManual>
+	<EnableSourceDurationCheckAndFix>true</EnableSourceDurationCheckAndFix> <!-- TAG QUI CORRIGE LA DUREE DE L'AUDIO ALTERNATE (trop court ou trop long) POUR LE FAIRE COINCIDER AVEC LA VIDEO. L'AUDIO ALTERNATE MEZZ DOIT ETRE CALE AU ProRes DE REF POUR QUE CA FONCTIONNE -->
+	<ExperimentalFlags>
+		<Flag tag="SubtitleFixMoveRaisedToTop" enabled="true" />
+	</ExperimentalFlags>	
+  </ProviderInfos>
+  <TechnicalInfos>
+    <General>
+      <Wrapper>MOV</Wrapper>
+      <StartTimecode>00:00:00:00</StartTimecode>
+      <NormDescription />
+	  <Framerate />
+    </General>
+  </TechnicalInfos>
+  <Components>
+    <ComponentStandard type="Feature" contentType="Feature;Restored with a different Edit" min="2" max="2">
+      <AssetVideo min="1" max="1" allowOvPictureOverride="true" allowOvAudioOverride="true" allowLocAudioOverride="true" allowBurnedSubtitle="true" makeProxy="true"> <!-- SDR -->
+        <Specifications>
+          <Video>                                   
+            <Standards>
+              <Standard value="UHD" min="1" max="1">
+                <Framerate />
+                <Sampling>422</Sampling>
+                <Profile>HQ</Profile>
+                <ContentAspectRatio>OAR</ContentAspectRatio>
+                <Codec>ProRes</Codec>
+                <Field>Progressive</Field>
+                <AspectRatio>16/9</AspectRatio>
+                <ColorSpace>REC709</ColorSpace>
+                <TransferCharacteristic>GAMMA</TransferCharacteristic>
+              </Standard>
+			  <Standard value="HD" min="1" max="1">
+                <Framerate />
+                <Sampling>422</Sampling>
+                <Profile>HQ</Profile>
+                <ContentAspectRatio>OAR</ContentAspectRatio>
+                <Codec>ProRes</Codec>
+                <Field>Progressive</Field>
+                <AspectRatio>16/9</AspectRatio>
+                <ColorSpace>REC709</ColorSpace>
+                <TransferCharacteristic>GAMMA</TransferCharacteristic>
+              </Standard>
+			  <Standard value="SD" min="1" max="1">
+				<Framerate>25</Framerate>
+				<Sampling>422</Sampling>
+				<Profile>HQ</Profile>
+				<ContentAspectRatio>OAR</ContentAspectRatio>
+				<Codec>ProRes</Codec>
+				<Field>Progressive</Field>
+				<AspectRatio></AspectRatio>
+				<ColorSpace>REC601</ColorSpace>
+				<TransferCharacteristic>GAMMA</TransferCharacteristic>
+			  </Standard>
+            </Standards>
+          </Video>
+          <Audio>
+            <Codec>PCM</Codec>
+            <Sampling>48000</Sampling>
+            <BitDepth>24</BitDepth>
+          </Audio>
+        </Specifications>
+        <TimelineSegments>
+          <Segment>
+            <Type>Program</Type>
+            <Duration />
+          </Segment>
+        </TimelineSegments>
+        <TracksMappings>
+			<Mapping voRedundancyChecker="false">
+				<Conditions>
+				  <Condition language="VO" version="5.1" />
+				  <Condition language="VO" version="2.0" />
+				</Conditions>
+				<Track id="1" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="L" positionTag="Left" loudnessCorrection="false" />
+				</Track>
+				<Track id="2" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="R" positionTag="Right" loudnessCorrection="false" />
+				</Track>
+				<Track id="3" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="C" positionTag="Center" loudnessCorrection="false" />
+				</Track>
+				<Track id="4" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="LFE" positionTag="LFE" loudnessCorrection="false" />
+				</Track>
+				<Track id="5" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Ls" positionTag="Left_Surround" loudnessCorrection="false" />
+				</Track>
+				<Track id="6" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Rs" positionTag="Right_Surround" loudnessCorrection="false" />
+				</Track>
+				<Track id="7" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+				</Track>
+				<Track id="8" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+				</Track>
+          </Mapping>
+          <Mapping voRedundancyChecker="false">
+            <Conditions>
+              <Condition language="VO" version="2.0" />
+            </Conditions>
+            <Track id="1" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+            </Track>
+            <Track id="2" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+            </Track>
+          </Mapping>
+        </TracksMappings>
+        <BurnIns>
+          <!-- <BurnIn toBeApplied="false" language="ENG" type="Full" ifAudioLanguageIsNot="ENG" doNotIfVM="true" /> -->
+          <!-- <BurnIn toBeApplied="false" language="ENG" type="Partial" doNotIfVM="false" ifAudioLanguage="ENG" /> -->
+        </BurnIns>
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Full-Mezz_UHD-SDR</NamingSegment>
+          <NamingSegment>_%languageLocalized%</NamingSegment>
+          <NamingSegment>[[%VDM_BurnedSubtitle% == '' ? '' : '_%languageLocalized%']]</NamingSegment>
+        </FileNamingRule>
+      </AssetVideo>
+
+      <AssetVideo min="1" max="1" allowOvPictureOverride="true" allowOvAudioOverride="true" allowLocAudioOverride="true" allowBurnedSubtitle="true" > <!-- HDR -->
+        <Specifications>
+          <Video>                                   
+            <Standards>
+              <Standard value="UHD" min="1" max="1"> 
+                <Framerate />
+                <Sampling>422</Sampling>
+                <Profile>HQ</Profile>
+                <Codec>ProRes</Codec>
+                <Field>Progressive</Field>
+				<Standard>UHD</Standard>
+                <AspectRatio>16/9</AspectRatio>
+				<ContentAspectRatio>OAR</ContentAspectRatio>										
+                <ColorSpace>REC2020</ColorSpace>
+                <TransferCharacteristic>PQ_ST2084</TransferCharacteristic> <!--  Possible values: PQ_ST2084, GAMMA (for REC601, REC709, REC2020), HLG_BT2100 -->
+				<HdrType>HDR10</HdrType> <!-- "HDR10" or "DolbyVision" -->
+			  </Standard>
+            </Standards>
+          </Video>
+          <Audio>
+            <Codec>PCM</Codec>
+            <Sampling>48000</Sampling>
+            <BitDepth>24</BitDepth>
+          </Audio>
+        </Specifications>
+        <TimelineSegments>
+          <Segment>
+            <Type>Program</Type>
+            <Duration />
+          </Segment>
+          <!-- YAN : En MovieLabs, on livre les dub cards à part (PRORES avec piste audio muette) -->
+          <!--<Segment language="ENG">
+            <Type>DubCard</Type>
+            <Duration />
+          </Segment>-->
+        </TimelineSegments>
+        <TracksMappings>
+			<Mapping voRedundancyChecker="false">
+				<Conditions>
+				  <Condition language="VO" version="5.1" />
+				  <Condition language="VO" version="2.0" />
+				</Conditions>
+				<Track id="1" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="L" positionTag="Left" loudnessCorrection="false" />
+				</Track>
+				<Track id="2" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="R" positionTag="Right" loudnessCorrection="false" />
+				</Track>
+				<Track id="3" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="C" positionTag="Center" loudnessCorrection="false" />
+				</Track>
+				<Track id="4" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="LFE" positionTag="LFE" loudnessCorrection="false" />
+				</Track>
+				<Track id="5" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Ls" positionTag="Left_Surround" loudnessCorrection="false" />
+				</Track>
+				<Track id="6" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Rs" positionTag="Right_Surround" loudnessCorrection="false" />
+				</Track>
+				<Track id="7" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+				</Track>
+				<Track id="8" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+				</Track>
+			</Mapping>
+			<Mapping voRedundancyChecker="false">
+				<Conditions>
+				  <Condition language="VO" version="2.0" />
+				</Conditions>
+				<Track id="1" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+				</Track>
+				<Track id="2" isUsed="true" codec="PCM">
+				  <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+				</Track>
+			</Mapping>
+        </TracksMappings>
+        <BurnIns>
+          <!-- <BurnIn toBeApplied="false" language="ENG" type="Full" ifAudioLanguageIsNot="ENG" doNotIfVM="true" /> -->
+          <!-- <BurnIn toBeApplied="false" language="ENG" type="Partial" doNotIfVM="false" ifAudioLanguage="ENG" /> -->
+        </BurnIns>
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Full-Mezz_UHD-HDR</NamingSegment>
+          <NamingSegment>_%languageLocalized%</NamingSegment>
+          <NamingSegment>[[%VDM_BurnedSubtitle% == '' ? '' : '_%languageLocalized%']]</NamingSegment>
+        </FileNamingRule>
+      </AssetVideo>
+
+      <AssetAudio min="0" max="100">                 <!-- ALTERNATE AUDIO -->
+        <Specifications>
+          <Audio>
+            <Codec>PCM</Codec>
+            <Sampling>48000</Sampling>
+            <BitDepth>24</BitDepth>
+          </Audio>
+        </Specifications>
+        <TracksMappings>
+		  <Mapping voRedundancyChecker="false" hideMappingIsVo="true">
+            <Conditions>
+              <Condition language="VO" version="5.1" /> <!-- rajouter condition AUDIO VO different de Français -->
+              <Condition language="VO" version="2.0" />
+            </Conditions>
+            <Track id="1" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="L" positionTag="Left" loudnessCorrection="false" />
+            </Track>
+            <Track id="2" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="R" positionTag="Right" loudnessCorrection="false" />
+            </Track>
+            <Track id="3" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="C" positionTag="Center" loudnessCorrection="false" />
+            </Track>
+            <Track id="4" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="LFE" positionTag="LFE" loudnessCorrection="false" />
+            </Track>
+            <Track id="5" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Ls" positionTag="Left_Surround" loudnessCorrection="false" />
+            </Track>
+            <Track id="6" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rs" positionTag="Right_Surround" loudnessCorrection="false" />
+            </Track>
+            <Track id="7" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+            </Track>
+            <Track id="8" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+            </Track>
+          </Mapping>
+          <Mapping voRedundancyChecker="false">
+            <Conditions>
+              <Condition language="VO" version="2.0"/> <!-- rajouter condition AUDIO VO different de Français -->
+            </Conditions>
+            <Track id="1" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Lt" loudnessCorrection="false" />
+            </Track>
+            <Track id="2" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rt" loudnessCorrection="false" />
+            </Track>
+          </Mapping>
+        </TracksMappings>
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Full-Audio_</NamingSegment>
+          <NamingSegment>%languageLocalized%</NamingSegment>
+        </FileNamingRule>
+      </AssetAudio>
+
+	  <AssetAudio min="0" max="1">                   <!-- AUDIODESCRIPTION -->
+        <Specifications>
+          <Audio>
+            <Codec>PCM</Codec>
+            <Sampling>48000</Sampling>
+            <BitDepth>24</BitDepth>
+          </Audio>
+        </Specifications>
+		<TracksMappings>
+          <Mapping>
+            <Conditions>
+              <Condition language="VO" version="AD" />
+            </Conditions>
+            <Track id="1" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" isAudiodescription="true" position="Lt" loudnessCorrection="true" />
+            </Track>
+            <Track id="2" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" isAudiodescription="true" position="Rt" loudnessCorrection="true" />
+            </Track>
+          </Mapping>
+        </TracksMappings>
+       <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Full-AudioDescriptive_</NamingSegment>
+          <NamingSegment>%languageLocalized%</NamingSegment>
+        </FileNamingRule>
+      </AssetAudio>										 
+
+      <AssetSubtitle min="0" max="100">
+        <Sidecars>
+          <!-- <Sidecar isRequired="true" language="VO" type="FullWithoutPartial" format="ITT" ifAudioLanguagesAreMoreThan="VO" subtitleIsClosed="false" isSDH="false" /> -->
+		  <Sidecar isRequired="true" language="VO" type="Full" format="ITT" ifAudioLanguagesAreMoreThan="VO" subtitleIsClosed="false" isSDH="false" />
+          <Sidecar isRequired="true" language="VO" type="Partial" format="ITT" subtitleIsClosed="false" isSDH="false" />
+          <Sidecar isRequired="true" language="VO" type="Full" isSDH="true" sdhType="SDH" format="ITT" subtitleIsClosed="false" ifAudioLanguagesAreMoreThan="VO" />
+		  <!-- <Sidecar isRequired="true" language="VO" type="FullWithoutPartial" isSDH="true" sdhType="SDH" format="ITT" ifPartialBurned="true" subtitleIsClosed="false" ifAudioLanguagesAreMoreThan="VO" /> -->
+        </Sidecars>
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Full-</NamingSegment>
+		  <NamingSegment>[[%subtitleType% == 'Partial' &amp;&amp; %subtitleSME% == 'False' ? 'Forced' : '']]</NamingSegment>
+		  <NamingSegment>[[%subtitleType% == 'Full' &amp;&amp; %subtitleSME% == 'False' ? 'Subtitle' : '']]</NamingSegment>
+		  <NamingSegment>[[%subtitleSME% == 'True' ? 'Caption' : '']]</NamingSegment>
+          <NamingSegment>%techFrameRate%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%languageLocalized%</NamingSegment>
+        </FileNamingRule>
+      </AssetSubtitle>
+    </ComponentStandard>
+
+    <!-- YAN : AJout bloc DubCard (avec pistes audio "mute" mais obligatoires -->
+    <ComponentStandard type="DubCard" contentType="Feature" min="0" max="100">
+      <AssetVideo min="0" max="100" useWorldWide="false" >
+        <Specifications>
+          <Video>
+            <Standards>
+              <Standard value="UHD" min="1" max="1">
+                <Framerate />
+                <Sampling>422</Sampling>
+                <Profile>HQ</Profile>
+                <ContentAspectRatio>OAR</ContentAspectRatio>
+                <Codec>ProRes</Codec>
+                <Field>Progressive</Field>
+                <AspectRatio>16/9</AspectRatio>
+                <ColorSpace>REC709</ColorSpace>
+                <TransferCharacteristic>GAMMA</TransferCharacteristic>
+              </Standard>
+			  <Standard value="HD" min="1" max="1">
+                <Framerate />
+                <Sampling>422</Sampling>
+                <Profile>HQ</Profile>
+                <ContentAspectRatio>OAR</ContentAspectRatio>
+                <Codec>ProRes</Codec>
+                <Field>Progressive</Field>
+                <AspectRatio>16/9</AspectRatio>
+                <ColorSpace>REC709</ColorSpace>
+                <TransferCharacteristic>GAMMA</TransferCharacteristic>
+              </Standard>
+			  <Standard value="SD" min="1" max="1">
+				<Framerate>25</Framerate>
+				<Sampling>422</Sampling>
+				<Profile>HQ</Profile>
+				<ContentAspectRatio>OAR</ContentAspectRatio>
+				<Codec>ProRes</Codec>
+				<Field>Progressive</Field>
+				<AspectRatio></AspectRatio>
+				<ColorSpace>REC601</ColorSpace>
+				<TransferCharacteristic>GAMMA</TransferCharacteristic>
+			  </Standard>
+            </Standards>
+          </Video>
+          <Audio>
+            <Codec>PCM</Codec>
+            <Sampling>48000</Sampling>
+            <BitDepth>24</BitDepth>
+          </Audio>
+        </Specifications>
+        <TimelineSegments>
+          <Segment>
+            <Type>Program</Type>
+            <Duration>00:00:05:00</Duration>
+			<DurationTimeStretch>true</DurationTimeStretch>
+          </Segment>
+        </TimelineSegments>
+        <TracksMappings>
+          <Mapping voRedundancyChecker="false">
+            <Conditions>
+              <Condition language="VO" version="2.0" />
+            </Conditions>
+            <Track id="1" isUsed="false" codec="PCM">
+              <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+            </Track>
+            <Track id="2" isUsed="false" codec="PCM">
+              <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+            </Track>
+          </Mapping>
+        </TracksMappings>
+
+        <BurnIns />
+
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Dubcard-</NamingSegment>
+          <!-- YAN : Remplacer %VDM_LanguageAudio% par %languagePicture% (si ça existe !) -->
+          <NamingSegment>%languageLocalized%</NamingSegment>
+          <!--<NamingSegment>%VDM_LanguageAudio%</NamingSegment>-->
+          
+          <!-- YAN : N/A !! -->
+          <!--<NamingSegment>[[%VDM_BurnedSubtitle == '' ? '' : '-%VDM_SubtitleLanguage%']]</NamingSegment>-->
+        </FileNamingRule>
+      </AssetVideo>
+
+    </ComponentStandard>
+
+    <ComponentStandard type="Trailer" contentType="Trailer;Clip;Teaser" min="0" max="1">
+      <AssetVideo min="0" max="100" allowVideoProfileOverride="true" allowOvPictureOverride="true" allowOvAudioOverride="true" allowLocAudioOverride="true" allowBurnedSubtitle="true" useWorldWide="false" >
+        <Specifications>
+          <Video>
+            <Standards>
+              <Standard value="UHD" min="1" max="1">
+                <Framerate />
+                <Sampling>422</Sampling>
+                <Profile>HQ</Profile>
+                <ContentAspectRatio>OAR</ContentAspectRatio>
+                <Codec>ProRes</Codec>
+                <Field>Progressive</Field>
+                <AspectRatio>16/9</AspectRatio>
+                <ColorSpace>REC709</ColorSpace>
+                <TransferCharacteristic>GAMMA</TransferCharacteristic>
+              </Standard>
+			  <Standard value="HD" min="1" max="1">
+                <Framerate />
+                <Sampling>422</Sampling>
+                <Profile>HQ</Profile>
+                <ContentAspectRatio>OAR</ContentAspectRatio>
+                <Codec>ProRes</Codec>
+                <Field>Progressive</Field>
+                <AspectRatio>16/9</AspectRatio>
+                <ColorSpace>REC709</ColorSpace>
+                <TransferCharacteristic>GAMMA</TransferCharacteristic>
+              </Standard>
+			  <Standard value="SD" min="1" max="1">
+				<Framerate>25</Framerate>
+				<Sampling>422</Sampling>
+				<Profile>HQ</Profile>
+				<ContentAspectRatio>OAR</ContentAspectRatio>
+				<Codec>ProRes</Codec>
+				<Field>Progressive</Field>
+				<AspectRatio></AspectRatio>
+				<ColorSpace>REC601</ColorSpace>
+				<TransferCharacteristic>GAMMA</TransferCharacteristic>
+			  </Standard>
+            </Standards>
+          </Video>
+          <Audio>
+            <Codec>PCM</Codec>
+            <Sampling>48000</Sampling>
+            <BitDepth>24</BitDepth>
+          </Audio>
+        </Specifications>
+        <TimelineSegments>
+          <Segment>
+            <Type>Program</Type>
+            <Duration />
+          </Segment>
+        </TimelineSegments>
+        <TracksMappings>
+          <Mapping voRedundancyChecker="false">
+            <Conditions>
+              <Condition language="VO" version="5.1" />
+              <Condition language="VO" version="2.0" />
+            </Conditions>
+            <Track id="1" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="L" positionTag="Left" loudnessCorrection="false" />
+            </Track>
+            <Track id="2" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="R" positionTag="Right" loudnessCorrection="false" />
+            </Track>
+            <Track id="3" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="C" positionTag="Center" loudnessCorrection="false" />
+            </Track>
+            <Track id="4" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="LFE" positionTag="LFE" loudnessCorrection="false" />
+            </Track>
+            <Track id="5" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Ls" positionTag="Left_Surround" loudnessCorrection="false" />
+            </Track>
+            <Track id="6" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rs" positionTag="Right_Surround" loudnessCorrection="false" />
+            </Track>
+            <Track id="7" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+            </Track>
+            <Track id="8" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+            </Track>
+          </Mapping>
+		  
+		  <Mapping voRedundancyChecker="false">
+            <Conditions>
+              <Condition language="VO" version="2.0" />
+            </Conditions>
+            <Track id="1" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+            </Track>
+            <Track id="2" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+            </Track>
+          </Mapping>
+		  
+          <Mapping voRedundancyChecker="false">
+            <Conditions>
+              <Condition language="VO" version="5.1" />
+              <Condition language="VO" version="2.0" />
+            </Conditions>
+            <Track id="1" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="L" positionTag="Left" loudnessCorrection="false" />
+            </Track>
+            <Track id="2" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="R" positionTag="Right" loudnessCorrection="false" />
+            </Track>
+            <Track id="3" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="C" positionTag="Center" loudnessCorrection="false" />
+            </Track>
+            <Track id="4" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="LFE" positionTag="LFE" loudnessCorrection="false" />
+            </Track>
+            <Track id="5" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Ls" positionTag="Left_Surround" loudnessCorrection="false" />
+            </Track>
+            <Track id="6" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rs" positionTag="Right_Surround" loudnessCorrection="false" />
+            </Track>
+            <Track id="7" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+            </Track>
+            <Track id="8" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+            </Track>
+          </Mapping>
+		  <Mapping voRedundancyChecker="false">
+            <Conditions>
+              <Condition language="VO" version="2.0" />
+            </Conditions>
+            <Track id="1" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Lt" positionTag="Left_Total" loudnessCorrection="false" />
+            </Track>
+            <Track id="2" isUsed="true" codec="PCM">
+              <Channel id="1" language="VO" position="Rt" positionTag="Right_Total" loudnessCorrection="false" />
+            </Track>
+          </Mapping>
+		  
+        </TracksMappings>
+		
+        <BurnIns>
+          <BurnIn toBeApplied="false" language="FRA" type="Full" ifAudioLanguageIsNot="FRA" doNotIfVM="true" />
+        </BurnIns>
+		
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Trailer-Mezz_</NamingSegment>
+		  <NamingSegment>[[%videoProfile% == 'UHD' ? 'UHD-' : '']]</NamingSegment>
+		  <NamingSegment>[[%videoProfile% == 'HD' ? 'HD-' : '']]</NamingSegment>
+		  <NamingSegment>[[%videoProfile% == 'SD' ? 'SD-' : '']]</NamingSegment>
+          <NamingSegment>%languageLocalized%</NamingSegment>
+          <NamingSegment>[[%VDM_BurnedSubtitle% == '' ? '' : '-%languageLocalized%']]</NamingSegment>
+        </FileNamingRule>
+      </AssetVideo>
+	  
+    </ComponentStandard>
+    
+	<ComponentArtwork type="Artwork" contentType="Artwork" min="0" max="1">
+      <AssetImage subType="ArtworkPosterVertical" min="1" max="100">
+        <Specifications>
+          <Image>
+            <ResolutionProfile>PxMatch_1200_to_1920x1600_to_2560</ResolutionProfile>
+            <Wrapper>JPG</Wrapper>
+            <Ratio>3/4</Ratio>
+          </Image>
+        </Specifications>
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Full-Image-</NamingSegment>
+          <NamingSegment>%languageLocalized%</NamingSegment>
+        </FileNamingRule>
+      </AssetImage>
+      <!-- YAN : A prévoir également : Version 16/9 -->
+      <AssetImage subType="ArtworkPosterHorizontal" min="0" max="100">
+        <Specifications>
+          <Image>
+            <ResolutionProfile>PxMatch_1920_to_3840x1080_to_2160</ResolutionProfile>
+            <Wrapper>JPG</Wrapper>
+            <Ratio>16/9</Ratio>
+          </Image>
+        </Specifications>
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Full-Image-</NamingSegment>
+          <NamingSegment>%languageLocalized%</NamingSegment>
+          <NamingSegment>-16x9</NamingSegment>
+        </FileNamingRule>
+      </AssetImage>
+      <!-- YAN : A prévoir également : Artwork Hero" (sometimes referred to as 'Background Art.' This artwork must be FRAe of any text elements) -->
+      <AssetImage subType="ArtworkPosterHero" min="0" max="100">
+        <Specifications>
+          <Image>
+            <ResolutionProfile>PxMatch_1920_to_3840x1080_to_2160</ResolutionProfile>
+            <Wrapper>JPG</Wrapper>
+            <Ratio>16/9</Ratio>
+          </Image>
+        </Specifications>
+        <FileNamingRule>
+          <NamingSegment>%partnerId%</NamingSegment>
+          <NamingSegment>-</NamingSegment>
+          <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+          <NamingSegment>-Full-Image-</NamingSegment>
+          <NamingSegment>%languageLocalized%</NamingSegment>
+          <NamingSegment>-Hero</NamingSegment>
+        </FileNamingRule>
+      </AssetImage>
+    </ComponentArtwork>
+  </Components>
+  
+  <Delivery>
+    <Bundle>
+      <Transfer>
+        <Type>UNC</Type>
+        <Host />
+        <Authentication>Credentials</Authentication>
+        <Login />
+        <Password />
+        <DocRoot>\\qq-vdm.vdm.local\VDM\EXCHANGES\DIGITAL-FACTORY\PATHE\From_DF</DocRoot>
+      </Transfer>
+    </Bundle>
+	<XmlHdr10>
+		<FileNamingRule>
+			<NamingSegment>%partnerId%</NamingSegment>
+			<NamingSegment>-</NamingSegment>
+			<NamingSegment>%BROADCASTER_ID%</NamingSegment>
+			<NamingSegment>_HDR10</NamingSegment>
+		</FileNamingRule>
+		<Transfer>
+			<Type>UNC</Type>
+			<Host />
+			<Authentication>Credentials</Authentication>
+			<Login />
+			<Password />
+			<DocRoot>\\qq-vdm.vdm.local\VDM\EXCHANGES\DIGITAL-FACTORY\PATHE\From_DF</DocRoot>
+		</Transfer>
+	</XmlHdr10>
+    <Manifest>
+      <ToBeGenerated>true</ToBeGenerated>
+      <XslPath />
+      <FileNamingRule>
+        <NamingSegment>%partnerId%</NamingSegment>
+        <NamingSegment>-</NamingSegment>
+        <NamingSegment>%BROADCASTER_ID%</NamingSegment>
+        <NamingSegment>-Metadata-fr-FR</NamingSegment>
+      </FileNamingRule>
+      <Transfer>
+        <Type>UNC</Type>
+        <Host />
+        <Authentication>Credentials</Authentication>
+        <Login />
+        <Password />
+        <DocRoot>\\qq-vdm.vdm.local\VDM\EXCHANGES\DIGITAL-FACTORY\PATHE\From_DF</DocRoot>
+      </Transfer>
+    </Manifest>
+  </Delivery>
+  <Notification>
+    <Type>Email</Type>
+    <Addresses>
+      <Address>ms-cc-pathe@vdm.fr</Address>
+    </Addresses>
+  </Notification>
+</DeliveryIdentity>

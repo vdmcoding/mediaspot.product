@@ -1,0 +1,996 @@
+{
+  "global": {
+    "offerName": "Advanced",
+    "cloud": true,
+    "basePrice": 299.0,
+    "commitmentMinimumDays": 0, //No comitment
+    "transferBandwidthOutMegaBytes": {
+      "window": "Day",
+      "value": 0 // 1TB
+    },
+    "mediaProcessingMinutes": {
+      "window": "Month", // Month only supported
+      "value": 0
+    },
+    "storageDiskMegabytes": {
+      "window": "Month", // Month only supported
+      "value": 0
+    },
+    "users": [
+      {
+        "type": "Basic",
+        "included": 50,
+        "lockAdditional": true,
+        "priceAdditional": 0
+      },
+      {
+        "type": "Admin",
+        "included": 3,
+        "lockAdditional": true,
+        "priceAdditional": 0
+      }
+    ],
+    "licences": [
+      {
+        "type": "WatermarkNexguardCivolution",
+        "basePrice": 150,
+        "included": false
+      },
+      {
+        "type": "TranscodingGenericBasketFeature",
+        "basePrice": 0,
+        "included": true
+      },
+      {
+        "type": "TranscodingByProfileBasketFeature",
+        "basePrice": 0,
+        "included": true
+      },
+      {
+        "type": "BundleMakerCore",
+        "basePrice": 0,
+        "included": false
+      },
+      {
+        "type": "BundleMakerMetadata",
+        "basePrice": 0,
+        "included": false
+      },
+      {
+        "type": "YoutubeAntipiracyBasketFeature",
+        "basePrice": 95,
+        "included": false
+      },
+      {
+        "type": "DcpKDMFeature",
+        "basePrice": 95,
+        "included": false
+      },
+      {
+        "type": "DcpTranscoding",
+        "basePrice": 50,
+        "included": false
+      },
+	  {
+        "type": "AWSConnector",
+        "basePrice": 500,
+        "included": false
+      },
+	  {
+        "type": "ImageSequenceProxyTranscode",
+        "basePrice": 50,
+        "included": false
+      },
+	  {
+        "type": "PlayerScreenshotFromHires",
+        "basePrice": 0,
+        "included": true
+      }
+    ]
+  },
+  "orders": [
+    {
+      "type": "FaspexSend",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00018,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AsperaFaspex", "AsperaP2P", "AsperaPush", "AsperaDropbox", "AsperaP2PWithSSHKey", "AsperaShares", "SigniantP2P" ] // TO CHECK
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00014,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AmazonS3Upload", "FTP", "Http", "SFTP", "SFTPWithSSHKey" ]
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00022,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "UNC" ]
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerRestoreFromArchiveOnly, VDM.AirLab.Sdk.Core",
+          "pricePerMegabytePerDay": 0.00005,
+          "durationOnDiskInDays": 5,
+          "machinePricePerMinute": 0.0
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceRestoreSize, VDM.AirLab.Sdk.Core",
+          "machinePricePerMinute": 0.0,
+          "PriceModelCredits": 0,
+          "pricePerMegabyte": 0.00005
+        }
+      ]
+    },
+    {
+      "type": "TranscodeGenericSingleFile",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+          "videoProfiles": [
+            {
+              "resolution": "SD",
+              "pricePerMinute": 0.50
+            },
+            {
+              "resolution": "HD",
+              "pricePerMinute": 0.70
+            },
+            {
+              "resolution": "UHD",
+              "pricePerMinute": 1.30
+            },
+            {
+              "resolution": "FourK",
+              "pricePerMinute": 1.30
+            },
+            {
+              "resolution": "Unknown",
+              "pricePerMinute": 0.70
+            }
+          ],
+          "specialEffectFactors": {
+            "hdr10": 1.50,
+            "hdrDoVi": 1.50,
+            "frameStdConvert": 1.30
+          },
+          "machinePricePerMinute": 0.0
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00018,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AsperaFaspex", "AsperaP2P", "AsperaPush", "AsperaDropbox", "AsperaP2PWithSSHKey", "AsperaShares", "SigniantP2P" ] // TO CHECK
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00014,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AmazonS3Upload", "FTP", "Http", "SFTP", "SFTPWithSSHKey" ]
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00022,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "UNC" ]
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceRestoreSize, VDM.AirLab.Sdk.Core",
+          "machinePricePerMinute": 0.0,
+          "PriceModelCredits": 0,
+          "pricePerMegabyte": 0.00005
+        }
+      ]
+    },
+    {
+      "type": "TranscodeGeneric",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+          "videoProfiles": [
+            {
+              "resolution": "SD",
+              "pricePerMinute": 0.50
+            },
+            {
+              "resolution": "HD",
+              "pricePerMinute": 0.70
+            },
+            {
+              "resolution": "UHD",
+              "pricePerMinute": 1.30
+            },
+            {
+              "resolution": "FourK",
+              "pricePerMinute": 1.30
+            },
+            {
+              "resolution": "Unknown",
+              "pricePerMinute": 0.70
+            }
+          ],
+          "specialEffectFactors": {
+            "hdr10": 1.50,
+            "hdrDoVi": 1.50,
+            "frameStdConvert": 1.30
+          },
+          "machinePricePerMinute": 0.0
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00018,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AsperaFaspex", "AsperaP2P", "AsperaPush", "AsperaDropbox", "AsperaP2PWithSSHKey", "AsperaShares", "SigniantP2P" ] // TO CHECK
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00014,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AmazonS3Upload", "FTP", "Http", "SFTP", "SFTPWithSSHKey" ]
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00022,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "UNC" ]
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceRestoreSize, VDM.AirLab.Sdk.Core",
+          "machinePricePerMinute": 0.0,
+          "PriceModelCredits": 0,
+          "pricePerMegabyte": 0.00005
+        }
+      ]
+    },
+    {
+      "type": "TranscodeDownscaleAsMezz",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+          "videoProfiles": [
+            {
+              "resolution": "SD",
+              "pricePerMinute": 0.50
+            },
+            {
+              "resolution": "HD",
+              "pricePerMinute": 0.70
+            },
+            {
+              "resolution": "UHD",
+              "pricePerMinute": 1.30
+            },
+            {
+              "resolution": "FourK",
+              "pricePerMinute": 1.30
+            },
+            {
+              "resolution": "Unknown",
+              "pricePerMinute": 0.70
+            }
+          ],
+          "specialEffectFactors": {
+            "hdr10": 1.50,
+            "hdrDoVi": 1.50,
+            "frameStdConvert": 1.30
+          },
+          "machinePricePerMinute": 0.0
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00018,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AsperaFaspex", "AsperaP2P", "AsperaPush", "AsperaDropbox", "AsperaP2PWithSSHKey", "AsperaShares", "SigniantP2P" ] // TO CHECK
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00014,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AmazonS3Upload", "FTP", "Http", "SFTP", "SFTPWithSSHKey" ]
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00022,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "UNC" ]
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceRestoreSize, VDM.AirLab.Sdk.Core",
+          "machinePricePerMinute": 0.0,
+          "PriceModelCredits": 0,
+          "pricePerMegabyte": 0.00005
+        }
+      ]
+    },
+    {
+      "type": "AntipiracyYoutube",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+          "videoProfiles": [
+            {
+              "resolution": "SD",
+              "pricePerMinute": 0.0
+            },
+            {
+              "resolution": "HD",
+              "pricePerMinute": 0.0
+            },
+            {
+              "resolution": "UHD",
+              "pricePerMinute": 0.0
+            },
+            {
+              "resolution": "FourK",
+              "pricePerMinute": 0.0
+            },
+            {
+              "resolution": "Unknown",
+              "pricePerMinute": 0.0
+            }
+          ],
+          "specialEffectFactors": {
+            "hdr10": 0.0,
+            "hdrDoVi": 0.0,
+            "frameStdConvert": 0.0
+          },
+          "machinePricePerMinute": 0.0
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00018,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AsperaFaspex", "AsperaP2P", "AsperaPush", "AsperaDropbox", "AsperaP2PWithSSHKey", "AsperaShares", "SigniantP2P" ] // TO CHECK
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00014,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AmazonS3Upload", "FTP", "Http", "SFTP", "SFTPWithSSHKey" ]
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00022,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "UNC" ]
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceRestoreSize, VDM.AirLab.Sdk.Core",
+          "machinePricePerMinute": 0.0,
+          "PriceModelCredits": 0,
+          "pricePerMegabyte": 0.00005
+        }
+      ]
+    },
+    {
+      "type": "TranscodeByProfile",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+          "videoProfiles": [
+            {
+              "resolution": "SD",
+              "pricePerMinute": 0.95
+            },
+            {
+              "resolution": "HD",
+              "pricePerMinute": 1.25
+            },
+            {
+              "resolution": "UHD",
+              "pricePerMinute": 1.95
+            },
+            {
+              "resolution": "FourK",
+              "pricePerMinute": 1.95
+            },
+            {
+              "resolution": "Unknown",
+              "pricePerMinute": 1.25
+            }
+          ],
+          "specialEffectFactors": {
+            "hdr10": 1.50,
+            "hdrDoVi": 1.50,
+            "frameStdConvert": 1.30
+          },
+          "machinePricePerMinute": 0.0
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00018,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AsperaFaspex", "AsperaP2P", "AsperaPush", "AsperaDropbox", "AsperaP2PWithSSHKey", "AsperaShares", "SigniantP2P" ] // TO CHECK
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00014,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AmazonS3Upload", "FTP", "Http", "SFTP", "SFTPWithSSHKey" ]
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00022,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "UNC" ]
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceRestoreSize, VDM.AirLab.Sdk.Core",
+          "machinePricePerMinute": 0.0,
+          "PriceModelCredits": 0,
+          "pricePerMegabyte": 0.00005
+        }
+      ]
+    },
+    {
+      "type": "TranscodeBundleByProfile",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+          "videoProfiles": [
+            {
+              "resolution": "SD",
+              "pricePerMinute": 1.20
+            },
+            {
+              "resolution": "HD",
+              "pricePerMinute": 1.60
+            },
+            {
+              "resolution": "UHD",
+              "pricePerMinute": 2.45
+            },
+            {
+              "resolution": "FourK",
+              "pricePerMinute": 2.45
+            },
+            {
+              "resolution": "Unknown",
+              "pricePerMinute": 1.60
+            }
+          ],
+          "specialEffectFactors": {
+            "hdr10": 1.50,
+            "hdrDoVi": 1.50,
+            "frameStdConvert": 1.30
+          },
+          "machinePricePerMinute": 0.0
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00018,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AsperaFaspex", "AsperaP2P", "AsperaPush", "AsperaDropbox", "AsperaP2PWithSSHKey", "AsperaShares", "SigniantP2P" ] // TO CHECK
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00014,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AmazonS3Upload", "FTP", "Http", "SFTP", "SFTPWithSSHKey" ]
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00022,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "UNC" ]
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceRestoreSize, VDM.AirLab.Sdk.Core",
+          "machinePricePerMinute": 0.0,
+          "PriceModelCredits": 0,
+          "pricePerMegabyte": 0.00005
+        }
+      ]
+    },
+    {
+      "type": "TranscodeImf",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+          "videoProfiles": [
+            {
+              "resolution": "SD",
+              "pricePerMinute": 1.20
+            },
+            {
+              "resolution": "HD",
+              "pricePerMinute": 1.60
+            },
+            {
+              "resolution": "UHD",
+              "pricePerMinute": 2.45
+            },
+            {
+              "resolution": "FourK",
+              "pricePerMinute": 2.45
+            },
+            {
+              "resolution": "Unknown",
+              "pricePerMinute": 1.60
+            }
+          ],
+          "specialEffectFactors": {
+            "hdr10": 1.50,
+            "hdrDoVi": 1.50,
+            "frameStdConvert": 1.30
+          },
+          "machinePricePerMinute": 0.0
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00018,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AsperaFaspex", "AsperaP2P", "AsperaPush", "AsperaDropbox", "AsperaP2PWithSSHKey", "AsperaShares", "SigniantP2P" ] // TO CHECK
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00014,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "AmazonS3Upload", "FTP", "Http", "SFTP", "SFTPWithSSHKey" ]
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.00022,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "window": "Day",
+            "value": 0
+          },
+		   "destinations": [ "UNC" ]
+        },
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceRestoreSize, VDM.AirLab.Sdk.Core",
+          "machinePricePerMinute": 0.0,
+          "PriceModelCredits": 0,
+          "pricePerMegabyte": 0.00005
+        }
+      ]
+    },
+    {
+      "type": "SubtitleConverter",
+      "basePrice": 5.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerDeliverySize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.0,
+          "machinePricePerMinute": 0.0
+        }
+      ]
+    },
+    {
+      "type": "Qualify",
+      "basePrice": 0.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceObjectType, VDM.AirLab.Sdk.Core",
+          "pricePerUnit": 40,
+          "machinePricePerMinute": 0.0,
+          "objectType": "Video"
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceObjectType, VDM.AirLab.Sdk.Core",
+          "pricePerUnit": 20,
+          "machinePricePerMinute": 0.0,
+          "objectType": "Audio"
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceObjectType, VDM.AirLab.Sdk.Core",
+          "pricePerUnit": 20,
+          "machinePricePerMinute": 0.0,
+          "objectType": "Subtitle"
+        }
+      ]
+    },
+    {
+      "type": "QualityCheck",
+      "basePrice": 15.0,
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceObjectType, VDM.AirLab.Sdk.Core",
+          "pricePerUnit": 0,
+          "machinePricePerMinute": 0.0,
+          "objectType": "Video"
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceObjectType, VDM.AirLab.Sdk.Core",
+          "pricePerUnit": 0,
+          "machinePricePerMinute": 0.0,
+          "objectType": "Audio"
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceObjectType, VDM.AirLab.Sdk.Core",
+          "pricePerUnit": 0,
+          "machinePricePerMinute": 0.0,
+          "objectType": "Subtitle"
+        },
+		{
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+          "videoProfiles": [
+            {
+              "resolution": "SD",
+              "pricePerMinute": 3.30,
+			  "commentMatch": "Full"
+            },
+			{
+              "resolution": "SD",
+              "pricePerMinute": 2.10,
+			  "commentMatch": "Video+2.0"
+            },
+			{
+              "resolution": "SD",
+              "pricePerMinute": 2.10,
+			  "commentMatch": "Video+5.1"
+            },
+            {
+              "resolution": "HD",
+              "pricePerMinute": 3.30,
+			  "commentMatch": "Full"
+            },
+			{
+              "resolution": "HD",
+              "pricePerMinute": 2.10,
+			  "commentMatch": "Video+2.0"
+            },
+			{
+              "resolution": "HD",
+              "pricePerMinute": 2.10,
+			  "commentMatch": "Video+5.1"
+            },
+			{
+              "resolution": "UHD",
+              "pricePerMinute": 4.10,
+			  "commentMatch": "Full"
+            },
+			{
+              "resolution": "UHD",
+              "pricePerMinute": 2.60,
+			  "commentMatch": "Video+2.0"
+            },
+			{
+              "resolution": "UHD",
+              "pricePerMinute": 2.60,
+			  "commentMatch": "Video+5.1"
+            },
+			{
+              "resolution": "FourK",
+              "pricePerMinute": 4.10,
+			  "commentMatch": "Full"
+            },
+			{
+              "resolution": "FourK",
+              "pricePerMinute": 2.60,
+			  "commentMatch": "Video+2.0"
+            },
+			{
+              "resolution": "FourK",
+              "pricePerMinute": 2.60,
+			  "commentMatch": "Video+5.1"
+            },
+			{
+              "resolution": "Unknown",
+              "pricePerMinute": 3.30,
+			  "commentMatch": "Full"
+            },
+			{
+              "resolution": "Unknown",
+              "pricePerMinute": 2.10,
+			  "commentMatch": "Video+2.0"
+            },
+			{
+              "resolution": "Unknown",
+              "pricePerMinute": 2.10,
+			  "commentMatch": "Video+5.1"
+            }
+          ],
+          "specialEffectFactors": {
+            "hdr10": 1.50,
+            "hdrDoVi": 1.50,
+            "frameStdConvert": 0.0
+          },
+          "machinePricePerMinute": 0.0
+        }
+      ]
+    }
+  ],
+  "ingest": {
+    "models": [
+      {
+        "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelTranscodePerMinute, VDM.AirLab.Sdk.Core",
+        "videoProfiles": [
+          {
+            "resolution": "SD",
+            "pricePerMinute": 0.0
+          },
+          {
+            "resolution": "HD",
+            "pricePerMinute": 0.0
+          },
+          {
+            "resolution": "UHD",
+            "pricePerMinute": 0.0
+          },
+          {
+            "resolution": "FourK",
+            "pricePerMinute": 0.0
+          },
+          {
+            "resolution": "Unknown",
+            "pricePerMinute": 0.0
+          }
+        ],
+        "specialEffectFactors": {
+          "hdr10": 0.0,
+          "hdrDoVi": 0.0,
+          "frameStdConvert": 0.0
+        },
+        "machinePricePerMinute": 0.0
+      },
+      {
+        "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelMediaAnalysisPerMinute, VDM.AirLab.Sdk.Core",
+        "videoProfiles": [
+          {
+            "resolution": "SD",
+            "pricePerMinute": 0.0
+          },
+          {
+            "resolution": "HD",
+            "pricePerMinute": 0.0
+          },
+          {
+            "resolution": "UHD",
+            "pricePerMinute": 0.0
+          },
+          {
+            "resolution": "FourK",
+            "pricePerMinute": 0.0
+          },
+          {
+            "resolution": "Unknown",
+            "pricePerMinute": 0.0
+          }
+        ],
+        "specialEffectFactors": {
+          "hdr10": 0.0,
+          "hdrDoVi": 0.0,
+          "frameStdConvert": 0.0
+        },
+        "machinePricePerMinute": 0.0
+      },
+      {
+        "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelIngest, VDM.AirLab.Sdk.Core",
+        "objectTypes": [
+          {
+            "type": "Video",
+            "price": 0,
+            "mezz": true,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          },
+          {
+            "type": "Audio",
+            "price": 0,
+            "mezz": true,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          },
+          {
+            "type": "Subtitle",
+            "price": 0,
+            "mezz": true,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          },
+          {
+            "type": "Video",
+            "price": 0,
+            "mezz": false,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0 // 350 x 12 units allowed per year before bill it
+            }
+          },
+          {
+            "type": "Audio",
+            "price": 0,
+            "mezz": false,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          },
+          {
+            "type": "Subtitle",
+            "price": 0,
+            "mezz": false,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          },
+          {
+            "type": "DcpPackage",
+            "price": 0,
+            "mezz": false,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          },
+          {
+            "type": "ImfPackage",
+            "price": 0,
+            "mezz": false,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          },
+          {
+            "type": "ImageSequence",
+            "price": 0,
+            "mezz": false,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          },
+          {
+            "type": "Unknown",
+            "price": 0,
+            "mezz": false,
+            "conditions": {
+              "nbTotalPerYearMoreThan": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "shares": [
+    {
+      "types": ["StreamingBasic", "StreamingTagSecure"],
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerUnit, VDM.AirLab.Sdk.Core",
+          "pricePerUnit": 0.0,
+          "machinePricePerMinute": 0.0,
+          "credits": {
+            "value": 10000, // Like unlimited
+            "window": "Month"
+          }
+        }
+      ]
+    }
+  ],
+  "storages": [
+    {
+      "kinds": [
+        "Ingest",
+        "Stagging",
+        "StandardAndWork",
+        "Generated",
+        "ProxyTag",
+        "ProxyOrLowResolution",
+        "MiscOrMetadata"
+      ],
+      "accessibility": "Disk",
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceSize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.0,
+          "machinePricePerMinute": 0.0
+        }
+      ]
+    },
+    {
+      "kinds": ["Archive"],
+      "accessibility": "Tape",
+      "models": [
+        {
+          "$type": "VDM.AirLab.Sdk.Core.Billing.PriceModelPerSourceSize, VDM.AirLab.Sdk.Core",
+          "pricePerMegabyte": 0.0000035,
+          "machinePricePerMinute": 0.0,
+        }
+      ]
+    }
+  ]
+}
