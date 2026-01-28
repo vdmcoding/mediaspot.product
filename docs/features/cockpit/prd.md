@@ -93,7 +93,7 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 | Critère | Cible | Rationale |
 |---------|-------|-----------|
 | Performance listing | < 1s pour 500 workflows | Fluidité d'usage |
-| Sync FFAStrans | Données fraîches < 5 min | Source de vérité cohérente |
+| Sync FFAStrans | Real-time | Source de vérité cohérente |
 | Disponibilité | 99% pendant heures ouvrées | Criticité medium |
 
 ### Measurable Outcomes
@@ -220,8 +220,8 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 
 ### Intégration FFAStrans
 
-- Mode read-only (Cockpit = consommateur)
-- Sync données < 5 min (défini dans success criteria)
+- Mode read/write
+- Sync données en real-time
 - Pas de limite de volume connue côté FFAStrans
 
 ## Web App Specific Requirements
@@ -259,7 +259,7 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 | Métrique | Cible | Source |
 |----------|-------|--------|
 | Chargement listing | < 1s pour 500 workflows | Success criteria |
-| Sync FFAStrans | < 5 min | Success criteria |
+| Sync FFAStrans | Real-time | Business requirement |
 | Latence streaming | 3-10s | Acceptable |
 
 ### Real-time
