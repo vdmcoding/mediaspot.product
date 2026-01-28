@@ -262,13 +262,8 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 | Sync FFAStrans | < 5 min | Success criteria |
 | Latence streaming | 3-10s | Acceptable |
 
-### Real-time (À Valider)
-
-**Question ouverte pour l'architecture :**
-- Polling périodique (simple, suffisant pour sync < 5 min)
-- WebSocket (notifications instantanées)
-
-*Décision à prendre avec l'équipe technique lors de l'architecture.*
+### Real-time
+- WebSocket (mise à jour en push de la liste des workflows)
 
 ### Accessibilité
 
@@ -301,8 +296,8 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 - **FR13:** Un reviewer peut rejeter un workflow
 - **FR14:** Un reviewer doit fournir un motif lors d'un rejet
 - **FR15:** Un reviewer peut indiquer un timecode lors d'un rejet
-- **FR16:** *(À valider tech)* Le système met à jour le statut du workflow après validation
-- **FR17:** *(À valider tech)* Le système met à jour le statut du workflow après rejet
+- **FR16:** Le système met à jour le statut du workflow après validation
+- **FR17:** Le système met à jour le statut du workflow après rejet
 
 ### Collaboration & Assignation
 
@@ -314,13 +309,14 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 - **FR20:** L'historique affiche qui a pris la décision
 - **FR21:** L'historique affiche quand la décision a été prise
 - **FR22:** L'historique affiche le motif de la décision
+- **FR23:** L'historique enregistre l'assignation, le rejet et la validation
 
 ### Gestion des Utilisateurs
 
-- **FR23:** Un admin peut créer un compte utilisateur
-- **FR24:** Un admin peut assigner un rôle à un utilisateur (admin, reviewer, user)
-- **FR25:** Un admin peut limiter les permissions d'un utilisateur par pôle
-- **FR26:** Un admin peut limiter les permissions d'un utilisateur par chaîne
+- **FR24:** Un admin peut créer un compte utilisateur
+- **FR25** Un admin peut désactiver un compte
+- **FR25** Un admin peut supprimer un compte
+- **FR26:** Un admin peut assigner un rôle à un utilisateur (admin, reviewer, user)
 - **FR27:** Un utilisateur peut se connecter via AWS Cognito
 
 ## Non-Functional Requirements
@@ -346,7 +342,7 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 
 | Système | Mode | Exigence |
 |---------|------|----------|
-| FFAStrans | Read-only | Sync données < 5 min |
+| FFAStrans | Read / Write | Websockets |
 | AWS S3 | Write | Copie vidéo à la demande |
 | AWS Cognito | Auth | SSO entreprise |
 
