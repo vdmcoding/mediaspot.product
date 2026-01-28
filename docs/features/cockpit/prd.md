@@ -107,7 +107,7 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 
 | Feature | Description |
 |---------|-------------|
-| Listing | Liste des workflows avec filtres (pôle, chaîne, step, priorité, statut) |
+| Listing | Liste des workflows avec filtres (pôle, chaîne, step, statut) |
 | Preview | Visualisation vidéo intégrée |
 | Validation | Approuver / Rejeter avec motif obligatoire + timecode optionnel |
 | Assignation | Assigner un workflow à un reviewer |
@@ -166,13 +166,13 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 
 > Sophie ouvre Cockpit à 9h. Son dashboard lui montre : **12 workflows en attente de validation**, **3 workflows critiques** à traiter avant 14h, **87 workflows en cours** sans action requise. Elle sait immédiatement où concentrer son énergie.
 
-**Capabilities révélées :** Vue "mes workflows" filtrée par pôle, indicateurs visuels de priorité, compteurs par statut
+**Capabilities révélées :** Vue "mes workflows" filtrée par pôle, compteurs par statut
 
 ### Journey 4 : Sophie valide un workflow critique avant diffusion
 
 > Sophie consulte le listing filtré sur les workflows critiques. Elle ouvre un workflow, vérifie la preview, consulte l'historique (2 rejets précédents, corrigés). Tout est OK, elle clique "Approuver". L'asset part en diffusion.
 
-**Capabilities révélées :** Listing filtré par priorité, historique des décisions passées, validation finale
+**Capabilities révélées :** Listing, historique des décisions passées, validation finale
 
 ### Journey 5 : Marc onboarde un nouveau presta
 
@@ -190,7 +190,7 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 
 | Capability | Journeys MVP | Journey Future |
 |------------|--------------|----------------|
-| Listing filtré (pôle, chaîne, statut, priorité) | 1, 2, 3, 4 | |
+| Listing filtré (pôle, chaîne, statut) | 1, 2, 3, 4 | |
 | Preview vidéo intégrée | 1, 2, 4 | 6 |
 | Approuver en 1 clic | 1, 4 | 6 |
 | Rejeter avec motif + timecode | 2 | |
@@ -279,7 +279,6 @@ Cockpit est un outil de suivi et validation des workflows de post-production vid
 - **FR2:** Un utilisateur peut filtrer les workflows par pôle
 - **FR3:** Un utilisateur peut filtrer les workflows par chaîne
 - **FR4:** Un utilisateur peut filtrer les workflows par step
-- **FR5:** Un utilisateur peut filtrer les workflows par priorité
 - **FR6:** Un utilisateur peut filtrer les workflows par statut
 - **FR7:** Un utilisateur peut voir ses workflows assignés ("À vérifier")
 - **FR8:** Un utilisateur peut voir les compteurs de workflows par statut
