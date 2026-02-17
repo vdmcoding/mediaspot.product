@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="film5.3">
+  <provider>underthemilkyway</provider>
+  <language>sv</language>
+  <video>
+    <type>film</type>
+    <subtype>feature</subtype>
+    <vendor_id>IT702603</vendor_id>
+    <countries_of_origin>
+      <country primary="true">NL</country>
+    </countries_of_origin>
+    <production_countries>
+      <country primary="true">NL</country>
+    </production_countries>
+    <original_spoken_locale>en</original_spoken_locale>
+    <title>The Human Centipede (First Sequence)</title>
+    <studio_release_title>The Human Centipede (First Sequence)</studio_release_title>
+    <synopsis>Två amerikanska turister får motorstopp och söker skydd i ett avlägset hus på den tyska landsbygden. Där bor en pensionerad kirurg med helt andra planer för sina gäster: en morbid vision av en grotesk mänsklig tusenfoting. The Human Centipede är den omtalade, kompromisslösa kroppsskräckfilmen som var på allas läppar – en kliniskt kylig mardröm som blivit både kultfenomen och gränsöverskridande chockverk.</synopsis>
+    <locales>
+      <locale name="da">
+        <title>The Human Centipede (First Sequence)</title>
+        <synopsis>Da to amerikanske turister får motorstop, søger de ly i et afsidesliggende hus i et tysk landdistrikt. Der bor en pensioneret kirurg med sine helt egne planer for sin gæster: en morbid fantasi om et grotesk menneskeligt tusindben. The Human Centipede er den berygtede og kompromisløse body horror-film, som var på alles læber. Et klinisk og køligt mareridt og et grænseoverskridende gys, som blev et kultfænomen.</synopsis>
+      </locale>
+      <locale name="fi">
+        <title>The Human Centipede (First Sequence)</title>
+        <synopsis>Kaksi amerikkalaisturistia hakeutuu moottorivian jälkeen suojaan syrjässä sijaitsevaan taloon Saksan maaseudulla. Talossa asuu eläköitynyt kirurgi, jolla on vieraidensa kanssa hyvin erilaiset suunnitelmat: hänellä on sairaalloinen visio irvokkaasta ihmistuhatjalkaisesta. The Human Centipede on paljon puhuttu, tinkimätön body horror -elokuva, joka oli kaikkien huulilla - kliinisen hyytävä painajainen, josta tuli sekä kulttimaineeseen noussut ilmiö että rajat ylittävä shokkiteos.</synopsis>
+      </locale>
+      <locale name="no">
+        <title>The Human Centipede (First Sequence)</title>
+        <synopsis>To amerikanske turister får motorstopp og søker tilflukt i et avsidesliggende hus på den tyske landsbygda. Der bor en pensjonert kirurg med helt andre planer for sine gjester: en morbid visjon av et grotesk menneskelig tusenbein. The Human Centipede er den mye omtalte, kompromissløse "body horror"-filmen som var på alles lepper - et klinisk kaldt mareritt som ble både et kultfenomen og et grensesprengende sjokk.</synopsis>
+      </locale>
+    </locales>
+    <production_company>Six Entertainment</production_company>
+    <copyright_cline>2025 NonStop Entertainment</copyright_cline>
+    <theatrical_release_date>2025-10-13</theatrical_release_date>
+    <regions>
+      <region>
+        <territory>DK</territory>
+        <theatrical_release_date>2025-10-13</theatrical_release_date>
+      </region>
+      <region>
+        <territory>FI</territory>
+        <theatrical_release_date>2025-10-13</theatrical_release_date>
+      </region>
+      <region>
+        <territory>NO</territory>
+        <theatrical_release_date>2025-10-13</theatrical_release_date>
+      </region>
+    </regions>
+    <genres>
+      <genre code="HORROR-00" />
+    </genres>
+    <ratings>
+      <rating system="dk-movies" code="15" />
+      <rating system="fi-movies" code="K-18" />
+      <rating system="no-movies" code="15" />
+      <rating system="se-movies" code="15+" />
+    </ratings>
+    <cast>
+      <cast_member billing="top">
+        <display_name>Dieter Laser</display_name>
+        <characters>
+          <character>
+            <character_name>Dr. Heiter</character_name>
+            <reference_id>DR_HEITER</reference_id>
+          </character>
+        </characters>
+      </cast_member>
+      <cast_member billing="top">
+        <display_name>Ashley C. Williams</display_name>
+        <characters>
+          <character>
+            <character_name>Lindsay</character_name>
+            <reference_id>LINDSAY</reference_id>
+          </character>
+        </characters>
+      </cast_member>
+      <cast_member billing="top">
+        <display_name>Ashlynn Yennie</display_name>
+        <characters>
+          <character>
+            <character_name>Jenny</character_name>
+            <reference_id>JENNY</reference_id>
+          </character>
+        </characters>
+      </cast_member>
+    </cast>
+    <crew>
+      <crew_member billing="top">
+        <display_name>Tom Six</display_name>
+        <roles>
+          <role>Director</role>
+          <role>Producer</role>
+          <role>Screenwriter</role>
+        </roles>
+      </crew_member>
+    </crew>
+    <chapters>
+      <timecode_format>25/1 1/nonDrop</timecode_format>
+      <chapter>
+        <start_time>00:00:00:00</start_time>
+        <titles>
+          <title locale="sv">Kapitel 1</title>
+          <title locale="da">Kapitel 1</title>
+          <title locale="fi">Luku 1</title>
+          <title locale="no">Kapittel 1</title>
+        </titles>
+        <artwork_time>00:04:30:11</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:10:02:10</start_time>
+        <titles>
+          <title locale="sv">Kapitel 2</title>
+          <title locale="da">Kapitel 2</title>
+          <title locale="fi">Luku 2</title>
+          <title locale="no">Kapittel 2</title>
+        </titles>
+        <artwork_time>00:16:28:16</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:20:52:05</start_time>
+        <titles>
+          <title locale="sv">Kapitel 3</title>
+          <title locale="da">Kapitel 3</title>
+          <title locale="fi">Luku 3</title>
+          <title locale="no">Kapittel 3</title>
+        </titles>
+        <artwork_time>00:25:54:03</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:30:10:01</start_time>
+        <titles>
+          <title locale="sv">Kapitel 4</title>
+          <title locale="da">Kapitel 4</title>
+          <title locale="fi">Luku 4</title>
+          <title locale="no">Kapittel 4</title>
+        </titles>
+        <artwork_time>00:31:04:07</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:39:15:21</start_time>
+        <titles>
+          <title locale="sv">Kapitel 5</title>
+          <title locale="da">Kapitel 5</title>
+          <title locale="fi">Luku 5</title>
+          <title locale="no">Kapittel 5</title>
+        </titles>
+        <artwork_time>00:42:43:21</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:50:04:01</start_time>
+        <titles>
+          <title locale="sv">Kapitel 6</title>
+          <title locale="da">Kapitel 6</title>
+          <title locale="fi">Luku 6</title>
+          <title locale="no">Kapittel 6</title>
+        </titles>
+        <artwork_time>00:51:30:14</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:58:49:23</start_time>
+        <titles>
+          <title locale="sv">Kapitel 7</title>
+          <title locale="da">Kapitel 7</title>
+          <title locale="fi">Luku 7</title>
+          <title locale="no">Kapittel 7</title>
+        </titles>
+        <artwork_time>01:01:48:22</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>01:08:36:00</start_time>
+        <titles>
+          <title locale="sv">Kapitel 8</title>
+          <title locale="da">Kapitel 8</title>
+          <title locale="fi">Luku 8</title>
+          <title locale="no">Kapittel 8</title>
+        </titles>
+        <artwork_time>01:10:02:10</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>01:19:00:07</start_time>
+        <titles>
+          <title locale="sv">Kapitel 9</title>
+          <title locale="da">Kapitel 9</title>
+          <title locale="fi">Luku 9</title>
+          <title locale="no">Kapittel 9</title>
+        </titles>
+        <artwork_time>01:22:16:03</artwork_time>
+      </chapter>
+    </chapters>
+    <assets>
+      <asset type="full">
+        <data_file role="source">
+          <locale name="en" />
+          <file_name>IT702603_source.mov</file_name>
+          <size>120370540577</size>
+          <checksum type="md5">80ab195ef1714ed5ab2a398a571fa8db</checksum>
+          <attribute name="crop.top">4</attribute>
+          <attribute name="crop.bottom">4</attribute>
+          <attribute name="crop.left">6</attribute>
+          <attribute name="crop.right">6</attribute>
+          <attribute name="image.textless_master">true</attribute>
+        </data_file>
+        <data_file role="subtitles">
+          <locale name="da" />
+          <file_name>IT702603_full_da.itt</file_name>
+          <size>39164</size>
+          <checksum type="md5">23daa9c19f46296408b6f9861b83a4c9</checksum>
+        </data_file>
+        <data_file role="subtitles">
+          <locale name="fi" />
+          <file_name>IT702603_full_fi.itt</file_name>
+          <size>39650</size>
+          <checksum type="md5">5ddcad3b124d3aa966bef3def4591860</checksum>
+        </data_file>
+        <data_file role="subtitles">
+          <locale name="no" />
+          <file_name>IT702603_full_no.itt</file_name>
+          <size>39475</size>
+          <checksum type="md5">eff10ccb7d3d7d013c14f0146b35f783</checksum>
+        </data_file>
+        <data_file role="subtitles">
+          <locale name="sv" />
+          <file_name>IT702603_full_sv.itt</file_name>
+          <size>39906</size>
+          <checksum type="md5">9607d0d066c65b361f1f16bf5642d541</checksum>
+        </data_file>
+        <data_file role="notes">
+          <file_name>IT702603_source_notes.pdf</file_name>
+          <size>1640550</size>
+          <checksum type="md5">6e534d9ad6cb8549f2095b11c407c6b4</checksum>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:01:01:19</preview_image_time>
+        <territories>
+          <territory>SE</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="en" />
+          <file_name>IT702603_preview_en_sv.mov</file_name>
+          <size>3472265476</size>
+          <checksum type="md5">e677da80fdb79e0c5da885c3c0c635d8</checksum>
+          <attribute name="crop.top">4</attribute>
+          <attribute name="crop.bottom">4</attribute>
+          <attribute name="crop.left">6</attribute>
+          <attribute name="crop.right">6</attribute>
+          <attribute name="image.burned_subtitles.locale">sv</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:01:01:19</preview_image_time>
+        <territories>
+          <territory>NO</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="en" />
+          <file_name>IT702603_preview_en_no.mov</file_name>
+          <size>3470933236</size>
+          <checksum type="md5">6bf8b458acfcf433c679d4e6b9dc719f</checksum>
+          <attribute name="crop.top">4</attribute>
+          <attribute name="crop.bottom">4</attribute>
+          <attribute name="crop.left">6</attribute>
+          <attribute name="crop.right">6</attribute>
+          <attribute name="image.burned_subtitles.locale">no</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:01:01:19</preview_image_time>
+        <territories>
+          <territory>FI</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="en" />
+          <file_name>IT702603_preview_en_fi.mov</file_name>
+          <size>3473199332</size>
+          <checksum type="md5">7689c481c119d86fe3d747ac7bc9b141</checksum>
+          <attribute name="crop.top">4</attribute>
+          <attribute name="crop.bottom">4</attribute>
+          <attribute name="crop.left">6</attribute>
+          <attribute name="crop.right">6</attribute>
+          <attribute name="image.burned_subtitles.locale">fi</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:01:01:19</preview_image_time>
+        <territories>
+          <territory>DK</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="en" />
+          <file_name>IT702603_preview_en_da.mov</file_name>
+          <size>3470752724</size>
+          <checksum type="md5">ba299068d681863aa08037c3a58aca64</checksum>
+          <attribute name="crop.top">4</attribute>
+          <attribute name="crop.bottom">4</attribute>
+          <attribute name="crop.left">6</attribute>
+          <attribute name="crop.right">6</attribute>
+          <attribute name="image.burned_subtitles.locale">da</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:01:01:19</preview_image_time>
+        <territories>
+          <territory>WW</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="en" />
+          <file_name>IT702603_preview_WW.mov</file_name>
+          <size>3469462692</size>
+          <checksum type="md5">da6a7f07cd536b39bc11fc064518ec9c</checksum>
+          <attribute name="crop.top">4</attribute>
+          <attribute name="crop.bottom">4</attribute>
+          <attribute name="crop.left">6</attribute>
+          <attribute name="crop.right">6</attribute>
+          <attribute name="image.textless_master">true</attribute>
+        </data_file>
+      </asset>
+      <asset type="artwork_16:9">
+        <territories>
+          <territory>WW</territory>
+        </territories>
+        <data_file>
+          <locales>
+            <locale name="en" />
+          </locales>
+          <file_name>IT702603_artwork_169_WW.png</file_name>
+          <size>15019748</size>
+          <checksum type="md5">4cc8b37314f194b18863afe58137107e</checksum>
+        </data_file>
+      </asset>
+      <asset type="artwork">
+        <territories>
+          <territory>WW</territory>
+        </territories>
+        <data_file>
+          <locales>
+            <locale name="en" />
+          </locales>
+          <file_name>IT702603_artwork_WW.png</file_name>
+          <size>10475001</size>
+          <checksum type="md5">7d4f0fd0601e071ca6a34ec074063160</checksum>
+        </data_file>
+      </asset>
+    </assets>
+    <products>
+      <product>
+        <territory>DK</territory>
+        <cleared_for_sale>true</cleared_for_sale>
+        <cleared_for_hd_sale>true</cleared_for_hd_sale>
+        <wholesale_price_tier>9</wholesale_price_tier>
+        <hd_wholesale_price_tier>112</hd_wholesale_price_tier>
+        <sales_start_date>2025-10-13</sales_start_date>
+        <cleared_for_vod>true</cleared_for_vod>
+        <vod_type>New Release</vod_type>
+        <available_for_vod_date>2025-10-13</available_for_vod_date>
+        <physical_release_date>2025-10-13</physical_release_date>
+        <cleared_for_hd_vod>true</cleared_for_hd_vod>
+      </product>
+      <product>
+        <territory>FI</territory>
+        <cleared_for_sale>true</cleared_for_sale>
+        <cleared_for_hd_sale>true</cleared_for_hd_sale>
+        <wholesale_price_tier>9</wholesale_price_tier>
+        <hd_wholesale_price_tier>112</hd_wholesale_price_tier>
+        <sales_start_date>2025-10-13</sales_start_date>
+        <cleared_for_vod>true</cleared_for_vod>
+        <vod_type>New Release</vod_type>
+        <available_for_vod_date>2025-10-13</available_for_vod_date>
+        <physical_release_date>2025-10-13</physical_release_date>
+        <cleared_for_hd_vod>true</cleared_for_hd_vod>
+      </product>
+      <product>
+        <territory>NO</territory>
+        <cleared_for_sale>true</cleared_for_sale>
+        <cleared_for_hd_sale>true</cleared_for_hd_sale>
+        <wholesale_price_tier>9</wholesale_price_tier>
+        <hd_wholesale_price_tier>112</hd_wholesale_price_tier>
+        <sales_start_date>2025-10-13</sales_start_date>
+        <cleared_for_vod>true</cleared_for_vod>
+        <vod_type>New Release</vod_type>
+        <available_for_vod_date>2025-10-13</available_for_vod_date>
+        <physical_release_date>2025-10-13</physical_release_date>
+        <cleared_for_hd_vod>true</cleared_for_hd_vod>
+      </product>
+      <product>
+        <territory>SE</territory>
+        <cleared_for_sale>true</cleared_for_sale>
+        <cleared_for_hd_sale>true</cleared_for_hd_sale>
+        <wholesale_price_tier>12</wholesale_price_tier>
+        <hd_wholesale_price_tier>112</hd_wholesale_price_tier>
+        <sales_start_date>2025-10-13</sales_start_date>
+        <cleared_for_vod>true</cleared_for_vod>
+        <vod_type>New Release</vod_type>
+        <available_for_vod_date>2025-10-13</available_for_vod_date>
+        <physical_release_date>2025-10-13</physical_release_date>
+        <cleared_for_hd_vod>true</cleared_for_hd_vod>
+      </product>
+    </products>
+  </video>
+</package>
