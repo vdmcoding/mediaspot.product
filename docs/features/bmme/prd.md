@@ -176,7 +176,7 @@ Sophie vient de recevoir "Le Dernier Métro Redux" (remake). Elle doit le prépa
 
 14h00 - **Ouvre VDM Connect** (système externe): Vérifie ce qui existe, crée métadonnées Package, s'occupe de la territorialisation. C'est long, répétitif, elle jongle entre 2 interfaces.
 
-16h00 - **Retour sur Mediaspot**: Importe les métadonnées VDM Connect.
+16h00 - **Retour sur Mediaspot**: Ré-import des métadonnées VDM Connect.
 
 17h00 - **Ouvre BMME actuel**: Crée packages côté Mediaspot. Certains champs sont pré-remplis, mais elle doit **ressaisir manuellement** des dizaines de champs pour chaque combinaison territoire/provider. **Aucun feedback** sur ce qui manque. Elle avance à l'aveugle.
 
@@ -497,10 +497,10 @@ Julie sait ce que ça veut dire: elle doit **mettre à jour tous les XML de mapp
 Julie ouvre le repo Git `provider-specs/`. La structure est:
 ```
 provider-specs/
-  ├── platform-A/
-  │   ├── itunes-mapping.xml
-  │   ├── amazon-mapping.xml
-  │   └── google-mapping.xml
+  ├── itunes-mapping
+  │   ├── itunes-mapping-sc.xml
+  │   ├── itunes-mapping-snd.xml
+  │   └── itunes-mapping-pathe.xml
   ├── platform-B/
   │   ├── itunes-mapping.xml
   │   ├── amazon-mapping.xml
