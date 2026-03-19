@@ -14,9 +14,9 @@ comme source.
 - Un pull manuel peut être fait depuis la page d'un Title.
 - La mise à jour et ses conséquences sont prévisualisables
 
-3. Pulls périodiques et Rollback manuel 
+3. Pulls périodiques et Resync manuel 
 - Les pulls des différents systèmes externes sont listés sur une page. Pour chacun, un détail du pull est disponible permettant de visualiser ce qui a été mis à jour.
-- Une fonctionnalité de rollback permet d'annuler un ou plusieurs pulls à la demande de l'utilisateur
+- Une fonctionnalité de resync permet de renouveler un ou plusieurs pulls à la demande de l'utilisateur
     - En sélectionnant un ou plusieurs Pulls uniques
     - En sélectionnant une range de dates
 

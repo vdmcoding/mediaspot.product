@@ -1,10 +1,15 @@
 ---
-stepsCompleted: ['step-01-init', 'step-02-discovery', 'step-03-success', 'step-04-journeys', 'step-05-domain', 'step-07-project-type', 'step-08-scoping', 'step-09-functional']
+stepsCompleted: ['step-01-init', 'step-02-discovery', 'step-03-success', 'step-04-journeys', 'step-05-domain', 'step-07-project-type', 'step-08-scoping', 'step-09-functional', 'step-10-dataflow-enrichment']
 inputDocuments:
   - 'docs/features/bmme/source-docs/feature_example.json'
   - 'docs/features/bmme/source-docs/package_example.json'
   - 'docs/features/bmme/source-docs/package_final_delivery.xml'
   - 'docs/features/bmme/source-docs/VDM Connect - Benjamin Chareyron.pdf'
+  - 'docs/features/bmme/source-docs/Data flow : Journey 1.1 - Localisation des métadonnées Title.pdf'
+  - 'docs/features/bmme/source-docs/Data flow : Journey 1.2 - Historisation : Synchro des métadonnées title.pdf'
+  - 'docs/features/bmme/source-docs/Data flow : Journey 1.3 - Gestion des packages.pdf'
+  - 'docs/features/bmme/source-docs/Data flow : Journey 2 - Mapping & Synchro des métadonnées entrantes.pdf'
+  - 'docs/features/bmme/source-docs/Data flow : Journey 3 - Mapping des métadonnées sortantes.pdf'
 workflowType: 'prd'
 briefCount: 0
 researchCount: 0
@@ -21,6 +26,28 @@ classification:
 
 **Author:** Ben
 **Date:** 2026-02-16
+
+## Executive Summary
+
+**BMME v2 (BundleMaker Metadata Editor v2)** est le nouveau module de gestion des métadonnées SVOD de la plateforme mediaspot. Il remplace VDM Connect et pose les fondations pour BundleMaker v2.
+
+### Problème
+
+Les gestionnaires de catalogue passent des heures à créer manuellement des packages de métadonnées pour chaque provider (iTunes, Amazon, Google, Netflix) et chaque territoire. Les outils actuels (VDM Connect, PackageEditor) sont fragmentés, lents et source d'erreurs. Les désynchronisations entre systèmes externes (Unity, Iron, MovieLibrary) génèrent un support client élevé.
+
+### Solution
+
+BMME v2 centralise la gestion des métadonnées avec :
+- **Héritage intelligent** : Title → Languages → Territories avec propagation automatique
+- **Vue bulk de localisation** : édition multi-langue/multi-territoire en une seule interface
+- **Mapping malléable** : éditeurs visuels pour les mappings entrants (systèmes externes) et sortants (providers)
+- **Source tracking** : traçabilité complète de l'origine et l'historique de chaque métadonnée
+
+### Impact attendu
+
+- **Productivité** : création de packages en minutes au lieu d'heures
+- **Adoption** : 80% des clients SVOD migrés en 6 mois
+- **Dépréciation** : VDM Connect éteint Q3 2026, PackageEditor remplacé par BM v2
 
 ## Success Criteria
 
@@ -194,7 +221,11 @@ Sophie crée "Le Dernier Métro Redux", remplit les métadonnées Title globales
 
 Sophie définit les **langues supportées**: Français, Anglais, Allemand, Espagnol, Italien.
 
-Pour chaque langue, le système lui présente automatiquement les **métadonnées localisables** (titre localisé, synopsis, mots-clés). Elle remplit:
+**Précision UX :** Sophie doit explicitement activer chaque langue qu'elle souhaite utiliser (bouton "Add language"). Seule la langue de l'original title (English) est active par défaut.
+
+L'interface affiche uniquement les **champs localisables** au niveau langue (Localized title, Release date, Synopsis...). Les métadonnées globales non-localisables (IMDb ID, Genres, Original title) restent au niveau Title uniquement.
+
+Pour chaque langue activée, le système lui présente automatiquement les **métadonnées localisables** (titre localisé, synopsis, mots-clés). Elle remplit:
 - FR: "Le Dernier Métro Redux", synopsis français
 - EN: "The Last Metro Redux", synopsis anglais
 - DE: "Die letzte Metro Redux", synopsis allemand
@@ -205,29 +236,85 @@ Pour chaque langue, le système lui présente automatiquement les **métadonnée
 
 Sophie ajoute les 15 territoires européens. **Par défaut, chaque territoire hérite de sa langue** (France hérite FR, Germany hérite DE, etc.).
 
+**Précision UX :** Quand Sophie active une langue (ex: French), tous les territoires associés (France, Belgium, Québec) deviennent activables. Elle peut les ajouter manuellement via un bouton "Add territory".
+
+Les métadonnées territoire sont **"pulled from Language"** par défaut - Sophie ne ressaisit rien si les valeurs langue conviennent. Elle n'intervient que pour les overrides spécifiques.
+
 Pour la Belgique, elle fait un **override manuel**: titre FR mais avec un synopsis adapté au marché belge.
 
 **Première réaction de Sophie:** "Ah ouais, ça hérite automatiquement! Je ne ressaisis plus 15 fois les mêmes trucs."
 
-**10h30 - Métadonnées Package partagées**
+**10h30 - Shared metadata (métadonnées partagées cross-platforms)**
 
-Sophie passe aux métadonnées Package (communes à tous les providers):
-- Studio: "Les Films du Losange"
-- Dates VOD: EST 15/03/2026, VOD 15/04/2026
+Avant de créer des packages par provider, Sophie définit les **Shared metadata** : des métadonnées communes à tous les packages, quelle que soit la plateforme de livraison.
+
+```
+Shared metadata                    0/12
+┌─────────────────────────────────────┐
+│ Vendor ID                           │
+│ Studio                              │
+│ Labo                                │
+│ Copyrights                          │
+│ ...                                 │
+└─────────────────────────────────────┘
+```
+
+Sophie remplit :
+- **Vendor ID** : généré automatiquement ou saisi manuellement
+- **Studio** : "Les Films du Losange"
+- **Labo** : "VDM"
+- **Copyrights** : "© 2026 Les Films du Losange"
+- Dates VOD : EST 15/03/2026, VOD 15/04/2026
 - Upload des artworks (16:9, poster)
+
+Ces métadonnées seront automatiquement propagées à tous les packages (iTunes, Amazon, Google, Netflix).
 
 Le système valide les formats en temps réel. ✅ "Artwork 16:9 valide"
 
 **11h00 - Création du package iTunes**
 
-Sophie crée le package iTunes, sélectionne les 15 territoires.
+Sophie clique sur "Create a package". Une modale s'affiche avec deux choix :
 
-**Le système pré-remplit automatiquement:**
-- Métadonnées globales Package (studio, dates, artworks)
-- Métadonnées Title héritées (titres localisés, synopsis, cast)
-- **Reasonable defaults** basés sur les specs iTunes (vendor ID généré, copyright formaté, ratings par défaut)
+```
+Create a package
+┌─────────────────────────────────────┐
+│ Platform      [iTunes ▼]           │
+│                                     │
+│ Territories   [x] UK  [x] US       │
+│               [x] FR  [x] DE  ...  │
+└─────────────────────────────────────┘
+```
+
+**Le système pré-remplit automatiquement :**
+- **Shared metadata** (Vendor ID, Studio, Labo, Copyrights)
+- **Métadonnées Title** héritées (titres localisés, synopsis, cast) transformées grâce au mapping des plateformes (journey 3)
 
 Sophie voit un **compteur: "94/120 champs remplis"**. En rouge: "3 champs manquants requis".
+
+**Structure du package :**
+
+Le package suit la même hiérarchie que les métadonnées Title :
+
+```
+Package "iTunes"                    Valid
+├── Global metadata (non-localized)  12/12
+│   ├── Package ID
+│   ├── Labo
+│   └── Original Title
+│
+├── English                          12/12
+│   ├── United Kingdom               12/12
+│   ├── United States                12/12
+│   └── Canada                       12/12
+│
+└── French language                  12/12
+    ├── France                       12/12
+    ├── Belgium                      12/12
+    └── Québec                       12/12
+```
+
+- **Language tab** : affiche uniquement les champs localisables (Localized title, Copyrights, VOD Dates)
+- **Territory tab** : métadonnées héritées de la langue ("Metadata pulled from Language")
 
 **11h15 - Vue bulk de localisation**
 
@@ -267,11 +354,97 @@ Elle peut maintenant préparer 3 films par semaine au lieu d'1.
 
 **Capabilities révélées par ce journey:**
 - Hiérarchie Title → Langues → Territoires avec héritage automatique
-- Hiérarchie Package → Langues → Territoires avec reasonable defaults
+- Activation explicite des langues
+- Séparation claire : métadonnées globales vs champs localisables
+- Territoires hérités automatiquement de leur langue parente ("Metadata pulled from Language")
+- Shared metadata cross-platforms (Vendor ID, Studio, Labo, Copyrights)
+- Création de package simplifiée : sélection Platform + Territories uniquement
+- Pré-remplissage automatique depuis Title metadata + Shared metadata, avec Provider mapping appliqué comme transformation
+- Structure Package identique à Title (Global → Languages → Territories)
 - Vue bulk de localisation (édition multi-langue/multi-territoire)
 - Feedback temps réel (compteur "94/120 champs remplis", champs manquants identifiés)
 - Validation live contre specs providers
 - État "VALID" pour handoff vers BundleMaker
+
+### Journey 1.2: Sophie - Synchronisation manuelle et historique des métadonnées
+
+**Contexte: Sophie doit arbitrer entre plusieurs sources de données**
+
+Sophie travaille sur "Stranger Things - Season 4". Les métadonnées proviennent de plusieurs sources :
+- **Unity** (système client StudioCanal)
+- **mediaspot** (saisie manuelle interne)
+- **IMDb** (enrichissement automatique)
+
+Elle constate que le champ `originalTitle` affiche "Stranger Things - Season 4" (source: mediaspot), mais Unity propose "Stranger Things - S04".
+
+---
+
+**Workflow de synchronisation manuelle:**
+
+**1. Vue Metadata tab avec indicateurs de source**
+
+Sophie voit chaque métadonnée avec :
+- L'icône de synchronisation
+- La source actuelle (Unity, mediaspot, IMDb)
+
+```
+OAR           🔄  source: Unity
+genre         🔄  source: Unity
+originalTitle 🔄  source: mediaspot
+```
+
+**2. Bouton "Manual sync"**
+
+Sophie clique sur "Manual sync". L'interface affiche :
+
+| Select source | Preview changes |
+|---------------|-----------------|
+| **Unity** (sélectionné) | Field: OAR → Old: 2.1 → New: 2.4 |
+| IMDb | Field: genre → Old: Horror → New: Horror |
+| Iron | |
+
+**3. Vue détail d'une métadonnée**
+
+Sophie peut cliquer sur `originalTitle` pour voir toutes les valeurs disponibles par source :
+
+```
+Métadonnée "originalTitle"
+┌─────────────────────────────────────┐
+│ "Stranger Things - S04"             │  ← source: Unity
+│ source: Unity                       │
+├─────────────────────────────────────┤
+│ "Stranger Things - Season 4"        │  ← source: mediaspot (actuel)
+│ source: mediaspot                   │
+├─────────────────────────────────────┤
+│ "Stranger Things"                   │  ← source: IMDb
+│ source: IMDb                        │
+└─────────────────────────────────────┘
+```
+
+**4. Historique complet d'une métadonnée**
+
+Sophie consulte l'historique des modifications :
+
+| Old value | New value | Date | User | Details |
+|-----------|-----------|------|------|---------|
+| Stranger Things - Season 4 | Stranger Things - S04 | 01/01/2026 | John Doe | Source changed (mediaspot → Unity) |
+| Stranger Things - S04 | Stranger Things - Season 4 | 01/01/2026 | John Doe | Manual Edit |
+| Stranger Things - Season 4 | Stranger Things - S04 | 01/01/2026 | System | Periodic sync |
+
+---
+
+**Moment "aha!" :**
+
+**"Je peux enfin voir d'où vient chaque donnée, comparer les sources, et choisir laquelle utiliser. Plus besoin de deviner ou de vérifier manuellement dans chaque système."**
+
+---
+
+**Capabilities révélées par ce journey:**
+- Source tracking par métadonnée (affichage de la source actuelle)
+- Synchronisation manuelle avec preview des changements
+- Vue multi-source pour une même métadonnée
+- Historique complet avec traçabilité (user, date, type de modification)
+- Types de modifications : Source changed, Manual Edit, Periodic sync
 
 ### Journey 2: Marc - Admin Interne VDM (Monitoring & Maintenance)
 
@@ -390,29 +563,99 @@ BMME fait un appel live à l'API Unity, affiche la réponse brute:
 
 **Réaction de Marc:** "Ah voilà, `director` → `directorName`. Je corrige le mapping."
 
-**8h50 - Correction du mapping via interface**
+**8h50 - Architecture de mapping externe (platform-based)**
 
-Marc ouvre **l'éditeur de mapping Unity → mediaspot** dans le back-office BMME.
+Marc ouvre l'éditeur de mapping. L'interface révèle deux concepts clés :
 
-Il voit une interface visuelle avec les champs mappés:
+**1. External source mapping (platform-based)**
+
+Chaque plateforme cliente (StudioCanal, UGC, etc.) a ses propres mappings vers les systèmes externes qu'elle utilise :
+
 ```
-Unity API            →  mediaspot
-─────────────────────────────────────
-data.title           →  title
-data.director        →  director (❌ erreur détectée)
-data.releaseYear     →  release_year
+┌─────────────────────────────────────────────────────────────────────┐
+│ External systems mappings                                          │
+├─────────────────────────────────────────────────────────────────────┤
+│ Unity                                                               │
+│ ┌───────────────┬─────────────────┬──────────────┬────────────────┐│
+│ │ Unity Field   │ mediaspot Field │ Formatting   │ Mapping options││
+│ ├───────────────┼─────────────────┼──────────────┼────────────────┤│
+│ │ directorName  │ cast.director   │              │                ││
+│ │ aspectRatio   │ OAR             │              │                ││
+│ │ genres        │ genre           │ value.split('&') │ Sci-fi → Sci-fi ││
+│ │               │                 │              │ Fantasy → Fantasy ││
+│ │ title         │ originalTitle   │              │                ││
+│ └───────────────┴─────────────────┴──────────────┴────────────────┘│
+│                                                                     │
+│ VDM Connect, Iron, IMDb... (même structure)                        │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
-Il édite la ligne:
+**Formatting options** : transformations de données (`value.split('&')`, `value.trim()`, etc.)
+
+**Mapping options** : correspondances d'enums entre système externe et mediaspot
+
+**2. mediaspot source of truth (cross-platforms)**
+
+Table centrale définissant le comportement de chaque champ mediaspot :
+
+```
+┌─────────────────┬────────┬────────────────┬─────────────┐
+│ mediaspot field │ Type   │ Default source │ Lock source │
+├─────────────────┼────────┼────────────────┼─────────────┤
+│ cast.director   │ string │ Unity          │ Yes         │
+│ OAR             │ enum   │ Unity          │ Yes         │
+│ genre           │ enum   │ Unity          │ No          │
+│ originalTitle   │ enum   │ mediaspot      │ No          │
+└─────────────────┴────────┴────────────────┴─────────────┘
+```
+
+- **Default source** : quelle source utiliser par défaut pour ce champ
+- **Lock source** : si "Yes", empêche le changement de source sur ce champ
+
+Marc corrige le mapping Unity :
 ```
 data.directorName    →  director
 ```
 
 Sauvegarde. Le système valide le mapping en temps réel contre un échantillon de données Unity. ✅ **"Mapping valide"**
 
-**9h00 - Resynchronisation en 1 clic**
+**9h00 - Sync history et resynchronisation**
 
-Le dashboard propose: **"Relancer la synchro pour les 3 derniers jours?"**
+Marc consulte l'historique des synchronisations :
+
+```
+Sync history                                          [Bulk resync]
+┌──────────┬─────────────────┬──────────┬────────┬─────────┐
+│ Source   │ Date            │ Impact   │ Errors │ Actions │
+├──────────┼─────────────────┼──────────┼────────┼─────────┤
+│ Unity    │ 21/12/2026 12:25│ 13 fields│ None   │ Resync  │
+│ Iron     │ 21/12/2026 12:25│ 152 fields│ 3     │ Resync  │
+└──────────┴─────────────────┴──────────┴────────┴─────────┘
+```
+
+Marc clique sur "13 fields" pour voir le détail de la sync Unity :
+
+```
+Data sync single - 13 fields updated                    [Resync]
+┌─────────────────┬───────────────┬───────────┬──────────────────────────────────┐
+│ Title           │ Field         │ New value │ Notes                            │
+├─────────────────┼───────────────┼───────────┼──────────────────────────────────┤
+│ Stranger Things │ director      │ "John Doe"│                                  │
+│                 │ OAR           │ 2.1       │                                  │
+│                 │ localizedTitle│ 13        │ ⚠️ Wrong data format: should be string │
+│                 │ genres        │ Sci-Fi    │ ⚠️ Formatting failed: no '&' found │
+│                 │ originalTitle │ 13        │ ℹ️ Not synced - Field sourced by mediaspot │
+├─────────────────┼───────────────┼───────────┼──────────────────────────────────┤
+│ Terminator      │ director      │ "John Doe"│                                  │
+│                 │ OAR           │ 2.1       │                                  │
+│                 │ originalTitle │ Terminator - Dark Fate │                   │
+└─────────────────┴───────────────┴───────────┴──────────────────────────────────┘
+```
+
+**Types de notes :**
+- ⚠️ **Wrong data format** : le type de donnée reçu ne correspond pas au type attendu
+- ⚠️ **Formatting failed** : la transformation (split, etc.) a échoué
+- ℹ️ **Not synced - Field sourced by mediaspot** : champ protégé par Lock source
 
 Marc clique sur **"Resync"**. Une barre de progression s'affiche:
 ```
@@ -461,15 +704,21 @@ Marc peut maintenant maintenir 10 connexions externes au lieu de 3, sans stress.
 ---
 
 **Capabilities révélées par ce journey:**
+
+**Architecture de mapping:**
+- External source mapping platform-based (chaque plateforme a ses propres mappings)
+- Formatting options pour transformations de données (split, trim, etc.)
+- Mapping options pour correspondances d'enums
+- Source of truth table avec Default source et Lock source
+- Lock source pour empêcher le changement de source sur un champ
+
+**Monitoring et historique:**
 - Dashboard de monitoring centralisé avec statut temps réel des synchronisations
-- Logs détaillés et friendly avec suggestions de diagnostic
+- Logs détaillés et friendly
 - Mode diagnostic live pour tester les APIs externes en temps réel
-- Éditeur de mapping visuel (plus besoin de toucher le code)
-- Validation en temps réel des mappings contre échantillons de données
-- Resynchronisation en 1 clic avec suivi de progression
-- Alertes proactives configurables (Slack, email)
-- Notifications automatiques aux utilisateurs impactés
-- Historique des synchronisations avec détection de régression
+- Sync history avec Impact, Errors, et action Resync
+- Détail par sync : liste des champs + notes d'erreur typées
+- Bulk resync pour relancer plusieurs syncs en une fois
 
 ### Journey 3: Julie - Labo VDM (Maintenance des specs providers)
 
@@ -563,24 +812,55 @@ Julie commit les 47 fichiers modifiés, push, déclenche un build. Elle envoie u
 
 **Avec BMME v2 (l'éditeur de specs centralisé):**
 
+**Distinction architecturale clé :**
+
+| Type de mapping | Scope | Géré par |
+|-----------------|-------|----------|
+| External source mapping (Journey 2) | **Platform-based** | Marc (Admin) par plateforme cliente |
+| Provider mapping (Journey 3) | **Cross-platform** | Julie (Labo) pour toutes les plateformes |
+
+Les specs providers (iTunes, Amazon, Google, Netflix) sont les mêmes pour tous les clients mediaspot. Julie maintient une source de vérité unique utilisée par toutes les plateformes.
+
 **9h05 - Éditeur de mapping centralisé**
 
 Julie reçoit l'email d'Apple. Elle ouvre le **back-office BMME Admin**, section **"Specs Providers"**.
 
-Elle clique sur **"iTunes Spec Editor"**. L'interface affiche une **vue centralisée** des mappings mediaspot → iTunes:
+Elle clique sur **"iTunes Spec Editor"**. L'interface affiche la même **source of truth table** que Marc (Journey 2), mais cette fois pour configurer les mappings sortants :
 
 ```
-Mediaspot Field          →  iTunes Field (v5.16)
-────────────────────────────────────────────────────
-studio_name              →  copyright
-  Format actuel: © {year} {studio_name}
-
-release_year             →  original_release_date
-  Format: YYYY
-
-title                    →  localized_title
-  Format: {title}
+mediaspot source of truth (cross-platforms)
+┌─────────────────┬────────┬────────────────┬─────────────┐
+│ mediaspot field │ Type   │ Default source │ Lock source │
+├─────────────────┼────────┼────────────────┼─────────────┤
+│ cast.director   │ string │ Unity          │ Yes         │
+│ OAR             │ enum   │ Unity          │ Yes         │
+│ genre           │ enum   │ Unity          │ No          │
+│ originalTitle   │ enum   │ mediaspot      │ No          │
+└─────────────────┴────────┴────────────────┴─────────────┘
 ```
+
+Puis les mappings vers chaque provider :
+
+```
+Providers mapping                                    [Test mappings]
+
+iTunes
+┌─────────────────┬──────────────┬──────────────────┬─────────────────┐
+│ mediaspot field │ iTunes field │ Formatting options│ Mapping options │
+├─────────────────┼──────────────┼──────────────────┼─────────────────┤
+│ cast.director   │ directorName │                  │                 │
+│ OAR             │ aspectRatio  │                  │                 │
+│ genre           │ genres       │ value.join(',')  │ Sci-fi → Sci-fi │
+│                 │              │                  │ Fantasy → Fantasy│
+│ originalTitle   │ title        │                  │                 │
+└─────────────────┴──────────────┴──────────────────┴─────────────────┘
+
+Amazon, Google... (même structure)
+```
+
+**Formatting options** : transformations pour l'export (`value.join(',')`, formatage de dates, etc.)
+
+**Mapping options** : correspondances d'enums mediaspot → provider
 
 **Première réaction de Julie:** "Ah, je vois tous les champs iTunes en un seul endroit!"
 
@@ -602,25 +882,40 @@ Elle modifie le format, sauvegarde.
 
 **Réaction de Julie:** "Un seul endroit à modifier! Avant je devais ouvrir 47 fichiers!"
 
-**9h15 - Validation en temps réel**
+**9h15 - Test mappings**
 
-Le système propose: **"Tester le nouveau mapping sur un échantillon de packages?"**
-
-Julie clique sur **"Test"**. L'interface affiche:
+Julie clique sur **"Test mappings"**. Une modale s'ouvre pour valider les mappings sur des packages réels :
 
 ```
-Test en cours sur 10 packages...
+Test mapping modal
+┌──────────────────────────────────────────────────────────┐
+│ Select packages to test:                                 │
+│ [x] Le Dernier Métro Redux (StudioCanal)                │
+│ [x] La Haine 4K (StudioCanal)                           │
+│ [x] Amélie (UGC)                                        │
+│                                                          │
+│ Provider: [iTunes ▼]                                    │
+│                                                          │
+│                              [Run test]                  │
+└──────────────────────────────────────────────────────────┘
+```
 
-✅ Package "Le Dernier Métro Redux" (StudioCanal)
+Résultats du test :
+
+```
+✅ Le Dernier Métro Redux
+   genres: "Drama,Romance" (value.join applied)
    copyright: © 2026 StudioCanal. All rights reserved.
 
-✅ Package "La Haine 4K" (StudioCanal)
+✅ La Haine 4K
+   genres: "Drama" (single value, no join needed)
    copyright: © 1995 StudioCanal. All rights reserved.
 
-✅ Package "Amélie" (UGC)
+✅ Amélie
+   genres: "Comedy,Romance" (value.join applied)
    copyright: © 2001 UGC. All rights reserved.
 
-10/10 packages validés contre iTunes v5.16
+3/3 packages validated against iTunes spec v5.16
 ```
 
 **Réaction de Julie:** "Parfait, le format est bon. Je valide!"
@@ -675,42 +970,62 @@ Julie peut maintenant maintenir les 4 providers MVP + ajouter de nouveaux provid
 ---
 
 **Capabilities révélées par ce journey:**
+
+**Architecture de mapping sortant:**
+- Provider mapping cross-platform (specs partagées entre toutes les plateformes clientes)
+- Source of truth table commune avec Journey 2 (cohérence entrée/sortie)
+- Formatting options pour transformations d'export (join, format dates, etc.)
+- Mapping options pour correspondances d'enums mediaspot → provider
+
+**Validation et déploiement:**
 - Éditeur de specs providers centralisé (un seul endroit par provider, pas 47 fichiers XML dispersés)
-- Validation en temps réel des mappings contre échantillons de packages
+- Bouton "Test mappings" pour valider sur packages réels avant déploiement
+- Prévisualisation des valeurs transformées
+- Validation contre specs provider (version trackée)
 - Prévisualisation XML avant livraison (test de génération)
-- Déploiement instantané sans toucher au code ni au Git
+- Déploiement instantané cross-platforms sans modification de code
 - Versionning des specs (rollback possible si problème)
 - Impact analysis (combien de plateformes impactées par un changement)
-- Interface visuelle pour éditer les formats de champs
 
 ### Journey Requirements Summary
 
-Les trois user journeys révèlent les capabilities suivantes pour BMME v2:
+Les quatre user journeys (1, 1.2, 2, 3) révèlent les capabilities suivantes pour BMME v2:
 
-**Pour les utilisateurs clients (Sophie):**
+**Pour les utilisateurs clients (Sophie - Journey 1 & 1.2):**
 - Hiérarchie Title → Langues → Territoires avec héritage automatique
+- Activation explicite des langues
+- Métadonnées territoire héritées de la langue ("Metadata pulled from Language")
+- Shared metadata cross-platforms (Vendor ID, Studio, Labo, Copyrights)
+- Création de package simplifiée : sélection Platform + Territories
 - Vue bulk de localisation (édition multi-langue/multi-territoire)
 - Feedback temps réel avec compteur de complétion ("94/120 champs remplis")
 - Validation live contre specs providers
 - État VALID/INVALID pour handoff vers BundleMaker
-- Reasonable defaults basés sur les specs providers
+- Source tracking par métadonnée (affichage de la source actuelle)
+- Synchronisation manuelle avec preview des changements
+- Historique complet des modifications avec traçabilité
 
-**Pour les admins internes (Marc):**
+**Pour les admins internes (Marc - Journey 2):**
+- External source mapping platform-based (chaque plateforme a ses propres mappings)
+- Formatting options pour transformations de données (split, trim, etc.)
+- Mapping options pour correspondances d'enums
+- Source of truth table avec Default source et Lock source
 - Dashboard de monitoring centralisé des synchronisations entrantes
 - Logs détaillés et friendly avec suggestions de diagnostic
 - Mode diagnostic live pour tester les APIs externes
-- Éditeur de mapping visuel (systèmes externes → mediaspot)
-- Resynchronisation en 1 clic avec suivi de progression
+- Sync history avec Impact, Errors, et action Resync
+- Bulk resync pour relancer plusieurs syncs
 - Alertes proactives configurables
-- Historique des synchronisations
 
-**Pour le labo (Julie):**
+**Pour le labo (Julie - Journey 3):**
+- Provider mapping cross-platform (specs partagées entre toutes les plateformes)
+- Source of truth table commune avec Journey 2 (cohérence entrée/sortie)
+- Formatting options pour transformations d'export (join, format dates, etc.)
+- Mapping options pour correspondances d'enums mediaspot → provider
+- Bouton "Test mappings" pour valider sur packages réels
 - Éditeur de specs providers centralisé (mediaspot → providers)
-- Validation en temps réel des mappings
 - Prévisualisation XML avant livraison
-- Déploiement instantané sans toucher au code
-- Versionning des specs avec rollback
-- Impact analysis des changements
+- Déploiement instantané cross-platforms sans modification de cod
 
 ## Domain-Specific Requirements
 
@@ -844,20 +1159,67 @@ Les trois user journeys révèlent les capabilities suivantes pour BMME v2:
 
 ### Integration Architecture
 
-**Intégrations entrantes (synchronisation):**
-- Unity API (StudioCanal) - Catalogue films
-- Iron API - Catalogue films
-- MovieLibrary FTP+XML - Catalogue films
-- Architecture Spock (agents de synchro) pour orchestrer les imports
+**Distinction architecturale clé : Platform-based vs Cross-platform**
 
-**Intégrations sortantes (delivery):**
+| Type | Scope | Description |
+|------|-------|-------------|
+| **External source mapping** | Platform-based | Chaque plateforme cliente configure ses propres mappings vers ses systèmes externes |
+| **Provider mapping** | Cross-platform | Specs providers partagées entre toutes les plateformes clientes |
+| **Source of truth table** | Cross-platform | Définition des champs mediaspot (Type, Default source, Lock source) partagée |
+
+**Intégrations entrantes (synchronisation) - Platform-based:**
+
+Chaque plateforme cliente peut configurer ses propres mappings vers :
+- Unity API (ex: StudioCanal)
+- Iron API
+- MovieLibrary FTP+XML
+- VDM Connect (migration)
+- IMDb (enrichissement)
+- Autres sources ajoutables par plateforme
+
+**Structure de mapping entrant :**
+```
+External Field → mediaspot Field + Formatting options + Mapping options
+```
+
+- **Formatting options** : transformations de données (`value.split('&')`, `value.trim()`, etc.)
+- **Mapping options** : correspondances d'enums explicites
+
+**Intégrations sortantes (delivery) - Cross-platform:**
+
+Specs providers maintenues centralement par le Labo VDM, appliquées à toutes les plateformes :
 - iTunes (XML spec-driven)
 - Amazon (XML spec-driven)
 - Google (XML spec-driven)
 - Netflix (XML spec-driven)
-- BundleMaker v2 (handoff interne pour fabrication packages)
 
-**Pas d'intégrations additionnelles prévues dans le scope actuel.**
+**Structure de mapping sortant :**
+```
+mediaspot Field → Provider Field + Formatting options + Mapping options
+```
+
+- **Formatting options** : transformations pour l'export (`value.join(',')`, formatage dates, etc.)
+- **Mapping options** : correspondances d'enums mediaspot → provider
+
+**Source of truth table (cross-platform) :**
+
+Table centrale définissant le comportement de chaque champ mediaspot :
+
+| Attribut | Description |
+|----------|-------------|
+| **mediaspot field** | Nom du champ dans le modèle mediaspot |
+| **Type** | Type de donnée (string, enum, date, etc.) |
+| **Default source** | Source par défaut pour ce champ (Unity, mediaspot, etc.) |
+| **Lock source** | Si activé, empêche le changement de source sur ce champ |
+
+Cette table est partagée entre :
+- Les mappings entrants (Journey 2 - Marc)
+- Les mappings sortants (Journey 3 - Julie)
+- BundleMaker v2 (consommation des métadonnées)
+
+**Handoff interne :**
+- BundleMaker v2 consomme les packages BMME v2 marqués "VALID"
+- Provider mapping appliqué comme transformation lors de la génération XML
 
 ### Compliance & Security
 
@@ -1095,8 +1457,8 @@ BMME v2 résout un problème opérationnel critique: la fragmentation des métad
 - FR12: Gestionnaires de catalogue peuvent supprimer un package
 - FR13: Gestionnaires de catalogue peuvent visualiser le statut de complétion d'un package (compteur "94/120 champs remplis")
 - FR14: Gestionnaires de catalogue peuvent identifier les champs manquants requis pour un package donné
-- FR15: Gestionnaires de catalogue peuvent définir des reasonable defaults par provider pour minimiser la saisie manuelle
-- FR16: Système applique les reasonable defaults basés sur le provider cible
+- FR15: Gestionnaires de catalogue peuvent définir des métadonnées partagées entre tous les providers pour minimiser la saisie manuelle
+- FR16: Système applique les métadonnées partagées au provider cible
 - FR17: Système valide en temps réel les métadonnées d'un package contre les specs du provider cible
 - FR18: Système marque automatiquement un package comme VALID lorsque tous les champs requis sont remplis pour handoff vers BundleMaker
 - FR19: Packages incomplets restent à l'état "draft" jusqu'à complétion
@@ -1111,29 +1473,23 @@ BMME v2 résout un problème opérationnel critique: la fragmentation des métad
 - FR25: Système valide en temps réel les mappings contre des échantillons de packages
 - FR26: Labo VDM peut prévisualiser le XML généré avant livraison client
 - FR27: Labo VDM peut déployer les changements de specs instantanément sans modification de code
-- FR28: Système versionne les specs providers pour permettre le rollback en cas de problème
-- FR29: Système affiche l'impact analysis des changements de specs (nombre de plateformes impactées)
-- FR30: Labo VDM peut consulter l'historique des versions de specs pour chaque provider
+- FR28: Système versionne les specs providers pour permettre le rollback en cas de problèm
 
 ### 4. External System Integration
 
 - FR31: Admin Internes VDM peuvent accéder à un dashboard de monitoring des synchronisations entrantes
 - FR32: Système affiche le statut temps réel de chaque synchronisation externe (Unity, Iron, MovieLibrary, VDM Connect)
-- FR33: Système affiche des logs détaillés et friendly avec suggestions de diagnostic en cas d'échec
+- FR33: Système affiche des logs détaillés et friendly pour chaque synchronisation
 - FR34: Admin Internes VDM peuvent tester une API externe en temps réel (mode diagnostic live)
 - FR35: Admin Internes VDM peuvent accéder à un éditeur de mapping visuel (système externe → mediaspot)
 - FR36: Admin Internes VDM peuvent éditer les mappings de champs entre système externe et mediaspot
-- FR37: Système valide les mappings en temps réel contre des échantillons de données externes
 - FR38: Admin Internes VDM peuvent déclencher une resynchronisation manuelle en 1 clic
 - FR39: Système affiche la progression de la resynchronisation avec ETA
-- FR40: Admin Internes VDM peuvent configurer des alertes proactives (Slack, email) en cas d'échec de synchro
-- FR41: Système notifie automatiquement les utilisateurs impactés après rétablissement d'une synchronisation
 - FR42: Système historise toutes les synchronisations pour détecter les régressions
 
 ### 5. Validation & Quality Assurance
 
 - FR43: Système génère les XML conformes aux specs provider actuelles
-- FR44: Système valide les XML générés contre les schemas XSD des providers
 
 ### 6. User & Permission Management
 
@@ -1148,4 +1504,50 @@ BMME v2 résout un problème opérationnel critique: la fragmentation des métad
 - FR50: SuperAdmin VDM peuvent gérer centralement les specs providers appliquées à toutes les plateformes
 - FR51: SuperAdmin VDM peuvent gérer centralement les specs systèmes externes partagées
 - FR52: Système génère des audit logs pour toutes les actions critiques (création/édition/suppression)
-- FR53: Système historise les modifications de mappings pour permettre le rollback
+
+### 8. Language & Territory Activation
+
+- FR55: Gestionnaires de catalogue peuvent activer une langue pour un Title
+- FR56: Langue de l'original title est activée par défaut
+- FR57: Système affiche uniquement les champs localisables au niveau langue et territoire
+- FR58: Métadonnées territoire sont héritées automatiquement de la langue parente ("pulled from Language")
+
+### 9. Source Tracking & Historisation
+
+- FR59: Système affiche la source actuelle de chaque métadonnée (Unity, mediaspot, IMDb, etc.)
+- FR60: Gestionnaires de catalogue peuvent déclencher une synchronisation manuelle depuis une source externe
+- FR61: Système affiche un preview des changements avant application (Old value vs New value)
+- FR62: Gestionnaires de catalogue peuvent voir toutes les valeurs d'une métadonnée par source
+- FR63: Système historise toutes les modifications de métadonnées (Old value, New value, Date, User, Details)
+- FR64: Système catégorise les types de modification (Source changed, Manual Edit, Periodic sync)
+- FR65: Gestionnaires de catalogue peuvent consulter l'historique complet d'une métadonnée
+
+### 10. Shared Metadata & Package Creation
+
+- FR66: Système gère des Shared metadata cross-platforms (Vendor ID, Studio, Labo, Copyrights)
+- FR67: Shared metadata sont automatiquement propagées à tous les packages d'un Title
+- FR68: Gestionnaires de catalogue peuvent créer un package en sélectionnant uniquement Platform + Territories
+- FR69: Système pré-remplit les packages depuis Title metadata + Shared metadata, puis applique le Provider mapping comme transformation de format
+- FR70: Structure Package suit la même hiérarchie que Title (Global → Languages → Territories)
+
+### 11. External System Mapping (Platform-based)
+
+- FR71: Admin Internes VDM peuvent définir des Formatting options par champ de mapping (split, trim, etc.)
+- FR72: Admin Internes VDM peuvent définir des Mapping options pour les correspondances d'enums
+- FR73: Système applique les Formatting options lors de l'import des données externes
+- FR74: Système applique les Mapping options pour convertir les valeurs d'enums
+- FR75: Admin Internes VDM peuvent définir une Default source par champ mediaspot
+- FR76: Admin Internes VDM peuvent activer Lock source pour empêcher le changement de source sur un champ
+- FR77: Système empêche le changement de source sur les champs avec Lock source activé
+- FR78: Système affiche des notes d'erreur typées lors des synchronisations (Wrong data format, Formatting failed, Not synced)
+- FR79: Admin Internes VDM peuvent déclencher un Resync pour réappliquer une synchronisation depuis une source
+- FR80: Admin Internes VDM peuvent déclencher un Bulk resync sur plusieurs sources simultanément
+
+### 12. Provider Mapping (Cross-platform)
+
+- FR81: Provider mappings sont cross-platform (partagés entre toutes les plateformes clientes)
+- FR82: Labo VDM peut définir des Formatting options pour l'export (join, format dates, etc.)
+- FR83: Labo VDM peut définir des Mapping options pour les correspondances d'enums mediaspot → provider
+- FR84: Labo VDM peut tester les mappings sur des packages réels avant déploiement
+- FR85: Système affiche les résultats de test avec les valeurs transformées
+- FR86: Source of truth table est partagée entre mappings entrants (Journey 2) et sortants (Journey 3)
