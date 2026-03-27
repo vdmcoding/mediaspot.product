@@ -1,0 +1,1085 @@
+[
+    {
+        "groupName": "Ingest Features",
+        "acls": [
+            {
+                "label": "Allows Placeholder Requests Creation",
+                "value": "aclIngestPlaceholderCreate"
+            },
+            {
+                "label": "Allows Configuration Creation",
+                "value": "aclIngestConfigCreation"
+            },
+            {
+                "label": "Allows for my linked Provider Lab(s) Requests Monitoring",
+                "value": "aclIngestWishListView"
+            },
+            {
+                "label": "Allows All (Override) Requests Monitoring",
+                "value": "aclIngestWishListViewAll"
+            },
+            {
+                "label": "Enable Access Level filter on Requests Monitoring",
+                "value": "aclIngestEnableAccessLevelFilter"
+            },
+            {
+                "label": "Allows File Upload (by Aspera)",
+                "value": "aclIngestUpload"
+            },
+            {
+                "label": "Allows File Ingest Monitoring",
+                "value": "aclIngestMonitor"
+            },
+            {
+                "label": "Allows Requests Assignation to a Lab Provider",
+                "value": "aclIngestAssignToLabProvider"
+            },
+            {
+                "label": "Allows Rejections Manager View",
+                "value": "aclIngestRejectionsView"
+            },
+            {
+                "label": "Allows Rejections Manager Bypass decision",
+                "value": "aclIngestRejectionsBypass"
+            },
+            {
+                "label": "Allows All (Override) Rejections Manager Bypass decision",
+                "value": "aclIngestRejectionsBypassOverwrite"
+            },
+            {
+                "label": "Allows Requests Deletion",
+                "value": "aclIngestDeleteRequest"
+            },
+            {
+                "label": "Allows the Creation of new Config Columns",
+                "value": "aclIngestConfigColumnSetCreate"
+            },
+            {
+                "label": "Allows the Update of new Config Columns",
+                "value": "aclIngestConfigColumnSetUpdate"
+            },
+            {
+                "label": "Allows Assign Priority",
+                "value": "aclIngestAssignPriority"
+            },
+            {
+                "label": "Allows to remind provider to upload media file",
+                "value": "aclIngestPlaceholderRemind"
+            }
+        ]
+    },
+    {
+        "groupName": "Backoffice Admin Features",
+        "acls": [
+            {
+                "label": "Backoffice Admin Features",
+                "value": "aclBackofficeUserListView"
+            },
+            {
+                "label": "Allows User/Group Creation",
+                "value": "aclBackofficeUserCreate"
+            },
+            {
+                "label": "Allows User/Group Deletion",
+                "value": "aclBackofficeUserDelete"
+            },
+            {
+                "label": "Allows Lab Provider Creation / Deletion",
+                "value": "aclBackofficeLabProviderCreate"
+            },
+            {
+                "label": "Allows Mailing List View",
+                "value": "aclBackofficeMailinglistView"
+            },
+            {
+                "label": "Allows Mailing List Creation",
+                "value": "aclBackofficeMailinglistCreate"
+            },
+            {
+                "label": "Allows Ldap User list View",
+                "value": "aclBackofficeUserLdapSync"
+            },
+            {
+                "label": "Manual Tasks Template Creation",
+                "value": "aclBackofficeManualTasksCreate"
+            },
+            {
+                "label": "Manual Tasks Template Deletion",
+                "value": "aclBackofficeManualTasksDelete"
+            },
+            {
+                "label": "Audit Logs Admin Access",
+                "value": "aclBackofficeAuditLogsView"
+            },
+            {
+                "label": "Transfers Drashboard Access",
+                "value": "aclBackofficeTransferListView"
+            },
+            {
+                "label": "Allows product update",
+                "value": "aclBackofficeDeliveryProductUpdate"
+            },
+            {
+                "label": "Allows quotas management view interface",
+                "value": "aclBackofficeQuotasView"
+            },
+            {
+                "label": "Allows product management view interface",
+                "value": "aclBackofficeDeliveryProductView"
+            },
+            {
+                "label": "Allows group role management",
+                "value": "aclGroupRoleManage"
+            },
+            {
+                "label": "Allows youtube channels management",
+                "value": "aclBackofficeYoutubeChannel"
+            }
+        ]
+    },
+    {
+        "groupName": "Workflow Features",
+        "acls": [
+            {
+                "label": "Allows to see Workflow operations",
+                "value": "aclWorkflowView"
+            },
+            {
+                "label": "Allows Workflow Admin operations (priority, cancel, retry etc.)",
+                "value": "aclBackofficeWorkflowAdmin"
+            },
+            {
+                "label": "Allows Purge Workflow List View",
+                "value": "aclWorkflowPurgeView"
+            },
+            {
+                "label": "Allows Purge Workflow Creation (Media File Purge)",
+                "value": "aclWorkflowPurgeCreate"
+            },
+            {
+                "label": "Allows Purge Workflow Creation (Media File Purge) on Accepted Asset status",
+                "value": "aclWorkflowPurgeCreateWithAcceptedAssetStatus"
+            },
+            {
+                "label": "Allows Workflow User Tasks List View",
+                "value": "aclUserTaskView"
+            },
+            {
+                "label": "Allows Workflow User Tasks Update and Claim",
+                "value": "aclUserTaskUpdate"
+            },
+            {
+                "label": "Allows Assign Followers",
+                "value": "aclWorkflowAssignFollowers"
+            }
+        ]
+    },
+    {
+        "groupName": "Order Features",
+        "acls": [
+            {
+                "label": "Allows Play/Start Order",
+                "value": "aclOrderStart"
+            },
+            {
+                "label": "Allows Auto-Play Order without Approval",
+                "value": "aclOrderPlayWithoutApproval"
+            },
+            {
+                "label": "Allows Cancel Order",
+                "value": "aclOrderCancel"
+            },
+            {
+                "label": "Allows Generated Asset Ingest",
+                "value": "aclOrderIngestGenerated"
+            },
+            {
+                "label": "Show \"enable audio only format\" button",
+                "value": "aclOrderAudioOnly"
+            },
+            {
+                "label": "Show Watermarking tab",
+                "value": "aclOrderWatermarcking"
+            },
+            {
+                "label": "Allows Assign Cost Benefit center",
+                "value": "aclOrderAssignBenefitCostLinkCreate"
+            },
+            {
+                "label": "Allows Order Update",
+                "value": "aclOrderUpdate"
+            },
+            {
+                "label": "Allows Item Issue Management",
+                "value": "aclOrderManageItemIssues"
+            },
+            {
+                "label": "Allows Assign Followers",
+                "value": "aclOrderAssignFollowers"
+            },
+            {
+                "label": "Allows Assign Priority",
+                "value": "aclOrderAssignPriority"
+            },
+            {
+                "label": "Allows to access to Manual Tasks Templates",
+                "value": "aclOrderManualTaskView"
+            },
+            {
+                "label": "Allows to override Prices on Check-out",
+                "value": "aclOrderOverrideItemPrice"
+            },
+            {
+                "label": "Allows to override Customers on Check-out",
+                "value": "aclOrderOverrideItemCustomer"
+            },
+            {
+                "label": "Allows to see Order option due date",
+                "value": "aclOrderDueDate"
+            },
+            {
+                "label": "Allows to see Order option major delivery",
+                "value": "aclOrderIsImportant"
+            },
+            {
+                "label": "Allows to send Billing Acknowledge manually",
+                "value": "aclorderSendAckBillingManually"
+            },
+            {
+                "label": "Allows to attach files to the items.",
+                "value": "aclOrderAttachFile"
+            },
+            {
+                "label": "Allows to see button who mask non available field",
+                "value": "aclOrderMaskNonAvailable"
+            },
+            {
+                "label": "Allows Product enable \"Transcode as Mezzanine\"",
+                "value": "aclOrderEnableProductTranscodeAsMezz"
+            },
+            {
+                "label": "Allows order approval",
+                "value": "aclOrderApprove"
+            },
+            {
+                "label": "Restrict all Orders access to only followers (CAUTION)",
+                "value": "aclOrderRestrictToFollower"
+            },
+            {
+                "label": "Allows to order a Manual Task",
+                "value": "aclOrderManualTask"
+            },
+            {
+                "label": "Allows to see the warnings on an order item product",
+                "value": "aclOrderWarnings"
+            },
+            {
+                "label": "Auto select contract on Checkout?",
+                "value": "aclOrderContractAutoSelect"
+            },
+            {
+                "label": "Allows to see Link between Orders and Ingest",
+                "value": "aclOrderIngestLinkView"
+            },
+            {
+                "label": "Allows to see segment cut on a transcode as service or PAD order",
+                "value": "aclSegmentCutView"
+            },
+            {
+                "label": "Allows to change status on manual orders treated externally",
+                "value": "aclOrderManualTaskExternalChangeStatus"
+            },
+            {
+                "label": "Allows to access quotes dashboard?",
+                "value": "aclOrderQuoteView"
+            },
+            {
+                "label": "Allows to request a manual work quote?",
+                "value": "aclOrderQuoteRequest"
+            },
+            {
+                "label": "Allows to validate quote?",
+                "value": "aclOrderQuoteValidate"
+            },
+            {
+                "label": "Allows to schedule orders",
+                "value": "aclOrderSchedule"
+            },
+            {
+                "label": "Allows to resend transfer download link emails",
+                "value": "aclOrderResendTransferEmail"
+            }
+        ]
+    },
+    {
+        "groupName": "Asset Features",
+        "acls": [
+            {
+                "label": "Allows to see Quick View",
+                "value": "aclAssetQuickView"
+            },
+            {
+                "label": "Allows to see Tools View",
+                "value": "aclAssetToolsView"
+            },
+            {
+                "label": "Allows to delete an Object Asset",
+                "value": "aclAssetDelete"
+            },
+            {
+                "label": "Allows to Download Asset PDF Export",
+                "value": "aclAssetPdfExport"
+            },
+            {
+                "label": "Allows to see Deleted Assets",
+                "value": "aclMetadataAssetViewDeleted"
+            },
+            {
+                "label": "Allows to see Deleted Contents",
+                "value": "aclMetadataContentViewDeleted"
+            },
+            {
+                "label": "Allows to see Deleted Titles",
+                "value": "aclMetadataTitleViewDeleted"
+            },
+            {
+                "label": "Allows to switch Class to Raw",
+                "value": "aclSwitchClassToRaw"
+            },
+            {
+                "label": "Allows to switch Class to Mezz",
+                "value": "aclSwitchClassToMezz"
+            },
+            {
+                "label": "Restrict all Asset access to only followers (CAUTION)",
+                "value": "aclAssetRestrictToFollower"
+            },
+            {
+                "label": "Hide empty Objects (no childrens, such as empty Content)",
+                "value": "aclAssetHideEmptyObjects"
+            },
+            {
+                "label": "Allows to see the column bypassed in assets relationships and the metadata in asset's page",
+                "value": "aclBypassedAsset"
+            },
+            {
+                "label": "Allows to hide the asset card's page and button",
+                "value": "aclDisableAssetAccess"
+            },
+            {
+                "label": "Show recent Titles in Search Engine home page",
+                "value": "aclSearchShowRecentTitles"
+            },
+            {
+                "label": "Allows object copy overriding ingest template",
+                "value": "aclCopyObjectOverridingPlaceholderTemplate"
+            },
+            {
+                "label": "Lock all objects and search access",
+                "value": "aclLockAssetObjectAccess"
+            },
+            {
+                "label": "Allow BundleMaker editor access (under licence)",
+                "value": "aclAssetBundlemaker"
+            },
+            {
+                "label": "Allow change asset status (under licence)",
+                "value": "aclObjectChangeStatus"
+            },
+            {
+                "label": "Allow quotas management view on asset",
+                "value": "aclQuotaObjectView"
+            }
+        ]
+    },
+    {
+        "groupName": "Main & global Features",
+        "acls": [
+            {
+                "label": "Flag this group as Administrator? Useful for notifications",
+                "value": "aclAdmin"
+            },
+            {
+                "label": "Allows Backoffice Access",
+                "value": "aclSectionBackofficeAccess"
+            },
+            {
+                "label": "Allows Search Engine",
+                "value": "aclSectionSearchAccess"
+            },
+            {
+                "label": "Allows Search Advanced Engine",
+                "value": "aclSearchAdvancedEnable"
+            },
+            {
+                "label": "Allows Orders",
+                "value": "aclSectionOrderAccess"
+            },
+            {
+                "label": "Allows Reporting querying",
+                "value": "aclSectionReportingAccess"
+            },
+            {
+                "label": "Allows Project Manager use",
+                "value": "aclSectionProjectManager"
+            },
+            {
+                "label": "Allows Clip creation",
+                "value": "aclClipCreate"
+            },
+            {
+                "label": "Allows Clip deletion",
+                "value": "aclClipDelete"
+            },
+            {
+                "label": "Allows Group Asset creation",
+                "value": "aclGroupCreate"
+            },
+            {
+                "label": "Allows Screenshot frame from Proxy (low-res)",
+                "value": "aclScreenshotFrame"
+            },
+            {
+                "label": "Allows Screenshot frame from Hi-Res",
+                "value": "aclScreenshotFrameHires"
+            },
+            {
+                "label": "Allows to enable Watermark on player",
+                "value": "aclPlayerWatermarkLogin"
+            },
+            {
+                "label": "Allows Statistics Home Page viewer",
+                "value": "aclViewStats"
+            },
+            {
+                "label": "Allows login emulation (CAUTION WITH THIS)",
+                "value": "aclLoginEmulate"
+            },
+            {
+                "label": "Allows Download Platform documents",
+                "value": "aclPlatformDocumentsDownload"
+            },
+            {
+                "label": "Allows Job Rules Apply",
+                "value": "aclJobRuleApply"
+            },
+            {
+                "label": "Documents access and download",
+                "value": "aclDocumentsAccess"
+            },
+            {
+                "label": "Allow file transfer set expire now",
+                "value": "aclTransferExpire"
+            },
+            {
+                "label": "Allow file transfer update",
+                "value": "aclTransferUpdate"
+            },
+            {
+                "label": "Allow use activity to post comments",
+                "value": "aclActivityAdd"
+            },
+            {
+                "label": "CAUTION: Lock everything on platform",
+                "value": "aclLockEverything"
+            },
+            {
+                "label": "Allow clear thumbnail cache",
+                "value": "aclThumbnailClearCache"
+            },
+            {
+                "label": "Allow set reference thumbnail",
+                "value": "aclThumbnailSetRef"
+            },
+            {
+                "label": "CAUTION: Allows bypass permissions",
+                "value": "aclBypassPermissions"
+            }
+        ]
+    },
+    {
+        "groupName": "Rights Management Features",
+        "acls": [
+            {
+                "label": "Allows Rights View",
+                "value": "aclRightsView"
+            },
+            {
+              "label": "Allows Rights management",
+              "value": "aclRightsManagement"
+            }
+        ]
+    },
+    {
+        "groupName": "Share & Screening Features",
+        "acls": [
+            {
+                "label": "Allows Shares View (Admin page)",
+                "value": "aclShareView"
+            },
+            {
+                "label": "Allows Shares Create",
+                "value": "aclShareCreate"
+            },
+            {
+                "label": "Allows Shares Delete",
+                "value": "aclShareDelete"
+            },
+            {
+                "label": "Allows Shares Update",
+                "value": "aclShareUpdate"
+            },
+            {
+                "label": "Allows Fast mode Share (without burns)",
+                "value": "aclFastModeShare"
+            },
+            {
+                "label": "Allows to delete the share clips",
+                "value": "aclShareClipDelete"
+            },
+            {
+                "label": "Allows to import the selected share clips",
+                "value": "aclShareClipImport"
+            }
+        ]
+    },
+    {
+        "groupName": "Title Management Features",
+        "acls": [
+            {
+                "label": "Allows to create new Title in Catalog glossary",
+                "value": "aclTitleCreate"
+            },
+            {
+                "label": "Allows to update a Title in Catalog glossary",
+                "value": "aclTitleUpdate"
+            },
+            {
+                "label": "Allows to change a bundle Title status",
+                "value": "aclBundleTitleStatusChange"
+            },
+            {
+                "label": "Allows to see Bundle Dashboard page",
+                "value": "aclBundleDashboardView"
+            },
+            {
+                "label": "Restrict access to bundle only",
+                "value": "aclRestrictViewBundleOnly"
+            }
+        ]
+    },
+    {
+        "groupName": "Metadata Management Features",
+        "acls": [
+            {
+                "label": "Allows Metadata Update (Asset fields set)",
+                "value": "aclMetadataUpdate"
+            },
+            {
+                "label": "Allows Metadata Update (Audio tracks table for class Raw)",
+                "value": "aclMetadataAudioTracksUpdate"
+            },
+            {
+                "label": "Allows Metadata Update (Asset fields set on Accepted Status)",
+                "value": "aclMetadataUpdateWithAcceptedAssetStatus"
+            },
+            {
+                "label": "Allows Metadata Update (Content fields set)",
+                "value": "aclMetadataContentUpdate"
+            },
+            {
+                "label": "Allows Metadata Update (Title fields set)",
+                "value": "aclMetadataTitleUpdate"
+            },
+            {
+                "label": "Allows Metadata Delete (Title fields set)",
+                "value": "aclMetadataTitleDelete"
+            },
+            {
+                "label": "Allows Asset Enable/Disable",
+                "value": "aclMetadataAssetDisable"
+            },
+            {
+                "label": "Allows to move Asset to another Content (of same Title)",
+                "value": "aclMetadataMoveLinkContentUpdate"
+            },
+            {
+                "label": "Allows to move Asset to another Title",
+                "value": "aclMetadataMoveLinkTitleUpdate"
+            },
+            {
+                "label": "Allows Metadata Export",
+                "value": "aclMetadataExport"
+            },
+            {
+                "label": "Allows to force the deletion of contents with only deleted assets",
+                "value": "aclDeleteMetadataContentAssetsDeleted"
+            },
+            {
+                "label": "Allows to add new values in metadata field options list",
+                "value": "aclMetadataFieldPopulate"
+            },
+            {
+                "label": "Allows to update assets metadata bulk",
+                "value": "aclImportMetadataBulk"
+            }
+        ]
+    },
+    {
+        "groupName": "Markers Features",
+        "acls": [
+            {
+                "label": "Allows Insert or Update Markers",
+                "value": "aclMarkerCreateOrUpdate"
+            },
+            {
+                "label": "Allows Delete Markers",
+                "value": "aclMarkerDelete"
+            }
+        ]
+    },
+    {
+        "groupName": "Customer Management Features",
+        "acls": [
+            {
+                "label": "Allows Customers Full List Access",
+                "value": "aclCustomersView"
+            },
+            {
+                "label": "Allows Customers Insertion",
+                "value": "aclCustomersCreate"
+            },
+            {
+                "label": "Allows Customers Delete",
+                "value": "aclCustomersDelete"
+            }
+        ]
+    },
+    {
+        "groupName": "Quality Check Features",
+        "acls": [
+            {
+                "label": "Allows Full QC Request",
+                "value": "aclOrderQualityCheckCreate"
+            },
+            {
+                "label": "Allows Qualify Request",
+                "value": "aclWorkflowQualifyCreate"
+            },
+            {
+                "label": "Allows QC/Qualify View",
+                "value": "aclWorkflowQualifyView"
+            },
+            {
+                "label": "Enable Telestream Switch integration playback",
+                "value": "aclPlayTelestreamSwitch"
+            },
+            {
+                "label": "Allows Bypass or ask fix issue (marker)",
+                "value": "aclMarkerBypassOrAskToFixIssue"
+            },
+            {
+                "label": "Allows change issue (marker) status to fixed",
+                "value": "aclMarkerFixIssue"
+            }
+        ]
+    },
+    {
+        "groupName": "Media Files Features",
+        "acls": [
+            {
+                "label": "Allows Upload annex Media Files",
+                "value": "aclMediaFileUpload"
+            },
+            {
+                "label": "Allows Download (direct link) Media Files",
+                "value": "aclMediaFileDownload"
+            },
+            {
+                "label": "Allows Delete Media Files (Annex Files only)",
+                "value": "aclMediaFileDelete"
+            },
+            {
+                "label": "Allows Download (direct link) Restricted Files",
+                "value": "aclRestrictedFileDownload"
+            },
+            {
+                "label": "Allows Add User Data",
+                "value": "aclFileUserDataAdd"
+            },
+            {
+                "label": "Allows Files download through transfer link",
+                "value": "aclMakeTransferFileDownloadLink"
+            },
+            {
+                "label": "Allows Files User Data change status to Ready",
+                "value": "aclFileChangeUserDataStatusReady"
+            },
+            {
+                "label": "Restrict uploaded Media Files view to only mine",
+                "value": "aclFileRestrictViewUploadOnlyMine"
+            },
+            {
+                "label": "Allows to run Subtitle Checker",
+                "value": "aclFileSubtitleCheck"
+            },
+            {
+                "label": "Allows to override the Poster of a title",
+                "value": "aclTitleOverridePoster"
+            },
+            {
+                "label": "Allows to override the Cover of a title",
+                "value": "aclTitleOverrideCover"
+            }
+        ]
+    },
+    {
+        "groupName": "Audit Logs Features",
+        "acls": [
+            {
+                "label": "Allows to see the user action logs",
+                "value": "aclAuditLogsView"
+            },
+            {
+                "label": "Allows to see metrics",
+                "value": "aclMetricView"
+            }
+        ]
+    },
+    {
+        "groupName": "ACL Elevation Features",
+        "acls": [
+            {
+                "label": "Allows to create ACL elevation requests",
+                "value": "aclElevationWishlistCreate"
+            },
+            {
+                "label": "Allows to delete ACL elevation requests",
+                "value": "aclElevationWishlistDelete"
+            },
+            {
+                "label": "Allows to update ACL elevation requests",
+                "value": "aclElevationWishlistUpdate"
+            }
+        ]
+    },
+    {
+        "groupName": "Dashboard Features",
+        "acls": [
+            {
+                "label": "Allows to see ingest's tab",
+                "value": "aclDashboardTabIngest"
+            },
+            {
+                "label": "Allows to see orders's tab",
+                "value": "aclDashboardTabOrders"
+            },
+            {
+                "label": "Allows to see titles's tab",
+                "value": "aclDashboardTabTitles"
+            },
+            {
+                "label": "Allows to see notepad's tab",
+                "value": "aclDashboardTabNotepad"
+            },
+            {
+                "label": "Allows to see Rights Management's tab",
+                "value": "aclDashboardTabRight"
+            }
+        ]
+    },
+    {
+        "groupName": "Support Features",
+        "acls": [
+            {
+                "label": "Allows to see the tickets",
+                "value": "aclSupportTicketView"
+            },
+            {
+                "label": "Allows to create the tickets",
+                "value": "aclSupportTicketCreate"
+            },
+            {
+                "label": "Allows to update the tickets",
+                "value": "aclSupportTicketUpdate"
+            },
+            {
+                "label": "Allows to comment the tickets",
+                "value": "aclSupportTicketComment"
+            },
+            {
+                "label": "Allows to delete the tickets",
+                "value": "aclSupportTicketDelete"
+            },
+            {
+                "label": "Allows to see the tickets from backlog",
+                "value": "aclSupportTicketBacklog"
+            },
+            {
+                "label": "Allows to see the onboarding tickets",
+                "value": "aclSupportOnboardingView"
+            },
+            {
+                "label": "Allows to upload and delete platform documents",
+                "value": "aclPlatformDocumentsUploadAndDelete"
+            }
+        ]
+    },
+    {
+        "groupName": "Confidentiality Features",
+        "acls": [
+            {
+                "label": "Allows to activate or not the confidentiality on a Title or force watermark on a Title",
+                "value": "aclTitleConfidentialitySet"
+            },
+            {
+                "label": "Allows to play a confidential Title",
+                "value": "aclTitleConfidentialityPlay"
+            },
+            {
+                "label": "Allows to request an asset creation from a confidential Title",
+                "value": "aclTitleConfidentialityIngestRequestCreation"
+            },
+            {
+                "label": "Allows to order from a confidential Title",
+                "value": "aclTitleConfidentialityOrders"
+            },
+            {
+                "label": "Allows to share media from a confidential Title",
+                "value": "aclTitleConfidentialityShares"
+            }
+        ]
+    },
+    {
+        "groupName": "External Links",
+        "acls": [
+            {
+                "label": "Allows to see the external links",
+                "value": "aclExternalLinksView"
+            }
+        ]
+    },
+    {
+        "groupName": "Planning & User Tasks",
+        "acls": [
+            {
+                "label": "Allows to view Planning User Tasks Dashboard",
+                "value": "aclPlanningUserTaskView"
+            },
+            {
+                "label": "Allows to update Planning User Task",
+                "value": "aclPlanningUserTaskUpdate"
+            },
+            {
+                "label": "Allows to assign Planning User Task",
+                "value": "aclPlanningUserTaskAssign"
+            }
+        ]
+    },
+    {
+        "groupName": "Scriber Tool (Online Subtitling)",
+        "acls": [
+            {
+                "label": "Allows to access to Scriber Tool",
+                "value": "aclScriberAccess"
+            },
+            {
+                "label": "Allows to create Subtitling Project",
+                "value": "aclScribeProjectCreate"
+            }
+        ]
+    },
+    {
+        "groupName": "Price rules",
+        "acls": [
+            {
+                "label": "Allows configure price rules",
+                "value": "aclOrderPriceRuleView"
+            },
+            {
+                "label": "Allows to create price rules",
+                "value": "aclOrderPriceRuleCreate"
+            },
+            {
+                "label": "Allows to delete price rules",
+                "value": "aclOrderPriceRuleDelete"
+            },
+            {
+                "label": "Enables price rule matching",
+                "value": "aclOrderPriceRuleMatchEnable"
+            }
+        ]
+    },
+    {
+        "groupName": "Timetool (under Licence)",
+        "acls": [
+            {
+                "label": "Enable full Access",
+                "value": "aclTimetool"
+            }
+        ]
+    },
+    {
+        "groupName": "Connect (under Licence)",
+        "acls": [
+            {
+                "label": "Enable Link possibility between VDM Connect and Mediaspot Titles",
+                "value": "aclConnectLinkTitle"
+            },
+            {
+                "label": "Enable Import possibility between VDM Connect and Mediaspot Titles",
+                "value": "aclConnectImportTitle"
+            }
+        ]
+    },
+    {
+        "groupName": "Spock",
+        "acls": [
+            {
+                "label": "Enable Sync possibility between Mediaspot Title and Spock Agent Title",
+                "value": "aclSyncTitleFromSpock"
+            }
+        ]
+    },
+    {
+        "groupName": "User access",
+        "acls": [
+            {
+                "label": "Allows to view assets permissions",
+                "value": "aclPermissionView"
+            },
+            {
+                "label": "Allows deleting assets permissions",
+                "value": "aclPermissionDelete"
+            },
+            {
+                "label": "Allows assets permission editing",
+                "value": "aclPermissionSet"
+            }
+        ]
+    },
+    {
+        "groupName": "KDM",
+        "acls": [
+            {
+                "label": "Allows upload DKDM/KDM",
+                "value": "aclKdmUpload"
+            },
+            {
+                "label": "Allows manage KDM recipients",
+                "value": "aclKdmRecipientAdmin"
+            }
+        ]
+    },
+    {
+        "groupName": "Drive features",
+        "licenseDependencies": [ "drive" ],
+        "acls": [
+            {
+                "label": "Allows Drive access",
+                "value": "aclDrive"
+            },
+            {
+                "label": "Allows trash/untrash Drive items",
+                "value": "aclObjectTrashPut"
+            },
+            {
+                "label": "Allows to delete permanently Drive trashed items",
+                "value": "aclObjectTrashDelete"
+            },
+            {
+                "label": "Allows to view Drive trash content",
+                "value": "aclObjectTrashView"
+            },
+            {
+                "label": "Restrict access to Drive only",
+                "value": "aclDistributionDriveOnly"
+            }
+        ]
+    },
+    {
+        "groupName": "Billing",
+        "acls": [
+            {
+                "label": "Allows billing dashboard access",
+                "value": "aclBillingAccess"
+            },
+            {
+                "label": "Allows billing expense add",
+                "value": "aclBillingAddExpense"
+            },
+            {
+                "label": "Allows billing invoice validation",
+                "value": "aclBillingValidateInvoice"
+            },
+            {
+                "label": "Allows billing change plan",
+                "value": "aclBillingChangePlan"
+            },
+            {
+                "label": "CAUTION: Allows billing unsubscribe offer & close platform",
+                "value": "aclBillingUnsubscribe"
+            }
+        ]
+    },
+    {
+        "groupName": "Collections",
+        "acls": [
+            {
+                "label": "Allows storefront collections management",
+                "value": "aclCollectionStorefrontAdmin"
+            },
+            {
+                "label": "Allows share collection to group",
+                "value": "aclCollectionShareToGroup"
+            },
+            {
+                "label": "Allows share collection to user",
+                "value": "aclCollectionShareToUser"
+            }
+        ]
+    },
+    {
+        "groupName": "Providers",
+        "acls": [
+            {
+                "label": "Restrict providers to access only titles where they own request",
+                "value": "aclRestrictProviderTitlesToRequest"
+            },
+            {
+                "label": "Restrict providers to access only assets where they own request",
+                "value": "aclRestrictProviderAssetsToRequest"
+            }
+        ]
+    },
+  {
+    "groupName": "External accesses",
+    "acls": [
+      {
+        "label": "Allows to create or update an external access",
+        "value": "aclExternalAccessCreateOrUpdate"
+      },
+      {
+        "label": "Allows to revoke an external access",
+        "value": "aclExternalAccessRevoke"
+      },
+      {
+        "label": "Allows to view external accesses on assets",
+        "value": "aclExternalAccessView"
+      },
+      {
+        "label": "Allows to view all external accesses in dashboard page",
+        "value": "aclExternalAccessViewAll"
+      }
+    ]
+  },
+  {
+    "groupName": "Storefront",
+    "acls": [
+      {
+        "label": "Allows to access storefronts administration",
+        "value": "aclManageStorefront"
+      }
+    ]
+  }
+]

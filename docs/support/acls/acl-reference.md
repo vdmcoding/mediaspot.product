@@ -1,461 +1,470 @@
 # ACL Reference
 
+> Source de vérité : `Acls Mapping.json` (backend)
+
 ## Ingest Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Placeholder Requests Creation | `aclIngestPlaceholderCreate` | Permet de créer des demandes de placeholder ("create new requests" submenu) |
-| Allow Configuration Creation | `aclIngestConfigCreation` | Permet de créer des configurations ("configuration manager" submenu) |
-| Allow for my linked Provider Lab(s) Requests Monitoring | `aclIngestWishListView` | Si vous avez une association de groupe avec un ou plusieurs labs fournisseurs, permet de voir le sous-menu "monitor" |
-| Allow All (Override) Requests Monitoring | `aclIngestWishListViewAll` | Permet de voir toutes les requêtes dans le sous-menu "monitor" |
-| Enable Access Level filter on Requests Monitoring | `aclIngestEnableAccessLevelFilter` | Les requêtes sont filtrées dans le sous-menu "monitor" selon les droits "level access" du groupe (AllMyPlatform, OnlyMyPlatformGroup, OnlyMine) |
-| Allow File Upload (by Aspera) | `aclIngestUpload` | Permet aux membres du groupe d'uploader un fichier quand demandé |
-| Allow File Ingest Monitoring | `aclIngestMonitor` | Affiche le sous-menu monitor dans le menu ingest |
-| Allow Requests Assignation to a Lab Provider | `aclIngestAssignToLabProvider` | Dans "upload file request", permet de changer le lab fournisseur |
-| Allow Rejections Manager View | `aclIngestRejectionsView` | Permet de voir le sous-menu "rejections manager" |
-| Allow Rejections Manager Bypass decision | `aclIngestRejectionsBypass` | Permet de voir et cliquer sur le pouce bleu pour bypass la décision QC dans le menu "rejections manager" |
-| Allow All (Override) Rejections Manager Bypass decision | `aclIngestRejectionsBypassOverwrite` | Permet de bypass un asset rejeté même si l'option bypass n'a pas été accordée durant la qualification |
-| Allow Requests Deletion | `aclIngestDeleteRequest` | Permet de supprimer les requêtes rejetées (comme les requêtes d'upload) |
-| Allow the Creation of new Config Columns | `aclIngestConfigColumnSetCreate` | Permet d'ajouter un nouveau champ Data dans la section Configuration Manager |
-| Allow the Update of new Config Columns | `aclIngestConfigColumnSetUpdate` | Permet de mettre à jour les champs Data dans la section Configuration Manager |
-| Allow Placeholder Remind | `aclIngestPlaceholderRemind` | Permet d'envoyer des rappels pour les placeholders |
-| Allow Assign Priority | `aclIngestAssignPriority` | Permet d'assigner une priorité aux requêtes d'ingest |
 
-## Back Office Admin Features
+| Nom                                                      | Tag                                  | Description                                                                                                                                     |
+| -------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Allows Placeholder Requests Creation                     | `aclIngestPlaceholderCreate`         | Permet de créer des demandes de placeholder ("create new requests" submenu)                                                                     |
+| Allows Configuration Creation                            | `aclIngestConfigCreation`            | Permet de créer des configurations ("configuration manager" submenu)                                                                            |
+| Allows for my linked Provider Lab(s) Requests Monitoring | `aclIngestWishListView`              | Si vous avez une association de groupe avec un ou plusieurs labs fournisseurs, permet de voir le sous-menu "monitor"                            |
+| Allows All (Override) Requests Monitoring                | `aclIngestWishListViewAll`           | Permet de voir toutes les requêtes dans le sous-menu "monitor"                                                                                  |
+| Enable Access Level filter on Requests Monitoring        | `aclIngestEnableAccessLevelFilter`   | Les requêtes sont filtrées dans le sous-menu "monitor" selon les droits "level access" du groupe (AllMyPlatform, OnlyMyPlatformGroup, OnlyMine) |
+| Allows File Upload (by Aspera)                           | `aclIngestUpload`                    | Permet aux membres du groupe d'uploader un fichier quand demandé                                                                                |
+| Allows File Ingest Monitoring                            | `aclIngestMonitor`                   | Affiche le sous-menu monitor dans le menu ingest                                                                                                |
+| Allows Requests Assignation to a Lab Provider            | `aclIngestAssignToLabProvider`       | Dans "upload file request", permet de changer le lab fournisseur                                                                                |
+| Allows Rejections Manager View                           | `aclIngestRejectionsView`            | Permet de voir le sous-menu "rejections manager"                                                                                                |
+| Allows Rejections Manager Bypass decision                | `aclIngestRejectionsBypass`          | Permet de voir et cliquer sur le pouce bleu pour bypass la décision QC dans le menu "rejections manager"                                        |
+| Allows All (Override) Rejections Manager Bypass decision | `aclIngestRejectionsBypassOverwrite` | Permet de bypass un asset rejeté même si l'option bypass n'a pas été accordée durant la qualification                                           |
+| Allows Requests Deletion                                 | `aclIngestDeleteRequest`             | Permet de supprimer les requêtes rejetées (comme les requêtes d'upload)                                                                         |
+| Allows the Creation of new Config Columns                | `aclIngestConfigColumnSetCreate`     | Permet d'ajouter un nouveau champ Data dans la section Configuration Manager                                                                    |
+| Allows the Update of new Config Columns                  | `aclIngestConfigColumnSetUpdate`     | Permet de mettre à jour les champs Data dans la section Configuration Manager                                                                   |
+| Allows Assign Priority                                   | `aclIngestAssignPriority`            | Permet d'assigner une priorité aux requêtes d'ingest                                                                                            |
+| Allows to remind provider to upload media file           | `aclIngestPlaceholderRemind`         | Permet d'envoyer des rappels au fournisseur pour uploader le fichier média                                                                      |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow User/Group list View | `aclBackofficeUserListView` | Permet de voir les sous-menus user et group |
-| Allow User/Group Creation | `aclBackofficeUserCreate` | Permet de créer des groupes et utilisateurs dans chaque sous-menu |
-| Allow User/Group Deletion | `aclBackofficeUserDelete` | Permet de les supprimer dans les mêmes sous-menus |
-| Allow Lab Provider Creation | `aclBackofficeLabProviderCreate` | Permet de créer un fournisseur (fonctionnalité non encore disponible) |
-| Allow Mailing List View | `aclBackofficeMailinglistView` | Permet de voir le sous-menu "mailing list management" |
-| Allow Mailing List Creation | `aclBackofficeMailinglistCreate` | Permet de créer ou non une mailing list |
-| Allow Ldap User list View | `aclBackofficeUserLdapSync` | Permet de voir la liste des utilisateurs connectés via l'active directory |
-| Manual Tasks Template Creation | `aclBackofficeManualTasksCreate` | Sous-menu + droit de création des templates de tâches manuelles |
-| Manual Tasks Template Deletion | `aclBackofficeManualTasksDelete` | Sous-menu + droit de suppression des templates de tâches manuelles |
-| Audit Logs Admin Access | `aclBackofficeAuditLogsView` | Ajoute un sous-menu dans le back office pour voir le log des actions utilisateur |
-| Transfers Dashboard Access | `aclBackofficeTransferListView` | Permet d'accéder à la page File Transfers (dans le menu Admin Backoffice) |
-| Allow Back office Access | `aclSectionBackofficeAccess` | Pour les administrateurs de site. Accès au menu Back office |
-| Allow Workflow Admin operations | `aclBackofficeWorkflowAdmin` | Permet les modifications de commandes, annulation, retry order/ingest, définir le niveau de priorité, et autres modifications admin |
-| Allow Delivery Product View | `aclBackofficeDeliveryProductView` | Permet de voir les produits de livraison |
-| Allow Delivery Product Update | `aclBackofficeDeliveryProductUpdate` | Permet de modifier les produits de livraison |
-| Allow Quotas View | `aclBackofficeQuotasView` | Permet de voir les quotas dans le backoffice |
-| Allow YouTube Channel Management | `aclBackofficeYoutubeChannel` | Permet de gérer les chaînes YouTube |
+
+## Backoffice Admin Features
+
+
+| Nom                                      | Tag                                  | Description                                                                      |
+| ---------------------------------------- | ------------------------------------ | -------------------------------------------------------------------------------- |
+| Backoffice Admin Features                | `aclBackofficeUserListView`          | Permet de voir les sous-menus user et group                                      |
+| Allows User/Group Creation               | `aclBackofficeUserCreate`            | Permet de créer des groupes et utilisateurs dans chaque sous-menu                |
+| Allows User/Group Deletion               | `aclBackofficeUserDelete`            | Permet de les supprimer dans les mêmes sous-menus                                |
+| Allows Lab Provider Creation / Deletion  | `aclBackofficeLabProviderCreate`     | Permet de créer/supprimer un fournisseur                                         |
+| Allows Mailing List View                 | `aclBackofficeMailinglistView`       | Permet de voir le sous-menu "mailing list management"                            |
+| Allows Mailing List Creation             | `aclBackofficeMailinglistCreate`     | Permet de créer une mailing list                                                 |
+| Allows Ldap User list View               | `aclBackofficeUserLdapSync`          | Permet de voir la liste des utilisateurs connectés via l'active directory        |
+| Manual Tasks Template Creation           | `aclBackofficeManualTasksCreate`     | Sous-menu + droit de création des templates de tâches manuelles                  |
+| Manual Tasks Template Deletion           | `aclBackofficeManualTasksDelete`     | Sous-menu + droit de suppression des templates de tâches manuelles               |
+| Audit Logs Admin Access                  | `aclBackofficeAuditLogsView`         | Ajoute un sous-menu dans le back office pour voir le log des actions utilisateur |
+| Transfers Drashboard Access              | `aclBackofficeTransferListView`      | Permet d'accéder à la page File Transfers (dans le menu Admin Backoffice)        |
+| Allows product update                    | `aclBackofficeDeliveryProductUpdate` | Permet de modifier les produits de livraison                                     |
+| Allows quotas management view interface  | `aclBackofficeQuotasView`            | Permet de voir l'interface de gestion des quotas                                 |
+| Allows product management view interface | `aclBackofficeDeliveryProductView`   | Permet de voir l'interface de gestion des produits                               |
+| Allows group role management             | `aclGroupRoleManage`                 | Permet de gérer les rôles des groupes                                            |
+| Allows youtube channels management       | `aclBackofficeYoutubeChannel`        | Permet de gérer les chaînes YouTube                                              |
+
 
 ## Workflow Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Workflow View | `aclWorkflowView` | Permet de voir les workflows |
-| Allow Purge Workflow List View | `aclWorkflowPurgeView` | Permet d'accéder à la page Purge Requests Manager |
-| Allow Purge Workflow Creation (Media File Purge) | `aclWorkflowPurgeCreate` | Permet de demander une purge. Les assets peuvent avoir les statuts: "accepted", "need check or editing", "rejected" |
-| Allow Purge Workflow Creation on Accepted Asset status | `aclWorkflowPurgeCreateWithAcceptedAssetStatus` | Permet de demander une purge uniquement sur les assets acceptés |
-| Allow Qualify Request | `aclWorkflowQualifyCreate` | Permet à l'utilisateur de commander une nouvelle qualification d'un asset (uniquement fichier MEZZ) depuis airlab |
-| Allow QC/Qualify View | `aclWorkflowQualifyView` | Permet de voir le sous-menu "QC and qualify Requests" sous asset management |
-| Allow Workflow Assign Followers | `aclWorkflowAssignFollowers` | Permet d'assigner des followers aux workflows |
+
+| Nom                                                                        | Tag                                             | Description                                                                                                                         |
+| -------------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Allows to see Workflow operations                                          | `aclWorkflowView`                               | Permet de voir les opérations de workflow                                                                                           |
+| Allows Workflow Admin operations (priority, cancel, retry etc.)            | `aclBackofficeWorkflowAdmin`                    | Permet les modifications de commandes, annulation, retry order/ingest, définir le niveau de priorité, et autres modifications admin |
+| Allows Purge Workflow List View                                            | `aclWorkflowPurgeView`                          | Permet d'accéder à la page Purge Requests Manager                                                                                   |
+| Allows Purge Workflow Creation (Media File Purge)                          | `aclWorkflowPurgeCreate`                        | Permet de demander une purge. Les assets peuvent avoir les statuts: "accepted", "need check or editing", "rejected"                 |
+| Allows Purge Workflow Creation (Media File Purge) on Accepted Asset status | `aclWorkflowPurgeCreateWithAcceptedAssetStatus` | Permet de demander une purge uniquement sur les assets acceptés                                                                     |
+| Allows Workflow User Tasks List View                                       | `aclUserTaskView`                               | Permet de voir la liste des tâches utilisateur du workflow                                                                          |
+| Allows Workflow User Tasks Update and Claim                                | `aclUserTaskUpdate`                             | Permet de mettre à jour et réclamer les tâches utilisateur du workflow                                                              |
+| Allows Assign Followers                                                    | `aclWorkflowAssignFollowers`                    | Permet d'assigner des followers aux workflows                                                                                       |
+
 
 ## Order Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Play/Start Order | `aclOrderStart` | Démarre manuellement un workflow de commande |
-| Allow Auto-Play Order without Approval | `aclOrderPlayWithoutApproval` | Permet de passer des commandes qui démarrent automatiquement sans confirmation d'un autre utilisateur |
-| Allow Cancel Order | `aclOrderCancel` | Permet de supprimer une commande depuis le Purchased Monitor |
-| Allow Generated Asset Ingest | `aclOrderIngestGenerated` | Permet d'ingérer un fichier généré par VDM-Digital Factory. Les métadonnées "generated" seront ajoutées automatiquement |
-| Allow Assign Cost Benefit center | `aclOrderAssignBenefitCostLinkCreate` | Permet de lier une commande à un centre de coût/bénéfice préconfiguré |
-| Allow Order Update | `aclOrderUpdate` | Permet de modifier la commande dans le purchased monitor |
-| Allow Item Issue Management | `aclOrderManageItemIssues` | Permet d'ajouter un commentaire concernant un problème sur les commandes livrées |
-| Allow Assign Follower | `aclOrderAssignFollowers` | Permet d'assigner un utilisateur supplémentaire pour suivre une commande ou un ingest |
-| Allow Assign Priority | `aclOrderAssignPriority` | Paramètres de priorité pour les commandes dans purchased monitor |
-| Allow to access to Manual Tasks Templates | `aclOrderManualTaskView` | Permet d'accéder à la page Manual Tasks Template |
-| Allow to override Prices on Check-out | `aclOrderOverrideItemPrice` | Permet de définir le prix souhaité sur la facture de n'importe quelle commande |
-| Allow to override Customers on Check-out | `aclOrderOverrideItemCustomer` | Permet de modifier le client sur une commande passée depuis un contrat spécifique |
-| Allow to see Order option due date | `aclOrderDueDate` | Permet de voir et définir une date d'échéance |
-| Allow to see Order option major delivery | `aclOrderIsImportant` | Permet de voir et cocher la case (état par défaut: false) |
-| Show "enable audio only format" button | `aclOrderAudioOnly` | Affiche le bouton "enable audio only format" dans les options transcodegeneric |
-| Show Watermarking tab | `aclOrderWatermarcking` | Affiche l'onglet Watermarking dans les options transcodegeneric |
-| Allow Order Approve | `aclOrderApprove` | Permet l'approbation des commandes |
-| Allow Order Manual Task | `aclOrderManualTask` | Permet d'utiliser le produit Manual Task dans les commandes |
-| Allow Order Warnings | `aclOrderWarnings` | Permet de voir les avertissements des commandes |
-| Allow Order Contract Auto Select | `aclOrderContractAutoSelect` | Permet la sélection automatique du contrat |
-| Allow Order Ingest Link View | `aclOrderIngestLinkView` | Permet de voir le lien vers l'ingest dans les commandes |
-| Allow Order Mask Non Available | `aclOrderMaskNonAvailable` | Permet de masquer les éléments non disponibles |
-| Allow Order Attach File | `aclOrderAttachFile` | Permet d'attacher des fichiers aux commandes |
-| Allow Order Enable Product Transcode As Mezz | `aclOrderEnableProductTranscodeAsMezz` | Permet d'activer le transcodage produit comme Mezz |
-| Allow Order Schedule | `aclOrderSchedule` | Permet de planifier les commandes |
-| Allow Order Resend Transfer Email | `aclOrderResendTransferEmail` | Permet de renvoyer l'email de transfert |
-| Allow Send Ack Billing Manually | `aclorderSendAckBillingManually` | Permet d'envoyer manuellement l'accusé de facturation |
 
-## Order Price Rules
+| Nom                                                              | Tag                                      | Description                                                                                                             |
+| ---------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Allows Play/Start Order                                          | `aclOrderStart`                          | Démarre manuellement un workflow de commande                                                                            |
+| Allows Auto-Play Order without Approval                          | `aclOrderPlayWithoutApproval`            | Permet de passer des commandes qui démarrent automatiquement sans confirmation d'un autre utilisateur                   |
+| Allows Cancel Order                                              | `aclOrderCancel`                         | Permet de supprimer une commande depuis le Purchased Monitor                                                            |
+| Allows Generated Asset Ingest                                    | `aclOrderIngestGenerated`                | Permet d'ingérer un fichier généré par VDM-Digital Factory. Les métadonnées "generated" seront ajoutées automatiquement |
+| Show "enable audio only format" button                           | `aclOrderAudioOnly`                      | Affiche le bouton "enable audio only format" dans les options transcodegeneric                                          |
+| Show Watermarking tab                                            | `aclOrderWatermarcking`                  | Affiche l'onglet Watermarking dans les options transcodegeneric                                                         |
+| Allows Assign Cost Benefit center                                | `aclOrderAssignBenefitCostLinkCreate`    | Permet de lier une commande à un centre de coût/bénéfice préconfiguré                                                   |
+| Allows Order Update                                              | `aclOrderUpdate`                         | Permet de modifier la commande dans le purchased monitor                                                                |
+| Allows Item Issue Management                                     | `aclOrderManageItemIssues`               | Permet d'ajouter un commentaire concernant un problème sur les commandes livrées                                        |
+| Allows Assign Followers                                          | `aclOrderAssignFollowers`                | Permet d'assigner un utilisateur supplémentaire pour suivre une commande ou un ingest                                   |
+| Allows Assign Priority                                           | `aclOrderAssignPriority`                 | Paramètres de priorité pour les commandes dans purchased monitor                                                        |
+| Allows to access to Manual Tasks Templates                       | `aclOrderManualTaskView`                 | Permet d'accéder à la page Manual Tasks Template                                                                        |
+| Allows to override Prices on Check-out                           | `aclOrderOverrideItemPrice`              | Permet de définir le prix souhaité sur la facture de n'importe quelle commande                                          |
+| Allows to override Customers on Check-out                        | `aclOrderOverrideItemCustomer`           | Permet de modifier le client sur une commande passée depuis un contrat spécifique                                       |
+| Allows to see Order option due date                              | `aclOrderDueDate`                        | Permet de voir et définir une date d'échéance                                                                           |
+| Allows to see Order option major delivery                        | `aclOrderIsImportant`                    | Permet de voir et cocher la case de livraison importante (état par défaut: false)                                       |
+| Allows to send Billing Acknowledge manually                      | `aclorderSendAckBillingManually`         | Permet d'envoyer manuellement l'accusé de facturation                                                                   |
+| Allows to attach files to the items.                             | `aclOrderAttachFile`                     | Permet d'attacher des fichiers aux éléments de commande                                                                 |
+| Allows to see button who mask non available field                | `aclOrderMaskNonAvailable`               | Permet de voir le bouton qui masque les champs non disponibles                                                          |
+| Allows Product enable "Transcode as Mezzanine"                   | `aclOrderEnableProductTranscodeAsMezz`   | Permet d'activer le transcodage produit comme Mezzanine                                                                 |
+| Allows order approval                                            | `aclOrderApprove`                        | Permet l'approbation des commandes                                                                                      |
+| Restrict all Orders access to only followers (CAUTION)           | `aclOrderRestrictToFollower`             | Restreint l'accès à toutes les commandes aux seuls followers (ATTENTION)                                                |
+| Allows to order a Manual Task                                    | `aclOrderManualTask`                     | Permet de commander une tâche manuelle                                                                                  |
+| Allows to see the warnings on an order item product              | `aclOrderWarnings`                       | Permet de voir les avertissements sur un produit d'élément de commande                                                  |
+| Auto select contract on Checkout?                                | `aclOrderContractAutoSelect`             | Sélection automatique du contrat au checkout                                                                            |
+| Allows to see Link between Orders and Ingest                     | `aclOrderIngestLinkView`                 | Permet de voir le lien entre les commandes et l'ingest                                                                  |
+| Allows to see segment cut on a transcode as service or PAD order | `aclSegmentCutView`                      | Permet de voir la coupe de segment sur une commande transcode as service ou PAD                                         |
+| Allows to change status on manual orders treated externally      | `aclOrderManualTaskExternalChangeStatus` | Permet de changer le statut sur les commandes manuelles traitées en externe                                             |
+| Allows to access quotes dashboard?                               | `aclOrderQuoteView`                      | Permet d'accéder au dashboard des devis                                                                                 |
+| Allows to request a manual work quote?                           | `aclOrderQuoteRequest`                   | Permet de demander un devis de travail manuel                                                                           |
+| Allows to validate quote?                                        | `aclOrderQuoteValidate`                  | Permet de valider un devis                                                                                              |
+| Allows to schedule orders                                        | `aclOrderSchedule`                       | Permet de planifier les commandes                                                                                       |
+| Allows to resend transfer download link emails                   | `aclOrderResendTransferEmail`            | Permet de renvoyer les emails de lien de téléchargement de transfert                                                    |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Order Price Rule View | `aclOrderPriceRuleView` | Permet de voir les règles de prix des commandes |
-| Allow Order Price Rule Create | `aclOrderPriceRuleCreate` | Permet de créer/éditer les règles de prix des commandes |
-| Allow Order Price Rule Delete | `aclOrderPriceRuleDelete` | Permet de supprimer les règles de prix des commandes |
-| Allow Order Price Rule Match Enable | `aclOrderPriceRuleMatchEnable` | Permet d'activer le matching des règles de prix |
-
-## Order Quotes
-
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Order Quote View | `aclOrderQuoteView` | Permet de voir les devis |
-| Allow Order Quote Request | `aclOrderQuoteRequest` | Permet de demander un devis |
-| Allow Order Quote Validate | `aclOrderQuoteValidate` | Permet de valider un devis |
 
 ## Asset Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow to see Tools View | `aclAssetToolsView` | Permet de voir le raccourci vers le panier sur le côté gauche de la page asset |
-| Allow to see Quick View | `aclAssetQuickView` | Permet de voir la vue rapide de l'asset |
-| Allow Asset Delete | `aclAssetDelete` | Permet de supprimer un asset |
-| Allow Asset PDF Export | `aclAssetPdfExport` | Permet d'exporter un asset en PDF |
-| Allow Asset Bundlemaker | `aclAssetBundlemaker` | Permet d'utiliser le bundlemaker |
-| Allow Asset Hide Empty Objects | `aclAssetHideEmptyObjects` | Permet de masquer les objets vides |
-| Allow Asset Restrict To Follower | `aclAssetRestrictToFollower` | Permet de restreindre l'asset aux followers |
-| Allow Disable Asset Access | `aclDisableAssetAccess` | Permet de désactiver l'accès à l'asset |
-| Allow Lock Asset Object Access | `aclLockAssetObjectAccess` | Permet de verrouiller l'accès à l'objet asset |
 
-## Main & Global Features
+| Nom                                                                                        | Tag                                          | Description                                                                                          |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Allows to see Quick View                                                                   | `aclAssetQuickView`                          | Permet de voir la vue rapide de l'asset                                                              |
+| Allows to see Tools View                                                                   | `aclAssetToolsView`                          | Permet de voir le raccourci vers le panier sur le côté gauche de la page asset                       |
+| Allows to delete an Object Asset                                                           | `aclAssetDelete`                             | Permet de supprimer un objet asset                                                                   |
+| Allows to Download Asset PDF Export                                                        | `aclAssetPdfExport`                          | Permet de télécharger l'export PDF d'un asset                                                        |
+| Allows to see Deleted Assets                                                               | `aclMetadataAssetViewDeleted`                | Permet de voir les assets supprimés                                                                  |
+| Allows to see Deleted Contents                                                             | `aclMetadataContentViewDeleted`              | Permet de voir les contenus supprimés                                                                |
+| Allows to see Deleted Titles                                                               | `aclMetadataTitleViewDeleted`                | Permet de voir les titres supprimés                                                                  |
+| Allows to switch Class to Raw                                                              | `aclSwitchClassToRaw`                        | Permet de changer la classe en RAW                                                                   |
+| Allows to switch Class to Mezz                                                             | `aclSwitchClassToMezz`                       | Permet de changer la classe en MEZZ                                                                  |
+| Restrict all Asset access to only followers (CAUTION)                                      | `aclAssetRestrictToFollower`                 | Restreint l'accès à tous les assets aux seuls followers (ATTENTION)                                  |
+| Hide empty Objects (no childrens, such as empty Content)                                   | `aclAssetHideEmptyObjects`                   | Masque les objets vides (sans enfants, comme les contenus vides)                                     |
+| Allows to see the column bypassed in assets relationships and the metadata in asset's page | `aclBypassedAsset`                           | Permet de voir la colonne bypassed dans les relations d'assets et les métadonnées dans la page asset |
+| Allows to hide the asset card's page and button                                            | `aclDisableAssetAccess`                      | Permet de masquer la page et le bouton de carte asset                                                |
+| Show recent Titles in Search Engine home page                                              | `aclSearchShowRecentTitles`                  | Affiche les titres récents sur la page d'accueil du moteur de recherche                              |
+| Allows object copy overriding ingest template                                              | `aclCopyObjectOverridingPlaceholderTemplate` | Permet de copier un objet en overridant le template d'ingest                                         |
+| Lock all objects and search access                                                         | `aclLockAssetObjectAccess`                   | Verrouille tous les objets et l'accès à la recherche                                                 |
+| Allow BundleMaker editor access (under licence)                                            | `aclAssetBundlemaker`                        | Permet l'accès à l'éditeur BundleMaker (sous licence)                                                |
+| Allow change asset status (under licence)                                                  | `aclObjectChangeStatus`                      | Permet de changer le statut d'un asset (sous licence)                                                |
+| Allow quotas management view on asset                                                      | `aclQuotaObjectView`                         | Permet de voir la gestion des quotas sur l'asset                                                     |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Lock Everything | `aclLockEverything` | Verrouille tout |
-| Admin | `aclAdmin` | Droits administrateur |
-| Super User | `aclSuperUser` | Super utilisateur |
-| Allow Search Engine | `aclSectionSearchAccess` | Pour tous les utilisateurs de la plateforme. Accès au menu de recherche d'assets |
-| Allow Orders | `aclSectionOrderAccess` | Uniquement pour ceux qui passent des commandes. Accès au menu Orders |
-| Allow Reporting querying | `aclSectionReportingAccess` | Permet d'extraire des rapports depuis la plateforme via le menu "reports" |
-| Allow Project Manager use | `aclSectionProjectManager` | Permet d'accéder au sous-menu de gestion des assets |
-| Allow Clip creation | `aclClipCreate` | Permet de créer des clips depuis l'onglet proxy de la carte asset de n'importe quel asset vidéo MEZZ & RAW, et de les commander pour transcodage et livraison |
-| Allow Clip deletion | `aclClipDelete` | Permet de supprimer les clips créés précédemment |
-| Allow Screenshot frame | `aclScreenshotFrame` | Permet de créer des captures d'écran depuis le proxy asset de n'importe quel asset vidéo MEZZ & RAW |
-| Allow Screenshot frame Hires | `aclScreenshotFrameHires` | Permet de créer des captures d'écran en haute résolution |
-| Allow to enable Watermark on Player | `aclPlayerWatermarkLogin` | Permet d'activer le watermark sur le Player |
-| Allow View Stats | `aclViewStats` | Permet de voir les statistiques |
-| Allow Search Advanced Enable | `aclSearchAdvancedEnable` | Permet d'activer la recherche avancée |
-| Allow Search Show Recent Titles | `aclSearchShowRecentTitles` | Permet d'afficher les titres récents dans la recherche |
-| Allow Documents Access | `aclDocumentsAccess` | Permet d'accéder aux documents |
-| Allow External Links View | `aclExternalLinksView` | Permet de voir les liens externes |
-| Allow Timetool | `aclTimetool` | Permet d'utiliser l'outil de temps |
-| Allow Login Emulate | `aclLoginEmulate` | Permet d'émuler la connexion d'un autre utilisateur |
-| Allow Bypass Permissions | `aclBypassPermissions` | Permet de bypass les permissions |
-| Allow Segment Cut View | `aclSegmentCutView` | Permet de voir les coupes de segments |
+
+## Main & global Features
+
+
+| Nom                                                        | Tag                            | Description                                                               |
+| ---------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------- |
+| Flag this group as Administrator? Useful for notifications | `aclAdmin`                     | Marque ce groupe comme administrateur (utile pour les notifications)      |
+| Allows Backoffice Access                                   | `aclSectionBackofficeAccess`   | Permet l'accès au menu Back office                                        |
+| Allows Search Engine                                       | `aclSectionSearchAccess`       | Permet l'accès au moteur de recherche d'assets                            |
+| Allows Search Advanced Engine                              | `aclSearchAdvancedEnable`      | Permet l'accès au moteur de recherche avancée                             |
+| Allows Orders                                              | `aclSectionOrderAccess`        | Permet l'accès au menu Orders                                             |
+| Allows Reporting querying                                  | `aclSectionReportingAccess`    | Permet d'extraire des rapports depuis la plateforme via le menu "reports" |
+| Allows Project Manager use                                 | `aclSectionProjectManager`     | Permet d'accéder au sous-menu de gestion des assets                       |
+| Allows Clip creation                                       | `aclClipCreate`                | Permet de créer des clips depuis l'onglet proxy de la carte asset         |
+| Allows Clip deletion                                       | `aclClipDelete`                | Permet de supprimer les clips créés précédemment                          |
+| Allows Group Asset creation                                | `aclGroupCreate`               | Permet de créer des groupes d'assets                                      |
+| Allows Screenshot frame from Proxy (low-res)               | `aclScreenshotFrame`           | Permet de créer des captures d'écran depuis le proxy (basse résolution)   |
+| Allows Screenshot frame from Hi-Res                        | `aclScreenshotFrameHires`      | Permet de créer des captures d'écran en haute résolution                  |
+| Allows to enable Watermark on player                       | `aclPlayerWatermarkLogin`      | Permet d'activer le watermark sur le Player                               |
+| Allows Statistics Home Page viewer                         | `aclViewStats`                 | Permet de voir la page d'accueil des statistiques                         |
+| Allows login emulation (CAUTION WITH THIS)                 | `aclLoginEmulate`              | Permet d'émuler la connexion d'un autre utilisateur (ATTENTION)           |
+| Allows Download Platform documents                         | `aclPlatformDocumentsDownload` | Permet de télécharger les documents de la plateforme                      |
+| Allows Job Rules Apply                                     | `aclJobRuleApply`              | Permet d'appliquer les règles de job                                      |
+| Documents access and download                              | `aclDocumentsAccess`           | Permet d'accéder et télécharger les documents                             |
+| Allow file transfer set expire now                         | `aclTransferExpire`            | Permet de faire expirer immédiatement un transfert de fichier             |
+| Allow file transfer update                                 | `aclTransferUpdate`            | Permet de mettre à jour les transferts de fichiers                        |
+| Allow use activity to post comments                        | `aclActivityAdd`               | Permet d'utiliser l'activité pour poster des commentaires                 |
+| CAUTION: Lock everything on platform                       | `aclLockEverything`            | Verrouille tout sur la plateforme (ATTENTION)                             |
+| Allow clear thumbnail cache                                | `aclThumbnailClearCache`       | Permet de vider le cache des miniatures                                   |
+| Allow set reference thumbnail                              | `aclThumbnailSetRef`           | Permet de définir la miniature de référence                               |
+| CAUTION: Allows bypass permissions                         | `aclBypassPermissions`         | Permet de bypass les permissions (ATTENTION)                              |
+
 
 ## Rights Management Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Rights View | `aclRightsView` | Permet aux membres du groupe de voir le menu "rights management" |
 
-## Shares & Screenings Features
+| Nom                      | Tag                   | Description                                                      |
+| ------------------------ | --------------------- | ---------------------------------------------------------------- |
+| Allows Rights View       | `aclRightsView`       | Permet aux membres du groupe de voir le menu "rights management" |
+| Allows Rights management | `aclRightsManagement` | Permet la gestion des droits                                     |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Shares View (Admin page) | `aclShareView` | Permet de voir la vue "shares and screening" |
-| Allow Shares Create | `aclShareCreate` | Permet de créer un lien de partage (depuis la vue recherche au niveau oeuvre ou asset) |
-| Allow Shares Delete | `aclShareDelete` | Dans le sous-menu "shares and screening", permet de voir et utiliser le bouton supprimer |
-| Allow Shares Update | `aclShareUpdate` | Permet de mettre à jour (nombre de vues et durée du partage) |
-| Allow Fast mode Share (without burns) | `aclFastModeShare` | Dans la vue recherche, lors de la création d'un partage, permet de voir et sélectionner "fast mode" sous le menu déroulant sécurité |
-| Allow to delete the share clips | `aclShareClipDelete` | Permet de supprimer les clips de la liste des clips demandés par l'utilisateur sur une page Media Share |
-| Allow to import the selected share clips | `aclShareClipImport` | Permet d'ajouter les clips demandés par l'utilisateur sur une page Media Share à votre panier pour transcodage et livraison |
+
+## Share & Screening Features
+
+
+| Nom                                       | Tag                  | Description                                                        |
+| ----------------------------------------- | -------------------- | ------------------------------------------------------------------ |
+| Allows Shares View (Admin page)           | `aclShareView`       | Permet de voir la vue "shares and screening"                       |
+| Allows Shares Create                      | `aclShareCreate`     | Permet de créer un lien de partage                                 |
+| Allows Shares Delete                      | `aclShareDelete`     | Permet de supprimer un partage                                     |
+| Allows Shares Update                      | `aclShareUpdate`     | Permet de mettre à jour un partage (nombre de vues et durée)       |
+| Allows Fast mode Share (without burns)    | `aclFastModeShare`   | Permet de créer un partage en mode rapide (sans burns)             |
+| Allows to delete the share clips          | `aclShareClipDelete` | Permet de supprimer les clips de partage                           |
+| Allows to import the selected share clips | `aclShareClipImport` | Permet d'importer les clips de partage sélectionnés dans le panier |
+
 
 ## Title Management Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Create new Title in Catalog | `aclTitleCreate` | Permet de créer un nouveau titre à partir de zéro |
-| Allow Title Update | `aclTitleUpdate` | Permet de mettre à jour un titre |
-| Allow Title Confidentiality Set | `aclTitleConfidentialitySet` | Permet de définir la confidentialité d'un titre |
-| Allow Title Confidentiality Play | `aclTitleConfidentialityPlay` | Permet de lire les titres confidentiels |
-| Allow Title Confidentiality Ingest Request Creation | `aclTitleConfidentialityIngestRequestCreation` | Permet de créer des requêtes d'ingest pour les titres confidentiels |
-| Allow Title Confidentiality Orders | `aclTitleConfidentialityOrders` | Permet de commander sur les titres confidentiels |
-| Allow Title Confidentiality Shares | `aclTitleConfidentialityShares` | Permet de partager les titres confidentiels |
-| Allow Title Restricted Infos View | `aclTitleRestrictedInfosView` | Permet de voir les informations restreintes des titres |
-| Allow Title Override Poster | `aclTitleOverridePoster` | Permet de remplacer le poster du titre |
-| Allow Title Override Cover | `aclTitleOverrideCover` | Permet de remplacer la couverture du titre |
-| Allow Connect Link Title | `aclConnectLinkTitle` | Permet de lier un titre via Connect |
-| Allow Connect Import Title | `aclConnectImportTitle` | Permet d'importer un titre via Connect |
-| Allow Sync Title From Spock | `aclSyncTitleFromSpock` | Permet de synchroniser un titre depuis Spock |
+
+| Nom                                            | Tag                          | Description                                                     |
+| ---------------------------------------------- | ---------------------------- | --------------------------------------------------------------- |
+| Allows to create new Title in Catalog glossary | `aclTitleCreate`             | Permet de créer un nouveau titre dans le glossaire du catalogue |
+| Allows to update a Title in Catalog glossary   | `aclTitleUpdate`             | Permet de mettre à jour un titre dans le glossaire du catalogue |
+| Allows to change a bundle Title status         | `aclBundleTitleStatusChange` | Permet de changer le statut d'un titre de bundle                |
+| Allows to see Bundle Dashboard page            | `aclBundleDashboardView`     | Permet de voir la page dashboard des bundles                    |
+| Restrict access to bundle only                 | `aclRestrictViewBundleOnly`  | Restreint l'accès aux bundles uniquement                        |
+
 
 ## Metadata Management Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Metadata Update (Asset fields set) | `aclMetadataUpdate` | Permet de modifier les métadonnées au niveau asset (depuis la vue carte asset) |
-| Allow Metadata Update (Asset fields set on Accepted Status) | `aclMetadataUpdateWithAcceptedAssetStatus` | Permet de modifier les métadonnées au niveau asset, mais uniquement sur les assets acceptés |
-| Allow Metadata Update (Content fields set) | `aclMetadataContentUpdate` | Permet de modifier les métadonnées au niveau content (depuis la page content) |
-| Allow Metadata Update (Œuvre fields set) | `aclMetadataTitleUpdate` | Permet de modifier les métadonnées au niveau Title (page œuvre) |
-| Allow Metadata Delete (Œuvre fields set) | `aclMetadataTitleDelete` | Permet de supprimer un Title, seulement s'il est vide (aucun fichier média lié au placeholder) |
-| Allow Asset Enable/Disable | `aclMetadataAssetDisable` | Permet de désactiver un asset. Il reste présent dans le MAM mais ne peut pas être ajouté à un panier |
-| Allow to see the metadata deleted assets | `aclMetadataAssetViewDeleted` | Permet de voir les requêtes ou assets supprimés. Ils apparaissent avec un statut "DELETED" |
-| Allow to move Asset to another Content (of same Title) | `aclMetadataMoveLinkContentUpdate` | Permet de déplacer un asset d'un content à un autre au sein du même titre. Si c'est un asset MEZZ, il retourne automatiquement au statut "TO BE QCED" |
-| Allow to move Asset to another Title | `aclMetadataMoveLinkTitleUpdate` | Permet de déplacer un asset d'un titre à un autre. Si c'est un asset MEZZ, il retourne automatiquement au statut "TO BE QCED" |
-| Allow Metadata Export | `aclMetadataExport` | Permet d'exporter les métadonnées |
-| Allow Metadata Content View Deleted | `aclMetadataContentViewDeleted` | Permet de voir les contenus supprimés |
-| Allow Delete Metadata Content Assets Deleted | `aclDeleteMetadataContentAssetsDeleted` | Permet de supprimer les assets de contenu marqués comme supprimés |
-| Allow Metadata Title View Deleted | `aclMetadataTitleViewDeleted` | Permet de voir les titres supprimés |
-| Allow Metadata Audio Tracks Update | `aclMetadataAudioTracksUpdate` | Permet de modifier les pistes audio |
-| Allow Metadata Field Populate | `aclMetadataFieldPopulate` | Permet de peupler les champs de métadonnées |
-| Allow Import Metadata Bulk | `aclImportMetadataBulk` | Permet l'import en masse de métadonnées |
+
+| Nom                                                               | Tag                                        | Description                                                                                 |
+| ----------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| Allows Metadata Update (Asset fields set)                         | `aclMetadataUpdate`                        | Permet de modifier les métadonnées au niveau asset                                          |
+| Allows Metadata Update (Audio tracks table for class Raw)         | `aclMetadataAudioTracksUpdate`             | Permet de modifier le tableau des pistes audio pour la classe Raw                           |
+| Allows Metadata Update (Asset fields set on Accepted Status)      | `aclMetadataUpdateWithAcceptedAssetStatus` | Permet de modifier les métadonnées au niveau asset, mais uniquement sur les assets acceptés |
+| Allows Metadata Update (Content fields set)                       | `aclMetadataContentUpdate`                 | Permet de modifier les métadonnées au niveau content                                        |
+| Allows Metadata Update (Title fields set)                         | `aclMetadataTitleUpdate`                   | Permet de modifier les métadonnées au niveau Title                                          |
+| Allows Metadata Delete (Title fields set)                         | `aclMetadataTitleDelete`                   | Permet de supprimer un Title (seulement s'il est vide)                                      |
+| Allows Asset Enable/Disable                                       | `aclMetadataAssetDisable`                  | Permet d'activer/désactiver un asset                                                        |
+| Allows to move Asset to another Content (of same Title)           | `aclMetadataMoveLinkContentUpdate`         | Permet de déplacer un asset vers un autre content (du même titre)                           |
+| Allows to move Asset to another Title                             | `aclMetadataMoveLinkTitleUpdate`           | Permet de déplacer un asset vers un autre titre                                             |
+| Allows Metadata Export                                            | `aclMetadataExport`                        | Permet d'exporter les métadonnées                                                           |
+| Allows to force the deletion of contents with only deleted assets | `aclDeleteMetadataContentAssetsDeleted`    | Permet de forcer la suppression des contenus avec uniquement des assets supprimés           |
+| Allows to add new values in metadata field options list           | `aclMetadataFieldPopulate`                 | Permet d'ajouter de nouvelles valeurs dans la liste d'options des champs de métadonnées     |
+| Allows to update assets metadata bulk                             | `aclImportMetadataBulk`                    | Permet la mise à jour en masse des métadonnées d'assets                                     |
+
+
+## Markers Features
+
+
+| Nom                             | Tag                       | Description                                     |
+| ------------------------------- | ------------------------- | ----------------------------------------------- |
+| Allows Insert or Update Markers | `aclMarkerCreateOrUpdate` | Permet d'insérer ou mettre à jour des marqueurs |
+| Allows Delete Markers           | `aclMarkerDelete`         | Permet de supprimer des marqueurs               |
+
 
 ## Customer Management Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Customers Full List Access | `aclCustomersView` | Permet d'accéder à la page 'Customers Management' |
-| Allow Customers Insertion | `aclCustomersCreate` | Permet de créer un client depuis la page 'Customers Management' |
-| Allow Customers Delete | `aclCustomersDelete` | Permet de supprimer un client depuis la page 'Customers Management' |
+
+| Nom                               | Tag                  | Description                                      |
+| --------------------------------- | -------------------- | ------------------------------------------------ |
+| Allows Customers Full List Access | `aclCustomersView`   | Permet d'accéder à la liste complète des clients |
+| Allows Customers Insertion        | `aclCustomersCreate` | Permet de créer un client                        |
+| Allows Customers Delete           | `aclCustomersDelete` | Permet de supprimer un client                    |
+
 
 ## Quality Check Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Full QC Request | `aclOrderQualityCheckCreate` | Permet de commander un QC complet à VDM. Fonctionne uniquement avec les fichiers média MEZZ |
 
-## Media Files (annex) Features
+| Nom                                           | Tag                              | Description                                                             |
+| --------------------------------------------- | -------------------------------- | ----------------------------------------------------------------------- |
+| Allows Full QC Request                        | `aclOrderQualityCheckCreate`     | Permet de commander un QC complet à VDM (fichiers MEZZ uniquement)      |
+| Allows Qualify Request                        | `aclWorkflowQualifyCreate`       | Permet de commander une nouvelle qualification d'un asset depuis airlab |
+| Allows QC/Qualify View                        | `aclWorkflowQualifyView`         | Permet de voir le sous-menu "QC and qualify Requests"                   |
+| Enable Telestream Switch integration playback | `aclPlayTelestreamSwitch`        | Active l'intégration de lecture Telestream Switch                       |
+| Allows Bypass or ask fix issue (marker)       | `aclMarkerBypassOrAskToFixIssue` | Permet de bypass ou demander de corriger un problème (marqueur)         |
+| Allows change issue (marker) status to fixed  | `aclMarkerFixIssue`              | Permet de changer le statut d'un problème (marqueur) à corrigé          |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Upload annex Media Files | `aclMediaFileUpload` | Permet d'uploader un fichier annexe visible en scrollant sur la page d'une carte asset |
-| Allow Download (direct link) Media Files | `aclMediaFileDownload` | Permet de télécharger ces fichiers annexes |
-| Allow Delete Media Files | `aclMediaFileDelete` | Permet de supprimer les fichiers média |
-| Allow Download (direct link) Restricted Files | `aclRestrictedFileDownload` | Permet de télécharger les fichiers proxy directement depuis la page de carte asset |
+
+## Media Files Features
+
+
+| Nom                                             | Tag                                 | Description                                                          |
+| ----------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------- |
+| Allows Upload annex Media Files                 | `aclMediaFileUpload`                | Permet d'uploader des fichiers média annexes                         |
+| Allows Download (direct link) Media Files       | `aclMediaFileDownload`              | Permet de télécharger les fichiers média (lien direct)               |
+| Allows Delete Media Files (Annex Files only)    | `aclMediaFileDelete`                | Permet de supprimer les fichiers média (fichiers annexes uniquement) |
+| Allows Download (direct link) Restricted Files  | `aclRestrictedFileDownload`         | Permet de télécharger les fichiers restreints (lien direct)          |
+| Allows Add User Data                            | `aclFileUserDataAdd`                | Permet d'ajouter des données utilisateur                             |
+| Allows Files download through transfer link     | `aclMakeTransferFileDownloadLink`   | Permet de télécharger des fichiers via un lien de transfert          |
+| Allows Files User Data change status to Ready   | `aclFileChangeUserDataStatusReady`  | Permet de changer le statut des données utilisateur à "Ready"        |
+| Restrict uploaded Media Files view to only mine | `aclFileRestrictViewUploadOnlyMine` | Restreint la vue des fichiers média uploadés à uniquement les miens  |
+| Allows to run Subtitle Checker                  | `aclFileSubtitleCheck`              | Permet d'exécuter le vérificateur de sous-titres                     |
+| Allows to override the Poster of a title        | `aclTitleOverridePoster`            | Permet de remplacer le poster d'un titre                             |
+| Allows to override the Cover of a title         | `aclTitleOverrideCover`             | Permet de remplacer la couverture d'un titre                         |
+
 
 ## Audit Logs Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow to see the user action logs | `aclAuditLogsView` | Permet de voir une quatrième fenêtre dans la vue média, près de asset et metadata |
 
-## Dashboard Features
+| Nom                                | Tag                | Description                                   |
+| ---------------------------------- | ------------------ | --------------------------------------------- |
+| Allows to see the user action logs | `aclAuditLogsView` | Permet de voir les logs d'actions utilisateur |
+| Allows to see metrics              | `aclMetricView`    | Permet de voir les métriques                  |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow to see ingest's tab | `aclDashboardTabIngest` | Permet de voir le module ingest sur la page d'accueil |
-| Allow to see orders's tab | `aclDashboardTabOrders` | Permet de voir le module orders sur la page d'accueil |
-| Allow to see titles's tab | `aclDashboardTabTitles` | Permet de voir le module titles sur la page d'accueil |
-| Allow to see notepad's tab | `aclDashboardTabNotepad` | Permet de voir le module notepad sur la page d'accueil |
-| Allow to see Rights Management's tab | `aclDashboardTabRight` | Permet de voir l'onglet Rights Management sur la page d'accueil |
 
 ## ACL Elevation Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow to create ACL elevation requests | `aclElevationWishlistCreate` | Permet à un utilisateur sans droits suffisants de demander le droit de purger, déplacer un asset ou bypass un rejet |
-| Allow to delete ACL elevation requests | `aclElevationWishlistDelete` | Permet (manager) de rejeter et supprimer les demandes d'élévation ACL |
-| Allow to update ACL elevation requests | `aclElevationWishlistUpdate` | Permet (manager) d'accepter une demande d'élévation ACL et définir un délai pour l'utilisateur |
 
-## Marker Features
+| Nom                                     | Tag                          | Description                                          |
+| --------------------------------------- | ---------------------------- | ---------------------------------------------------- |
+| Allows to create ACL elevation requests | `aclElevationWishlistCreate` | Permet de créer des demandes d'élévation ACL         |
+| Allows to delete ACL elevation requests | `aclElevationWishlistDelete` | Permet de supprimer des demandes d'élévation ACL     |
+| Allows to update ACL elevation requests | `aclElevationWishlistUpdate` | Permet de mettre à jour des demandes d'élévation ACL |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Marker Create Or Update | `aclMarkerCreateOrUpdate` | Permet de créer ou modifier des marqueurs |
-| Allow Marker Delete | `aclMarkerDelete` | Permet de supprimer des marqueurs |
-| Allow Marker Bypass Or Ask To Fix Issue | `aclMarkerBypassOrAskToFixIssue` | Permet de bypass ou demander de corriger un problème via marqueur |
-| Allow Marker Fix Issue | `aclMarkerFixIssue` | Permet de marquer un problème comme corrigé |
 
-## Support Ticket Features
+## Dashboard Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Support Ticket View | `aclSupportTicketView` | Permet de voir les tickets support |
-| Allow Support Ticket Create | `aclSupportTicketCreate` | Permet de créer des tickets support |
-| Allow Support Ticket Update | `aclSupportTicketUpdate` | Permet de mettre à jour les tickets support |
-| Allow Support Ticket Comment | `aclSupportTicketComment` | Permet de commenter les tickets support |
-| Allow Support Ticket Delete | `aclSupportTicketDelete` | Permet de supprimer des tickets support |
-| Allow Support Ticket Backlog | `aclSupportTicketBacklog` | Permet de voir le backlog des tickets support |
-| Allow Support Onboarding View | `aclSupportOnboardingView` | Permet de voir l'onboarding support |
 
-## Platform Documents Features
+| Nom                                   | Tag                      | Description                                                |
+| ------------------------------------- | ------------------------ | ---------------------------------------------------------- |
+| Allows to see ingest's tab            | `aclDashboardTabIngest`  | Permet de voir l'onglet ingest sur le dashboard            |
+| Allows to see orders's tab            | `aclDashboardTabOrders`  | Permet de voir l'onglet orders sur le dashboard            |
+| Allows to see titles's tab            | `aclDashboardTabTitles`  | Permet de voir l'onglet titles sur le dashboard            |
+| Allows to see notepad's tab           | `aclDashboardTabNotepad` | Permet de voir l'onglet notepad sur le dashboard           |
+| Allows to see Rights Management's tab | `aclDashboardTabRight`   | Permet de voir l'onglet Rights Management sur le dashboard |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Platform Documents Download | `aclPlatformDocumentsDownload` | Permet de télécharger les documents de la plateforme |
-| Allow Platform Documents Upload And Delete | `aclPlatformDocumentsUploadAndDelete` | Permet d'uploader et supprimer les documents de la plateforme |
 
-## User Task Features
+## Support Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow User Task View | `aclUserTaskView` | Permet de voir les tâches utilisateur (concerne les tâches des workflows) |
-| Allow User Task Update | `aclUserTaskUpdate` | Permet de mettre à jour les tâches utilisateur (concerne les tâches des workflows) |
 
-## Planning User Task Features
+| Nom                                            | Tag                                   | Description                                                   |
+| ---------------------------------------------- | ------------------------------------- | ------------------------------------------------------------- |
+| Allows to see the tickets                      | `aclSupportTicketView`                | Permet de voir les tickets                                    |
+| Allows to create the tickets                   | `aclSupportTicketCreate`              | Permet de créer des tickets                                   |
+| Allows to update the tickets                   | `aclSupportTicketUpdate`              | Permet de mettre à jour les tickets                           |
+| Allows to comment the tickets                  | `aclSupportTicketComment`             | Permet de commenter les tickets                               |
+| Allows to delete the tickets                   | `aclSupportTicketDelete`              | Permet de supprimer des tickets                               |
+| Allows to see the tickets from backlog         | `aclSupportTicketBacklog`             | Permet de voir les tickets du backlog                         |
+| Allows to see the onboarding tickets           | `aclSupportOnboardingView`            | Permet de voir les tickets d'onboarding                       |
+| Allows to upload and delete platform documents | `aclPlatformDocumentsUploadAndDelete` | Permet d'uploader et supprimer les documents de la plateforme |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Planning User Task View | `aclPlanningUserTaskView` | Permet de voir les tâches de planning utilisateur |
-| Allow Planning User Task Update | `aclPlanningUserTaskUpdate` | Permet de mettre à jour les tâches de planning utilisateur |
-| Allow Planning User Task Assign | `aclPlanningUserTaskAssign` | Permet d'assigner les tâches de planning utilisateur |
 
-## File User Data Features
+## Confidentiality Features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow File User Data Add | `aclFileUserDataAdd` | Permet d'ajouter des données utilisateur aux fichiers |
-| Allow File User Data Update | `aclFileUserDataUpdate` | Permet de mettre à jour les données utilisateur des fichiers (non utilisé) |
-| Allow File User Data Delete | `aclFileUserDataDelete` | Permet de supprimer les données utilisateur des fichiers (non utilisé) |
-| Allow File Change User Data Status Ready | `aclFileChangeUserDataStatusReady` | Permet de changer le statut des données utilisateur à "ready" |
-| Allow File Restrict View Upload Only Mine | `aclFileRestrictViewUploadOnlyMine` | Restreint la vue aux fichiers uploadés par l'utilisateur uniquement |
-| Allow File Subtitle Check | `aclFileSubtitleCheck` | Permet de vérifier les sous-titres |
 
-## Switch Class Features
+| Nom                                                                                    | Tag                                            | Description                                                                    |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------ |
+| Allows to activate or not the confidentiality on a Title or force watermark on a Title | `aclTitleConfidentialitySet`                   | Permet d'activer ou non la confidentialité sur un titre ou forcer le watermark |
+| Allows to play a confidential Title                                                    | `aclTitleConfidentialityPlay`                  | Permet de lire un titre confidentiel                                           |
+| Allows to request an asset creation from a confidential Title                          | `aclTitleConfidentialityIngestRequestCreation` | Permet de demander la création d'un asset depuis un titre confidentiel         |
+| Allows to order from a confidential Title                                              | `aclTitleConfidentialityOrders`                | Permet de commander depuis un titre confidentiel                               |
+| Allows to share media from a confidential Title                                        | `aclTitleConfidentialityShares`                | Permet de partager des médias depuis un titre confidentiel                     |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Switch Class To Raw | `aclSwitchClassToRaw` | Permet de changer la classe en RAW |
-| Allow Switch Class To Mezz | `aclSwitchClassToMezz` | Permet de changer la classe en MEZZ |
 
-## Scriber Features
+## External Links
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Scriber Access | `aclScriberAccess` | Permet d'accéder à Scriber |
-| Allow Scribe Project Create | `aclScribeProjectCreate` | Permet de créer des projets Scribe |
 
-## Permission Features
+| Nom                              | Tag                    | Description                       |
+| -------------------------------- | ---------------------- | --------------------------------- |
+| Allows to see the external links | `aclExternalLinksView` | Permet de voir les liens externes |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Permission View | `aclPermissionView` | Permet de voir les permissions |
-| Allow Permission Set | `aclPermissionSet` | Permet de définir les permissions |
-| Allow Permission Delete | `aclPermissionDelete` | Permet de supprimer les permissions |
 
-## Metric Features
+## Planning & User Tasks
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Metric View | `aclMetricView` | Permet de voir les métriques |
 
-## Object Trash Features
+| Nom                                          | Tag                         | Description                                                    |
+| -------------------------------------------- | --------------------------- | -------------------------------------------------------------- |
+| Allows to view Planning User Tasks Dashboard | `aclPlanningUserTaskView`   | Permet de voir le dashboard des tâches utilisateur de planning |
+| Allows to update Planning User Task          | `aclPlanningUserTaskUpdate` | Permet de mettre à jour les tâches utilisateur de planning     |
+| Allows to assign Planning User Task          | `aclPlanningUserTaskAssign` | Permet d'assigner des tâches utilisateur de planning           |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Object Trash Put | `aclObjectTrashPut` | Permet de mettre des objets à la corbeille |
-| Allow Object Trash View | `aclObjectTrashView` | Permet de voir la corbeille |
-| Allow Object Trash Delete | `aclObjectTrashDelete` | Permet de supprimer définitivement de la corbeille |
-| Allow Object Change Status | `aclObjectChangeStatus` | Permet de changer le statut d'un objet |
 
-## Collection Features
+## Scriber Tool (Online Subtitling)
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Collection Storefront Admin | `aclCollectionStorefrontAdmin` | Permet d'administrer le storefront des collections |
-| Allow Manage Storefront | `aclManageStorefront` | Permet de gérer le storefront |
-| Allow Collection Share To Group | `aclCollectionShareToGroup` | Permet de partager une collection avec un groupe |
-| Allow Collection Share To User | `aclCollectionShareToUser` | Permet de partager une collection avec un utilisateur |
 
-## Transfer Features
+| Nom                                 | Tag                      | Description                               |
+| ----------------------------------- | ------------------------ | ----------------------------------------- |
+| Allows to access to Scriber Tool    | `aclScriberAccess`       | Permet d'accéder à l'outil Scriber        |
+| Allows to create Subtitling Project | `aclScribeProjectCreate` | Permet de créer un projet de sous-titrage |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Transfer Expire | `aclTransferExpire` | Permet de faire expirer les transferts |
-| Allow Transfer Update | `aclTransferUpdate` | Permet de mettre à jour les transferts |
-| Allow Make Transfer File Download Link | `aclMakeTransferFileDownloadLink` | Permet de créer des liens de téléchargement pour les fichiers de transfert |
 
-## Group Features
+## Price rules
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Group Create | `aclGroupCreate` | Permet de créer des groupes |
-| Allow Group Role Manage | `aclGroupRoleManage` | Permet de gérer les rôles des groupes |
 
-## Job Rule Features
+| Nom                          | Tag                            | Description                             |
+| ---------------------------- | ------------------------------ | --------------------------------------- |
+| Allows configure price rules | `aclOrderPriceRuleView`        | Permet de configurer les règles de prix |
+| Allows to create price rules | `aclOrderPriceRuleCreate`      | Permet de créer des règles de prix      |
+| Allows to delete price rules | `aclOrderPriceRuleDelete`      | Permet de supprimer des règles de prix  |
+| Enables price rule matching  | `aclOrderPriceRuleMatchEnable` | Active le matching des règles de prix   |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Job Rule Apply | `aclJobRuleApply` | Permet d'appliquer les règles de job |
 
-## Copy Object Features
+## Timetool (under Licence)
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Copy Object Overriding Placeholder Template | `aclCopyObjectOverridingPlaceholderTemplate` | Permet de copier un objet en overridant le template placeholder |
 
-## Activity Features
+| Nom                | Tag           | Description                       |
+| ------------------ | ------------- | --------------------------------- |
+| Enable full Access | `aclTimetool` | Active l'accès complet à Timetool |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Activity Add | `aclActivityAdd` | Permet d'ajouter des activités |
 
-## KDM Features
+## Connect (under Licence)
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow KDM Upload | `aclKdmUpload` | Permet d'uploader des KDM |
-| Allow KDM Recipient Admin | `aclKdmRecipientAdmin` | Permet d'administrer les destinataires KDM |
 
-## Billing Features
+| Nom                                                                | Tag                     | Description                                                                |
+| ------------------------------------------------------------------ | ----------------------- | -------------------------------------------------------------------------- |
+| Enable Link possibility between VDM Connect and Mediaspot Titles   | `aclConnectLinkTitle`   | Active la possibilité de lier VDM Connect et les titres Mediaspot          |
+| Enable Import possibility between VDM Connect and Mediaspot Titles | `aclConnectImportTitle` | Active la possibilité d'importer entre VDM Connect et les titres Mediaspot |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Billing Access | `aclBillingAccess` | Permet d'accéder à la facturation |
-| Allow Billing Add Expense | `aclBillingAddExpense` | Permet d'ajouter des dépenses |
-| Allow Billing Validate Invoice | `aclBillingValidateInvoice` | Permet de valider les factures |
-| Allow Billing Change Plan | `aclBillingChangePlan` | Permet de changer de plan |
-| Allow Billing Unsubscribe | `aclBillingUnsubscribe` | Permet de se désabonner |
 
-## Restrict Provider Features
+## Spock
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Restrict Provider Titles To Request | `aclRestrictProviderTitlesToRequest` | Restreint les titres du fournisseur aux demandes |
-| Allow Restrict Provider Assets To Request | `aclRestrictProviderAssetsToRequest` | Restreint les assets du fournisseur aux demandes |
 
-## Thumbnail Features
+| Nom                                                                   | Tag                     | Description                                                                        |
+| --------------------------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------- |
+| Enable Sync possibility between Mediaspot Title and Spock Agent Title | `aclSyncTitleFromSpock` | Active la possibilité de synchronisation entre les titres Mediaspot et Spock Agent |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Thumbnail Clear Cache | `aclThumbnailClearCache` | Permet de vider le cache des miniatures |
-| Allow Thumbnail Set Ref | `aclThumbnailSetRef` | Permet de définir la miniature de référence |
 
-## Player Features
+## User access
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Play Telestream Switch | `aclPlayTelestreamSwitch` | Permet de basculer vers le player Telestream |
 
-## Quota Features
+| Nom                                | Tag                   | Description                                    |
+| ---------------------------------- | --------------------- | ---------------------------------------------- |
+| Allows to view assets permissions  | `aclPermissionView`   | Permet de voir les permissions des assets      |
+| Allows deleting assets permissions | `aclPermissionDelete` | Permet de supprimer les permissions des assets |
+| Allows assets permission editing   | `aclPermissionSet`    | Permet de modifier les permissions des assets  |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Quota Object View | `aclQuotaObjectView` | Permet de voir les quotas d'objets |
 
-## Distribution Features
+## KDM
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Distribution Drive Only | `aclDistributionDriveOnly` | Limite la distribution au Drive uniquement |
-| Allow Drive | `aclDrive` | Permet d'accéder au Drive |
 
-## Bundle Features
+| Nom                          | Tag                    | Description                           |
+| ---------------------------- | ---------------------- | ------------------------------------- |
+| Allows upload DKDM/KDM       | `aclKdmUpload`         | Permet d'uploader des DKDM/KDM        |
+| Allows manage KDM recipients | `aclKdmRecipientAdmin` | Permet de gérer les destinataires KDM |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Bundle Title Status Change | `aclBundleTitleStatusChange` | Permet de changer le statut d'un titre dans un bundle |
-| Allow Bundle Dashboard View | `aclBundleDashboardView` | Permet de voir le dashboard des bundles |
-| Allow Restrict View Bundle Only | `aclRestrictViewBundleOnly` | Restreint la vue aux bundles uniquement |
 
-## External Access Features
+## Drive features
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow External Access Create Or Update | `aclExternalAccessCreateOrUpdate` | Permet de créer ou modifier les accès externes |
-| Allow External Access Revoke | `aclExternalAccessRevoke` | Permet de révoquer les accès externes |
-| Allow External Access View | `aclExternalAccessView` | Permet de voir les accès externes |
-| Allow External Access View All | `aclExternalAccessViewAll` | Permet de voir tous les accès externes |
 
-## Order Restrict Features
+| Nom                                              | Tag                        | Description                                                           |
+| ------------------------------------------------ | -------------------------- | --------------------------------------------------------------------- |
+| Allows Drive access                              | `aclDrive`                 | Permet l'accès au Drive                                               |
+| Allows trash/untrash Drive items                 | `aclObjectTrashPut`        | Permet de mettre/retirer des éléments Drive de la corbeille           |
+| Allows to delete permanently Drive trashed items | `aclObjectTrashDelete`     | Permet de supprimer définitivement les éléments Drive de la corbeille |
+| Allows to view Drive trash content               | `aclObjectTrashView`       | Permet de voir le contenu de la corbeille Drive                       |
+| Restrict access to Drive only                    | `aclDistributionDriveOnly` | Restreint l'accès au Drive uniquement                                 |
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Order Restrict To Follower | `aclOrderRestrictToFollower` | Permet de restreindre la commande aux followers |
 
-## Bypassed Asset Features
+## Billing
 
-| Nom | Tag | Description |
-|-----|-----|-------------|
-| Allow Bypassed Asset | `aclBypassedAsset` | Permet de voir/gérer les assets bypassés |
+
+| Nom                                                        | Tag                         | Description                                                 |
+| ---------------------------------------------------------- | --------------------------- | ----------------------------------------------------------- |
+| Allows billing dashboard access                            | `aclBillingAccess`          | Permet l'accès au dashboard de facturation                  |
+| Allows billing expense add                                 | `aclBillingAddExpense`      | Permet d'ajouter des dépenses                               |
+| Allows billing invoice validation                          | `aclBillingValidateInvoice` | Permet de valider les factures                              |
+| Allows billing change plan                                 | `aclBillingChangePlan`      | Permet de changer de plan                                   |
+| CAUTION: Allows billing unsubscribe offer & close platform | `aclBillingUnsubscribe`     | Permet de se désabonner et fermer la plateforme (ATTENTION) |
+
+
+## Collections
+
+
+| Nom                                      | Tag                            | Description                                           |
+| ---------------------------------------- | ------------------------------ | ----------------------------------------------------- |
+| Allows storefront collections management | `aclCollectionStorefrontAdmin` | Permet la gestion des collections storefront          |
+| Allows share collection to group         | `aclCollectionShareToGroup`    | Permet de partager une collection avec un groupe      |
+| Allows share collection to user          | `aclCollectionShareToUser`     | Permet de partager une collection avec un utilisateur |
+
+
+## Providers
+
+
+| Nom                                                             | Tag                                  | Description                                                                             |
+| --------------------------------------------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------- |
+| Restrict providers to access only titles where they own request | `aclRestrictProviderTitlesToRequest` | Restreint les fournisseurs à accéder uniquement aux titres où ils possèdent une demande |
+| Restrict providers to access only assets where they own request | `aclRestrictProviderAssetsToRequest` | Restreint les fournisseurs à accéder uniquement aux assets où ils possèdent une demande |
+
+
+## External accesses
+
+
+| Nom                                                    | Tag                               | Description                                                   |
+| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------- |
+| Allows to create or update an external access          | `aclExternalAccessCreateOrUpdate` | Permet de créer ou mettre à jour un accès externe             |
+| Allows to revoke an external access                    | `aclExternalAccessRevoke`         | Permet de révoquer un accès externe                           |
+| Allows to view external accesses on assets             | `aclExternalAccessView`           | Permet de voir les accès externes sur les assets              |
+| Allows to view all external accesses in dashboard page | `aclExternalAccessViewAll`        | Permet de voir tous les accès externes dans la page dashboard |
+
+
+## Storefront
+
+
+| Nom                                         | Tag                   | Description                                         |
+| ------------------------------------------- | --------------------- | --------------------------------------------------- |
+| Allows to access storefronts administration | `aclManageStorefront` | Permet d'accéder à l'administration des storefronts |
+
+
