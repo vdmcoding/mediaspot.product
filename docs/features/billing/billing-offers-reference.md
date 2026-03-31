@@ -2,121 +2,174 @@
 
 > **Document technique** - Synthèse des configurations billing extraites des fichiers JSON de production
 > **Date de génération**: Mars 2026
-> **Source**: `billing-config/*.json`
+> **Source**: `billing-config/V2/*.json` (Export infrastructure - Version courante)
+> **Version précédente**: `billing-config/V1/*.json` (Archivé)
 
 ---
 
 ## 1. Vue d'ensemble des offres
 
-### 1.1 Offres Cloud
+### 1.1 Offres Cloud (V2)
 
 
-| Offre        | Prix/mois | Engagement | Cloud | Cible                  |
-| ------------ | --------- | ---------- | ----- | ---------------------- |
-| **Archive**  | 1€        | Aucun      | Oui   | Archivage pur          |
-| **Screener** | 29€       | Aucun      | Oui   | Diffusion de screeners |
-| **Open**     | 199€      | Aucun      | Oui   | Petites structures     |
-| **Advanced** | 299€      | Aucun      | Oui   | PME média              |
-| **Premium**  | 499€      | Aucun      | Oui   | Gros volumes           |
-| **Ultimate** | 999€      | Aucun      | Oui   | Enterprise             |
+| Offre        | Prix/mois | Engagement | Cloud | Cible                  | Changement V1→V2 |
+| ------------ | --------- | ---------- | ----- | ---------------------- | ---------------- |
+| **Archive**  | 1€        | Aucun      | Oui   | Archivage pur          | - |
+| **Open**     | 199€      | Aucun      | Oui   | Petites structures     | - |
+| **Advanced** | 199€      | Aucun      | Oui   | PME média              | **était 299€** |
+| **Premium**  | 299€      | Aucun      | Oui   | Gros volumes           | **était 499€** |
+| **Ultimate** | 499€      | Aucun      | Oui   | Enterprise             | **était 999€** |
 
+> **Note V2**: L'offre Screener (29€) n'est plus présente dans les configurations V2.
 
-### 1.2 Offres On-Premise
+### 1.2 Offres On-Premise (V2)
 
 
 | Offre       | Prix/mois | Engagement    | Cloud | Cible               |
 | ----------- | --------- | ------------- | ----- | ------------------- |
 | **Premium** | 14 900€   | 3 ans (1095j) | Non   | Grandes entreprises |
+| **CNC**     | 0€        | Aucun         | Non   | Centre National Cinéma |
+| **IDC**     | 0€        | Aucun         | Non   | Variante CNC |
+
+### 1.3 Offres Custom (V2)
+
+
+| Offre         | Prix/mois | Cloud | Cible               |
+| ------------- | --------- | ----- | ------------------- |
+| **Newen**     | À l'usage | -     | Groupe Newen        |
+| **SimuCloud** | 499€      | Non   | Simulation Cloud    |
+| **Default**   | 99€       | Non   | Configuration base  |
 
 
 ---
 
 ## 2. Utilisateurs inclus par offre
 
-### 2.1 Cloud
+### 2.1 Cloud (V2)
 
 
-| Offre    | Users Basic | Add. Basic | Users Admin | Add. Admin |
-| -------- | ----------- | ---------- | ----------- | ---------- |
-| Archive  | 1           | Bloqué     | 1           | Bloqué     |
-| Screener | 10          | Bloqué     | 1           | Bloqué     |
-| Open     | 20          | Bloqué     | 2           | Bloqué     |
-| Advanced | 50          | Bloqué     | 3           | Bloqué     |
-| Premium  | 10 000      | Bloqué     | 5           | Bloqué     |
-| Ultimate | 10 000      | Bloqué     | 10          | Bloqué     |
+| Offre    | Users Basic | Add. Basic | Users Admin | Add. Admin | Changement V1→V2 |
+| -------- | ----------- | ---------- | ----------- | ---------- | ---------------- |
+| Archive  | 20          | Bloqué     | 3           | Bloqué     | **était 1+1** |
+| Open     | 20          | Bloqué     | 2           | Bloqué     | - |
+| Advanced | 50          | Bloqué     | 3           | Bloqué     | - |
+| Premium  | 30          | Bloqué     | 5           | Bloqué     | **était 10000** |
+| Ultimate | 10 000      | Bloqué     | 10          | Bloqué     | - |
 
 
-### 2.2 On-Premise
+### 2.2 On-Premise (V2)
 
 
 | Offre   | Users Basic | Add. Basic | Users Admin | Add. Admin |
 | ------- | ----------- | ---------- | ----------- | ---------- |
 | Premium | 10 000      | +15€/user  | 10          | +25€/user  |
+| CNC     | 100         | Bloqué     | 10          | Bloqué     |
+| IDC     | 20          | Bloqué     | 3           | Bloqué     |
+
+### 2.3 Custom (V2)
+
+
+| Offre     | Users Basic | Add. Basic | Users Admin | Add. Admin |
+| --------- | ----------- | ---------- | ----------- | ---------- |
+| SimuCloud | 10 000      | +15€/user  | 10          | +25€/user  |
+| Default   | 10          | +15€/user  | 1           | Bloqué     |
 
 
 ---
 
 ## 3. Licences et Fonctionnalités
 
-### 3.1 Matrice Cloud
+### 3.1 Matrice Cloud (V2)
 
 
-| Licence                    | Archive | Screener | Open   | Advanced | Premium | Ultimate | Prix option |
-| -------------------------- | ------- | -------- | ------ | -------- | ------- | -------- | ----------- |
-| TranscodingGenericBasket   | -       | -        | Inclus | Inclus   | Inclus  | Inclus   | 0€          |
-| TranscodingByProfileBasket | -       | -        | -      | Inclus   | Inclus  | Inclus   | 0€          |
-| BundleMakerCore            | -       | -        | -      | -        | -       | Inclus   | 0€          |
-| BundleMakerMetadata        | -       | -        | -      | -        | -       | Inclus   | 0€          |
-| WatermarkNexguard          | Option  | Option   | Option | Option   | Option  | Option   | 150€/mois   |
-| YoutubeAntipiracy          | Option  | Option   | Option | Option   | Option  | Option   | 95€/mois    |
-| DcpKDMFeature              | Option  | Option   | Option | Option   | Option  | Option   | 95€/mois    |
-| DcpTranscoding             | Option  | Option   | Option | Option   | Option  | Option   | 50€/mois    |
-| AWSConnector               | Option  | Option   | Option | Option   | Option  | Option   | 500€/mois   |
-| ImageSequenceProxy         | Option  | Option   | Option | Option   | Option  | Option   | 50€/mois    |
-| PlayerScreenshotHires      | Inclus  | Inclus   | Inclus | Inclus   | Inclus  | Inclus   | 0€          |
+| Licence                    | Archive | Open   | Advanced | Premium | Ultimate | Prix option | Nouveau V2 |
+| -------------------------- | ------- | ------ | -------- | ------- | -------- | ----------- | ---------- |
+| Drive                      | Inclus  | Inclus | Inclus   | Inclus  | Inclus   | 0€          | **OUI** |
+| CatalogManagement          | Inclus  | Inclus | Inclus   | Inclus  | Inclus   | 0€          | **OUI** |
+| CatalogReporting           | Inclus  | -      | -        | Inclus  | Inclus   | 0€          | **OUI** |
+| ShareScreening             | Option  | -      | Option   | Inclus  | Inclus   | 19€/mois    | **OUI** |
+| QuoteManagement            | Option  | -      | -        | -       | Inclus   | 25€/mois    | **OUI** |
+| TranscodingGenericBasket   | -       | Inclus | Inclus   | Inclus  | Inclus   | 0€          | |
+| TranscodingByProfileBasket | -       | -      | -        | Inclus  | Inclus   | 0€          | |
+| BundleMakerCore            | -       | -      | -        | Inclus  | Inclus   | 0€          | |
+| BundleMakerMetadata        | -       | -      | -        | Inclus  | Inclus   | 0€          | |
+| IngestMeasureAudioLoudness | -       | -      | -        | Inclus  | Inclus   | 0€          | **OUI** |
+| HDRDoViOutputTranscoding   | -       | -      | -        | Inclus  | Inclus   | 0€          | **OUI** |
+| WatermarkNexguard          | Option  | Option | Option   | Option  | Option   | 150€/mois   | |
+| YoutubeAntipiracy          | Option  | Option | Option   | Option  | Option   | 95€/mois    | |
+| DcpKDMFeature              | Option  | Option | Option   | Option  | Option   | 95€/mois    | |
+| DcpTranscoding             | Option  | Option | Option   | Option  | Option   | 50€/mois    | |
+| AWSConnector               | Option  | Option | Option   | Option  | Option   | 500€/mois   | |
+| ImageSequenceProxy         | Option  | Option | Option   | Option  | Option   | 50€/mois    | |
+| AccountManager             | Option  | Option | Option   | Option  | Inclus   | 1500€/mois  | **OUI** |
+| PlayerScreenshotHires      | Inclus  | Inclus | Inclus   | Inclus  | Inclus   | 0€          | |
 
 
-### 3.2 On-Premise Premium
+### 3.2 On-Premise Premium (V2)
 
 
 | Licence                    | Inclus | Prix option |
 | -------------------------- | ------ | ----------- |
+| Drive                      | Oui    | -           |
+| CatalogManagement          | Oui    | -           |
 | TranscodingGenericBasket   | Oui    | -           |
 | TranscodingByProfileBasket | Oui    | -           |
 | BundleMakerCore            | Oui    | -           |
 | BundleMakerMetadata        | Oui    | -           |
+| IngestMeasureAudioLoudness | Oui    | -           |
 | WatermarkNexguard          | Non    | 950€/mois   |
 | YoutubeAntipiracy          | Non    | 95€/mois    |
 | DcpKDMFeature              | Non    | 95€/mois    |
 | DcpTranscoding             | Non    | 75€/mois    |
+
+### 3.3 On-Premise CNC (V2)
+
+
+| Licence                    | Inclus | Prix option |
+| -------------------------- | ------ | ----------- |
+| Drive                      | Oui    | -           |
+| TranscodingGenericBasket   | Oui    | -           |
+| DcpKDMFeature              | Oui    | -           |
+| DcpTranscoding             | Oui    | -           |
+| ImageSequenceProxyTranscode| Oui    | -           |
+| ShareScreening             | Oui    | -           |
+| PlayerScreenshotFromHires  | Oui    | -           |
+| CatalogManagement          | Oui    | -           |
+| CatalogReporting           | Oui    | -           |
+| WatermarkNexguard          | Non    | 150€/mois   |
+| YoutubeAntipiracy          | Non    | 95€/mois    |
+| AWSConnector               | Non    | 500€/mois   |
+| AccountManager             | Non    | 1500€/mois  |
 
 
 ---
 
 ## 4. Tarification Transcodage
 
-### 4.1 Transcode Generic (Cloud)
+### 4.1 Transcode Generic (Cloud V2)
 
 Prix identiques pour toutes les offres Cloud.
 
 
-| Résolution | Prix/min |
-| ---------- | -------- |
-| SD         | 0,50€    |
-| HD         | 0,70€    |
-| UHD        | 1,30€    |
-| 4K         | 1,30€    |
-| Unknown    | 0,70€    |
+| Résolution | Prix/min | Nouveau V2 |
+| ---------- | -------- | ---------- |
+| SD         | 0,50€    | |
+| HD         | 0,70€    | |
+| HDReady    | 0,60€    | **OUI** |
+| UHD        | 1,30€    | |
+| 4K         | 1,30€    | |
+| Unknown    | 0,70€    | |
 
 
-**Multiplicateurs effets spéciaux (Cloud):**
+**Multiplicateurs effets spéciaux (Cloud V2):**
 
 
-| Effet         | Facteur |
-| ------------- | ------- |
-| HDR10         | x1.50   |
-| Dolby Vision  | x1.50   |
-| Frame Convert | x1.30   |
+| Effet         | Facteur | Nouveau V2 |
+| ------------- | ------- | ---------- |
+| HDR10         | x1.50   | |
+| Dolby Vision  | x1.50   | |
+| Frame Convert | x1.30   | |
+| Proxy Source  | x0.30   | **OUI** |
 
 
 ### 4.2 Transcode By Profile (Cloud)
@@ -230,24 +283,40 @@ Prix identiques pour toutes les offres Cloud.
 
 ## 6. Tarification Stockage
 
-### 6.1 Cloud
+### 6.1 Cloud (V2) - **CHANGEMENT MAJEUR**
 
 
-| Type                                           | Prix/Mo     |
-| ---------------------------------------------- | ----------- |
-| Disk (Ingest, Staging, Work, Generated, Proxy) | 0€ (inclus) |
-| Archive (Tape)                                 | 0,0000035€  |
+| Type                                           | Prix/Mo      | Changement V1→V2 |
+| ---------------------------------------------- | ------------ | ---------------- |
+| Disk (Ingest, Staging, Work, Generated, Proxy) | 0,000035€    | **était GRATUIT** |
+| Archive (Tape)                                 | 0,0000035€   | - |
 
 
-> **Note**: Stockage disque inclus sans limite dans toutes les offres Cloud.
+> **ATTENTION V2**: Le stockage disque est maintenant PAYANT à 0,000035€/Mo (soit 0,035€/Go ou ~35€/To/mois).
 
-### 6.2 On-Premise Premium
+### 6.2 On-Premise Premium (V2)
 
 
 | Type           | Prix/Mo   | Inclus |
 | -------------- | --------- | ------ |
 | Disk           | 0,000017€ | 200 To |
 | Archive (Tape) | 0,000017€ | -      |
+
+### 6.3 On-Premise CNC (V2)
+
+
+| Type           | Prix/Mo         | Condition |
+| -------------- | --------------- | --------- |
+| Disk           | 0,0000143€      | Par metadata sysStorageTier=Disk |
+| Archive (Tape) | 0,0000086€      | Par metadata sysStorageTier=Archive |
+
+### 6.4 SimuCloud (V2)
+
+
+| Type           | Prix/Mo      |
+| -------------- | ------------ |
+| Disk           | 0,000035€    |
+| Archive (Tape) | 0,0000035€   |
 
 
 ---
@@ -279,13 +348,13 @@ Prix identiques pour toutes les offres Cloud.
 
 ## 8. QC et Qualification
 
-### 8.1 Cloud
+### 8.1 Cloud (V2)
 
 
-| Service      | Base | Video     | Audio     | Subtitle  |
-| ------------ | ---- | --------- | --------- | --------- |
-| Qualify      | 0€   | 40€/unité | 20€/unité | 20€/unité |
-| QualityCheck | 15€  | 0€        | 0€        | 0€        |
+| Service      | Base | Video     | Audio     | Subtitle  | Changement V1→V2 |
+| ------------ | ---- | --------- | --------- | --------- | ---------------- |
+| Qualify      | 0€   | 40€/unité | 30€/unité | 20€/unité | Audio **était 20€** |
+| QualityCheck | 15€  | 0€        | 0€        | 0€        | - |
 
 
 **QualityCheck - Tarifs par minute (Cloud):**
@@ -312,13 +381,27 @@ Prix identiques pour toutes les offres Cloud.
 
 ## 9. Ingest
 
-### 9.1 Cloud
+### 9.1 Cloud (V2) - **CHANGEMENT MAJEUR**
 
-**Ingest gratuit** pour toutes les offres Cloud (prix = 0€).
+**L'ingest est maintenant PAYANT** dans les configurations V2.
 
-Types supportés: Video, Audio, Subtitle, DcpPackage, ImfPackage, ImageSequence.
+**Proxy generation (génération de proxy à l'ingest):**
 
-### 9.2 On-Premise Premium
+| Résolution | Prix/min | Changement V1→V2 |
+| ---------- | -------- | ---------------- |
+| Toutes     | 0,01€    | **était GRATUIT** |
+
+**Ingest Mezzanine (assets Mezz):**
+
+| Type     | Prix/unité | Changement V1→V2 |
+| -------- | ---------- | ---------------- |
+| Video    | 40€        | **était GRATUIT** |
+| Audio    | 30€        | **était GRATUIT** |
+| Subtitle | 20€        | **était GRATUIT** |
+
+> **ATTENTION V2**: L'ingest Cloud qui était gratuit devient payant. Ceci impacte significativement les coûts pour les clients avec beaucoup d'ingest.
+
+### 9.2 On-Premise Premium (V2)
 
 
 | Type          | Mezz | Non-Mezz | Seuil gratuit/an |
@@ -340,6 +423,23 @@ Types supportés: Video, Audio, Subtitle, DcpPackage, ImfPackage, ImageSequence.
 | SD         | 0,00633€ |
 | HD/UHD/4K  | 0,01266€ |
 
+### 9.3 On-Premise CNC (V2)
+
+**Ingest gratuit** (proxy et analyse à 0€)
+
+| Type     | Mezz | Non-Mezz |
+| -------- | ---- | -------- |
+| Video    | 40€  | 0€       |
+| Audio    | 30€  | 0€       |
+| Subtitle | 20€  | 0€       |
+| Autres   | -    | 0€       |
+
+### 9.4 SimuCloud (V2)
+
+**Ingest gratuit** pour Mezz et non-Mezz (tous types à 0€)
+
+**Proxy generation:** 0,01€/min (toutes résolutions)
+
 
 ---
 
@@ -356,101 +456,131 @@ Types supportés: Video, Audio, Subtitle, DcpPackage, ImfPackage, ImageSequence.
 
 ---
 
-## 11. Fiches détaillées par offre
+## 11. Fiches détaillées par offre (V2)
 
 ### 11.1 Cloud Archive (1€/mois)
 
 **Positionnement**: Offre minimale pour archivage uniquement.
 
-- **Users**: 1 Basic + 1 Admin (non extensibles)
-- **Streaming**: 0 crédits/mois
-- **Features incluses**: PlayerScreenshotFromHires uniquement
-- **Transcodage**: Disponible mais aucune licence incluse
-- **Stockage**: Disk gratuit, Archive à 0,0000035€/Mo
+- **Users**: 20 Basic + 3 Admin (non extensibles) - **V2: était 1+1**
+- **Streaming**: 10 000 crédits/mois
+- **Features incluses (V2)**:
+  - Drive (NOUVEAU)
+  - CatalogManagement (NOUVEAU)
+  - CatalogReporting (NOUVEAU)
+  - PlayerScreenshotFromHires
+- **Options**:
+  - ShareScreening: 19€/mois
+  - QuoteManagement: 25€/mois
+- **Transcodage**: Disponible mais aucune licence spéciale incluse
+- **Stockage V2**: Disk **PAYANT** 0,000035€/Mo, Archive à 0,0000035€/Mo
+- **Ingest V2**: Proxy 0,01€/min, Mezz Video=40€, Audio=30€, ST=20€
+- **managedServices**: Section complète disponible
 
-### 11.2 Cloud Screener (29€/mois)
-
-**Positionnement**: Diffusion de screeners pour validation.
-
-- **Users**: 10 Basic + 1 Admin (non extensibles)
-- **Streaming**: 250 crédits/mois
-- **Features incluses**: PlayerScreenshotFromHires
-- **Transcodage**: Disponible, aucune licence spéciale incluse
-- **Stockage**: Disk gratuit, Archive à 0,0000035€/Mo
-
-### 11.3 Cloud Open (199€/mois)
+### 11.2 Cloud Open (199€/mois)
 
 **Positionnement**: Entrée de gamme pour petites structures.
 
 - **Users**: 20 Basic + 2 Admin (non extensibles)
 - **Streaming**: 500 crédits/mois
-- **Features incluses**:
+- **Features incluses (V2)**:
+  - Drive (NOUVEAU)
+  - CatalogManagement (NOUVEAU)
   - TranscodingGenericBasketFeature
   - PlayerScreenshotFromHires
-- **Stockage**: Disk gratuit, Archive à 0,0000035€/Mo
+- **Stockage V2**: Disk **PAYANT** 0,000035€/Mo, Archive à 0,0000035€/Mo
+- **Ingest V2**: Proxy 0,01€/min, Mezz payant
 
-### 11.4 Cloud Advanced (299€/mois)
+### 11.3 Cloud Advanced (199€/mois) - **V2: prix réduit de 299€**
 
 **Positionnement**: PME média avec besoins de transcodage avancé.
 
 - **Users**: 50 Basic + 3 Admin (non extensibles)
 - **Streaming**: 10 000 crédits/mois
-- **Features incluses**:
+- **Features incluses (V2)**:
+  - Drive (NOUVEAU)
+  - CatalogManagement (NOUVEAU)
   - TranscodingGenericBasketFeature
-  - TranscodingByProfileBasketFeature
   - PlayerScreenshotFromHires
-- **Stockage**: Disk gratuit, Archive à 0,0000035€/Mo
+- **Options**:
+  - ShareScreening: 19€/mois
+  - AccountManager: 1500€/mois
+- **Note V2**: TranscodingByProfileBasket n'est plus inclus
+- **Stockage V2**: Disk **PAYANT** 0,000035€/Mo, Archive à 0,0000035€/Mo
+- **Ingest V2**: Proxy 0,01€/min, Mezz payant
 
-### 11.5 Cloud Premium (499€/mois)
+### 11.4 Cloud Premium (299€/mois) - **V2: prix réduit de 499€**
 
-**Positionnement**: Gros volumes, nombreux utilisateurs.
+**Positionnement**: Gros volumes avec fonctionnalités avancées.
 
-- **Users**: 10 000 Basic + 5 Admin (non extensibles)
+- **Users**: 30 Basic + 5 Admin (non extensibles) - **V2: était 10000 Basic**
 - **Streaming**: 10 000 crédits/mois
-- **Features incluses**:
+- **Features incluses (V2)**:
+  - Drive (NOUVEAU)
+  - CatalogManagement (NOUVEAU)
+  - CatalogReporting (NOUVEAU)
+  - IngestMeasureAudioLoudness (NOUVEAU)
+  - HDRDoViOutputTranscoding (NOUVEAU)
+  - ShareScreening (NOUVEAU)
   - TranscodingGenericBasketFeature
   - TranscodingByProfileBasketFeature
+  - BundleMakerCore
+  - BundleMakerMetadata
   - PlayerScreenshotFromHires
-- **Stockage**: Disk gratuit, Archive à 0,0000035€/Mo
+- **Stockage V2**: Disk **PAYANT** 0,000035€/Mo, Archive à 0,0000035€/Mo
+- **Ingest V2**: Proxy 0,01€/min, Mezz payant
 
-### 11.6 Cloud Ultimate (999€/mois)
+### 11.5 Cloud Ultimate (499€/mois) - **V2: prix réduit de 999€**
 
 **Positionnement**: Enterprise, toutes fonctionnalités.
 
 - **Users**: 10 000 Basic + 10 Admin (non extensibles)
 - **Streaming**: 10 000 crédits/mois
-- **Features incluses**:
+- **Features incluses (V2)**:
+  - Drive (NOUVEAU)
+  - CatalogManagement (NOUVEAU)
+  - CatalogReporting (NOUVEAU)
+  - IngestMeasureAudioLoudness (NOUVEAU)
+  - HDRDoViOutputTranscoding (NOUVEAU)
+  - ShareScreening (NOUVEAU)
+  - QuoteManagement (NOUVEAU)
+  - AccountManager (NOUVEAU)
   - TranscodingGenericBasketFeature
   - TranscodingByProfileBasketFeature
   - BundleMakerCore
   - BundleMakerMetadata
   - PlayerScreenshotFromHires
-- **Stockage**: Disk gratuit, Archive à 0,0000035€/Mo
+- **Stockage V2**: Disk **PAYANT** 0,000035€/Mo, Archive à 0,0000035€/Mo
+- **Ingest V2**: Proxy 0,01€/min, Mezz payant
 
-### 11.7 On-Premise Premium (14 900€/mois)
+### 11.6 On-Premise Premium (14 900€/mois)
 
 **Positionnement**: Grandes entreprises, infrastructure dédiée.
 
-- **Engagement**: 3 ans minimum
+- **Engagement**: 3 ans minimum (1095 jours)
 - **Users**: 10 000 Basic + 10 Admin (extensibles à 15€/25€)
 - **Inclus**:
   - 200 To stockage disque
   - 1 500 min processing/mois
   - 1 To transfert/jour
-- **Features incluses**:
+- **Features incluses (V2)**:
+  - Drive (NOUVEAU)
+  - CatalogManagement (NOUVEAU)
+  - IngestMeasureAudioLoudness (NOUVEAU)
   - TranscodingGenericBasketFeature
   - TranscodingByProfileBasketFeature
   - BundleMakerCore
   - BundleMakerMetadata
-- **Tarifs réduits** sur transcodage vs Cloud
+- **Tarifs transcodage**: SD=0,24€, HD=0,44€, UHD/4K=0,89€/min
+- **Multiplicateurs**: HDR10=x1.55, DoVi=x2.50, Frame=x1.30
 
-### 11.8 On-Premise CNC (Offre spéciale)
+### 11.7 On-Premise CNC (Offre spéciale)
 
 **Positionnement**: Offre sur mesure pour le CNC (Centre National du Cinéma).
 
 - **Prix de base**: 0€/mois (facturation à l'usage uniquement)
 - **Engagement**: Aucun
-- **Users**: 20 Basic + 3 Admin (non extensibles)
+- **Users**: 100 Basic + 10 Admin (non extensibles)
 - **Features incluses**:
   - Drive
   - TranscodingGenericBasketFeature
@@ -460,6 +590,7 @@ Types supportés: Video, Audio, Subtitle, DcpPackage, ImfPackage, ImageSequence.
   - ShareScreening
   - PlayerScreenshotFromHires
   - CatalogManagement
+  - CatalogReporting
 - **Features en option**:
   - WatermarkNexguard: 150€/mois
   - YoutubeAntipiracy: 95€/mois
@@ -514,7 +645,89 @@ Types supportés: Video, Audio, Subtitle, DcpPackage, ImfPackage, ImageSequence.
 | Setup personnalisé | 250€ |
 | Ingest by VDM | 20€ |
 
-### 11.9 Custom Newen (Offre personnalisée)
+### 11.8 On-Premise IDC (V2 - NOUVEAU)
+
+**Positionnement**: Variante CNC avec modèle de tarification standard.
+
+- **Prix de base**: 0€/mois (facturation à l'usage uniquement)
+- **Engagement**: Aucun
+- **Users**: 20 Basic + 3 Admin (non extensibles)
+- **Features incluses**:
+  - Drive
+  - TranscodingGenericBasketFeature
+  - DcpKDMFeature
+  - DcpTranscoding
+  - ImageSequenceProxyTranscode
+  - ShareScreening
+  - PlayerScreenshotFromHires
+  - CatalogManagement
+  - CatalogReporting
+- **Différence avec CNC**: Utilise PriceModelTranscodePerMinute (pas par bitrate)
+
+**Tarifs IDC:**
+
+| Aspect | Valeur |
+|--------|--------|
+| Transcode SD | 0,24€/min |
+| Transcode HD | 0,44€/min |
+| Transcode UHD/4K | 0,89€/min |
+| Livraison Aspera/Http | 0,0001953€/Mo |
+| Livraison FTP/SFTP/S3 | 0,0002734€/Mo |
+| Livraison UNC | Gratuit |
+| Stockage Disk | 0,0000143€/Mo |
+| Stockage Archive | 0,0000086€/Mo |
+
+### 11.9 Custom SimuCloud Premium (V2 - NOUVEAU)
+
+**Positionnement**: Offre On-Prem simulant le comportement Cloud.
+
+- **Prix de base**: 499€/mois
+- **Cloud**: false (mais simule le comportement Cloud)
+- **Engagement**: Aucun
+- **Users**: 10 000 Basic + 10 Admin (extensibles à 15€/25€)
+- **Features incluses**:
+  - Drive
+  - HDRDoViOutputTranscoding
+  - TranscodingGenericBasketFeature
+  - TranscodingByProfileBasketFeature
+  - BundleMakerCore
+  - BundleMakerMetadata
+  - PlayerScreenshotFromHires
+
+**Particularités SimuCloud:**
+
+| Aspect | Valeur |
+|--------|--------|
+| Transcode Generic SD | 0,50€/min |
+| Transcode Generic HD | 0,70€/min |
+| Transcode Generic UHD/4K | 1,30€/min |
+| Transcode ByProfile SD | 0,95€/min |
+| Transcode ByProfile HD | 1,25€/min |
+| Transcode ByProfile UHD/4K | 1,95€/min |
+| Transcode Bundle SD | 1,20€/min |
+| Transcode Bundle HD | 1,60€/min |
+| Transcode Bundle UHD/4K | 2,45€/min |
+| Multiplicateur HDR10/DoVi | x1.50 |
+| Stockage Disk | 0,000035€/Mo |
+| Stockage Archive | 0,0000035€/Mo |
+
+**Livraison par destination (SimuCloud):**
+
+| Destination | Prix/Mo |
+|-------------|---------|
+| Aspera/Signiant | 0,00018€ |
+| FTP/SFTP/S3 | 0,00014€ |
+| UNC | 0,00022€ |
+
+**Qualify/QC SimuCloud (par type d'objet + durée):**
+
+| Service | Video | Audio | Subtitle | + par min (SD/HD) | + par min (UHD/4K) |
+|---------|-------|-------|----------|-------------------|-------------------|
+| Qualify | 40€ | 30€ | 20€ | - | - |
+| QC (Full) | 0€ | 0€ | 0€ | 3,30€ | 4,10€ |
+| QC (Video+Audio) | 0€ | 0€ | 0€ | 2,10€ | 2,60€ |
+
+### 11.10 Custom Newen (Offre personnalisée)
 
 **Positionnement**: Configuration sur mesure pour le groupe Newen.
 
@@ -544,21 +757,42 @@ Types supportés: Video, Audio, Subtitle, DcpPackage, ImfPackage, ImageSequence.
 | Subtitle | 20€ | 5€ | 10 500 unités |
 | Unknown | - | 5€ | 2 000 unités |
 
+### 11.11 Default (Configuration de base)
+
+**Positionnement**: Configuration par défaut / référence.
+
+- **Prix de base**: 99€/mois
+- **offerName**: "Prod"
+- **Users**: 10 Basic + 1 Admin (Admin bloqué)
+- **Features**: Uniquement WatermarkNexguard en option (950€)
+
+**Tarifs Default:**
+
+| Aspect | Valeur |
+|--------|--------|
+| Transcode SD | 0,24€/min |
+| Transcode HD | 0,44€/min |
+| Transcode UHD/4K | 0,89€/min |
+| Streaming | 200 crédits/mois, 0,75€/unité au-delà |
+| Stockage Disk | 0,000017€/Mo |
+| Stockage Archive | 0,000017€/Mo |
+
 ---
 
 ## 12. Points d'attention techniques
 
-### 12.1 Différences Cloud vs On-Premise
+### 12.1 Différences Cloud vs On-Premise (V2)
 
 
-| Aspect              | Cloud            | On-Premise                |
-| ------------------- | ---------------- | ------------------------- |
-| Prix transcodage    | Plus élevé       | Plus bas                  |
-| Stockage disque     | Gratuit illimité | Inclus 200 To puis payant |
-| Users additionnels  | Bloqués          | Payants                   |
-| Engagement          | Aucun            | 3 ans                     |
-| Ingest              | Gratuit          | Payant                    |
-| Multiplicateur DoVi | x1.50            | x2.50                     |
+| Aspect              | Cloud V2                  | On-Premise                |
+| ------------------- | ------------------------- | ------------------------- |
+| Prix transcodage    | Plus élevé                | Plus bas                  |
+| Stockage disque     | **PAYANT** (0,000035€/Mo) | Inclus 200 To puis payant |
+| Users additionnels  | Bloqués                   | Payants                   |
+| Engagement          | Aucun                     | 3 ans                     |
+| Ingest              | **PAYANT** (proxy+mezz)   | Payant                    |
+| Multiplicateur DoVi | x1.50                     | x2.50                     |
+| Nouvelles licences  | Drive, Catalog*, Share... | Drive, Catalog...         |
 
 
 ### 12.2 Types de modèles de facturation
@@ -614,21 +848,58 @@ Le système utilise plusieurs types de `PriceModel`:
 
 ## 13. Annexes
 
-### 13.1 Fichiers source
+### 13.1 Fichiers source V2 (Version courante)
 
 
-| Fichier                                           | Offre            |
-| ------------------------------------------------- | ---------------- |
-| `BillingPriceModel_default.json`                  | Prod (référence) |
-| `BillingPriceModel_cloud_offer_archive.json`      | Cloud Archive    |
-| `BillingPriceModel_cloud_offer_screener.json`     | Cloud Screener   |
-| `BillingPriceModel_cloud_offer_open.json`         | Cloud Open       |
-| `BillingPriceModel_cloud_offer_advanced.json`     | Cloud Advanced   |
-| `BillingPriceModel_cloud_offer_premium.json`      | Cloud Premium    |
-| `BillingPriceModel_cloud_offer_ultimate 1.json`   | Cloud Ultimate   |
-| `BillingPriceModel_onprem_offer_premium.json`     | On-Prem Premium  |
-| `BillingPriceModel_onprem_offer_cnc_updated.json` | On-Prem CNC      |
-| `BillingPriceModel_Newen.json`                    | Custom Newen     |
+| Fichier V2                                              | Offre            |
+| ------------------------------------------------------- | ---------------- |
+| `V2/BillingPriceModel_cloud_offer_archive 1.json`       | Cloud Archive    |
+| `V2/BillingPriceModel_cloud_offer_open 1.json`          | Cloud Open       |
+| `V2/BillingPriceModel_cloud_offer_advanced 1.json`      | Cloud Advanced   |
+| `V2/BillingPriceModel_cloud_offer_premium 1.json`       | Cloud Premium    |
+| `V2/BillingPriceModel_cloud_offer_ultimate 2.json`      | Cloud Ultimate   |
+| `V2/BillingPriceModel_onprem_offer_premium 1.json`      | On-Prem Premium  |
+| `V2/BillingPriceModel_onprem_offer_cnc.json`            | On-Prem CNC      |
+| `V2/BillingPriceModel_onprem_offer_idc.json`            | On-Prem IDC      |
+| `V2/BillingPriceModel_SimuCloud_offer_premium.json`     | SimuCloud        |
+| `V2/BillingPriceModel_Newen 1.json`                     | Custom Newen     |
+| `V2/BillingPriceModel_default 1.json`                   | Default/Prod     |
+
+### 13.2 Fichiers source V1 (Archive)
+
+
+| Fichier V1                                              | Offre            |
+| ------------------------------------------------------- | ---------------- |
+| `V1/BillingPriceModel_default.json`                     | Prod (référence) |
+| `V1/BillingPriceModel_cloud_offer_archive.json`         | Cloud Archive    |
+| `V1/BillingPriceModel_cloud_offer_screener.json`        | Cloud Screener   |
+| `V1/BillingPriceModel_cloud_offer_open.json`            | Cloud Open       |
+| `V1/BillingPriceModel_cloud_offer_advanced.json`        | Cloud Advanced   |
+| `V1/BillingPriceModel_cloud_offer_premium.json`         | Cloud Premium    |
+| `V1/BillingPriceModel_cloud_offer_ultimate 1.json`      | Cloud Ultimate   |
+| `V1/BillingPriceModel_onprem_offer_premium.json`        | On-Prem Premium  |
+| `V1/BillingPriceModel_onprem_offer_cnc_updated.json`    | On-Prem CNC      |
+| `V1/BillingPriceModel_Newen.json`                       | Custom Newen     |
+
+### 13.3 Résumé des changements majeurs V1 → V2
+
+| Changement | V1 | V2 | Impact |
+|------------|----|----|--------|
+| Prix Advanced | 299€ | 199€ | **-33%** |
+| Prix Premium | 499€ | 299€ | **-40%** |
+| Prix Ultimate | 999€ | 499€ | **-50%** |
+| Users Premium | 10 000 Basic | 30 Basic | **-99.7%** |
+| Users Archive | 1 Basic + 1 Admin | 20 Basic + 3 Admin | **+1900%** |
+| Stockage Disk Cloud | Gratuit | 0,000035€/Mo | **Nouveau coût** |
+| Ingest proxy Cloud | Gratuit | 0,01€/min | **Nouveau coût** |
+| Ingest Mezz Cloud | Gratuit | 40€/30€/20€ | **Nouveau coût** |
+| Qualify Audio | 20€ | 30€ | **+50%** |
+| Nouvelles licences | - | Drive, Catalog*, Share, Quote, Account | **Ajouts** |
+| Nouvelle résolution | - | HDReady (0,60€) | **Ajout** |
+| Nouveau facteur | - | proxySource (x0.30) | **Ajout** |
+| Section managedServices | CNC uniquement | Tous | **Généralisé** |
+| Offre Screener | 29€ | Supprimée | **Retrait** |
+| Nouvelles offres | - | IDC, SimuCloud | **Ajouts** |
 
 ---
 
@@ -636,27 +907,31 @@ Le système utilise plusieurs types de `PriceModel`:
 
 ### 14.1 Grille Tarifs MEDIASPOT CLOUD 2024 (Excel - Mars 2024)
 
-Comparaison entre la grille tarifaire officielle et les configurations JSON.
+Comparaison entre la grille tarifaire officielle et les configurations JSON V2.
 
 #### Plans et abonnements
 
-| Élément | Excel 2024 | JSON Config | Statut |
-|---------|------------|-------------|--------|
+| Élément | Excel 2024 | JSON V2 | Statut |
+|---------|------------|---------|--------|
 | Archive | 1€/mois | 1€ | OK |
 | Open | 199€/mois | 199€ | OK |
-| Advanced | 299€/mois | 299€ | OK |
-| Premium | 499€/mois | 499€ | OK |
-| Ultimate | 999€/mois | 999€ | OK |
+| Advanced | 299€/mois | **199€** | **DIFF - V2 moins cher** |
+| Premium | 499€/mois | **299€** | **DIFF - V2 moins cher** |
+| Ultimate | 999€/mois | **499€** | **DIFF - V2 moins cher** |
+
+> **Note**: Les prix V2 sont inférieurs à la grille Excel 2024. Vérifier si une nouvelle grille tarifaire existe.
 
 #### Users inclus
 
-| Plan | Excel Users | Excel Admin | JSON Users | JSON Admin | Statut |
-|------|-------------|-------------|------------|------------|--------|
-| Archive | 0 | 0 | 1 | 1 | DIFF - Excel=0, JSON=1 |
+| Plan | Excel Users | Excel Admin | JSON V2 Users | JSON V2 Admin | Statut |
+|------|-------------|-------------|---------------|---------------|--------|
+| Archive | 0 | 0 | **20** | **3** | **DIFF - V2 généreux** |
 | Open | 10 | 1 | 20 | 2 | DIFF - JSON plus généreux |
-| Advanced | 20 | 3 | 50 | 3 | DIFF - JSON: 50 users vs Excel: 20 |
-| Premium | 30 | 5 | 10 000 | 5 | DIFF - JSON: 10K users vs Excel: 30 |
+| Advanced | 20 | 3 | 50 | 3 | DIFF - JSON plus généreux |
+| Premium | 30 | 5 | **30** | 5 | **OK - V2 aligné** |
 | Ultimate | ∞ | 10 | 10 000 | 10 | DIFF - JSON: 10K vs Excel: illimité |
+
+> **Note V2**: Premium est maintenant aligné avec l'Excel (30 users vs 10000 en V1).
 
 #### Transcodage
 
@@ -697,21 +972,21 @@ Comparaison entre la grille tarifaire officielle et les configurations JSON.
 
 #### Options mensuelles
 
-| Option | Excel 2024 | JSON Config | Statut |
-|--------|------------|-------------|--------|
+| Option | Excel 2024 | JSON V2 | Statut |
+|--------|------------|---------|--------|
 | Marquage Nexguard | 150€/mois | 150€/mois | OK |
 | DCP & KDM | 95€/mois | 95€/mois | OK |
 | YouTube Antipiracy | 95€/mois | 95€/mois | OK |
 | Proxy DCP/Séquence | 50€/mois | 50€/mois | OK |
 | Connecteur AWS S3 | 500€/mois | 500€/mois | OK |
-| Account Manager Dédié | 1 500€/mois | Non présent | MANQUANT dans JSON standard |
+| Account Manager Dédié | 1 500€/mois | **1500€/mois** | **OK - V2 ajouté** |
 
 #### Services managés
 
-| Service | Excel 2024 | JSON Config | Statut |
-|---------|------------|-------------|--------|
+| Service | Excel 2024 | JSON V2 | Statut |
+|---------|------------|---------|--------|
 | Qualification Mezz Image | 40€ | 40€ | OK |
-| Qualification Mezz Audio | 30€ | 20€ | DIFF - JSON: 20€ vs Excel: 30€ |
+| Qualification Mezz Audio | 30€ | **30€** | **OK - V2 corrigé** |
 | Qualification Mezz ST | 20€ | 20€ | OK |
 | Mise aux normes UHD | 1,95€/min | Non présent | À IMPLÉMENTER |
 | Mise aux normes SD-HD | 1,50€/min | Non présent | À IMPLÉMENTER |
@@ -868,26 +1143,61 @@ Le PDF montre un exemple avec un asset Audio Mezzanine de 6058 secondes (~101 mi
 4. **Ajouter PriceModelTranscodePerParameters** pour le modèle CNC
 5. **Clarifier la séparation Shares vs Orders** dans l'architecture
 
-### 14.3 Synthèse des écarts
+### 14.3 Synthèse des écarts V2
 
-#### Écarts critiques (à corriger)
+#### Écarts CORRIGÉS dans V2
 
-| Écart | Impact | Recommandation |
-|-------|--------|----------------|
-| Users inclus différents | Commercial | Aligner JSON sur grille Excel 2024 |
-| Qualification Audio 20€ vs 30€ | Facturation | Vérifier prix officiel |
-| Services managés absents | Fonctionnalité | Ajouter section `managedServices` |
-| Coef conversion format x1.15 | Facturation | Ajouter dans `specialEffectFactors` |
+| Écart | Était | Maintenant V2 | Statut |
+|-------|-------|---------------|--------|
+| Qualification Audio | 20€ | 30€ | **CORRIGÉ** |
+| Users Premium Cloud | 10 000 | 30 | **CORRIGÉ (aligné Excel)** |
+| Account Manager | Absent | 1500€/mois | **CORRIGÉ** |
+| managedServices | CNC uniquement | Tous | **CORRIGÉ** |
 
-#### Fonctionnalités CNC non généralisées
+#### Écarts restants (V2 vs Excel 2024)
 
-Le modèle CNC contient des fonctionnalités avancées non disponibles dans les offres standard:
-- `managedServices` avec catalogue complet de services
-- `PriceModelTranscodePerParameters` (facturation par bitrate)
-- Conditions par metadata (`conditionByMetadata`)
+| Écart | Excel 2024 | JSON V2 | Impact |
+|-------|------------|---------|--------|
+| Prix Advanced | 299€ | 199€ | **-33%** - Vérifier grille 2025 |
+| Prix Premium | 499€ | 299€ | **-40%** - Vérifier grille 2025 |
+| Prix Ultimate | 999€ | 499€ | **-50%** - Vérifier grille 2025 |
+| Users Archive | 0 | 20+3 | **Généreux** - Intentionnel? |
+| Coef conversion format | x1.15 | Absent | À ajouter si nécessaire |
+
+#### Nouveautés V2 non documentées
+
+| Fonctionnalité | Description | Impacte |
+|----------------|-------------|---------|
+| Storage Disk payant | 0,000035€/Mo | **Tous les clients Cloud** |
+| Ingest payant | Proxy + Mezz | **Tous les clients Cloud** |
+| Nouvelles licences | Drive, Catalog*, Share, Quote, Account | Nouvelles features |
+| Nouvelle résolution | HDReady (0,60€/min) | Transcodage |
+| Nouveau facteur | proxySource (x0.30) | Transcodage proxy |
+| Offres ajoutées | IDC, SimuCloud | Nouveaux clients |
+| Offre supprimée | Screener (29€) | Migration à prévoir |
 
 #### Namespace hérité
 
 Le fichier Newen utilise l'ancien namespace `VDM.AirLab.BillingService.Api` au lieu de `VDM.AirLab.Sdk.Core.Billing`. Migration recommandée.
+
+---
+
+## 15. Conclusion et recommandations
+
+### 15.1 Points d'attention pour l'équipe technique
+
+1. **Storage Disk Cloud maintenant payant** - Impacte tous les clients, à communiquer
+2. **Ingest Cloud maintenant payant** - Impact significatif pour gros volumes
+3. **Changements de prix** - Vérifier si nouvelle grille tarifaire existe
+4. **Réduction drastique users Premium** - 10 000 → 30, peut impacter certains clients
+5. **Suppression offre Screener** - Prévoir migration clients existants
+
+### 15.2 Actions recommandées
+
+- [ ] Vérifier existence d'une grille tarifaire 2025/2026
+- [ ] Migrer le fichier Newen vers le nouveau namespace
+- [ ] Documenter le nouveau modèle de facturation proxy (proxySource factor)
+- [ ] Communiquer les changements de tarification aux équipes commerciales
+- [ ] Mettre à jour la documentation PDF architecture avec les nouveaux types
 
 
