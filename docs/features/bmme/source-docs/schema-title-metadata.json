@@ -1,0 +1,522 @@
+{
+  "$schema": "draft-07",
+  "$comment": "BMME v2 - Source de verite mediaspot - TITLE METADATA (metadonnees oeuvre)",
+  "Title": {
+    "$comment": "Metadonnees globales non-localisables (niveau Title)",
+    "identifiers": {
+      "id": {
+        "type": "integer",
+        "description": "Identifiant unique mediaspot"
+      },
+      "isan": {
+        "type": "string",
+        "format": "ISAN",
+        "description": "Identifiant ISAN"
+      },
+      "imdb_id": {
+        "type": "string",
+        "description": "Identifiant IMDb (tt0103064)"
+      },
+      "imdb_url": {
+        "type": "string",
+        "format": "url",
+        "description": "URL IMDb complete"
+      }
+    },
+    "classification": {
+      "type": {
+        "type": "string",
+        "enum": [
+          "film",
+          "series",
+          "season",
+          "episode"
+        ],
+        "description": "Type de contenu"
+      },
+      "subtype": {
+        "type": "string",
+        "enum": [
+          "feature",
+          "short",
+          "documentary",
+          "animation"
+        ],
+        "description": "Sous-type"
+      }
+    },
+    "series_info": {
+      "$comment": "Informations hierarchiques pour series/seasons/episodes",
+      "parent_id": {
+        "type": "integer",
+        "nullable": true,
+        "description": "ID du Title parent (series_id pour season, season_id pour episode)"
+      },
+      "parent_type": {
+        "type": "string",
+        "enum": ["isseasonof", "isepisodeof"],
+        "nullable": true,
+        "description": "Type de relation parent (Amazon MEC)"
+      },
+      "sequence_number": {
+        "type": "integer",
+        "nullable": true,
+        "description": "Numero de saison ou episode"
+      },
+      "production_number": {
+        "type": "string",
+        "nullable": true,
+        "description": "Numero de production episode (iTunes)"
+      }
+    },
+    "titles": {
+      "original_title": {
+        "type": "string",
+        "description": "Titre original de l'oeuvre"
+      },
+      "studio_release_title": {
+        "type": "string",
+        "description": "Titre de sortie studio (peut differer du titre original)"
+      }
+    },
+    "production": {
+      "production_year": {
+        "type": "integer",
+        "description": "Annee de production"
+      },
+      "production_companies": {
+        "type": "string[]",
+        "description": "Societes de production"
+      },
+      "countries_of_origin": {
+        "type": "array",
+        "items": {
+          "country": {
+            "type": "string",
+            "format": "ISO-3166-1-alpha-2"
+          },
+          "primary": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "description": "Pays d'origine avec indicateur principal"
+      },
+      "production_countries": {
+        "type": "array",
+        "items": {
+          "country": {
+            "type": "string",
+            "format": "ISO-3166-1-alpha-2"
+          },
+          "primary": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "description": "Pays de production"
+      }
+    },
+    "languages": {
+      "original_language": {
+        "type": "string",
+        "format": "locale",
+        "example": "en-US",
+        "description": "Langue originale (BCP 47)"
+      },
+      "original_spoken_locale": {
+        "type": "string",
+        "format": "locale",
+        "description": "Locale audio originale"
+      },
+      "primary_spoken_language": {
+        "type": "string",
+        "format": "locale",
+        "nullable": true,
+        "description": "Langue principale parlee si differente de l'originale (Google Primary Spoken Language)"
+      }
+    },
+    "technical": {
+      "duration": {
+        "type": "integer",
+        "unit": "minutes",
+        "description": "Duree en minutes"
+      },
+      "hd_available": {
+        "type": "boolean",
+        "description": "Disponibilite HD"
+      }
+    },
+    "legal": {
+      "copyright": {
+        "type": "string",
+        "description": "Mention de copyright de l'oeuvre (ex: 1991 Studiocanal)"
+      }
+    },
+    "genres": {
+      "type": "array",
+      "items": {
+        "name": {
+          "type": "string",
+          "description": "Nom du genre (Action, Horror, etc.)"
+        },
+        "code": {
+          "type": "string",
+          "description": "Code normalise provider (HORROR-00, ACTION-00)"
+        }
+      },
+      "description": "Genres avec codes normalises"
+    },
+    "dates": {
+      "release_year": {
+        "type": "integer",
+        "description": "Annee de sortie (ReleaseYear Amazon/iTunes)"
+      },
+      "release_date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date de sortie generique (utilisee si pas de theatrical)"
+      },
+      "theatrical_release_date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date de sortie cinema mondiale"
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date",
+        "description": "Date de creation fiche"
+      },
+      "created_by": {
+        "type": "string",
+        "description": "Createur de la fiche"
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Derniere modification"
+      }
+    },
+    "release_history": {
+      "$comment": "Historique des sorties par type et territoire (Amazon ReleaseHistory)",
+      "type": "array",
+      "items": {
+        "release_type": {
+          "type": "string",
+          "enum": ["Theatrical", "DVD", "Blu-ray", "VOD", "Broadcast"],
+          "description": "Type de sortie"
+        },
+        "territory": {
+          "type": "string",
+          "format": "ISO-3166-1-alpha-2"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "right_holder": {
+      "$comment": "Detenteur des droits",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string",
+          "description": "Nom du detenteur (ex: STUDIOCANAL)"
+        },
+        "provider_business_unit": {
+          "type": "string",
+          "description": "Unite commerciale"
+        },
+        "provider_agent": {
+          "type": "string",
+          "description": "Agent responsable"
+        }
+      }
+    },
+    "cast": {
+      "$comment": "Distribution artistique",
+      "type": "array",
+      "items": {
+        "$ref": "#/CastMember"
+      }
+    },
+    "crew": {
+      "$comment": "Equipe technique",
+      "type": "array",
+      "items": {
+        "$ref": "#/CrewMember"
+      }
+    },
+    "localized_content": {
+      "$comment": "Contenu localise par langue",
+      "type": "array",
+      "items": {
+        "$ref": "#/Language"
+      }
+    }
+  },
+  "CastMember": {
+    "display_name": {
+      "type": "string",
+      "description": "Nom affiche (langue originale)"
+    },
+    "cast_type": {
+      "type": "string",
+      "enum": ["actor", "guest_actor", "voice_actor"],
+      "default": "actor",
+      "description": "Type de cast (Google separe Guest Actors)"
+    },
+    "billing": {
+      "type": "string",
+      "enum": [
+        "top",
+        "supporting",
+        "ordered",
+        "unordered"
+      ],
+      "description": "Type de facturation"
+    },
+    "billing_block_order": {
+      "type": "integer",
+      "description": "Ordre dans le block billing (Amazon BillingBlockOrder)"
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "character_name": {
+          "type": "string"
+        },
+        "reference_id": {
+          "type": "string",
+          "description": "ID de reference pour le personnage"
+        }
+      }
+    },
+    "locales": {
+      "type": "object",
+      "additionalProperties": {
+        "display_name": {
+          "type": "string"
+        },
+        "character_name": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "CrewMember": {
+    "display_name": {
+      "type": "string"
+    },
+    "billing": {
+      "type": "string",
+      "enum": [
+        "top",
+        "supporting",
+        "ordered",
+        "unordered"
+      ]
+    },
+    "billing_block_order": {
+      "type": "integer",
+      "description": "Ordre dans le block billing (Amazon BillingBlockOrder)"
+    },
+    "roles": {
+      "type": "string[]",
+      "enum": [
+        "Director",
+        "Producer",
+        "Screenwriter",
+        "Writer",
+        "Composer",
+        "Cinematographer",
+        "Editor",
+        "Actor",
+        "Creator"
+      ],
+      "description": "Roles (Writer = Amazon, Screenwriter = iTunes, Creator = Google series showrunner)"
+    },
+    "locales": {
+      "type": "object",
+      "additionalProperties": {
+        "display_name": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "Language": {
+    "$comment": "Niveau langue - metadonnees localisables",
+    "locale": {
+      "type": "string",
+      "format": "locale",
+      "example": "fr-FR"
+    },
+    "title": {
+      "type": "string",
+      "description": "Titre localise"
+    },
+    "synopsis": {
+      "type": "string",
+      "maxLength": 4000,
+      "description": "Synopsis long"
+    },
+    "short_synopsis": {
+      "type": "string",
+      "maxLength": 400,
+      "description": "Synopsis court"
+    },
+    "territories": {
+      "type": "array",
+      "items": {
+        "$ref": "#/Territory"
+      }
+    }
+  },
+  "Territory": {
+    "$comment": "Niveau territoire - metadonnees specifiques",
+    "country": {
+      "type": "string",
+      "format": "ISO-3166-1-alpha-2"
+    },
+    "language": {
+      "type": "string",
+      "format": "locale",
+      "description": "Langue principale"
+    },
+    "localized_metadata": {
+      "title": {
+        "type": "string",
+        "description": "Titre (override langue si different)"
+      },
+      "synopsis": {
+        "type": "string"
+      },
+      "short_synopsis": {
+        "type": "string"
+      }
+    },
+    "release_info": {
+      "provisional_release_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "cinema_release_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "video_physical_release_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "program_category": {
+        "type": "string",
+        "enum": [
+          "Library",
+          "New Release",
+          "Pre-order"
+        ]
+      },
+      "day_and_date": {
+        "type": "boolean"
+      }
+    },
+    "versions": {
+      "original_version": {
+        "type": "boolean"
+      },
+      "dubbed_version": {
+        "type": "boolean"
+      },
+      "subtitled_version": {
+        "type": "boolean"
+      }
+    },
+    "rating": {
+      "rating_system": {
+        "type": "string",
+        "description": "Systeme (dk-movies, fi-movies, FSK, MEKU, SM-SA, de-tv, etc.)"
+      },
+      "rating_code": {
+        "type": "string",
+        "description": "Code (15, K-18, 12+, etc.)"
+      },
+      "rating_reason": {
+        "type": "string",
+        "nullable": true
+      },
+      "not_rated": {
+        "type": "boolean",
+        "default": false,
+        "description": "True si le contenu n'est pas classe (Amazon notrated)"
+      }
+    },
+    "rights": {
+      "rights_duration": {
+        "type": "string",
+        "nullable": true
+      },
+      "reg_number": {
+        "type": "string",
+        "nullable": true
+      },
+      "vod_rights_ident": {
+        "type": "string",
+        "nullable": true
+      },
+      "vod_suspension_required": {
+        "type": "boolean"
+      }
+    },
+    "distribution": {
+      "$comment": "Informations de distribution par territoire",
+      "tv_first_diffuser": {
+        "type": "string",
+        "nullable": true
+      },
+      "tv_pay_opening_date": {
+        "type": "string",
+        "format": "date",
+        "nullable": true
+      },
+      "tv_free_opening_date": {
+        "type": "string",
+        "format": "date",
+        "nullable": true
+      },
+      "video_editor": {
+        "type": "string",
+        "nullable": true
+      },
+      "video_distributor": {
+        "type": "string",
+        "nullable": true
+      },
+      "cinema_distributor": {
+        "type": "string",
+        "nullable": true
+      },
+      "cinema_attendance_figures": {
+        "type": "integer",
+        "nullable": true
+      },
+      "cinema_attendance_figures_unit": {
+        "type": "string",
+        "nullable": true
+      }
+    },
+    "additional_locales": {
+      "type": "string[]",
+      "description": "Locales additionnelles (ex: Belgique FR + NL)"
+    }
+  },
+  "_metadata": {
+    "version": "2.0.0",
+    "type": "title-metadata",
+    "description": "Schema des metadonnees oeuvre (Title) - source de verite mediaspot"
+  }
+}

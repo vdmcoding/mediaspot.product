@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="tv5.3">
+  <provider>studiocanal</provider>
+  <language>de-DE</language>
+  <video>
+    <type>tv</type>
+    <subtype>episode</subtype>
+    <container_id>035973_DE_S001</container_id>
+    <container_position>1</container_position>
+    <vendor_id>035973_DE_E001</vendor_id>
+    <episode_production_number>1</episode_production_number>
+    <countries_of_origin>
+      <country primary="true">FR</country>
+    </countries_of_origin>
+    <production_countries>
+      <country primary="true">FR</country>
+    </production_countries>
+    <original_spoken_locale>fr-FR</original_spoken_locale>
+    <title>Willkommen in Paris</title>
+    <studio_release_title>Épisode 1</studio_release_title>
+    <description>Karl Lagerfeld erinnert sich an seine Kindheit in Hamburg. An seine Liebe zum Zeichnen und an seine ersten Schritte in der Modewelt von Paris. Erste Erfahrungen als Designer machte er für die Modehäuser Balmain und Patou. Parallel entwickelt sich seine enge Freundschaft und Rivalität mit Yves Saint Laurent.</description>
+    <release_date>2024-01-10</release_date>
+    <copyright_cline>2023 KM</copyright_cline>
+    <ratings>
+      <rating system="de-tv" code="12+" />
+    </ratings>
+    <assets>
+      <asset type="full">
+        <data_file role="source">
+          <locale name="de-DE" />
+          <file_name>035973_DE_E001_source.mov</file_name>
+          <size>57229067012</size>
+          <checksum type="md5">f68cae1fa98421bf3911caa57e0b7ad0</checksum>
+          <attribute name="crop.top">4</attribute>
+          <attribute name="crop.bottom">4</attribute>
+          <attribute name="crop.left">4</attribute>
+          <attribute name="crop.right">4</attribute>
+          <attribute name="image.burned_forced_narrative.locale">de-DE</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+    </assets>
+    <preview starttime="533" />
+    <products>
+      <product>
+        <territory>DE</territory>
+        <sales_start_date>2026-02-19</sales_start_date>
+        <cleared_for_sale>true</cleared_for_sale>
+      </product>
+    </products>
+  </video>
+</package>

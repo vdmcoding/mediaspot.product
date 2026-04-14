@@ -1,0 +1,231 @@
+Donnée;Sync VDM;Label VDM;tagname VDM;Commentaire VDM;exemple de format;"exemple ""vide""";remarque coté UNITY;Utilisé par VDM/DMS o/n?;commentaire JULIA;Colonne1
+miloCode;OUI;MILO;customerId;;"""miloCode"": ""028421""";Toujours définie;-;OUI;;
+catalog;OUI;Catalog;catalog;La donnée n'était pas affichée sur la page Title. Elle est maintenant en bas de la section Summary;"""catalog"": ""Studiocanal Germany""";"""catalog"": ""Non défini""";"gestion de la donnée ""vide"" : peut on ne pas renvoyer la donnée catalogue quand ""catalog"": ""Non défini"" ?";OUI;sans règle de gestion;"renommé en ""entitesource"" ""source entity"" >> sylvie indique que c'est une donnée purement interne de michel pour indiquer qui lui a fait la demande, pas utile de l'utiliser.  >> pourrait s'apparenter (ce que nous voulons) à la notion ""library"" de la partie Legal unity."
+owner;OUI;Appartenance;appartenance;;"""owner"": ""StudioCanal""";Toujours définie;"donnée doubon avec ""membership"". Peut-on supprimer une des 2 ?";OUI;sans règle de gestion côté VDM / règle côté UNITY pour n'envoyer que ce qui n'est pas concurrence.;correspond à la donnée appartenance. Il y a un filtre pour ne pas envoyer les données de la concurrence
+isancode;OUI;ISAN ID;isanId;;"""isanCode"": ""00000005BB11""";null;-;OUI;sans règle de gestion >> vérifier avec VDM si on rajoute en 30 caractère, ce qui se passe.;30 caractères normalement mais uniquement partiel.
+originLanguage;OUI;Title Lang;languageTitle;Donnée obligatoire pour les qualifications et commandes;"""originLanguage"": ""USA""";"""originLanguage"": ""Non défini""";"+ attention 5 isoCode != (CSK, CUB, EGY, IRA, GIN).
+ + Attention changement de plusieurs isoCode à venir !";OUI;avec règle pour la qualification + une règle de split des valeurs main et secondary.;
+originCountry;OUI;Title Nationalities;nationalities;Mapping dynamique côté front pour le USA ou U.S.A en WW;"""originCountry"": ""USA""";Toujours définie;-;OUI;à vérifier pour DMS;dans UNITY il s'agit de ProductionCountry maintenant. Donnée construite sur le territoire de la version principale du titre de l'œuvre.
+kind;OUI;Genre keywords;titleGenres;"Import sur ""en"" ";"""kind"": {
+      ""fr"": ""Comédie,Guerre"",
+      ""en"": ""Comedy,War""
+    }";"""kind"": {
+      ""fr"": ""NA"",
+      ""en"": ""NA""
+    }";"+ Peut on envisager de changer le nom  en ""genres"" ?
+ + gestion de la donnée ""vide"" : peut on ne pas renvoyer la donnée kind quand ""kind"": {
+      ""fr"": ""NA"",
+      ""en"": ""NA""
+    }?";OUI;sans règle de gestion mais utilisé pour livraison package VOD;proposition d'envoyer l'ID genre unity au lieu du label en fr etc. + renommage kind en genre. Gestion de la donnée vide ? Obligation de saisir un genre côté UNITY - VDM/DMS excluent ils le N/A
+episodeNb;OUI;Title Episodes Total Nb;serieSeasonEpisodeTotalNumber;"- Affiché sur le front : 
+Catalog Type Season (X episodes)
+- Utilisé pour différencier MOVIE de SEASON";"""episodeNb"": 1,";Toujours définie;"Donnée propre au format d'oeuvre ""sériel"" qui rentre dans la structure des oeuvres en général (même non sérielles) Quid nettoyage données sérielles pour les oeuvres non sérielles ?";OUI;sans règle de gestion mais utilisé pour la qualification;voir pour consolider la règle de gestion des épisodes - à discuter avec michel.
+firstEpisode;NON;;;;"""firstEpisode"": 1";Toujours définie;"Donnée propre au format d'oeuvre ""sériel"" qui rentre dans la structure des oeuvres en général (même non sérielles) Quid nettoyage données sérielles pour les oeuvres non sérielles ?";à vérifier;;
+lastEpisode;NON;;;;"""lastEpisode"": 1";Toujours définie;"Donnée propre au format d'oeuvre ""sériel"" qui rentre dans la structure des oeuvres en général (même non sérielles) Quid nettoyage données sérielles pour les oeuvres non sérielles ?";à vérifier;;
+bu;OUI;Business Unit;businessUnit;;"""bu"": ""Germany""";Toujours définie;-;OUI;sans règle de gestion;à challenger pour comprendre la viabilité de cette donnée ?
+eidr;OUI;EIDR;eidr;;"""eidr"": ""10.5240/EDBD-5352-DDF1-1E91-888E-4""";null;;OUI;sans règle de gestion - utilisé pour certains packages VOD. / à vérifier avec vdm comment ils font quand donnée absente.;non obligatoire côté UNITY
+creationDate;NON;;;L'information de date de création dans la DF enregistré en DB;"""creationDate"": ""09/05/2018""";Toujours définie;-;à vérifier;;
+modificationDate;NON;;;L'information de dates de modfication dans la DF enregistré en DB;"""modificationDate"": ""10/01/2023""";Toujours définie;-;à vérifier;règle des 10 jours, commen font ils côté vdm;
+artetEssai;NON;;;"Nous n'avons pas connaissance de cette métadonnée.
+Celle-ci n'est pas renvoyée par UNITY";"""artetEssai"": 0";Toujours définie;Quid de remplacer (0/1/null) par un Boolean (null/true/false) ?;OUI;sans règle de gestion;
+imdbId;OUI;Imdb Id;imdbId;;"""imdbId"": ""tt0036317""";null;-;OUI;avec règle;/ avec règle aussi côté UNITY : imdb obligatoire à la création de l'œuvre TT------ : vérifier avec vdm et dms ce qu'ils font. Ils empechent aussi les doublons. Me donner un exemple de film avec ça.
+cboId;NON;;;Nous n'avons pas connaissance de cette métadonnée.;"""cboId"": ""29094""";null;-;à vérifier;;
+ratio;OUI;Title Original Picture Format;titleOriginalPictureFormat;Donnée obligatoire pour les qualifications et commandes,;"""ratio"": ""2.39"",";null;-;OUI;avec règle + qualif;
+visaDate;NON;;;;"""visaDate"": ""18/06/2021""";null;-;à vérifier;;changé en date visa d'exploitation cnc
+visa;OUI;VISA Id;visaId;;"""visa"": 150973";"""visa"": -1";Quid de remplacer -1 par null ?;OUI;sans règle de gestion;changement dans UNITY : jusqu'ici sais côté legal. immatriculationRCA. Vérifier si c'est michel qui le saisit. Règle de gestion à intégrer côté VDM/DMS pour conserver le terme VISA
+patrimony;NON;;;Nous n'avons pas connaissance de cette métadonnée.;"""patrimony"": true";null;-;à vérifier;;
+highestGrade;NON;;;Nous n'avons pas connaissance de cette métadonnée.;"""highestGrade"": ""B""";null;-;à vérifier;;
+localSalesGrade;NON;;;;"""localSalesGrade"": {
+    ""grade"": {
+      ""france"":""B"",
+      ""uk"":""C"",
+      ""germany"":""E"",
+      ""international"":""D""
+
+    },""tv"": {
+      ""france"":""B"",
+      ""uk"":""D"",
+      ""germany"":""E"",
+      ""international"":""D""
+
+    },""video"": {
+      ""france"":""B"",
+      ""uk"":""C"",
+      ""germany"":""E""
+    }
+  }";null;-;à vérifier;;
+relatedWorks;OUI;Related TItle Id;relatedTitleId;Affiche dans le front dans un menu déroulant du bandeau principal;"""relatedWorks"": [
+    ""035319""
+  ]";null;-;OUI;avec règle;qualification du lien entre les œuvres - peut être IDTYPEOEUVRELIEE à vérifier côté sylvie. Pourrait être ajouté
+keywords;OUI;Title Tags;titleTags;La donnée n'était pas affichée sur la page Title. Elle est maintenant en bas de la section Summary;"""keywords"": {
+    ""en"":[""Paris"",""Mafia"",""Bandit""],
+    ""de"":[""Paris"",""Mafia"",""Bandit""]
+  }";null;"+ Quid de corriger l'incohérence des traductions envoyées par rapport au nom de la donnée ?
+ + Quid d'ajouter la traduction française ?";OUI;sans règle de gestion / oui il faut ajouter traduction FR;chantier mots clés +++ à faire. Voir pour envoyer que les ID.
+copyright;NON;;;;"""copyright"": {
+    ""text"": ""© 2020""
+  },";null;"Quid de supprimer la mention de l'imbrication : ""copyright"": ""© 2020"" ?";OUI;sans règle de gestion / pas possible de supprimer;sylvie regarder pour sa quesiton.
+productionYear;OUI;Production Date;productionDate;Donnée obligatoire pour les qualifications et commandes;"""productionYear"": {
+      ""fr"": ""1944"",
+      ""en"": ""1944""
+    }";"    ""productionYear"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    },";"Quid de changer la structure de l'envoi de cette donnée : envoyer l'année et remplacer le ""Non défini"" (et sa traduction) par ""null"" ?";OUI;avec règle /  qu'est-ce qui doit etre changé @sylvie? / à vérifier pour territoires dans dms;"liste déroulant de 1880 à 2030. à changer. Label langue inutile. S'appelle désormais ""YEAR"" > à changer dans le json. Decision à prendre quand il n'y a pas d'année. Film avec une année en undefined."
+duration;NON;;;;"""duration"": {
+      ""fr"": ""62"",
+      ""en"": ""62""
+    }";"    ""duration"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    },";"Quid de changer la structure de l'envoi de cette donnée : envoyer la durée et remplacer le ""Non défini"" (et sa traduction) par ""null"" ?";OUI;"avec règle / on doit vérifier avec VDM pour le ""null"", et aussi créer une règle de gestion pour les durées à 0.";même problématique : en/fr, undefined etc. Michel met 0 quand il ne sait pas.
+format;NON;;;"n'est plus utilisé depuis le 28/07/2021 cf. DF-2628 :
+L'IT CANAL+ indique que la seule donnée remontant de Unity qui permettrait de déterminer dans tous les cas si nous sommes en ""Movie"" ou ""Season"" est ""episodeNB"".
+
+Il faudrait donc adapter notre méthode afin que les titres dont ""episodeNB""=1 apparaissent en ""Movie"" et ceux dont ""episodeNB"">1 apparaissent en ""Season"".";"""format"": {
+      ""fr"": ""Long métrage"",
+      ""en"": ""Feature""
+    }";Toujours définie;-;OUI;avec règle ?;
+formatType;NON;;;;"    ""formatType"": {
+      ""fr"": ""Fiction"",
+      ""en"": ""Fiction""
+    }";Toujours définie;Ce champs sera supprimé et les données seront intégrer via autres champs (genre);à vérifier;;
+membership;NON;;;;"""membership"": {
+      ""fr"": ""StudioCanal"",
+      ""en"": ""StudioCanal""
+    }";Toujours définie;"donnée doubon avec ""ownership"". Peut-on supprimer une des 2 ?";OUI;sans règle de gestion;
+color;NON;;;;"""color"": {
+      ""fr"": ""Couleur"",
+      ""en"": ""Color""
+    }";"    ""color"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    },";"+ gestion de la donnée ""vide"" : peut on ne pas renvoyer la donnée color quand ""color"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    }?";à vérifier;;
+imageFormat;NON;;;;"  ""imageFormat"": {
+      ""fr"": ""2D"",
+      ""en"": ""2D""
+    }";"    ""imageFormat"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    },";"+ gestion de la donnée ""vide"" : peut on ne pas renvoyer la donnée imageFormat quand ""imageFormat"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    }?";à vérifier;;
+projectStatus;NON;;;;"    ""projectStatus"": {
+      ""fr"": ""Exploitation"",
+      ""en"": ""Exploitation""
+    },";Toujours définie;-;OUI;avec règle?;
+sound;NON;;;;"    ""sound"": {
+      ""fr"": ""Sonore"",
+      ""en"": ""Sound""
+    },";"    ""sound"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    },";"+ gestion de la donnée ""vide"" : peut on ne pas renvoyer la donnée sound quand ""sound"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    }?";à vérifier;;
+quota;NON;;;;"    ""quota"": {
+      ""fr"": ""USA"",
+      ""en"": ""USA""
+    },";Toujours définie;-;OUI;sans règle de gestion;
+productionYearFrom;NON;;;;"    ""productionYearFrom"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    },";"    ""productionYearFrom"": {
+      ""fr"": ""Non Défini"",
+      ""en"": ""Undefined""
+    },";"Quid de changer la structure de l'envoi de cette donnée : envoyer la productionYearFrom et remplacer le ""Non défini"" (et sa traduction) par ""null"" ?";à vérifier;;
+synopsis;OUI;Synopses;synopses;"Prend de préférence le type qui contient ""court""";"""synopsis"": [
+      {
+        ""isoCode"": ""DEU"",
+        ""synopsis"": ""ZWEI REKRUTEN UND (...)  SCHIESSEN."",
+        ""type"": {
+          ""fr"": ""Synopsis"",
+          ""en"": ""Synopsis""
+        }
+      }
+    ],";null;Quid de supprimer la notion d'ordre des synopsis ?;OUI;avec règle;
+awards;NON;;;;"""awards"": [
+    {
+      ""isoCode"": ""FRA"",
+      ""award"": ""Coupe Volpi du Meilleur Acteur : Jean Gabin"",
+      ""complement"": ""-"",
+      ""origin"": ""-""
+    }
+  ]";null;"Quid de changer la structure de l'envoi des données ""complement"" et ""origin"" : remplacer ""-"" par null.";à ajouter DF;;
+pressReviews;NON;;;;"""pressReviews"": [
+    {
+      ""isoCode"":""FRA"",
+      ""review"":""\""Ce n'est pas un mince mérite que ..."",
+      ""complement"":""-"",
+      ""origin"":""La Croix""
+    }
+  ],";null;"Quid de changer la structure de l'envoi des données ""complement"" et ""origin"" : remplacer ""-"" par null.";NON;;
+version;OUI;"Title+ArticleLabel
+Original Language";"assetName
+titleOriginalLanguage";"Données utilisées :
+""title""
+ ""isanCode""
+""articleLabel""
+""isoCode""
+
+Mapping dynamique côté front pour le USA ou U.S.A en WW pour les titres localisés (""principal"": ""N"" te langue différente de langue originale)";"""versions"": [
+      {
+        ""title"": ""Rookies in Burma"",
+        ""isanCode"": """",
+        ""articleLabel"": ""-"",
+        ""isoCode"": ""USA"",
+        ""country"": {
+          ""fr"": ""U.S.A."",
+          ""en"": ""U.S.A.""
+        },
+        ""origin"": 2,
+        ""principal"": ""O"",
+        ""complementTitle"": """",
+        ""resTv"": ""n/a"",
+        ""resCinema"": ""n/a"",
+        ""used"": {
+          ""id"": 20,
+          ""label"": {
+            ""fr"": ""Utilisé"",
+            ""en"": ""Use""
+          }
+        }
+      }
+    ],";null (1 oeuvre concernée);"+ Quid d'ordonner par origine, titre ?
+ + Quid de changer la structure de l'envoi des données ""isanCode"", ""articleLabel""et ""complementTitle "" et  remplacer ""-"" par null.
+ + Quid de changer la structure de la donnée ""principal"" pour exploiter un boolean ?
+ + Quid de changer la structure de l'envoi des données ""restTv"", ""restCinema"" pour remplacer ""n/a"" par null
++ est ce que le ""usedId"" est utilisé ?";OUI;avec règle;
+participants;OUI;Casts;casts;;"""participants"": [
+      {
+        ""id"": 4117,
+        ""personId"": 3249,
+        ""name"": {
+          ""firstName"": ""Joan"",
+          ""lastName"": ""Barclay""
+        },
+        ""inFunctionOrder"": 4,
+        ""function"": {
+          ""id"": 10,
+          ""functionLabel"": null,
+          ""label"": {
+            ""fr"": ""Acteur"",
+            ""en"": ""Actor""
+          }
+        }
+      },";null;"+ est ce que le ""id"", ""personId"" et ""functionId"" est utilisé ?
++ Quid de changer la structure de l'envoi des données ""firstName"" et  remplacer """" par null.";OUI;avec règle;
+episodes;NON;;;;"""episodes"": [
+    {
+      ""number"": ""1"",
+      ""title"": ""Episode 01"",
+      ""synopsis"": ""-"" // _ -> null ? [CMP]
+    }
+  ]";;"+ Quid d'ajouter un tri par numéro d'épisode
++ Quid de revoir le modèle de la liste d'episodes pour que  chaque épisode possède une liste de version.
++ Quid de changer la structure de l'envoi de la donnée ""synopsis"" pour remplacer  '-' par  null";OUI;avec règle?;

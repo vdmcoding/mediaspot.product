@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://apple.com/itunes/importer" version="film5.3">
+  <provider>underthemilkyway</provider>
+  <language>sv</language>
+  <video>
+    <type>film</type>
+    <subtype>feature</subtype>
+    <vendor_id>IT702599</vendor_id>
+    <countries_of_origin>
+      <country primary="true">FR</country>
+    </countries_of_origin>
+    <production_countries>
+      <country primary="true">FR</country>
+    </production_countries>
+    <original_spoken_locale>fr-FR</original_spoken_locale>
+    <title>Amelie från Montmarte</title>
+    <studio_release_title>Le fabuleux destin d'Amélie Poulain</studio_release_title>
+    <synopsis>Amélie har en udda bakgrund, en livlig fantasi och ett drömskt sinne. Fast hon till synes lever i sin egen värld, gör hon ständigt små hemliga goda gärningar för att ge andra människor glädje. Men kan hennes bekymmersfria syn på livet leda henne till egen lycka och kärlek? Amélie från Montmartre tog världen med storm när filmens unika estetik och varma berättelse öppnade publikens ögon för fransk film på nytt. En stilbildande modern klassiker av Jean-Pierre Jeunet med Audrey Tautou och Mathieu Kassovitz.</synopsis>
+    <locales>
+      <locale name="da">
+        <title>Amelie</title>
+        <synopsis>Amélie har en usædvanlig baggrund, en livlig fantasi og et sværmerisk sind. Selvom hun tilsyneladende lever i sin egen verden, gør hun jævnligt gode gerninger for at gøre andre mennesker glade. Men kan hendes sorgløse syn på livet bringe hende lykke og kærlighed? Den fabelagtige Amélie fra Montnartre tog verden med storm, da filmens enestående æstetik og varme fortælling atter åbnede publikums øjne for fransk film. En stilskabende moderne klassiker af Jean-Pierre Jeunet med Audrey Tautou og Mathieu Kassovitz.</synopsis>
+      </locale>
+      <locale name="fi">
+        <title>Amelie</title>
+        <synopsis>Améliella on erikoinen tausta, vilkas mielikuvitus ja haaveileva mieli. Vaikka hän tuntuu elävän omassa maailmassaan, hän tekee jatkuvasti pieniä, salaisia tekoja, joilla hän tuo iloa muille. Mutta voiko hänen huoleton elämänkatsomuksensa johtaa hänet hänen oman onnensa ja rakkautensa äärelle? Amélie valloitti maailman, kun elokuvan ainutlaatuinen estetiikka ja lämminhenkinen tarina avasivat yleisön silmät uudelleen ranskalaiselle elokuvalle. Jean-Pierre Jeunet'n suuntaa antavan ja modernin klassikkoelokuvan pääosissa nähdään Audrey Tautou ja Mathieu Kassovitz.</synopsis>
+      </locale>
+      <locale name="no">
+        <title>Amelie</title>
+        <synopsis>Amélie har en uvanlig bakgrunn, en livlig fantasi og et drømmende sinn. Selv om hun tilsynelatende lever i sin egen verden, gjør hun stadig små gode gjerninger i hemmelighet for å gi andre mennesker glede. Men kan hennes bekymringsløse syn på livet føre henne til egen lykke og kjærlighet? Den fabelaktige Amélie fra Montmartre tok verden med storm da filmens unike estetikk og varme fortelling åpnet publikums øyne for fransk film på nytt. En stilsettende moderne klassiker av Jean-Pierre Jeunet med Audrey Tautou og Mathieu Kassovitz.</synopsis>
+      </locale>
+    </locales>
+    <production_company>Victoires Productions</production_company>
+    <copyright_cline>2025 NonStop Entertainment</copyright_cline>
+    <theatrical_release_date>2001-10-12</theatrical_release_date>
+    <regions>
+      <region>
+        <territory>DK</territory>
+        <theatrical_release_date>2002-01-11</theatrical_release_date>
+      </region>
+      <region>
+        <territory>FI</territory>
+        <theatrical_release_date>2001-10-26</theatrical_release_date>
+      </region>
+      <region>
+        <territory>NO</territory>
+        <theatrical_release_date>2025-10-01</theatrical_release_date>
+      </region>
+    </regions>
+    <genres>
+      <genre code="COMEDY-00" />
+      <genre code="ROMANCE-00" />
+    </genres>
+    <ratings>
+      <rating system="dk-movies" code="7" />
+      <rating system="fi-movies" code="K-12" />
+      <rating system="no-movies" code="12" />
+      <rating system="se-movies" code="7+" />
+    </ratings>
+    <cast>
+      <cast_member billing="top">
+        <display_name>Audrey Tautou</display_name>
+        <characters>
+          <character>
+            <character_name>Amélie Poulain</character_name>
+            <reference_id>AMELIE_POULAIN</reference_id>
+          </character>
+        </characters>
+      </cast_member>
+      <cast_member billing="top">
+        <display_name>Mathieu Kassovitz</display_name>
+        <characters>
+          <character>
+            <character_name>Nino Quincampoix</character_name>
+            <reference_id>NINO_QUINCAMPOIX</reference_id>
+          </character>
+        </characters>
+      </cast_member>
+      <cast_member billing="top">
+        <display_name>Rufus</display_name>
+        <characters>
+          <character>
+            <character_name>Raphaël Poulain</character_name>
+            <reference_id>RAPHAEL_POULAIN</reference_id>
+          </character>
+        </characters>
+      </cast_member>
+    </cast>
+    <crew>
+      <crew_member billing="top">
+        <display_name>Jean-Pierre Jeunet</display_name>
+        <roles>
+          <role>Director</role>
+          <role>Screenwriter</role>
+        </roles>
+      </crew_member>
+      <crew_member billing="top">
+        <display_name>Claudie Ossard</display_name>
+        <roles>
+          <role>Producer</role>
+        </roles>
+      </crew_member>
+    </crew>
+    <chapters>
+      <timecode_format>25/1 1/nonDrop</timecode_format>
+      <chapter>
+        <start_time>00:00:00:00</start_time>
+        <titles>
+          <title locale="sv">Kapitel 1</title>
+          <title locale="da">Kapitel 1</title>
+          <title locale="fi">Luku 1</title>
+          <title locale="no">Kapittel 1</title>
+        </titles>
+        <artwork_time>00:09:19:15</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:10:36:17</start_time>
+        <titles>
+          <title locale="sv">Kapitel 2</title>
+          <title locale="da">Kapitel 2</title>
+          <title locale="fi">Luku 2</title>
+          <title locale="no">Kapittel 2</title>
+        </titles>
+        <artwork_time>00:13:21:12</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:20:20:06</start_time>
+        <titles>
+          <title locale="sv">Kapitel 3</title>
+          <title locale="da">Kapitel 3</title>
+          <title locale="fi">Luku 3</title>
+          <title locale="no">Kapittel 3</title>
+        </titles>
+        <artwork_time>00:24:28:21</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:33:12:06</start_time>
+        <titles>
+          <title locale="sv">Kapitel 4</title>
+          <title locale="da">Kapitel 4</title>
+          <title locale="fi">Luku 4</title>
+          <title locale="no">Kapittel 4</title>
+        </titles>
+        <artwork_time>00:38:46:07</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:40:27:21</start_time>
+        <titles>
+          <title locale="sv">Kapitel 5</title>
+          <title locale="da">Kapitel 5</title>
+          <title locale="fi">Luku 5</title>
+          <title locale="no">Kapittel 5</title>
+        </titles>
+        <artwork_time>00:48:37:10</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>00:49:37:12</start_time>
+        <titles>
+          <title locale="sv">Kapitel 6</title>
+          <title locale="da">Kapitel 6</title>
+          <title locale="fi">Luku 6</title>
+          <title locale="no">Kapittel 6</title>
+        </titles>
+        <artwork_time>00:54:05:17</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>01:01:10:11</start_time>
+        <titles>
+          <title locale="sv">Kapitel 7</title>
+          <title locale="da">Kapitel 7</title>
+          <title locale="fi">Luku 7</title>
+          <title locale="no">Kapittel 7</title>
+        </titles>
+        <artwork_time>01:01:57:24</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>01:10:36:22</start_time>
+        <titles>
+          <title locale="sv">Kapitel 8</title>
+          <title locale="da">Kapitel 8</title>
+          <title locale="fi">Luku 8</title>
+          <title locale="no">Kapittel 8</title>
+        </titles>
+        <artwork_time>01:13:52:19</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>01:21:41:07</start_time>
+        <titles>
+          <title locale="sv">Kapitel 9</title>
+          <title locale="da">Kapitel 9</title>
+          <title locale="fi">Luku 9</title>
+          <title locale="no">Kapittel 9</title>
+        </titles>
+        <artwork_time>01:22:48:16</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>01:31:53:14</start_time>
+        <titles>
+          <title locale="sv">Kapitel 10</title>
+          <title locale="da">Kapitel 10</title>
+          <title locale="fi">Luku 10</title>
+          <title locale="no">Kapittel 10</title>
+        </titles>
+        <artwork_time>01:38:34:08</artwork_time>
+      </chapter>
+      <chapter>
+        <start_time>01:43:45:22</start_time>
+        <titles>
+          <title locale="sv">Kapitel 11</title>
+          <title locale="da">Kapitel 11</title>
+          <title locale="fi">Luku 11</title>
+          <title locale="no">Kapittel 11</title>
+        </titles>
+        <artwork_time>01:51:37:22</artwork_time>
+      </chapter>
+    </chapters>
+    <assets>
+      <asset type="full">
+        <data_file role="source">
+          <locale name="fr-FR" />
+          <file_name>IT702599_source.mov</file_name>
+          <size>160704057412</size>
+          <checksum type="md5">01fa58332be316812501947be1c0c32e</checksum>
+          <attribute name="crop.top">132</attribute>
+          <attribute name="crop.bottom">132</attribute>
+          <attribute name="crop.left">4</attribute>
+          <attribute name="crop.right">4</attribute>
+          <attribute name="image.burned_forced_narrative.locale">fr-FR</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+        <data_file role="subtitles">
+          <locale name="sv" />
+          <file_name>IT702599_full_sv.itt</file_name>
+          <size>100935</size>
+          <checksum type="md5">c5942cbcd9560a90a7808c8b160ef52e</checksum>
+        </data_file>
+        <data_file role="subtitles">
+          <locale name="no" />
+          <file_name>IT702599_full_no.itt</file_name>
+          <size>99903</size>
+          <checksum type="md5">01f30e10870c56e9cf4cf02d6d3fddea</checksum>
+        </data_file>
+        <data_file role="subtitles">
+          <locale name="fi" />
+          <file_name>IT702599_full_fi.itt</file_name>
+          <size>99675</size>
+          <checksum type="md5">bf9ab14afdd2d8b0c0e00cbd2b687a2e</checksum>
+        </data_file>
+        <data_file role="subtitles">
+          <locale name="da" />
+          <file_name>IT702599_full_da.itt</file_name>
+          <size>99747</size>
+          <checksum type="md5">8badc1ad81386bb786ce3142410bc0c9</checksum>
+        </data_file>
+        <data_file role="notes">
+          <file_name>IT702599_source_notes.pdf</file_name>
+          <size>2522852</size>
+          <checksum type="md5">808cf892dea9b6c68fba4ff49503f8fb</checksum>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:00:57:02</preview_image_time>
+        <territories>
+          <territory>NO</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="fr-FR" />
+          <file_name>IT702599_preview_fr-FR_no.mov</file_name>
+          <size>1488702879</size>
+          <checksum type="md5">592ba61a5b1d95c71f1b5ebd24ca8f62</checksum>
+          <attribute name="crop.top">132</attribute>
+          <attribute name="crop.bottom">132</attribute>
+          <attribute name="crop.left">4</attribute>
+          <attribute name="crop.right">4</attribute>
+          <attribute name="image.burned_subtitles.locale">no</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:00:57:02</preview_image_time>
+        <territories>
+          <territory>DK</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="fr-FR" />
+          <file_name>IT702599_preview_fr-FR_da.mov</file_name>
+          <size>1488621759</size>
+          <checksum type="md5">f22da88b85d558be79d73fe0d20849d2</checksum>
+          <attribute name="crop.top">132</attribute>
+          <attribute name="crop.bottom">132</attribute>
+          <attribute name="crop.left">4</attribute>
+          <attribute name="crop.right">4</attribute>
+          <attribute name="image.burned_subtitles.locale">da</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:00:57:02</preview_image_time>
+        <territories>
+          <territory>SE</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="fr-FR" />
+          <file_name>IT702599_preview_fr-FR_sv.mov</file_name>
+          <size>1487385295</size>
+          <checksum type="md5">356fc1d6fa90ee1c535a112763decba3</checksum>
+          <attribute name="crop.top">132</attribute>
+          <attribute name="crop.bottom">132</attribute>
+          <attribute name="crop.left">4</attribute>
+          <attribute name="crop.right">4</attribute>
+          <attribute name="image.burned_subtitles.locale">sv</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:00:57:02</preview_image_time>
+        <territories>
+          <territory>FI</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="fr-FR" />
+          <file_name>IT702599_preview_fr-FR_fi.mov</file_name>
+          <size>1490988399</size>
+          <checksum type="md5">c54b04b6a1a9dba5031590c598e7b5af</checksum>
+          <attribute name="crop.top">132</attribute>
+          <attribute name="crop.bottom">132</attribute>
+          <attribute name="crop.left">4</attribute>
+          <attribute name="crop.right">4</attribute>
+          <attribute name="image.burned_subtitles.locale">fi</attribute>
+          <attribute name="image.textless_master">false</attribute>
+        </data_file>
+      </asset>
+      <asset type="preview">
+        <preview_image_time format="25/1 1/nonDrop">00:00:57:02</preview_image_time>
+        <territories>
+          <territory>WW</territory>
+        </territories>
+        <data_file role="source">
+          <locale name="fr-FR" />
+          <file_name>IT702599_preview_WW.mov</file_name>
+          <size>1490865556</size>
+          <checksum type="md5">b3b8eb4e267583524d307895ac29a728</checksum>
+          <attribute name="crop.top">132</attribute>
+          <attribute name="crop.bottom">132</attribute>
+          <attribute name="crop.left">4</attribute>
+          <attribute name="crop.right">4</attribute>
+          <attribute name="image.textless_master">true</attribute>
+        </data_file>
+      </asset>
+      <asset type="artwork_16:9">
+        <territories>
+          <territory>SE</territory>
+        </territories>
+        <data_file>
+          <locales>
+            <locale name="sv" />
+          </locales>
+          <file_name>IT702599_artwork_169_sv.png</file_name>
+          <size>19956223</size>
+          <checksum type="md5">37bf3fbcf676dda05e46412fa5d84e84</checksum>
+        </data_file>
+      </asset>
+      <asset type="artwork_16:9">
+        <territories>
+          <territory>WW</territory>
+        </territories>
+        <data_file>
+          <locales>
+            <locale name="fr-FR" />
+          </locales>
+          <file_name>IT702599_artwork_169_WW.png</file_name>
+          <size>19849156</size>
+          <checksum type="md5">2d013361e3c22244cf0e7c219b156142</checksum>
+        </data_file>
+      </asset>
+      <asset type="artwork">
+        <territories>
+          <territory>WW</territory>
+        </territories>
+        <data_file>
+          <locales>
+            <locale name="fr-FR" />
+          </locales>
+          <file_name>IT702599_artwork_WW.jpg</file_name>
+          <size>1434525</size>
+          <checksum type="md5">3cf2f18603167071f1c5900e65b18f3f</checksum>
+        </data_file>
+      </asset>
+      <asset type="artwork">
+        <territories>
+          <territory>SE</territory>
+        </territories>
+        <data_file>
+          <locales>
+            <locale name="sv" />
+          </locales>
+          <file_name>IT702599_artwork_sv.jpg</file_name>
+          <size>1505772</size>
+          <checksum type="md5">12502c7f9674ac75e740bb11390a20dd</checksum>
+        </data_file>
+      </asset>
+    </assets>
+    <products>
+      <product>
+        <territory>DK</territory>
+        <cleared_for_sale>true</cleared_for_sale>
+        <cleared_for_hd_sale>true</cleared_for_hd_sale>
+        <wholesale_price_tier>9</wholesale_price_tier>
+        <hd_wholesale_price_tier>112</hd_wholesale_price_tier>
+        <sales_start_date>2025-10-01</sales_start_date>
+        <cleared_for_vod>true</cleared_for_vod>
+        <vod_type>Library</vod_type>
+        <available_for_vod_date>2025-10-01</available_for_vod_date>
+        <physical_release_date>2025-10-01</physical_release_date>
+        <cleared_for_hd_vod>true</cleared_for_hd_vod>
+      </product>
+      <product>
+        <territory>FI</territory>
+        <cleared_for_sale>true</cleared_for_sale>
+        <cleared_for_hd_sale>true</cleared_for_hd_sale>
+        <wholesale_price_tier>9</wholesale_price_tier>
+        <hd_wholesale_price_tier>112</hd_wholesale_price_tier>
+        <sales_start_date>2025-10-01</sales_start_date>
+        <cleared_for_vod>true</cleared_for_vod>
+        <vod_type>Library</vod_type>
+        <available_for_vod_date>2025-10-01</available_for_vod_date>
+        <physical_release_date>2025-10-01</physical_release_date>
+        <cleared_for_hd_vod>true</cleared_for_hd_vod>
+      </product>
+      <product>
+        <territory>NO</territory>
+        <cleared_for_sale>true</cleared_for_sale>
+        <cleared_for_hd_sale>true</cleared_for_hd_sale>
+        <wholesale_price_tier>9</wholesale_price_tier>
+        <hd_wholesale_price_tier>112</hd_wholesale_price_tier>
+        <sales_start_date>2025-10-01</sales_start_date>
+        <cleared_for_vod>true</cleared_for_vod>
+        <vod_type>Library</vod_type>
+        <available_for_vod_date>2025-10-01</available_for_vod_date>
+        <physical_release_date>2025-10-01</physical_release_date>
+        <cleared_for_hd_vod>true</cleared_for_hd_vod>
+      </product>
+      <product>
+        <territory>SE</territory>
+        <cleared_for_sale>true</cleared_for_sale>
+        <cleared_for_hd_sale>true</cleared_for_hd_sale>
+        <wholesale_price_tier>9</wholesale_price_tier>
+        <hd_wholesale_price_tier>112</hd_wholesale_price_tier>
+        <sales_start_date>2025-10-01</sales_start_date>
+        <cleared_for_vod>true</cleared_for_vod>
+        <vod_type>Library</vod_type>
+        <available_for_vod_date>2025-10-01</available_for_vod_date>
+        <physical_release_date>2025-10-01</physical_release_date>
+        <cleared_for_hd_vod>true</cleared_for_hd_vod>
+      </product>
+    </products>
+  </video>
+</package>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmec:CoreMetadata xmlns:mdmec="http://www.movielabs.com/schema/mdmec/v2.6" xmlns:md="http://www.movielabs.com/schema/md/v2.6/md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <mdmec:Basic ContentID="md:cid:org:studiocanal:035973_DE_S001">
+    <md:LocalizedInfo language="de-DE">
+      <!--TitleDisplayUnlimited is required by Amazon. Limited to 250 characters.-->
+      <md:TitleDisplayUnlimited>Karl Lagerfeld: Ambitions</md:TitleDisplayUnlimited>
+      <!--TitleSort is required by the MEC XSD, but is not used by Amazon. Blank fields such as below are acceptable.-->
+      <md:TitleSort>Karl Lagerfeld: Ambitions</md:TitleSort>
+      <md:ArtReference resolution="2000x3000" purpose="poster">studiocanal-035973_DE_S001-Full-Image-de-DE-Poster.png</md:ArtReference>
+      <md:ArtReference resolution="3840x2160" purpose="hero">studiocanal-035973_DE_S001-Full-Image-de-DE-Hero.jpg</md:ArtReference>
+      <md:ArtReference resolution="3840x2160" purpose="cover">studiocanal-035973_DE_S001-Full-Image-de-DE-16x9.png</md:ArtReference>
+      <md:ArtReference resolution="2560x1920" purpose="boxart">studiocanal-035973_DE_S001-Full-Image-de-DE.jpg</md:ArtReference>
+      <!--Summary190 is required by the MEC XSD, but is not required by Amazon. Blank fields such as below are acceptable.-->
+      <md:Summary190>Karl Lagerfeld - der größte Modeschöpfer seiner Zeit, auf der ganzen Welt als Ikone bekannt.</md:Summary190>
+      <!--Summary400 is required by Amazon.-->
+      <md:Summary400>Karl Lagerfeld - der größte Modeschöpfer seiner Zeit, auf der ganzen Welt als Ikone bekannt. Er war ein Freigeist, der sein ganzes Leben damit verbrachte, sich neu zu erfinden. Doch wer verbarg sich hinter dem tadellos geschnittenen Anzug, dem weißen Pferdeschwanz und der dunklen Brille? Wer war Karl Lagerfeld wirklich?</md:Summary400>
+      <!--Genres must be submitted using the AV Genre codes, such as below.-->
+      <!--Genres may be provided in just one, or all LocalizedInfo blocks. See the spec documentation for more detail.-->
+      <!--At least 1 genre is required. Up to 3 genres are allowed.-->
+      <md:Genre id="av_subgenre_documentary_biography" />
+      <md:Genre id="av_genre_documentary" />
+    </md:LocalizedInfo>
+    <!--end of Localized Info-->
+    <md:ReleaseYear>2024</md:ReleaseYear>
+    <md:ReleaseDate>2024-01-10</md:ReleaseDate>
+    <!--Provide as much release history as possible.-->
+    <!--WorkType is Required.-->
+    <md:WorkType>season</md:WorkType>
+    <!--The ID used in the MMC and in the Avail must also be included in the AltIdentifier section.-->
+    <md:AltIdentifier>
+      <md:Namespace>ORG</md:Namespace>
+      <md:Identifier>035973_DE_S001</md:Identifier>
+    </md:AltIdentifier>
+    <md:RatingSet>
+      <!--each rating specifies exactly one country, system and value-->
+      <!--At least one rating is required. If the work is not rated, use <md:notrated>true</md:notrated>-->
+      <!--see http://www.movielabs.com/md/ratings/current.html for ratings-->
+      <md:Rating>
+        <md:Region>
+          <md:country>DE</md:country>
+        </md:Region>
+        <md:System>FSK</md:System>
+        <md:Value>12</md:Value>
+      </md:Rating>
+    </md:RatingSet>
+    <!--people are used for the cast and crew.-->
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Director</md:JobFunction>
+        <md:BillingBlockOrder>1</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="de-DE">Stéphane Bohée</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Producer</md:JobFunction>
+        <md:BillingBlockOrder>1</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="de-DE">Stéphane Bohée</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Director</md:JobFunction>
+        <md:BillingBlockOrder>2</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="de-DE">Guillaume Perez</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Writer</md:JobFunction>
+        <md:BillingBlockOrder>1</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="de-DE">Guillaume Perez</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Producer</md:JobFunction>
+        <md:BillingBlockOrder>2</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="de-DE">Aurélia Rouvier</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Writer</md:JobFunction>
+        <md:BillingBlockOrder>2</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="de-DE">Anne-Solen Douguet</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <!--OriginalLanguage is required by Amazon.-->
+    <md:OriginalLanguage>fr-FR</md:OriginalLanguage>
+    <!--AssociatedOrg is used to provide the Partner Alias and is required-->
+    <!--Include the Partner Alias value in the @organizationID attribute and the value of "licensor" in the @role attribute-->
+    <md:AssociatedOrg organizationID="studiocanal" role="licensor" />
+    <md:SequenceInfo>
+      <md:Number>1</md:Number>
+    </md:SequenceInfo>
+    <md:Parent relationshipType="isseasonof">
+      <md:ParentContentID>md:cid:org:studiocanal:035973_DE_SERIES</md:ParentContentID>
+    </md:Parent>
+  </mdmec:Basic>
+  <!--CompanyDisplayCredit is used to provide customer-facing studio credits. Required.-->
+  <mdmec:CompanyDisplayCredit>
+    <md:DisplayString>STUDIOCANAL</md:DisplayString>
+  </mdmec:CompanyDisplayCredit>
+</mdmec:CoreMetadata>

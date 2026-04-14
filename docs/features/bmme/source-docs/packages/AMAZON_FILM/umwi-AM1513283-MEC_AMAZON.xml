@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmec:CoreMetadata xmlns:mdmec="http://www.movielabs.com/schema/mdmec/v2.6" xmlns:md="http://www.movielabs.com/schema/md/v2.6/md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <mdmec:Basic ContentID="md:cid:org:umwi:AM1513283">
+    <md:LocalizedInfo language="fi-FI">
+      <!--TitleDisplayUnlimited is required by Amazon. Limited to 250 characters.-->
+      <md:TitleDisplayUnlimited>Bone Lake</md:TitleDisplayUnlimited>
+      <!--TitleSort is required by the MEC XSD, but is not used by Amazon. Blank fields such as below are acceptable.-->
+      <md:TitleSort>Bone Lake</md:TitleSort>
+      <md:ArtReference resolution="1920x2560" purpose="boxart">umwi-AM1513283-Full-Image-en-US.jpg</md:ArtReference>
+      <md:ArtReference resolution="3840x2160" purpose="cover">umwi-AM1513283-Full-Image-en-US-16x9.jpg</md:ArtReference>
+      <md:ArtReference resolution="3840x2160" purpose="hero">umwi-AM1513283-Full-Image-en-US-Hero.jpg</md:ArtReference>
+      <md:ArtReference resolution="2000x3000" purpose="poster">umwi-AM1513283-Full-Image-en-US-Poster.jpg</md:ArtReference>
+      <!--Summary190 is required by the MEC XSD, but is not required by Amazon. Blank fields such as below are acceptable.-->
+      <md:Summary190>Diego ja Sage odottavat innolla romanttista viikonloppua maalla, mutta heidän suunnitelmansa menevät pieleen...</md:Summary190>
+      <!--Summary400 is required by Amazon.-->
+      <md:Summary400>Diego ja Sage odottavat innolla romanttista viikonloppua maalla, mutta heidän suunnitelmansa menevät pieleen, kun eräs toinen pariskunta ilmestyy paikalle mystisissä olosuhteissa.</md:Summary400>
+      <!--Genres must be submitted using the AV Genre codes, such as below.-->
+      <!--Genres may be provided in just one, or all LocalizedInfo blocks. See the spec documentation for more detail.-->
+      <!--At least 1 genre is required. Up to 3 genres are allowed.-->
+      <md:Genre id="av_genre_comedy" />
+      <md:Genre id="av_genre_horror" />
+      <md:Genre id="av_genre_suspense" />
+    </md:LocalizedInfo>
+    <md:LocalizedInfo language="sv-SE">
+      <!--TitleDisplayUnlimited is required by Amazon. Limited to 250 characters.-->
+      <md:TitleDisplayUnlimited>Bone Lake</md:TitleDisplayUnlimited>
+      <!--TitleSort is required by the MEC XSD, but is not used by Amazon. Blank fields such as below are acceptable.-->
+      <md:TitleSort>Bone Lake</md:TitleSort>
+      <md:ArtReference resolution="1920x2560" purpose="boxart">umwi-AM1513283-Full-Image-en-US.jpg</md:ArtReference>
+      <md:ArtReference resolution="3840x2160" purpose="cover">umwi-AM1513283-Full-Image-en-US-16x9.jpg</md:ArtReference>
+      <md:ArtReference resolution="3840x2160" purpose="hero">umwi-AM1513283-Full-Image-en-US-Hero.jpg</md:ArtReference>
+      <md:ArtReference resolution="2000x3000" purpose="poster">umwi-AM1513283-Full-Image-en-US-Poster.jpg</md:ArtReference>
+      <!--Summary190 is required by the MEC XSD, but is not required by Amazon. Blank fields such as below are acceptable.-->
+      <md:Summary190>Diego och Sage ser fram emot en romantisk helg i ett avlägset hus på landet, men deras planer störs när ett annat par dyker</md:Summary190>
+      <!--Summary400 is required by Amazon.-->
+      <md:Summary400>Diego och Sage ser fram emot en romantisk helg i ett avlägset hus på landet, men deras planer störs när ett annat par dyker upp under mystiska omständigheter. Till en början försöker de alla njuta av semestern tillsammans, men snart gror misstänksamhet och svartsjuka och ställer friden på ända.</md:Summary400>
+      <!--Genres must be submitted using the AV Genre codes, such as below.-->
+      <!--Genres may be provided in just one, or all LocalizedInfo blocks. See the spec documentation for more detail.-->
+      <!--At least 1 genre is required. Up to 3 genres are allowed.-->
+      <md:Genre id="av_genre_comedy" />
+      <md:Genre id="av_genre_horror" />
+      <md:Genre id="av_genre_suspense" />
+    </md:LocalizedInfo>
+    <!--end of Localized Info-->
+    <md:ReleaseYear>2025</md:ReleaseYear>
+    <md:ReleaseDate>2025-10-03</md:ReleaseDate>
+    <!--Provide as much release history as possible.-->
+    <md:ReleaseHistory>
+      <md:ReleaseType>Theatrical</md:ReleaseType>
+      <md:DistrTerritory>
+        <md:country>FI</md:country>
+      </md:DistrTerritory>
+      <md:Date>2026-02-09</md:Date>
+    </md:ReleaseHistory>
+    <md:ReleaseHistory>
+      <md:ReleaseType>Theatrical</md:ReleaseType>
+      <md:DistrTerritory>
+        <md:country>SE</md:country>
+      </md:DistrTerritory>
+      <md:Date>2026-02-09</md:Date>
+    </md:ReleaseHistory>
+    <!--WorkType is Required.-->
+    <md:WorkType>movie</md:WorkType>
+    <!--The ID used in the MMC and in the Avail must also be included in the AltIdentifier section.-->
+    <md:AltIdentifier>
+      <md:Namespace>ORG</md:Namespace>
+      <md:Identifier>AM1513283</md:Identifier>
+    </md:AltIdentifier>
+    <md:RatingSet>
+      <!--each rating specifies exactly one country, system and value-->
+      <!--At least one rating is required. If the work is not rated, use <md:notrated>true</md:notrated>-->
+      <!--see http://www.movielabs.com/md/ratings/current.html for ratings-->
+      <md:Rating>
+        <md:Region>
+          <md:country>FI</md:country>
+        </md:Region>
+        <md:System>MEKU</md:System>
+        <md:Value>18</md:Value>
+      </md:Rating>
+      <md:Rating>
+        <md:Region>
+          <md:country>SE</md:country>
+        </md:Region>
+        <md:System>SM-SA</md:System>
+        <md:Value>15</md:Value>
+      </md:Rating>
+    </md:RatingSet>
+    <!--people are used for the cast and crew.-->
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Actor</md:JobFunction>
+        <md:BillingBlockOrder>1</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="fi-FI">Maddie Hasson</md:DisplayName>
+        <md:DisplayName language="sv-SE">Maddie Hasson</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Actor</md:JobFunction>
+        <md:BillingBlockOrder>2</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="fi-FI">Marco Pigossi</md:DisplayName>
+        <md:DisplayName language="sv-SE">Marco Pigossi</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Actor</md:JobFunction>
+        <md:BillingBlockOrder>3</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="fi-FI">Alex Roe</md:DisplayName>
+        <md:DisplayName language="sv-SE">Alex Roe</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <md:People>
+      <md:Job>
+        <md:JobFunction>Director</md:JobFunction>
+        <md:BillingBlockOrder>1</md:BillingBlockOrder>
+      </md:Job>
+      <md:Name>
+        <md:DisplayName language="fi-FI">Mercedes Bryce Morgan</md:DisplayName>
+        <md:DisplayName language="sv-SE">Mercedes Bryce Morgan</md:DisplayName>
+      </md:Name>
+    </md:People>
+    <!--2025-08 : CountryOfOrigin is now required by Amazon.-->
+    <md:CountryOfOrigin>
+      <md:country>US</md:country>
+    </md:CountryOfOrigin>
+    <!--OriginalLanguage is required by Amazon.-->
+    <md:OriginalLanguage>en-US</md:OriginalLanguage>
+    <!--AssociatedOrg is used to provide the Partner Alias and is required-->
+    <!--Include the Partner Alias value in the @organizationID attribute and the value of "licensor" in the @role attribute-->
+    <md:AssociatedOrg organizationID="umwi" role="licensor" />
+  </mdmec:Basic>
+  <!--CompanyDisplayCredit is used to provide customer-facing studio credits. Required.-->
+  <mdmec:CompanyDisplayCredit>
+    <md:DisplayString>LD Entertainment</md:DisplayString>
+  </mdmec:CompanyDisplayCredit>
+</mdmec:CoreMetadata>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest:MediaManifest xmlns:md="http://www.movielabs.com/schema/md/v2.4/md" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsi="http://www.w3.org/2001/XMLSchema" xmlns:manifest="http://www.movielabs.com/schema/manifest/v1.5/manifest">
+  <manifest:Compatibility>
+    <manifest:SpecVersion>1.5</manifest:SpecVersion>
+    <manifest:Profile>MMC-1</manifest:Profile>
+  </manifest:Compatibility>
+  <manifest:Inventory>
+    <manifest:Audio AudioTrackID="md:audtrackid:org:studiocanal:035973_DE_E001:feature.audio.fr-FR">
+      <md:Type>primary</md:Type>
+      <md:Language>fr-FR</md:Language>
+      <manifest:ContainerReference>
+        <manifest:ContainerLocation>file://studiocanal-035973_DE_E001-Full-Mezz_UHD-fr-FR.mov</manifest:ContainerLocation>
+      </manifest:ContainerReference>
+    </manifest:Audio>
+    <manifest:Audio AudioTrackID="md:audtrackid:org:studiocanal:035973_DE_E001:feature.audio.de-DE">
+      <md:Type>primary</md:Type>
+      <md:Language>de-DE</md:Language>
+      <manifest:ContainerReference>
+        <manifest:ContainerLocation>file://studiocanal-035973_DE_E001-Full-Audio-de-DE.mov</manifest:ContainerLocation>
+      </manifest:ContainerReference>
+    </manifest:Audio>
+    <manifest:Video VideoTrackID="md:vidtrackid:org:studiocanal:035973_DE_E001:feature.video">
+      <md:Type>primary</md:Type>
+      <md:Picture>
+        <md:AspectRatio>16:9</md:AspectRatio>
+        <md:WidthPixels>3840</md:WidthPixels>
+        <md:HeightPixels>2160</md:HeightPixels>
+        <md:Progressive>true</md:Progressive>
+      </md:Picture>
+      <manifest:ContainerReference>
+        <manifest:ContainerLocation>file://studiocanal-035973_DE_E001-Full-Mezz_UHD-fr-FR.mov</manifest:ContainerLocation>
+      </manifest:ContainerReference>
+    </manifest:Video>
+    <manifest:Subtitle SubtitleTrackID="md:subtrackid:org:studiocanal:035973_DE_E001:feature.subs.de-DE">
+      <md:Format />
+      <md:Type>Normal</md:Type>
+      <md:Language>de-DE</md:Language>
+      <md:Encoding>
+        <md:FrameRate timecode="NonDrop">25</md:FrameRate>
+      </md:Encoding>
+      <manifest:ContainerReference>
+        <manifest:ContainerLocation>file://studiocanal-035973_DE_E001-Full-Subtitle25-de-DE.itt</manifest:ContainerLocation>
+      </manifest:ContainerReference>
+    </manifest:Subtitle>
+  </manifest:Inventory>
+  <manifest:Presentations>
+    <manifest:Presentation PresentationID="md:presentationid:org:studiocanal:035973_DE_E001:feature.presentation">
+      <manifest:TrackMetadata>
+        <manifest:TrackSelectionNumber>0</manifest:TrackSelectionNumber>
+        <manifest:VideoTrackReference>
+          <manifest:VideoTrackID>md:vidtrackid:org:studiocanal:035973_DE_E001:feature.video</manifest:VideoTrackID>
+        </manifest:VideoTrackReference>
+        <manifest:AudioTrackReference>
+          <manifest:AudioTrackID>md:audtrackid:org:studiocanal:035973_DE_E001:feature.audio.fr-FR</manifest:AudioTrackID>
+        </manifest:AudioTrackReference>
+        <manifest:AudioTrackReference>
+          <manifest:AudioTrackID>md:audtrackid:org:studiocanal:035973_DE_E001:feature.audio.de-DE</manifest:AudioTrackID>
+        </manifest:AudioTrackReference>
+        <manifest:SubtitleTrackReference>
+          <manifest:SubtitleTrackID>md:subtrackid:org:studiocanal:035973_DE_E001:feature.subs.de-DE</manifest:SubtitleTrackID>
+        </manifest:SubtitleTrackReference>
+      </manifest:TrackMetadata>
+    </manifest:Presentation>
+  </manifest:Presentations>
+  <manifest:PlayableSequences>
+    <manifest:PlayableSequence PlayableSequenceID="md:playablesequenceid:org:studiocanal:035973_DE_E001:feature">
+      <manifest:Clip sequence="0">
+        <manifest:PresentationID>md:presentationid:org:studiocanal:035973_DE_E001:feature.presentation</manifest:PresentationID>
+      </manifest:Clip>
+    </manifest:PlayableSequence>
+  </manifest:PlayableSequences>
+  <manifest:Experiences>
+    <manifest:Experience ExperienceID="md:experienceid:org:studiocanal:035973_DE_E001.experience" version="1.0">
+      <manifest:ContentID>md:cid:org:studiocanal:035973_DE_E001</manifest:ContentID>
+      <manifest:Audiovisual ContentID="md:cid:org:studiocanal:035973_DE_E001">
+        <manifest:Type>Main</manifest:Type>
+        <manifest:SubType>Feature</manifest:SubType>
+        <manifest:PlayableSequenceID>md:playablesequenceid:org:studiocanal:035973_DE_E001:feature</manifest:PlayableSequenceID>
+      </manifest:Audiovisual>
+    </manifest:Experience>
+  </manifest:Experiences>
+  <manifest:ALIDExperienceMaps>
+    <manifest:ALIDExperienceMap>
+      <manifest:ALID>md:alid:org:studiocanal:035973_DE_E001</manifest:ALID>
+      <manifest:ExperienceID>md:experienceid:org:studiocanal:035973_DE_E001.experience</manifest:ExperienceID>
+    </manifest:ALIDExperienceMap>
+  </manifest:ALIDExperienceMaps>
+</manifest:MediaManifest>

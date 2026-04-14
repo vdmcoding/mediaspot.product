@@ -1,0 +1,284 @@
+{
+  "$schema": "draft-07",
+  "$comment": "BMME v2 - Source de verite mediaspot - PACKAGE METADATA (metadonnees livraison)",
+
+  "Package": {
+    "$comment": "Package de livraison pour un provider donne",
+
+    "identifiers": {
+      "id": { "type": "integer", "description": "Identifiant unique package mediaspot" },
+      "title_id": { "type": "integer", "description": "Reference vers le Title parent" },
+      "vendor_id": { "type": "string", "description": "Identifiant vendeur specifique provider (IT702603)" }
+    },
+
+    "provider": {
+      "name": { "type": "string", "enum": ["iTunes", "Amazon", "Google", "Netflix", "Sony", "Microsoft"], "description": "Plateforme cible" },
+      "provider_code": { "type": "string", "description": "Code provider / Licensor (underthemilkyway, studiocanal, umwi, Lionsgate, etc.)" },
+      "service_provider": { "type": "string", "nullable": true, "description": "Service Provider si different du Licensor (Google)" },
+      "company_display_credit": { "type": "string", "description": "Credit studio client-facing (Amazon CompanyDisplayCredit, Google Studio Display Name)" }
+    },
+
+    "container_info": {
+      "$comment": "Pour episodes TV - reference vers la saison (iTunes tv5.3)",
+      "container_id": { "type": "string", "description": "ID du container parent (saison)" },
+      "container_position": { "type": "integer", "description": "Position dans le container (numero episode)" }
+    },
+
+    "preview": {
+      "$comment": "Configuration preview/trailer",
+      "starttime": { "type": "integer", "description": "Temps de debut preview en secondes (iTunes TV)" },
+      "starttime_timecode": { "type": "string", "format": "timecode", "description": "Temps de debut en timecode (iTunes Film)" }
+    },
+
+    "shared_metadata": {
+      "$comment": "Metadonnees partagees cross-platforms, heritees entre packages d'un meme Title",
+      "type": "object",
+      "properties": {
+        "lab": { "type": "string", "description": "Laboratoire (VDM, etc.)" },
+        "studios": { "type": "string", "description": "Studio distributeur" },
+        "copyright_cline": { "type": "string", "description": "Copyright line complete format provider (ex: 2025 NonStop Entertainment)" },
+        "invoice_to": { "type": "string", "description": "Facturation a" },
+        "digitizing_costs_type": { "type": "string", "enum": ["Recouped", "Not Recouped"] },
+        "provider_costs": { "type": "string", "nullable": true },
+        "contract_reference": { "type": "string", "nullable": true },
+        "contract_status": { "type": "string", "nullable": true },
+        "contract_signing_date": { "type": "string", "format": "date", "nullable": true },
+        "umw_id": { "type": "string", "nullable": true },
+        "global_vod_dates": {
+          "$comment": "Dates VOD par defaut (overridables par Product)",
+          "est_date": { "type": "string", "format": "date", "description": "Date de vente EST" },
+          "vod_date": { "type": "string", "format": "date", "description": "Date de location VOD" }
+        }
+      }
+    },
+
+    "package_language": {
+      "type": "string",
+      "format": "locale",
+      "description": "Langue principale du package (sv, en, fr, etc.)"
+    },
+
+    "territories": {
+      "$comment": "Territoires couverts par ce package",
+      "type": "array",
+      "items": { "type": "string", "format": "ISO-3166-1-alpha-2" },
+      "description": "Liste des territoires (DK, FI, NO, SE)"
+    },
+
+    "regions": {
+      "$comment": "Dates de sortie specifiques par territoire (override des dates Title)",
+      "type": "array",
+      "items": {
+        "territory": { "type": "string", "format": "ISO-3166-1-alpha-2" },
+        "theatrical_release_date": { "type": "string", "format": "date" }
+      }
+    },
+
+    "localized_content": {
+      "$comment": "Contenu localise specifique au package (peut override Title)",
+      "type": "array",
+      "items": {
+        "locale": { "type": "string", "format": "locale" },
+        "title": { "type": "string", "maxLength": 250, "description": "Titre (TitleDisplayUnlimited Amazon max 250)" },
+        "title_sort": { "type": "string", "nullable": true, "description": "Titre pour tri (TitleSort Amazon)" },
+        "synopsis_short": { "type": "string", "maxLength": 190, "description": "Synopsis court (Summary190 Amazon)" },
+        "synopsis": { "type": "string", "maxLength": 400, "description": "Synopsis moyen (Summary400 Amazon)" },
+        "synopsis_long": { "type": "string", "maxLength": 4000, "description": "Synopsis long (iTunes)" },
+        "description": { "type": "string", "description": "Description (iTunes TV - alternative a synopsis)" }
+      }
+    },
+
+    "chapters": {
+      "$comment": "Chapitrage video",
+      "type": "object",
+      "properties": {
+        "timecode_format": { "type": "string", "example": "25/1 1/nonDrop", "description": "Format timecode" },
+        "items": {
+          "type": "array",
+          "items": {
+            "start_time": { "type": "string", "format": "timecode", "example": "00:10:02:10" },
+            "artwork_time": { "type": "string", "format": "timecode", "description": "Timecode pour la vignette" },
+            "titles": {
+              "type": "object",
+              "additionalProperties": { "type": "string" },
+              "description": "Titres par locale (sv: 'Kapitel 1', da: 'Kapitel 1', fi: 'Luku 1')"
+            }
+          }
+        }
+      }
+    },
+
+    "assets": {
+      "$comment": "Fichiers associes au package",
+      "type": "array",
+      "items": { "$ref": "#/Asset" }
+    },
+
+    "products": {
+      "$comment": "Configuration commerciale par territoire",
+      "type": "array",
+      "items": { "$ref": "#/Product" }
+    },
+
+    "status": {
+      "state": { "type": "string", "enum": ["draft", "valid", "delivered", "rejected"], "description": "Etat du package" },
+      "completion_rate": { "type": "integer", "min": 0, "max": 100, "description": "Taux de completion (%)" },
+      "missing_fields": { "type": "string[]", "description": "Liste des champs manquants" },
+      "validation_errors": { "type": "string[]", "description": "Erreurs de validation provider" }
+    },
+
+    "audit": {
+      "created_at": { "type": "string", "format": "date-time" },
+      "created_by": { "type": "string" },
+      "updated_at": { "type": "string", "format": "date-time" },
+      "updated_by": { "type": "string" },
+      "delivered_at": { "type": "string", "format": "date-time", "nullable": true },
+      "delivered_by": { "type": "string", "nullable": true }
+    }
+  },
+
+  "Asset": {
+    "$comment": "Fichier associe (video, sous-titres, artwork)",
+
+    "type": {
+      "type": "string",
+      "enum": ["full", "preview", "artwork", "artwork_16:9", "artwork_poster"],
+      "description": "Type d'asset (iTunes: full/preview/artwork/artwork_16:9)"
+    },
+
+    "artwork_spec": {
+      "$comment": "Specifications artwork Amazon (ArtReference)",
+      "purpose": {
+        "type": "string",
+        "enum": ["boxart", "cover", "hero", "poster"],
+        "description": "Purpose Amazon (boxart=portrait, cover=16:9, hero=background, poster=affiche)"
+      },
+      "resolution": {
+        "type": "string",
+        "description": "Resolution attendue (ex: 1920x2560, 3840x2160, 2000x3000)"
+      }
+    },
+
+    "territories": {
+      "type": "string[]",
+      "description": "Territoires concernes (WW = worldwide)"
+    },
+
+    "preview_image_time": {
+      "type": "string",
+      "format": "timecode",
+      "nullable": true,
+      "description": "Timecode pour l'image de preview"
+    },
+
+    "data_files": {
+      "type": "array",
+      "items": { "$ref": "#/DataFile" }
+    }
+  },
+
+  "DataFile": {
+    "$comment": "Fichier physique avec metadonnees techniques",
+
+    "role": {
+      "type": "string",
+      "enum": ["source", "subtitles", "audio", "notes", "artwork"],
+      "description": "Role du fichier"
+    },
+
+    "locale": {
+      "type": "string",
+      "format": "locale",
+      "nullable": true,
+      "description": "Locale du fichier (pour sous-titres/audio)"
+    },
+
+    "file_name": { "type": "string", "description": "Nom du fichier" },
+    "size": { "type": "integer", "description": "Taille en bytes" },
+
+    "checksum": {
+      "type": { "type": "string", "enum": ["md5", "sha256"] },
+      "value": { "type": "string" }
+    },
+
+    "subtitle_spec": {
+      "$comment": "Specifications sous-titres (Amazon MMC)",
+      "subtitle_type": {
+        "type": "string",
+        "enum": ["Normal", "SDH", "Forced"],
+        "description": "Type de sous-titres"
+      },
+      "frame_rate": { "type": "string", "description": "Framerate (24, 25, etc.)" },
+      "timecode_type": { "type": "string", "enum": ["Drop", "NonDrop"] }
+    },
+
+    "audio_spec": {
+      "$comment": "Specifications audio (Amazon MMC)",
+      "audio_type": {
+        "type": "string",
+        "enum": ["primary", "descriptive", "commentary", "dubbed"],
+        "description": "Type de piste audio"
+      }
+    },
+
+    "video_spec": {
+      "$comment": "Specifications video (Amazon MMC)",
+      "aspect_ratio": { "type": "string", "description": "Ratio (16:9, 2.35:1, etc.)" },
+      "width": { "type": "integer", "description": "Largeur en pixels" },
+      "height": { "type": "integer", "description": "Hauteur en pixels" },
+      "progressive": { "type": "boolean", "description": "Video progressive (vs interlaced)" }
+    },
+
+    "attributes": {
+      "$comment": "Attributs techniques specifiques iTunes",
+      "type": "object",
+      "properties": {
+        "crop_top": { "type": "integer" },
+        "crop_bottom": { "type": "integer" },
+        "crop_left": { "type": "integer" },
+        "crop_right": { "type": "integer" },
+        "textless_master": { "type": "boolean" },
+        "burned_subtitles_locale": { "type": "string", "format": "locale", "nullable": true },
+        "burned_forced_narrative_locale": { "type": "string", "format": "locale", "nullable": true }
+      }
+    }
+  },
+
+  "Product": {
+    "$comment": "Configuration commerciale pour un territoire",
+
+    "territory": { "type": "string", "format": "ISO-3166-1-alpha-2" },
+
+    "clearances": {
+      "cleared_for_sale": { "type": "boolean", "description": "Autorise vente EST" },
+      "cleared_for_hd_sale": { "type": "boolean", "description": "Autorise vente HD" },
+      "cleared_for_vod": { "type": "boolean", "description": "Autorise location VOD" },
+      "cleared_for_hd_vod": { "type": "boolean", "description": "Autorise location HD" },
+      "cleared_for_svod": { "type": "boolean", "description": "Autorise SVOD" }
+    },
+
+    "pricing": {
+      "wholesale_price_tier": { "type": "string", "description": "Tier prix SD" },
+      "hd_wholesale_price_tier": { "type": "string", "description": "Tier prix HD" }
+    },
+
+    "dates": {
+      "sales_start_date": { "type": "string", "format": "date", "description": "Date debut vente" },
+      "available_for_vod_date": { "type": "string", "format": "date", "description": "Date disponibilite VOD" },
+      "physical_release_date": { "type": "string", "format": "date", "description": "Date sortie physique" }
+    },
+
+    "vod_type": {
+      "type": "string",
+      "enum": ["New Release", "Library", "Pre-order"],
+      "description": "Type de programme VOD"
+    }
+  },
+
+  "_metadata": {
+    "version": "2.0.0",
+    "type": "package-metadata",
+    "description": "Schema des metadonnees package (livraison provider) - source de verite mediaspot",
+    "relationship": "Package.title_id -> Title.id (many-to-one)"
+  }
+}

@@ -7,11 +7,11 @@
 
 ## Vue d'ensemble du cycle de sprint
 
-| Sprint (3 semaines) | Sem. 1 | Sem. 1 | Sem. 2 | Sem. 2 | Sem. 3 | Sem. 3 | Fin / Début |
-|---|---|---|---|---|---|---|---|
-| Jour | Lun | Mer | Mer | Mer | Mer | Jeu (J-2) | Lun suivant |
-| Cérémonie | Sprint Planning | Refinement | Refinement | Refinement | Refinement | Sprint Cleanup | Sprint Planning |
-| Durée | 1h | - | - | - | - | 2 jours | 1h |
+| Sprint (3 semaines) | Sem. 1 | Sem. 1 | Sem. 2 | Sem. 3 | Sem. 3 | Fin / Début |
+|---|---|---|---|---|---|---|
+| Jour | Lun | Mer | Mer | Mer | Jeu (J-2) | Lun suivant |
+| Cérémonie | Sprint Planning | Refinement | Refinement | Refinement | Sprint Cleanup | Sprint Planning |
+| Durée | 1h | - | - | - | 2 jours | 1h |
 
 **Cérémonies clés :**
 

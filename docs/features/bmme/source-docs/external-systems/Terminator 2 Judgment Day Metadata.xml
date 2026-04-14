@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<film id="9546">
+  <right_holder id="924">
+    <name>STUDIOCANAL</name>
+    <provider_business_unit>UMW France</provider_business_unit>
+    <provider_agent>PORTAL Océane</provider_agent>
+  </right_holder>
+  <title>Terminator 2: Judgment Day</title>
+  <lab>VDM</lab>
+  <digitizing_costs_type>Recouped</digitizing_costs_type>
+  <provider_costs/>
+  <contract_reference/>
+  <contract_status/>
+  <contract_signing_date/>
+  <umw_id/>
+  <production_companies>Carolco Pictures</production_companies>
+  <copyright>1991 Studiocanal. All Rights Reserved.</copyright>
+  <genres>Action,Science Fiction,Thrillers</genres>
+  <platforms>iTunes Google Amazon Sony Microsoft</platforms>
+  <duration>137</duration>
+  <hd_available>true</hd_available>
+  <isan>0000-0000-7173-0000-O-0000-0006-P</isan>
+  <created_at>2019-11-05</created_at>
+  <created_by>PORTAL Océane</created_by>
+  <original_language>en-US</original_language>
+  <production_year>1991</production_year>
+  <theatrical_release_date>1991-07-03</theatrical_release_date>
+  <imdb>https://www.imdb.com/title/tt0103064/?ref_=nv_sr_3?ref_=nv_sr_3</imdb>
+  <invoice_to>UMW SARL</invoice_to>
+  <studios>Under The Milky Way</studios>
+  <cast>
+    <cast_member>
+      <display_name>Arnold Schwarzenegger</display_name>
+      <character_name>T-800</character_name>
+      <billing>ordered</billing>
+      <locales>
+        <locale locale="ja">
+          <display_name>アーノルド・シュワルツェネッガー</display_name>
+          <character_name>ターミネーター</character_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>아놀드 슈왈제네거</display_name>
+          <character_name>T-800</character_name>
+        </locale>
+      </locales>
+    </cast_member>
+    <cast_member>
+      <display_name>Linda Hamilton</display_name>
+      <character_name>Sarah Connor</character_name>
+      <billing>ordered</billing>
+      <locales>
+        <locale locale="ja">
+          <display_name>リンダ・ハミルトン</display_name>
+          <character_name>サラ・コナー</character_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>린다 해밀턴</display_name>
+          <character_name>사라 코너</character_name>
+        </locale>
+      </locales>
+    </cast_member>
+    <cast_member>
+      <display_name>Robert Patrick</display_name>
+      <character_name>T-1000</character_name>
+      <billing>ordered</billing>
+      <locales>
+        <locale locale="ja">
+          <display_name>ロバート・パトリック</display_name>
+          <character_name>T-1000</character_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>로버트 패트릭</display_name>
+          <character_name>T-1000</character_name>
+        </locale>
+      </locales>
+    </cast_member>
+    <cast_member>
+      <display_name>Edward Furlong</display_name>
+      <character_name>John Connor</character_name>
+      <billing>ordered</billing>
+      <locales>
+        <locale locale="ja">
+          <display_name>エドワード・ファーロング</display_name>
+          <character_name>ジョン・コナー</character_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>에드워드 퍼롱</display_name>
+          <character_name>존 코너</character_name>
+        </locale>
+      </locales>
+    </cast_member>
+  </cast>
+  <crew>
+    <crew_member>
+      <display_name>James Cameron</display_name>
+      <billing>ordered</billing>
+      <roles>
+        <role>Director</role>
+        <role>Producer</role>
+        <role>Screenwriter</role>
+      </roles>
+      <locales>
+        <locale locale="ja">
+          <display_name>ジェームズ・キャメロン</display_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>제임스 카메론</display_name>
+        </locale>
+      </locales>
+    </crew_member>
+    <crew_member>
+      <display_name>William Wisher Jr.</display_name>
+      <billing>ordered</billing>
+      <roles>
+        <role>Screenwriter</role>
+      </roles>
+      <locales>
+        <locale locale="ja">
+          <display_name>ウィリアム・ウィッシャー</display_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>윌리엄 위셔 주니어</display_name>
+        </locale>
+      </locales>
+    </crew_member>
+  </crew>
+  <territories>
+    <territory country="IT">
+      <language>it-IT</language>
+      <title>Terminator 2 : Il giorno del giudizio</title>
+      <synopsis>Dieci anni dopo i fatti legati al Terminator, Sarah Connor è in manicomio per aver cercato di far esplodere una fabbrica collegata a Skynet. Tutti la ritengono psicotica, mentre suo figlio John è un ragazzo sbandato in affido a Los Angeles.</synopsis>
+      <provisional_release_date>2020-08-31</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rights_duration/>
+      <reg_number/>
+      <rating_system>MIC</rating_system>
+      <rating_code>T</rating_code>
+      <rating_reason/>
+      <vod_rights_ident/>
+      <short_synopsis>Sono trascorsi dieci anni dai fatti di sangue causati dalla caccia del Terminator alla madre di John Connor, Sarah. Tutti quanti la ritengono una psicotica.</short_synopsis>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <vod_suspension_required>false</vod_suspension_required>
+      <cinema_release_date>1991-12-19</cinema_release_date>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+      <platforms>
+        <platform name="Amazon">
+          <cleared_for_sale>false</cleared_for_sale>
+          <cleared_for_hd_sale>false</cleared_for_hd_sale>
+          <wholesale_price_tier/>
+          <cleared_for_vod>false</cleared_for_vod>
+          <cleared_for_hd_vod>false</cleared_for_hd_vod>
+          <cleared_for_svod>false</cleared_for_svod>
+          <vendor_id>AM1512414</vendor_id>
+        </platform>
+      </platforms>
+    </territory>
+    <territory country="FI">
+      <language>fi</language>
+      <title>Terminator 2 : Tuomion päivä</title>
+      <synopsis>Kolmetoista vuotta ensimmäisen Terminator-elokuvan jälkeen kaksi terminaattoria – T-800 ja T-1000 – saapuvat etsimään 13-vuotiaan John Connorin. T-800 suojelee Johnia, T-1000 tappaa hänet. Sarah Connor on mielisairaalassa, ja John pitää äitiään psykopaattina.</synopsis>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rights_duration/>
+      <reg_number/>
+      <rating_system>MEKU</rating_system>
+      <rating_code>K-16</rating_code>
+      <rating_reason/>
+      <vod_rights_ident/>
+      <short_synopsis>Kaksi terminaattoria saapuvat aikamatkailun avulla vuodesta 2029 etsimään 13-vuotiaan John Connorin, josta tulisi tulevaisuudessa ihmisten vastarintaliikkeen johtaja.</short_synopsis>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <vod_suspension_required>false</vod_suspension_required>
+      <cinema_release_date>2003-08-01</cinema_release_date>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+      <platforms>
+        <platform name="Amazon">
+          <cleared_for_sale>false</cleared_for_sale>
+          <cleared_for_hd_sale>false</cleared_for_hd_sale>
+          <wholesale_price_tier/>
+          <cleared_for_vod>false</cleared_for_vod>
+          <cleared_for_hd_vod>false</cleared_for_hd_vod>
+          <cleared_for_svod>false</cleared_for_svod>
+          <vendor_id>AM1512414</vendor_id>
+        </platform>
+      </platforms>
+    </territory>
+    <territory country="NO">
+      <language>no</language>
+      <title>Terminator II : Dommens dag</title>
+      <synopsis>10år er gått siden en terminator ble sendt for å ta livet av den da ufødte John Connor. Maskinene som regjerer fremtiden lyktes ikke i sin plan, og i 1995 må de sende en ny terminator for å forsøke igjen, men menneskene i fremtiden vet råd.</synopsis>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rights_duration/>
+      <reg_number/>
+      <rating_system>Medietilsynet</rating_system>
+      <rating_code>15</rating_code>
+      <rating_reason/>
+      <vod_rights_ident/>
+      <short_synopsis>10år er gått siden en terminator ble sendt for å ta livet av den da ufødte John Connor. I 1995 må de sende en ny terminator for å forsøke igjen.</short_synopsis>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <vod_suspension_required>false</vod_suspension_required>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+      <platforms>
+        <platform name="Amazon">
+          <cleared_for_sale>false</cleared_for_sale>
+          <cleared_for_hd_sale>false</cleared_for_hd_sale>
+          <wholesale_price_tier/>
+          <cleared_for_vod>false</cleared_for_vod>
+          <cleared_for_hd_vod>false</cleared_for_hd_vod>
+          <cleared_for_svod>false</cleared_for_svod>
+          <vendor_id>AM1512414</vendor_id>
+        </platform>
+      </platforms>
+    </territory>
+    <territory country="DK">
+      <language>da</language>
+      <title>Terminator 2: Dommedag</title>
+      <synopsis>Året er 1995 og der er gået 11 år siden Sarah Connor overlevede et angreb fra den menneskelignende maskine Terminator som kom fra fremtiden. Kort efter fik hun en søn ved navn John Connor. John vil i fremtiden lede kampen imod de maskiner der har overtaget jorden efter en altødelæggende atomkrig.</synopsis>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rights_duration/>
+      <reg_number/>
+      <rating_system>MCCYP</rating_system>
+      <rating_code>15</rating_code>
+      <rating_reason/>
+      <vod_rights_ident/>
+      <short_synopsis>Der er gået 11 år siden Sarah Connor overlevede et angreb fra den Terminator. Kort efter fik hun en søn ved navn John. John vil i fremtiden lede kampen imod de maskiner.</short_synopsis>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <vod_suspension_required>false</vod_suspension_required>
+      <cinema_release_date>1991-11-08</cinema_release_date>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+      <platforms>
+        <platform name="Amazon">
+          <cleared_for_sale>false</cleared_for_sale>
+          <cleared_for_hd_sale>false</cleared_for_hd_sale>
+          <wholesale_price_tier/>
+          <cleared_for_vod>false</cleared_for_vod>
+          <cleared_for_hd_vod>false</cleared_for_hd_vod>
+          <cleared_for_svod>false</cleared_for_svod>
+          <vendor_id>AM1512414</vendor_id>
+        </platform>
+      </platforms>
+    </territory>
+    <territory country="PL">
+      <language>pl</language>
+      <title>Terminator 2: Dzień sądu</title>
+      <synopsis>Arnold Schwarzenegger powraca jako Terminator T-800, który przenosi się do przeszłości, by chronić 10-letniego Johna. Jego matka, Sara Connor, jest w zakładzie psychiatrycznym. Razem planują jej ucieczkę. Ich przeciwnikiem jest cyborg T-1000.</synopsis>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rights_duration/>
+      <reg_number/>
+      <rating_system>NBC-PL</rating_system>
+      <rating_code>15</rating_code>
+      <rating_reason/>
+      <vod_rights_ident/>
+      <short_synopsis>Terminátor T-800 (Arnold Schwarzenegger) chroni 10-letniego Johna, którego matka, Sara, jest w szpitalu psychiatrycznym. Razem z Johnem próbują ją uwolnić, walcząc z cyborgiem T-1000.</short_synopsis>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <vod_suspension_required>false</vod_suspension_required>
+      <cinema_release_date>1992-05-05</cinema_release_date>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+      <platforms>
+        <platform name="Amazon">
+          <cleared_for_sale>false</cleared_for_sale>
+          <cleared_for_hd_sale>false</cleared_for_hd_sale>
+          <wholesale_price_tier/>
+          <cleared_for_vod>false</cleared_for_vod>
+          <cleared_for_hd_vod>false</cleared_for_hd_vod>
+          <cleared_for_svod>false</cleared_for_svod>
+          <vendor_id>AM1512414</vendor_id>
+        </platform>
+      </platforms>
+    </territory>
+    <territory country="PT">
+      <language>pt-PT</language>
+      <title>Exterminador Implacável 2: O Dia do Julgamento</title>
+      <synopsis>Sarah Connor e o seu filho adolescente são perseguidos pelo Exterminador T-1000, absolutamente letal e capaz de mudar de forma, enviado no tempo para matar John Connor e o impedir de ser o líder da resistência humana no futuro. Um segundo Exterminador, menos avançado, também chegou para o proteger.</synopsis>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rights_duration/>
+      <reg_number/>
+      <rating_system>CCE</rating_system>
+      <rating_code>M12</rating_code>
+      <rating_reason/>
+      <vod_rights_ident/>
+      <short_synopsis>Sarah Connor e seu filho John são perseguidos pelo Exterminador T-1000, enviado para matá-lo. Outro Exterminador chega para protegê-lo e garantir seu futuro como líder da resistência.</short_synopsis>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <vod_suspension_required>false</vod_suspension_required>
+      <cinema_release_date>1991-10-25</cinema_release_date>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+      <platforms>
+        <platform name="Amazon">
+          <cleared_for_sale>false</cleared_for_sale>
+          <cleared_for_hd_sale>false</cleared_for_hd_sale>
+          <wholesale_price_tier/>
+          <cleared_for_vod>false</cleared_for_vod>
+          <cleared_for_hd_vod>false</cleared_for_hd_vod>
+          <cleared_for_svod>false</cleared_for_svod>
+          <vendor_id>AM1512414</vendor_id>
+        </platform>
+      </platforms>
+    </territory>
+    <territory country="ES">
+      <language>es-ES</language>
+      <title>Terminator 2: El Juicio Final</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rights_duration/>
+      <reg_number/>
+      <rating_system>ICAA</rating_system>
+      <rating_code>18</rating_code>
+      <rating_reason/>
+      <vod_rights_ident/>
+      <short_synopsis>Tras fallar en el intento de eliminar a Sarah Connor, un androide T-1000 llega del futuro para eliminar a su hijo, John Connor. Entonces, el T-800 es enviado para protegerle.</short_synopsis>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <vod_suspension_required>false</vod_suspension_required>
+      <cinema_release_date>1991-12-05</cinema_release_date>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+      <platforms>
+        <platform name="Amazon">
+          <cleared_for_sale>false</cleared_for_sale>
+          <cleared_for_hd_sale>false</cleared_for_hd_sale>
+          <wholesale_price_tier/>
+          <cleared_for_vod>false</cleared_for_vod>
+          <cleared_for_hd_vod>false</cleared_for_hd_vod>
+          <cleared_for_svod>false</cleared_for_svod>
+          <vendor_id>AM1512414</vendor_id>
+        </platform>
+      </platforms>
+    </territory>
+    <territory country="SE">
+      <language>sv</language>
+      <title>Terminator 2: Domedagen</title>
+      <synopsis>Efter händelserna i Terminator har Sarah Connor (Linda Hamilton) blivit intagen på mentalsjukhus och hennes son John (Edward Furlong) placerats i fosterhem. Från framtiden skickas två cyborger, en T-1000 (Robert Patrick) för att döda John och en omprogrammerad T-800 (Arnold Schwarzenegger) för att skydda honom. De måste också hitta mannen som orsakar Skynets krig mot mänskligheten.</synopsis>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rights_duration/>
+      <reg_number/>
+      <rating_system>SM-SA</rating_system>
+      <rating_code>15+</rating_code>
+      <rating_reason/>
+      <vod_rights_ident/>
+      <short_synopsis>Från framtiden skickas två cyborger, en T-1000 med uppdraget att döda John Connor och en omprogrammerad Serie T-800 Model 101 för att skydda honom.</short_synopsis>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <vod_suspension_required>false</vod_suspension_required>
+      <cinema_release_date>1991-09-13</cinema_release_date>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+      <platforms>
+        <platform name="Amazon">
+          <cleared_for_sale>false</cleared_for_sale>
+          <cleared_for_hd_sale>false</cleared_for_hd_sale>
+          <wholesale_price_tier/>
+          <cleared_for_vod>false</cleared_for_vod>
+          <cleared_for_hd_vod>false</cleared_for_hd_vod>
+          <cleared_for_svod>false</cleared_for_svod>
+          <vendor_id>AM1512414</vendor_id>
+        </platform>
+      </platforms>
+    </territory>
+  </territories>
+</film>

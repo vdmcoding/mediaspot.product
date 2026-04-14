@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<film id="9546">
+  <right_holder id="924">
+    <name>STUDIOCANAL</name>
+    <provider_business_unit>UMW France</provider_business_unit>
+    <provider_agent>PORTAL Océane</provider_agent>
+  </right_holder>
+  <title>Terminator 2: Judgment Day</title>
+  <lab>VDM</lab>
+  <digitizing_costs_type>Recouped</digitizing_costs_type>
+  <provider_costs/>
+  <contract_reference/>
+  <contract_status/>
+  <contract_signing_date/>
+  <umw_id/>
+  <production_companies>Carolco Pictures</production_companies>
+  <copyright>1991 Studiocanal. All Rights Reserved.</copyright>
+  <genres>Action &amp; Adventure,Sci-Fi &amp; Fantasy,Thriller</genres>
+  <platforms>iTunes Google Amazon Sony Microsoft</platforms>
+  <duration>137</duration>
+  <hd_available>true</hd_available>
+  <isan>0000-0000-7173-0000-O-0000-0006-P</isan>
+  <created_at>2019-11-05</created_at>
+  <created_by>PORTAL Océane</created_by>
+  <original_language>en-US</original_language>
+  <production_year>1991</production_year>
+  <theatrical_release_date>1991-07-03</theatrical_release_date>
+  <imdb>https://www.imdb.com/title/tt0103064/?ref_=nv_sr_3?ref_=nv_sr_3</imdb>
+  <invoice_to>UMW SARL</invoice_to>
+  <cast>
+    <cast_member>
+      <display_name>Arnold Schwarzenegger</display_name>
+      <character_name>T-800</character_name>
+      <billing>ordered</billing>
+      <locales>
+        <locale locale="ja">
+          <display_name>アーノルド・シュワルツェネッガー</display_name>
+          <character_name>ターミネーター</character_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>아놀드 슈왈제네거</display_name>
+          <character_name>T-800</character_name>
+        </locale>
+      </locales>
+    </cast_member>
+    <cast_member>
+      <display_name>Linda Hamilton</display_name>
+      <character_name>Sarah Connor</character_name>
+      <billing>ordered</billing>
+      <locales>
+        <locale locale="ja">
+          <display_name>リンダ・ハミルトン</display_name>
+          <character_name>サラ・コナー</character_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>린다 해밀턴</display_name>
+          <character_name>사라 코너</character_name>
+        </locale>
+      </locales>
+    </cast_member>
+    <cast_member>
+      <display_name>Robert Patrick</display_name>
+      <character_name>T-1000</character_name>
+      <billing>ordered</billing>
+      <locales>
+        <locale locale="ja">
+          <display_name>ロバート・パトリック</display_name>
+          <character_name>T-1000</character_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>로버트 패트릭</display_name>
+          <character_name>T-1000</character_name>
+        </locale>
+      </locales>
+    </cast_member>
+    <cast_member>
+      <display_name>Edward Furlong</display_name>
+      <character_name>John Connor</character_name>
+      <billing>ordered</billing>
+      <locales>
+        <locale locale="ja">
+          <display_name>エドワード・ファーロング</display_name>
+          <character_name>ジョン・コナー</character_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>에드워드 퍼롱</display_name>
+          <character_name>존 코너</character_name>
+        </locale>
+      </locales>
+    </cast_member>
+  </cast>
+  <crew>
+    <crew_member>
+      <display_name>James Cameron</display_name>
+      <billing>ordered</billing>
+      <roles>
+        <role>Director</role>
+        <role>Producer</role>
+        <role>Screenwriter</role>
+      </roles>
+      <locales>
+        <locale locale="ja">
+          <display_name>ジェームズ・キャメロン</display_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>제임스 카메론</display_name>
+        </locale>
+      </locales>
+    </crew_member>
+    <crew_member>
+      <display_name>William Wisher Jr.</display_name>
+      <billing>ordered</billing>
+      <roles>
+        <role>Screenwriter</role>
+      </roles>
+      <locales>
+        <locale locale="ja">
+          <display_name>ウィリアム・ウィッシャー</display_name>
+        </locale>
+        <locale locale="ko">
+          <display_name>윌리엄 위셔 주니어</display_name>
+        </locale>
+      </locales>
+    </crew_member>
+  </crew>
+  <territories>
+    <territory country="AR">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>ar-movies</rating_system>
+      <rating_code>SAM16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-08-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="BE">
+      <language>fr-FR</language>
+      <title>Terminator 2 : Le jugement dernier</title>
+      <synopsis>En 2029, après leur échec pour éliminer Sarah Connor, les robots de Skynet programment un nouveau Terminator, le T-1000, pour retourner dans le passé et éliminer son fils John Connor, futur leader de la résistance humaine. Ce dernier programme un autre cyborg, le T-800, et l'envoie également en 1995, pour le protéger. Une seule question déterminera le sort de l'humanité : laquelle des deux machines trouvera John la première ?</synopsis>
+      <short_synopsis>En 2029, les robots de Skynet programment un nouveau Terminator, le T-1000, pour retourner dans le passé et éliminer le fils de Sarah Connor, futur leader de la résistance humaine.</short_synopsis>
+      <actived_platforms>iTunes Google</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>be-movies</rating_system>
+      <rating_code>16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2017-08-30</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="BN">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>bn-movies</rating_system>
+      <rating_code>A-PG</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="BO">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>bo-movies</rating_system>
+      <rating_code>14</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="BR">
+      <language>pt-BR</language>
+      <title>O Exterminador do Futuro 2: O Julgamento Final</title>
+      <synopsis>Um andróide T-800 vem do futuro para proteger o garoto John Connor, filho de Sarah Connor. Mas há um problema: o mais avançado modelo existente, T-1000, também voltou no tempo, e com a missão de matar o menino.</synopsis>
+      <short_synopsis>Um andróide T-800 vem do futuro para proteger o garoto John Connor, filho de Sarah Connor. Mas há um problema: o mais avançado modelo existente, T-1000, também voltou no tempo...</short_synopsis>
+      <actived_platforms>iTunes Google Amazon Sony Microsoft</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>false</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>br-movies</rating_system>
+      <rating_code>A14</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-08-30</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="BW">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>bw-movies</rating_system>
+      <rating_code>R</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="BZ">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>bz-movies</rating_system>
+      <rating_code>R</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="CH">
+      <language>fr-FR</language>
+      <title>Terminator 2 : Le jugement dernier</title>
+      <synopsis>En 2029, après leur échec pour éliminer Sarah Connor, les robots de Skynet programment un nouveau Terminator, le T-1000, pour retourner dans le passé et éliminer son fils John Connor, futur leader de la résistance humaine. Ce dernier programme un autre cyborg, le T-800, et l'envoie également en 1995, pour le protéger. Une seule question déterminera le sort de l'humanité : laquelle des deux machines trouvera John la première ?</synopsis>
+      <short_synopsis>En 2029, les robots de Skynet programment un nouveau Terminator, le T-1000, pour retourner dans le passé et éliminer le fils de Sarah Connor, futur leader de la résistance humaine.</short_synopsis>
+      <actived_platforms>iTunes Microsoft</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>ch-movies</rating_system>
+      <rating_code>16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="CL">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis>Después del fracaso de Skynet, as máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión.</short_synopsis>
+      <actived_platforms>iTunes Amazon</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>cl-movies</rating_system>
+      <rating_code>14</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="CO">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis>Después del fracaso de Skynet, as máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión.</short_synopsis>
+      <actived_platforms>iTunes Amazon</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>co-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-08-16</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="CR">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>cr-movies</rating_system>
+      <rating_code>A</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="CV">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>cv-movies</rating_system>
+      <rating_code>M16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="CY">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>cy-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="DK">
+      <language>da</language>
+      <title>Terminator 2: Dommedag</title>
+      <synopsis>Året er 1995 og der er gået 11 år siden Sarah Connor overlevede et angreb fra den menneskelignende maskine Terminator som kom fra fremtiden. Kort efter fik hun en søn ved navn John Connor. John vil i fremtiden lede kampen imod de maskiner der har overtaget jorden efter en altødelæggende atomkrig.</synopsis>
+      <short_synopsis>Der er gået 11 år siden Sarah Connor overlevede et angreb fra den Terminator. Kort efter fik hun en søn ved navn John. John vil i fremtiden lede kampen imod de maskiner.</short_synopsis>
+      <actived_platforms>iTunes Google Amazon</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>dk-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-11-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="DO">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>do-movies</rating_system>
+      <rating_code>U</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="EC">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>ec-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="ES">
+      <language>es-ES</language>
+      <title>Terminator 2: El Juicio Final</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis>Tras fallar en el intento de eliminar a Sarah Connor, un androide T-1000 llega del futuro para eliminar a su hijo, John Connor. Entonces, el T-800 es enviado para protegerle.</short_synopsis>
+      <actived_platforms>iTunes Google Amazon Sony</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>es-movies</rating_system>
+      <rating_code>18</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-12-05</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="FI">
+      <language>fi</language>
+      <title>Terminator 2 : Tuomion päivä</title>
+      <synopsis>Kolmetoista vuotta ensimmäisen Terminator-elokuvan jälkeen kaksi terminaattoria – T-800 ja T-1000 – saapuvat etsimään 13-vuotiaan John Connorin. T-800 suojelee Johnia, T-1000 tappaa hänet. Sarah Connor on mielisairaalassa, ja John pitää äitiään psykopaattina.</synopsis>
+      <short_synopsis>Kaksi terminaattoria saapuvat aikamatkailun avulla vuodesta 2029 etsimään 13-vuotiaan John Connorin, josta tulisi tulevaisuudessa ihmisten vastarintaliikkeen johtaja.</short_synopsis>
+      <actived_platforms>iTunes Google Amazon</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>fi-movies</rating_system>
+      <rating_code>K-16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2003-08-01</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="GM">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>gm-movies</rating_system>
+      <rating_code>R</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="GR">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>gr-movies</rating_system>
+      <rating_code>16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-12-12</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="GT">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>gt-movies</rating_system>
+      <rating_code>B-15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="GW">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>gw-movies</rating_system>
+      <rating_code>M16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="HN">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>hn-movies</rating_system>
+      <rating_code>C</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="ID">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>id-movies</rating_system>
+      <rating_code>13</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-12-12</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="IL">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>il-movies</rating_system>
+      <rating_code>14+</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="IN">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment Day</title>
+      <synopsis>सारा कॉनर को भविष्य के एक साइबॉर्ग द्वारा समाप्त करने के लिए लक्षित किए जाने के लगभग 10 साल बीत चुके हैं। अब उसका बेटा, जॉन, प्रतिरोध का भावी नेता, एक नए, अधिक घातक टर्मिनेटर का लक्ष्य है। एक बार फिर, प्रतिरोध ने जॉन और उसकी माँ सारा को बचाने के प्रयास में एक रक्षक को वापस भेजने में कामयाबी हासिल की है।</synopsis>
+      <short_synopsis>सारा कॉनर को भविष्य के एक साइबॉर्ग द्वारा समाप्त करने के लिए निशाना बनाए जाने के लगभग 10 साल बीत चुके हैं। अब उसका बेटा, जॉन, प्रतिरोध का भावी नेता, लक्ष्य है...</short_synopsis>
+      <actived_platforms>Amazon</actived_platforms>
+      <provisional_release_date>2024-11-25</provisional_release_date>
+      <program_category>New Release</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>in-movies</rating_system>
+      <rating_code>U</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2017-08-25</video_physical_release_date>
+      <cinema_release_date>2017-08-25</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="IT">
+      <language>it-IT</language>
+      <title>Terminator 2 : Il giorno del giudizio</title>
+      <synopsis>Dieci anni dopo i fatti legati al Terminator, Sarah Connor è in manicomio per aver cercato di far esplodere una fabbrica collegata a Skynet. Tutti la ritengono psicotica, mentre suo figlio John è un ragazzo sbandato in affido a Los Angeles.</synopsis>
+      <short_synopsis>Sono trascorsi dieci anni dai fatti di sangue causati dalla caccia del Terminator alla madre di John Connor, Sarah. Tutti quanti la ritengono una psicotica.</short_synopsis>
+      <actived_platforms>iTunes Google Amazon Sony</actived_platforms>
+      <provisional_release_date>2020-08-31</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>it-movies</rating_system>
+      <rating_code>T</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-12-19</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="JP">
+      <language>ja</language>
+      <title>ターミネーター 2</title>
+      <synopsis>スカイネットは最新モデルのT-1000型ターミネーターを解き放った。T-1000の使命は、サラの息子ジョン・コナーが未来で機械軍に反撃する人類抵抗軍を率いる前に彼を抹殺すること。抵抗軍は少年ジョンを守るために未来から別のターミネーターを送り込む。そのターミネーターはジョンの傍を片時も離れず、ジョンを狙う敵の最新サイボーグから守るようプログラムされていた。</synopsis>
+      <short_synopsis>スカイネットはジョン・コナーを殺すためにT-1000型ターミネーターを送り込んだ。人類存亡の最後の希望を守るべく、未来から別のターミネーターが少年を守るために送り込まれた。</short_synopsis>
+      <actived_platforms>Amazon</actived_platforms>
+      <provisional_release_date>2019-11-25</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>jp-movies</rating_system>
+      <rating_code>15+</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>1997-08-24</video_physical_release_date>
+      <cinema_release_date>1991-08-24</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="KH">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>kh-movies</rating_system>
+      <rating_code>NC-17</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="KR">
+      <language>ko</language>
+      <title>터미네이터2:심판의날</title>
+      <synopsis>인류와 기계가 전쟁을 벌이는 미래에서 인류 저항군 사령관이 될 존 코너를 제거하기 위해 미래에서 현재로 넘어 온 로봇 T-1000과 T-1000으로 부터 존 코너를 지키기 위한 엄마 사라 코너와 저항군 터미네이터의 활약을 그린</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes Google</actived_platforms>
+      <provisional_release_date>2023-06-02</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>kr-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2024-02-02</video_physical_release_date>
+      <cinema_release_date>1991-07-06</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="LA">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>la-movies</rating_system>
+      <rating_code>NC-17</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="LK">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>lk-movies</rating_system>
+      <rating_code>A</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="MD">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>md-movies</rating_system>
+      <rating_code>16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="MN">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>mn-movies</rating_system>
+      <rating_code>18+</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="MT">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>mt-movies</rating_system>
+      <rating_code>14</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="MU">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>mu-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="MX">
+      <language>es-MX</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis>Después del fracaso de Skynet, as máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión.</short_synopsis>
+      <actived_platforms>iTunes Google Amazon</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>false</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>mx-movies</rating_system>
+      <rating_code>B-15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-07-03</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="MZ">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>mz-movies</rating_system>
+      <rating_code>M16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="NA">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>na-movies</rating_system>
+      <rating_code>16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="NE">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>ne-movies</rating_system>
+      <rating_code>15+</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="NI">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>ni-movies</rating_system>
+      <rating_code>PG-13</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="NL">
+      <language>nl</language>
+      <title>Terminator 2: Judgment Day</title>
+      <synopsis>In dit deel van de Terminator-reeks is John Connor twaalf jaar. Zijn moeder Sarah Connor, die in het vorige deel uit 1984 bijna werd vermoord door "Terminator T-800 model 101", zit in een goed beveiligde inrichting. Zij tracht tevergeefs iedereen ervan bewust te maken dat ooit "Judgment Day" (de dag van het laatste oordeel) zal komen: de dag waarop de machines zelfbewust worden en nucleaire raketten op Rusland gooien, omdat ze weten dat de Russen op hun beurt even hard terug zullen slaan naar Amerika. Op die dag zullen meer dan 3 miljard mensen de dood vinden.</synopsis>
+      <short_synopsis>Sarah Connor zit in een goed beveiligde inrichting. Zij tracht tevergeefs iedereen ervan bewust te maken dat ooit "Judgment Day".</short_synopsis>
+      <actived_platforms>iTunes Google Microsoft</actived_platforms>
+      <provisional_release_date>2020-04-13</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>nl-movies</rating_system>
+      <rating_code>16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2017-08-24</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="NO">
+      <language>no</language>
+      <title>Terminator II : Dommens dag</title>
+      <synopsis>10år er gått siden en terminator ble sendt for å ta livet av den da ufødte John Connor. Maskinene som regjerer fremtiden lyktes ikke i sin plan, og i 1995 må de sende en ny terminator for å forsøke igjen, men menneskene i fremtiden vet råd.</synopsis>
+      <short_synopsis>10år er gått siden en terminator ble sendt for å ta livet av den da ufødte John Connor. I 1995 må de sende en ny terminator for å forsøke igjen.</short_synopsis>
+      <actived_platforms>iTunes Google Amazon</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>no-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="PA">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>pa-movies</rating_system>
+      <rating_code>C</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="PE">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>pe-movies</rating_system>
+      <rating_code>14</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="PH">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>ph-movies</rating_system>
+      <rating_code>R-13</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-09-03</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="PL">
+      <language>pl</language>
+      <title>Terminator 2: Dzień sądu</title>
+      <synopsis>Arnold Schwarzenegger powraca jako Terminator T-800, który przenosi się do przeszłości, by chronić 10-letniego Johna. Jego matka, Sara Connor, jest w zakładzie psychiatrycznym. Razem planują jej ucieczkę. Ich przeciwnikiem jest cyborg T-1000.</synopsis>
+      <short_synopsis>Terminátor T-800 (Arnold Schwarzenegger) chroni 10-letniego Johna, którego matka, Sara, jest w szpitalu psychiatrycznym. Razem z Johnem próbują ją uwolnić, walcząc z cyborgiem T-1000.</short_synopsis>
+      <actived_platforms>iTunes Amazon</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>pl-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1992-05-05</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="PT">
+      <language>pt-PT</language>
+      <title>Exterminador Implacável 2: O Dia do Julgamento</title>
+      <synopsis>Sarah Connor e o seu filho adolescente são perseguidos pelo Exterminador T-1000, absolutamente letal e capaz de mudar de forma, enviado no tempo para matar John Connor e o impedir de ser o líder da resistência humana no futuro. Um segundo Exterminador, menos avançado, também chegou para o proteger.</synopsis>
+      <short_synopsis>Sarah Connor e seu filho John são perseguidos pelo Exterminador T-1000, enviado para matá-lo. Outro Exterminador chega para protegê-lo e garantir seu futuro como líder da resistência.</short_synopsis>
+      <actived_platforms>iTunes Google Amazon</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>true</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>pt-movies</rating_system>
+      <rating_code>M12</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-10-25</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="PY">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>py-movies</rating_system>
+      <rating_code>15</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="SE">
+      <language>sv</language>
+      <title>Terminator 2: Domedagen</title>
+      <synopsis>Efter händelserna i Terminator har Sarah Connor (Linda Hamilton) blivit intagen på mentalsjukhus och hennes son John (Edward Furlong) placerats i fosterhem. Från framtiden skickas två cyborger, en T-1000 (Robert Patrick) för att döda John och en omprogrammerad T-800 (Arnold Schwarzenegger) för att skydda honom. De måste också hitta mannen som orsakar Skynets krig mot mänskligheten.</synopsis>
+      <short_synopsis>Från framtiden skickas två cyborger, en T-1000 med uppdraget att döda John Connor och en omprogrammerad Serie T-800 Model 101 för att skydda honom.</short_synopsis>
+      <actived_platforms>iTunes Google Amazon Microsoft</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>true</subtitled_version>
+      <rating_system>se-movies</rating_system>
+      <rating_code>15+</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>1991-09-13</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="SG">
+      <language>en-SG</language>
+      <title>Terminator 2: Judgment Day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>sg-movies</rating_system>
+      <rating_code>NC16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="SV">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>sv-movies</rating_system>
+      <rating_code>C</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="SZ">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>sz-movies</rating_system>
+      <rating_code>13</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="TR">
+      <language>en-US</language>
+      <title>Terminator 2: Mahşer Günü</title>
+      <synopsis>Terminatör 2: Mahşer Günü, 2009 yılında geçmektedir. Sarah Connor’ı öldürme görevinde başarısızlığa uğrayan Synet robotları, T-1000 adında yeni bir robot üretirler. Bu yeni “Terminatör” geçmişe dönerek insan direnişinin gelecekteki lideri olacak Sarah’ın oğlu John Connar’ı öldürmeye programlanır. Fakat bir diğer robot T-800 de John’u korumaya programlanarak geçmişe gönderilmiştir. İnsanoğlunun kaderini belirleyen tek bir soru vardır: İki robottan hangisi John’u daha önce bulacaktır?</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>tr-movies</rating_system>
+      <rating_code>16+</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2017-08-25</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="TT">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>tt-movies</rating_system>
+      <rating_code>14+</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="UG">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>ug-movies</rating_system>
+      <rating_code>R</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="VE">
+      <language>es-419</language>
+      <title>El Exterminator 2</title>
+      <synopsis>Después del fracaso de Skynet, gracias a la intervención de un humano enviado por la resistencia para salvar a Sarah Connor -el soldado y fiel seguidor de John Connor, Kyle Reese- las máquinas no se rindieron, y esta vez envían a otro cyborg con una nueva misión; si la vez anterior no consiguieron acabar con Sarah, esta vez el objetivo es el propio John Connor, aún siendo un niño.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>ve-movies</rating_system>
+      <rating_code>C</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="VN">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>vn-movies</rating_system>
+      <rating_code>T16</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2017-09-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="ZA">
+      <language>en</language>
+      <title>Terminator 2: Judgment Day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-05-04</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>za-movies</rating_system>
+      <rating_code>13</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+    <territory country="ZW">
+      <language>en-US</language>
+      <title>Terminator 2: Judgment day</title>
+      <synopsis>Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.</synopsis>
+      <short_synopsis/>
+      <actived_platforms>iTunes</actived_platforms>
+      <provisional_release_date>2020-06-08</provisional_release_date>
+      <program_category>Library</program_category>
+      <day_and_date>false</day_and_date>
+      <original_version>true</original_version>
+      <dubbed_version>false</dubbed_version>
+      <subtitled_version>false</subtitled_version>
+      <rating_system>zw-movies</rating_system>
+      <rating_code>R</rating_code>
+      <rights_duration/>
+      <reg_number/>
+      <tv_first_diffuser/>
+      <tv_pay_opening_date/>
+      <tv_free_opening_date/>
+      <video_editor/>
+      <video_distributor/>
+      <video_physical_release_date>2020-06-08</video_physical_release_date>
+      <cinema_release_date>2020-06-08</cinema_release_date>
+      <cinema_distributor/>
+      <cinema_attendance_figures/>
+      <cinema_attendance_figures_unit/>
+      <additional_locales>
+        <additional_locale/>
+      </additional_locales>
+    </territory>
+  </territories>
+  <keywords>
+    <keyword>Terminator 2 Judgment Day</keyword>
+    <keyword>Terminator 2 Judgment Day</keyword>
+    <keyword>Terminator 2: Judgment Day</keyword>
+    <keyword>Arnold Schwarzenegger</keyword>
+    <keyword>Linda Hamilton</keyword>
+    <keyword>Robert Patrick</keyword>
+    <keyword>Edward Furlong</keyword>
+  </keywords>
+</film>
