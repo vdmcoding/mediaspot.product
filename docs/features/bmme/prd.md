@@ -1,16 +1,18 @@
 ---
 
 ## stepsCompleted: ['step-01-init', 'step-02-discovery', 'step-03-success', 'step-04-journeys', 'step-05-domain', 'step-07-project-type', 'step-08-scoping', 'step-09-functional', 'step-10-dataflow-enrichment']
+
 inputDocuments:
-  - 'docs/features/bmme/source-docs/feature_example.json'
-  - 'docs/features/bmme/source-docs/package_example.json'
-  - 'docs/features/bmme/source-docs/package_final_delivery.xml'
-  - 'docs/features/bmme/source-docs/VDM Connect - Benjamin Chareyron.pdf'
-  - 'docs/features/bmme/source-docs/Data flow : Journey 1.1 - Localisation des métadonnées Title.pdf'
-  - 'docs/features/bmme/source-docs/Data flow : Journey 1.2 - Historisation : Synchro des métadonnées title.pdf'
-  - 'docs/features/bmme/source-docs/Data flow : Journey 1.3 - Gestion des packages.pdf'
-  - 'docs/features/bmme/source-docs/Data flow : Journey 2 - Mapping & Synchro des métadonnées entrantes.pdf'
-  - 'docs/features/bmme/source-docs/Data flow : Journey 3 - Mapping des métadonnées sortantes.pdf'
+
+- 'docs/features/bmme/source-docs/feature_example.json'
+- 'docs/features/bmme/source-docs/package_example.json'
+- 'docs/features/bmme/source-docs/package_final_delivery.xml'
+- 'docs/features/bmme/source-docs/VDM Connect - Benjamin Chareyron.pdf'
+- 'docs/features/bmme/source-docs/Data flow : Journey 1.1 - Localisation des métadonnées Title.pdf'
+- 'docs/features/bmme/source-docs/Data flow : Journey 1.2 - Historisation : Synchro des métadonnées title.pdf'
+- 'docs/features/bmme/source-docs/Data flow : Journey 1.3 - Gestion des packages.pdf'
+- 'docs/features/bmme/source-docs/Data flow : Journey 2 - Mapping & Synchro des métadonnées entrantes.pdf'
+- 'docs/features/bmme/source-docs/Data flow : Journey 3 - Mapping des métadonnées sortantes.pdf'
 workflowType: 'prd'
 briefCount: 0
 researchCount: 0
@@ -1687,6 +1689,6 @@ BMME v2 résout un problème opérationnel critique: la fragmentation des métad
 - FR90: Système applique le mapping lors de chaque modification de métadonnée dans BMME v2
 - FR91: Modules mediaspot existants continuent à lire les métadonnées via `DbMetadataFieldInfo` sans modification
 - FR92: Système garantit la cohérence entre BMME v2 (source) et DbMetadataFieldInfo (projection)
-- FR93: Admin Internes VDM peuvent monitorer le statut de synchronisation BMME v2 → DbMetadataFieldInfo
+- FR93: Admin Internes VDM peu_vent monitorer le statut de synchronisation BMME v2 → DbMetadataFieldInfo
 - FR94: Système alerte en cas d'échec de synchronisation vers le modèle legacy
 

@@ -834,70 +834,141 @@ Feature: Propagation Shared Metadata aux packages
 
 **Valeur livrée :** Marc voit le dashboard de monitoring, identifie une erreur de synchro Unity en 5 min, corrige le mapping via l'éditeur visuel et resynchronise en 1 clic.
 
+**UI References:** [docs/features/bmme/ui/](docs/features/bmme/ui/)
+
 #### Story 3.1 : Dashboard de monitoring des synchronisations
 
 As a **Admin Interne VDM**,
 I want **voir un dashboard avec le statut temps réel de toutes les synchronisations externes**,
 So that **je détecte immédiatement les problèmes sans attendre les plaintes clients**.
 
+**UI Reference:** [3.1 - Dashboard de monitoring des synchronisations/](docs/features/bmme/ui/3.1%20-%20Dashboard%20de%20monitoring%20des%20synchronisations/)
+
 **Acceptance Criteria:**
 
 ```gherkin
 Feature: Dashboard de monitoring des synchronisations
 
-  Scenario: Affichage du dashboard
+  Background:
     Given je suis connecté en tant qu'Admin Interne VDM
-    When j'accède au dashboard de monitoring
-    Then je vois la liste des sources externes (Unity, Iron, VDM Connect, MovieLibrary)
-    And chaque source affiche un badge de statut (🟢 OK / 🔴 Failed / 🟡 Warning)
-    And je vois la date de dernière synchronisation réussie
+    And j'accède à "External sources > Synchronizations"
 
-  Scenario: Détection d'une synchronisation échouée
-    Given une synchronisation Unity a échoué depuis 3 jours
-    Then un badge rouge "🔴 Failed (3 jours)" s'affiche
-    And une alerte est visible en haut du dashboard
-    And le nombre d'échecs consécutifs est affiché
+  Scenario: Affichage des cartes sources en haut du dashboard
+    Then je vois 5 cartes sources : Unity, Iron, IMDb, MovieLibrary, VDM C
+    And chaque carte affiche :
+      | Élément | Format |
+      | Nom de la source | "Unity", "Iron", etc. |
+      | Badge statut | 🟢 (vert) ou 🔴 (rouge) selon état |
+      | Last sync | Temps relatif (ex: "2h. ago") avec icône ⏱️ |
+      | Last week | "X syncs" avec compteur d'erreurs coloré (ex: "🔴 2") |
 
-  Scenario: Détails d'une source
-    Given je suis sur le dashboard
-    When je clique sur une source (ex: Unity - StudioCanal)
-    Then je vois les détails : dernière synchro réussie, première erreur, impact (X films)
+  Scenario: Filtrage des sources par statut
+    When une source Unity a des erreurs récentes
+    Then la carte Unity affiche un badge rouge
+    And le compteur "Last week" affiche le nombre d'erreurs en rouge
+
+  Scenario: Affichage du tableau des synchronisations
+    Then je vois un tableau paginé avec les colonnes :
+      | Colonne | Description |
+      | Source | Nom de la source (Unity, Iron, IMDb, VDM C) |
+      | Date | Date et heure (format: 21/12/2026 12:25) |
+      | Trigger | ⚡ System (automatique) ou 👤 John Doe (manuel) |
+      | Errors | "None" (vert) ou "X errors" (rouge) |
+      | Updates | "X titles · Y fields" |
+    And les lignes avec erreurs affichent une icône 🔄 pour relancer
+
+  Scenario: Filtrage du tableau des synchronisations
+    When je clique sur le filtre "Source"
+    And je sélectionne "Unity"
+    Then seules les synchronisations Unity sont affichées
+    And un badge "Unity ×" apparaît pour indiquer le filtre actif
+
+  Scenario: Filtrage par erreurs uniquement
+    When j'active le toggle "Errors only"
+    Then seules les synchronisations avec erreurs sont affichées
+
+  Scenario: Export des données
+    When je clique sur le bouton "Export"
+    Then les données filtrées sont exportées au format CSV/Excel
+
+  Scenario: Pagination du tableau
+    Given il y a plus de 20 synchronisations
+    Then la pagination affiche "1 - 20 of X" en bas du tableau
+    And je peux naviguer entre les pages
+    And je peux choisir "20 per page" via un sélecteur
 ```
 
 **FRs couverts :** FR31, FR32
 
 ---
 
-#### Story 3.2 : Logs détaillés et friendly des synchronisations
+#### Story 3.2 : Détails de synchronisation et erreurs typées
 
 As a **Admin Interne VDM**,
-I want **consulter des logs détaillés et compréhensibles pour chaque synchronisation**,
-So that **je diagnostique rapidement la cause d'un problème sans fouiller dans des logs techniques**.
+I want **consulter le détail d'une synchronisation avec les erreurs typées par titre et par champ**,
+So that **je diagnostique rapidement la cause d'un problème et je sais exactement quoi corriger**.
+
+**UI Reference:** [3.2, 3.7 - Logs détaillés & friendly des synchronisations/](docs/features/bmme/ui/3.2%2C%203.7%20-Logs%20d%C3%A9taill%C3%A9s%20%26%20friendly%20des%20synchronisations%2C%20Affichage%20des%20erreurs%20typ%C3%A9es%20lors%20des%20synchronisations/)
 
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Logs détaillés et friendly
+Feature: Détails de synchronisation et erreurs typées
 
-  Scenario: Affichage des logs d'une synchronisation
-    Given je suis sur les détails d'une source en erreur
-    When je clique sur "Voir les logs"
-    Then je vois un log structuré et lisible
-    And chaque entrée a un timestamp, un niveau (info/warning/error), un message
-    And les erreurs sont mises en évidence
+  Background:
+    Given je suis sur le dashboard "External sources > Synchronizations"
 
-  Scenario: Log avec suggestion de diagnostic
-    Given une erreur "Champ director manquant" s'affiche
-    Then le log inclut une suggestion : "Vérifier si le champ a été renommé dans l'API Unity"
-    And le film concerné est identifié (Unity ID: 98234)
+  Scenario: Ouvrir la modale "Sync details" depuis le tableau
+    When je clique sur une ligne de synchronisation
+    Then une modale "Sync details" s'ouvre
+    And le header affiche :
+      | Élément | Exemple |
+      | Source | "Unity" |
+      | Date/heure | "21/12/2026 12:25" |
+      | Trigger | "⚡ System" ou "👤 John Doe" |
+    And le résumé affiche "X titles · Y fields · Z errors" (erreurs en rouge)
 
-  Scenario: Filtrage des logs
-    Given je suis dans la vue logs
-    When je filtre par "Errors only"
-    Then seules les entrées d'erreur sont affichées
+  Scenario: Liste des titres synchronisés avec accordéon
+    Given la modale "Sync details" est ouverte
+    Then je vois la liste des titres impactés avec :
+      | Élément | Format |
+      | Thumbnail | Image miniature du titre |
+      | Nom du titre | "Stranger Things" |
+      | ID externe | "#123456" |
+      | Compteur | "X fields · Y errors" ou "X fields · No errors" |
+    And chaque titre est un accordéon dépliable
+
+  Scenario: Détail des champs synchronisés pour un titre
+    When je déplie l'accordéon d'un titre
+    Then je vois un tableau avec les colonnes :
+      | Colonne | Description |
+      | Field | Nom du champ (director, OAR, localizedTitle, genres, originalTitle) |
+      | New value | Valeur importée (code style monospace) |
+      | Details | Message d'erreur ou vide si OK |
+    And les champs en erreur sont mis en évidence (texte rouge)
+    And un toggle "Errors only" permet de filtrer
+
+  Scenario: Types d'erreurs affichés dans la colonne Details
+    Given un titre a des erreurs de synchronisation
+    Then les types d'erreurs suivants sont affichés :
+      | Type d'erreur | Message exemple |
+      | Wrong data format | "Field localizedTitle should be a string" |
+      | Mapping option manquante | "Option 'sci-fi' is not in mapping options" |
+      | Champ non mappé | "Not mapped" avec icône ⚠️ |
+    And les valeurs problématiques sont affichées en rouge dans "New value"
+
+  Scenario: Identification des champs verrouillés
+    Given un champ a "Lock source" activé
+    Then le champ affiche une icône cadenas 🔒 à côté du nom
+    And la colonne Details peut afficher "Not synced - Field sourced by mediaspot"
+
+  Scenario: Filtrage "Errors only" par titre
+    When j'active le toggle "Errors only" sur un titre déplié
+    Then seuls les champs avec erreurs sont affichés pour ce titre
+    And les champs sans erreur sont masqués
 ```
 
-**FRs couverts :** FR33, FR42
+**FRs couverts :** FR33, FR42, FR78
 
 ---
 
@@ -907,217 +978,383 @@ As a **Admin Interne VDM**,
 I want **tester une API externe en temps réel pour diagnostiquer un problème**,
 So that **je comprends rapidement si le problème vient de l'API ou du mapping**.
 
+**UI Reference:** [3.3 - Mode diagnostic live des APIs externes/](docs/features/bmme/ui/3.3%20-%20Mode%20diagnostic%20live%20des%20APIs%20externes/)
+
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Mode diagnostic live API
+Feature: Mode diagnostic live API (External system troubleshoot)
 
-  Scenario: Tester une API externe
-    Given je suis sur les détails d'une source en erreur
-    When je clique sur "Tester l'API maintenant"
-    Then le système fait un appel live à l'API externe
-    And la réponse brute JSON est affichée
-    And je peux voir les champs retournés
+  Background:
+    Given je suis connecté en tant qu'Admin Interne VDM
 
-  Scenario: Comparaison avec le mapping attendu
-    Given j'ai testé l'API et reçu une réponse
-    Then le système compare la réponse avec le mapping configuré
-    And les champs manquants ou renommés sont mis en évidence
-    And une suggestion de correction est proposée
+  Scenario: Accéder au mode troubleshoot depuis le dashboard
+    Given je suis sur le dashboard "Synchronizations"
+    When je clique sur l'icône de diagnostic d'une source (ex: Unity)
+    Then une modale "External system troubleshoot" s'ouvre
 
-  Scenario: Test sur un film spécifique
-    Given je veux tester l'API pour un film précis
-    When je saisis l'ID externe (ex: Unity ID 98234)
-    And je clique sur "Test"
-    Then l'API est appelée pour ce film spécifique
-    And les données retournées sont affichées
+  Scenario: Interface de la modale troubleshoot
+    Given la modale "External system troubleshoot" est ouverte
+    Then je vois :
+      | Élément | Description |
+      | Sélecteur source | Dropdown avec "Unity" présélectionné |
+      | Sélecteur titre | Dropdown pour choisir un titre ou "Random title" |
+      | Bouton Trigger | Bouton violet "Trigger ⚡" |
+      | Zone de résultat | Affichage JSON avec coloration syntaxique |
+
+  Scenario: Tester l'API avec un titre aléatoire
+    Given je suis dans la modale troubleshoot
+    When je sélectionne "Random title" dans le sélecteur de titre
+    And je clique sur "Trigger ⚡"
+    Then le système appelle l'API externe pour un titre aléatoire
+    And la réponse JSON brute s'affiche avec coloration syntaxique
+
+  Scenario: Tester l'API avec un titre spécifique
+    When je sélectionne un titre (ex: "Stranger Things Season 4")
+    And je clique sur "Trigger ⚡"
+    Then l'API est appelée pour ce titre spécifique
+    And la réponse JSON s'affiche
+
+  Scenario: Affichage des erreurs de mapping inline dans le JSON
+    Given l'API a retourné une réponse JSON
+    Then les champs problématiques sont annotés avec un badge rouge ⚠️
+    And les erreurs détectées incluent :
+      | Type d'erreur | Annotation |
+      | Valeur non mappée | ⚠️ à côté de la valeur (ex: "SND" non reconnu) |
+      | Format incorrect | ⚠️ à côté du champ |
+      | Champ manquant | ⚠️ indication de champ attendu |
+
+  Scenario: Tooltip explicatif au survol d'une erreur
+    Given le JSON affiche des badges d'erreur ⚠️
+    When je survole un badge d'erreur
+    Then un tooltip explicatif s'affiche
+    And le message indique la cause (ex: "Value 'SND' missing from mapped options")
+
+  Scenario: Structure JSON avec erreurs multiples
+    Given l'API retourne un objet complexe
+    Then la structure JSON est affichée avec indentation :
+      | Chemin | Exemple d'erreur |
+      | summary.productionCompanies | ⚠️ "SND" non mappé |
+      | dates.releaseDate | ⚠️ format de date invalide |
+      | languagesAndInternationalization.originalCountry | ⚠️ valeur non reconnue |
+    And je peux identifier rapidement tous les problèmes
 ```
 
 **FRs couverts :** FR34
 
 ---
 
-#### Story 3.4 : Éditeur de mapping visuel (externe → mediaspot)
+#### Story 3.4 : Éditeur de mappings avec Formatting et Mapping options
 
 As a **Admin Interne VDM**,
-I want **configurer visuellement les mappings entre un système externe et mediaspot**,
-So that **je n'ai pas besoin de modifier du code pour corriger un mapping**.
+I want **configurer visuellement les mappings entre un système externe et mediaspot, incluant les transformations et correspondances d'enums**,
+So that **je n'ai pas besoin de modifier du code pour corriger un mapping ou ajouter des transformations**.
+
+**UI Reference:** [3.4, 3.5 - Éditeur visuel de mappings/](docs/features/bmme/ui/3.4%2C%203.5%20-%20%C3%89diteur%20visuel%20de%20mappings%2C%20Configuration%20des%20Formatting%20et%20Mapping%20options/)
 
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Éditeur de mapping visuel
+Feature: Éditeur de mappings avec Formatting et Mapping options
 
-  Scenario: Accéder à l'éditeur de mapping
-    Given je suis sur les détails d'une source externe
-    When je clique sur "Edit mappings"
-    Then l'éditeur de mapping visuel s'ouvre
-    And je vois une table : Champ externe | Champ mediaspot | Formatting | Mapping options
+  Background:
+    Given je suis connecté en tant qu'Admin Interne VDM
+    And j'accède à "External sources > Mappings > Unity" (ou autre source)
 
-  Scenario: Modifier un mapping de champ
-    Given je suis dans l'éditeur de mapping
-    When je modifie "data.director" en "data.directorName" pour le champ source
-    And je clique sur "Sauvegarder"
-    Then le mapping est mis à jour
+  Scenario: Navigation vers l'éditeur de mappings
+    Given je suis dans le menu "External sources"
+    Then je vois une section "Mappings" avec les sources configurées :
+      | Source |
+      | Iron |
+      | Unity |
+      | IMDb |
+      | VDM Connect |
+    And je peux cliquer sur "+ New mapping" pour ajouter une source
+
+  Scenario: Affichage de la vue hiérarchique des mappings
+    When je clique sur "Unity" dans la section Mappings
+    Then je vois la page "Unity mappings" avec :
+      | Élément | Description |
+      | Header | "Unity mappings" avec compteur "(X/Y fields mapped)" |
+      | Boutons | "Test API" et "Save" |
+      | Filtre | Champ de recherche "Mapped fields ▾" |
+    And les champs sont affichés en structure arborescente (JSON-like)
+
+  Scenario: Structure hiérarchique des champs à mapper
+    Given je suis sur la page "Unity mappings"
+    Then je vois les champs organisés hiérarchiquement :
+      | Niveau | Exemple |
+      | Racine | artistCode, catalog, originCountry |
+      | Objet | isan (avec sous-champs episode, root, version) |
+      | Localisé | keywords ARRAY Localized (avec fr, en, de, etc.) |
+      | Service | service ARRAY (avec titleAlternatives) |
+    And chaque champ affiche son type (string, ARRAY, Localized, etc.)
+    And la notation "→" indique le champ cible mediaspot
+
+  Scenario: Ouvrir la modale "Field mapping settings"
+    When je clique sur un champ (ex: "productionYear")
+    Then une modale "Field mapping settings" s'ouvre
+    And je vois :
+      | Élément | Description |
+      | Toggle actif | Switch ON/OFF pour activer le mapping |
+      | Nom du champ | "productionYear" avec badge de type (date) |
+      | Sélecteur cible | Dropdown pour choisir le champ mediaspot cible |
+
+  Scenario: Configurer le champ cible mediaspot
+    Given la modale "Field mapping settings" est ouverte
+    When je clique sur le sélecteur de champ cible
+    Then je vois une liste filtrable des champs mediaspot :
+      | Champ | Type | Badges |
+      | titleGenres | Genres | localized |
+      | originalTitle | string | - |
+      | casts | Casts | localized |
+      | productionYear | date | - |
+      | titleNationalities | CountryCode | - |
+    And je peux filtrer par nom de champ
+
+  Scenario: Ajouter une Formatting option
+    Given la modale "Field mapping settings" est ouverte
+    When je survole la zone sous le champ
+    Then un lien "+ add formatting" apparaît
+    When je clique sur "+ add formatting"
+    Then je peux configurer une transformation :
+      | Transformation | Effet |
+      | split | Découpe une chaîne en tableau |
+      | trim | Supprime les espaces |
+      | join | Fusionne un tableau en chaîne |
+      | format | Applique un format (dates, etc.) |
+
+  Scenario: Ajouter des Value mappings (correspondances d'enums)
+    Given la modale "Field mapping settings" est ouverte pour un champ avec enums
+    When je clique sur "+ add mappings"
+    Then une section "Edit value mappings" apparaît avec :
+      | Colonne | Description |
+      | input | Valeur source (ex: "Guerre", "Comédie", "Science-Fiction") |
+      | → | Flèche de transformation |
+      | output | Dropdown avec valeurs mediaspot cibles |
+      | 🗑️ | Bouton supprimer |
+    And je peux ajouter des lignes avec "Add row +"
+    And je peux supprimer le mapping avec "Remove mapping"
+
+  Scenario: Preview par langue des value mappings
+    Given je configure des value mappings pour un champ localisé
+    Then je vois un sélecteur "Preview in" avec les langues (French, English, etc.)
+    When je sélectionne "French"
+    Then les valeurs input/output sont affichées en français
+
+  Scenario: Gérer les objets complexes imbriqués
+    Given je clique sur un champ de type "object" (ex: "version")
+    Then la modale affiche la structure hiérarchique :
+      | Champ | Type | Sous-champs |
+      | version | object | title, isanCode, articleLabel, isoCode, country, origin, etc. |
+    And chaque sous-champ a son propre toggle actif/inactif
+    And les objets imbriqués (ex: country > fr, en) sont également configurables
+
+  Scenario: Champ non mappé (désactivé)
+    Given je clique sur un champ non mappé
+    Then le toggle est OFF (grisé)
+    And aucune configuration n'est affichée
+    When j'active le toggle
+    Then les options de configuration apparaissent
+
+  Scenario: Indicateur de formatting/mapping activés
+    Given un champ a des transformations configurées
+    Then la vue principale affiche :
+      | Indicateur | Signification |
+      | "formatting enabled" | Une transformation est configurée |
+      | "mapping enabled" | Des correspondances d'enums sont configurées |
+    And une icône ✏️ permet d'éditer rapidement
+
+  Scenario: Sauvegarder les modifications
+    When je clique sur "Save" dans la modale ou la page principale
+    Then les modifications sont sauvegardées
     And le système valide le mapping contre un échantillon de données
 
-  Scenario: Ajouter un nouveau mapping
-    Given je suis dans l'éditeur de mapping
-    When je clique sur "Add mapping"
-    And je sélectionne le champ externe et le champ mediaspot cible
-    Then le nouveau mapping est ajouté à la liste
+  Scenario: Tester le mapping
+    When je clique sur "Test API" dans le header
+    Then le mode troubleshoot s'ouvre (cf. Story 3.3)
+    And je peux vérifier que mes mappings fonctionnent correctement
 ```
 
-**FRs couverts :** FR35, FR36
+**FRs couverts :** FR35, FR36, FR71, FR72, FR73, FR74
 
 ---
 
-#### Story 3.5 : Configuration des Formatting et Mapping options
+#### Story 3.5 : Inventory settings - Configuration des sources par champ
 
 As a **Admin Interne VDM**,
-I want **définir des transformations (split, trim) et des correspondances d'enums pour les mappings**,
-So that **les données sont correctement transformées lors de l'import**.
-
-**Acceptance Criteria:**
-
-```gherkin
-Feature: Formatting et Mapping options
-
-  Scenario: Définir une Formatting option
-    Given je suis sur un mapping de champ
-    When je clique sur "Formatting options"
-    And je sélectionne "split" avec séparateur "&"
-    Then la transformation est configurée
-    And un preview montre le résultat : "Sci-Fi & Fantasy" → ["Sci-Fi", "Fantasy"]
-
-  Scenario: Définir un Mapping option pour enum
-    Given le champ "genre" a des valeurs différentes entre Unity et mediaspot
-    When je configure le Mapping option
-    And je définis : Unity "Science-Fiction" → mediaspot "Sci-Fi"
-    Then la correspondance est enregistrée
-    And elle sera appliquée lors de l'import
-
-  Scenario: Application des transformations à l'import
-    Given des Formatting et Mapping options sont configurées
-    When une synchronisation s'exécute
-    Then les transformations sont appliquées aux données entrantes
-    And les valeurs transformées sont stockées dans mediaspot
-```
-
-**FRs couverts :** FR71, FR72, FR73, FR74
-
----
-
-#### Story 3.6 : Définition de Default source et Lock source
-
-As a **Admin Interne VDM**,
-I want **définir une source par défaut pour chaque champ et verrouiller certaines sources**,
+I want **configurer la source par défaut et le verrouillage de source pour chaque champ de métadonnée**,
 So that **les données proviennent de la bonne source et ne sont pas écrasées accidentellement**.
 
+**UI Reference:** [3.6 - Definition de Default source & Lock source/Frame 2761.png](docs/features/bmme/ui/3.6%20-%20Definition%20de%20Default%20source%20%26%20Lock%20source/Frame%202761.png)
+
+**Note :** La vue détaillée d'un champ avec "All values" (multi-source) et "History" fait partie de l'**Epic 5** (Traçabilité et Historique des Métadonnées), cf. [Locked source.png](docs/features/bmme/ui/3.6%20-%20Definition%20de%20Default%20source%20%26%20Lock%20source/Locked%20source.png).
+
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Default source et Lock source
+Feature: Inventory settings - Configuration des sources par champ
 
-  Scenario: Définir une Default source
-    Given je suis dans la configuration de la Source of Truth table
-    When je définis "Unity" comme Default source pour le champ "director"
-    Then le champ "director" utilisera Unity par défaut
-    And cette config s'applique à toutes les plateformes clientes
+  Background:
+    Given je suis connecté en tant qu'Admin Interne VDM
+    And j'accède à "Inventory settings"
+
+  Scenario: Navigation vers Inventory settings
+    Given je suis dans le menu principal
+    Then je vois une section "Inventory settings" avec les sous-menus :
+      | Section |
+      | Metadata Fields |
+      | Title & Curation |
+      | Extras |
+      | Aliases |
+      | Metadata values |
+      | Bulk importer |
+      | Legacy importer |
+
+  Scenario: Affichage du tableau "Title fields"
+    When je clique sur "Title & Curation"
+    Then je vois le tableau "Title fields" avec les colonnes :
+      | Colonne | Description |
+      | Field | Nom du champ (ISAN-Id, HDR, Catalog Type, Original Title, etc.) |
+      | Type | Badge coloré (ISAN-id, HDR, string, CountryCode, LocaleCode, etc.) |
+      | Level | "title" ou "localized" |
+      | Default source | Dropdown avec la source actuelle (Unity, mediaspot, etc.) |
+      | 🔒 | Icône cadenas pour Lock source (actif/inactif) |
+    And un bouton "Add" permet d'ajouter un nouveau champ
+    And un bouton "Export" permet d'exporter la configuration
+    And la pagination affiche "1 - 51 of X" avec sélecteur "20 per page"
+
+  Scenario: Configurer la Default source d'un champ
+    Given je suis sur le tableau "Title fields"
+    When je clique sur le dropdown "Default source" d'un champ (ex: "Original Title")
+    Then je vois les options de sources disponibles :
+      | Source |
+      | Unity |
+      | mediaspot |
+      | IMDb |
+      | MovieLibrary |
+    When je sélectionne "Unity"
+    Then la Default source est mise à jour immédiatement
+    And les prochaines synchronisations utiliseront Unity pour ce champ
 
   Scenario: Activer Lock source sur un champ
-    Given je configure le champ "OAR" (Original Aspect Ratio)
-    When j'active "Lock source" = Yes
-    Then la source ne pourra plus être changée pour ce champ
-    And l'UI affiche un cadenas sur ce champ
+    Given je suis sur le tableau "Title fields"
+    When je clique sur l'icône cadenas 🔒 d'un champ (ex: "OAR")
+    Then le cadenas devient actif (icône remplie/colorée)
+    And la source ne pourra plus être changée pour ce champ
+    And les gestionnaires de catalogue verront un cadenas sur ce champ dans l'UI de métadonnées
 
-  Scenario: Blocage du changement de source
+  Scenario: Désactiver Lock source sur un champ
+    Given un champ a Lock source activé
+    When je clique à nouveau sur l'icône cadenas 🔒
+    Then le cadenas devient inactif (icône vide/grisée)
+    And la source peut à nouveau être modifiée
+
+  Scenario: Menu contextuel des actions sur un champ
+    Given je suis sur le tableau "Title fields"
+    When je survole une ligne et clique sur le menu ⋮
+    Then un menu contextuel s'affiche avec :
+      | Action |
+      | ✏️ Edit |
+      | 📋 Duplicate |
+      | 🗑️ Delete |
+
+  Scenario: Affichage du statut verrouillé dans l'UI de métadonnées (côté Gestionnaire)
     Given le champ "OAR" a Lock source activé
-    When un utilisateur tente de changer la source
-    Then le système bloque l'action
-    And un message explique que la source est verrouillée
+    When un Gestionnaire de catalogue consulte ce champ sur un Title
+    Then une icône cadenas 🔒 est affichée à côté du champ
+    And le sélecteur de source est désactivé (non modifiable par l'utilisateur)
 ```
 
 **FRs couverts :** FR75, FR76, FR77
 
 ---
 
-#### Story 3.7 : Affichage des erreurs typées lors des synchronisations
+#### Story 3.6 : Resynchronisation manuelle en 1 clic
 
 As a **Admin Interne VDM**,
-I want **voir des notes d'erreur typées lors des synchronisations (Wrong data format, Formatting failed, Not synced)**,
-So that **je comprends immédiatement le type de problème à résoudre**.
+I want **déclencher une resynchronisation manuelle depuis une synchronisation précédente avec suivi de progression**,
+So that **je rattrape les données après avoir corrigé un problème de mapping**.
+
+**UI Reference:** [3.8 - Resynchronisation manuelle en 1 clic/](docs/features/bmme/ui/3.8%20-%20Resynchronisation%20manuelle%20en%201%20clic/)
 
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Notes d'erreur typées
+Feature: Resynchronisation manuelle en 1 clic
 
-  Scenario: Affichage du détail d'une synchronisation avec erreurs
-    Given une synchronisation a importé 13 champs avec des erreurs
-    When je clique sur "13 fields" pour voir le détail
-    Then je vois une table avec : Title | Field | New value | Notes
+  Background:
+    Given je suis connecté en tant qu'Admin Interne VDM
+    And j'accède à "External sources > Synchronizations"
 
-  Scenario: Types d'erreurs identifiées
-    Given je consulte le détail d'une sync
-    Then je vois les notes typées :
-      | Type | Exemple |
-      | ⚠️ Wrong data format | should be string, received number |
-      | ⚠️ Formatting failed | no '&' found for split |
-      | ℹ️ Not synced | Field sourced by mediaspot (Lock source) |
+  Scenario: Accéder à la resync depuis le tableau des synchronisations
+    Given une synchronisation passée a des erreurs
+    When je clique sur l'icône 🔄 (refresh) sur la ligne de cette synchronisation
+    Then une modale "Refresh synchronization" s'ouvre
 
-  Scenario: Filtrage par type d'erreur
-    Given je suis dans le détail de sync
-    When je filtre par "Errors only"
-    Then seuls les champs avec ⚠️ sont affichés
-```
+  Scenario: Interface de la modale "Refresh synchronization"
+    Given la modale "Refresh synchronization" est ouverte
+    Then je vois :
+      | Élément | Description |
+      | Header | "Refresh synchronization" |
+      | Info source | "Unity" + date/heure + trigger (⚡ System ou 👤 John Doe) |
+      | Résumé | "X titles · Y fields · Z errors" |
+      | Liste des titres | Accordéons avec thumbnail, nom, ID externe |
+    And chaque titre affiche "X fields · Y errors" ou "X fields · No errors"
+    And un bouton "Refresh sync" en bas de la modale
 
-**FRs couverts :** FR78
+  Scenario: Déclencher la resynchronisation
+    Given la modale "Refresh synchronization" est ouverte
+    When je clique sur "Refresh sync"
+    Then le bouton change en "Sync in progress... 🔄"
+    And les titres commencent à se mettre à jour un par un
 
----
-
-#### Story 3.8 : Resynchronisation manuelle en 1 clic
-
-As a **Admin Interne VDM**,
-I want **déclencher une resynchronisation manuelle en 1 clic avec suivi de progression**,
-So that **je rattrape les données manquantes après avoir corrigé un problème**.
-
-**Acceptance Criteria:**
-
-```gherkin
-Feature: Resynchronisation manuelle
-
-  Scenario: Déclencher une resync
-    Given une synchronisation a échoué et j'ai corrigé le mapping
-    When je clique sur "Resync"
-    Then une barre de progression s'affiche
-    And elle indique : "X/Y films synchronisés (Z%)"
-    And un ETA est affiché
-
-  Scenario: Resync terminée avec succès
+  Scenario: Suivi de la progression en temps réel
     Given une resync est en cours
-    When elle se termine
-    Then le statut passe à "✅ Synced"
-    And un résumé affiche : "47 films synchronisés avec succès"
-    And le badge du dashboard passe au vert
+    Then chaque titre affiche son statut :
+      | Statut | Description |
+      | "Syncing..." | Synchronisation en cours (texte grisé) |
+      | "Refreshed" (vert) | Synchronisation terminée avec succès |
+      | "X errors" (rouge) | Synchronisation terminée avec erreurs |
+    And les titres en attente restent avec leur statut initial
 
-  Scenario: Bulk resync sur plusieurs sources
-    Given plusieurs sources ont des erreurs
-    When je sélectionne plusieurs sources
-    And je clique sur "Bulk resync"
-    Then toutes les sources sélectionnées sont resynchronisées
-    And je peux suivre la progression de chacune
+  Scenario: Resynchronisation terminée avec succès
+    Given tous les titres ont été resynchronisés
+    Then le bouton affiche "✓ Refresh complete" (vert)
+    And un bouton "Done" apparaît pour fermer la modale
+    And le compteur d'erreurs global est mis à jour (ex: "7 errors" → "2 errors")
+
+  Scenario: Mise à jour des compteurs après resync
+    Given la resync est terminée
+    Then les compteurs par titre sont mis à jour :
+      | Avant | Après |
+      | "5 fields · 2 errors" | "Refreshed · 5 fields · No errors" |
+    And le résumé global reflète le nouveau total d'erreurs
+
+  Scenario: Consulter le détail d'un titre resynchronisé
+    Given la resync est terminée
+    When je clique sur un titre avec "Refreshed"
+    Then l'accordéon se déplie
+    And je vois le détail des champs synchronisés (cf. Story 3.2)
+
+  Scenario: Fermer la modale et voir les résultats
+    When je clique sur "Done"
+    Then la modale se ferme
+    And le tableau des synchronisations montre une nouvelle ligne avec la resync
+    And le trigger indique "👤 John Doe" (ou l'utilisateur connecté)
 ```
 
 **FRs couverts :** FR38, FR39, FR79, FR80
 
 ---
 
-#### Story 3.9 : Synchronisation depuis VDM Connect et systèmes externes
+#### Story 3.7 : Synchronisation depuis VDM Connect et systèmes externes (Backend)
 
 As a **Système**,
 I want **synchroniser les métadonnées Title depuis VDM Connect, Unity, Iron et MovieLibrary**,
 So that **les données sont centralisées dans mediaspot comme source de vérité**.
+
+**Note :** Cette story est purement backend/système et n'a pas de maquette UI associée.
 
 **Acceptance Criteria:**
 
