@@ -861,96 +861,162 @@ So that **je détecte immédiatement les problèmes sans attendre les plaintes c
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Dashboard de monitoring des synchronisations
+Background:
+  Given je suis connecté en tant qu'Admin Interne VDM
+  And j'accède à "External sources"
 
-  Background:
-    Given je suis connecté en tant qu'Admin Interne VDM
-    And j'accède à "External sources"
+# ── Cas nominaux ──────────────────────────────────────────────────────────────
 
-  # --- Vue API syncs (synchronisations API) ---
+# --- Vue API syncs ---
 
-  Scenario: Navigation vers les synchronisations API
-    When je clique sur "API syncs" dans la sidebar
-    Then je vois la page "Synchronizations" avec :
-      | Élément | Description |
-      | Header | "Synchronizations · X in the last month" |
-      | Cartes sources | Unity, Iron, IMDb, MovieLibrary, VDM C |
-      | Tableau | Liste des synchronisations paginée |
+Scenario: Navigation vers les synchronisations API
+  When je clique sur "API syncs" dans la sidebar
+  Then je vois la page "Synchronizations" avec :
+    | Élément      | Description                               |
+    | Header       | "Synchronizations · X in the last month"  |
+    | Cartes sources | Unity, Iron, IMDb, MovieLibrary, VDM C  |
+    | Tableau      | Liste des synchronisations paginée        |
 
-  Scenario: Affichage des cartes sources API en haut du dashboard
-    Given je suis sur "API syncs"
-    Then je vois 5 cartes sources : Unity, Iron, IMDb, MovieLibrary, VDM C
-    And chaque carte affiche :
-      | Élément | Format |
-      | Nom de la source | "Unity", "Iron", etc. |
-      | Badge statut | 🟢 (vert) ou 🔴 (rouge) selon état |
-      | Last sync | Temps relatif (ex: "2h. ago") avec icône ⏱️ |
-      | Last week | "X syncs" avec compteurs syncs/erreurs (ex: "12 0" ou "12 2") |
+Scenario: Affichage des cartes sources API en haut du dashboard
+  Given je suis sur "API syncs"
+  Then je vois 5 cartes sources : Unity, Iron, IMDb, MovieLibrary, VDM C
+  And chaque carte affiche :
+    | Élément       | Format                                                                      |
+    | Nom de la source | "Unity", "Iron", etc.                                                    |
+    | Badge statut  | 🟢 (vert) ou 🔴 (rouge) selon état                                         |
+    | Last sync     | Temps relatif (ex: "2h. ago") avec icône ⏱️                                |
+    | Last week     | "X syncs" avec compteurs syncs/erreurs (ex: "12 0" ou "12 2")             |
 
-  Scenario: Affichage du tableau des synchronisations API
-    Given je suis sur "API syncs"
-    Then je vois un tableau paginé avec les colonnes :
-      | Colonne | Description |
-      | Source | Nom de la source (Unity, Iron, IMDb, VDM C) |
-      | Date | Date et heure (format: 21/12/2026 12:25) |
-      | Trigger | ⚡ System (automatique) ou 👤 John Doe (manuel) |
-      | Errors | "None" (vert) ou "X errors" (rouge) |
-      | Updates | "X titles · Y fields" |
-    And les lignes avec erreurs affichent une icône 🔄 pour relancer
+Scenario: Affichage du tableau des synchronisations API
+  Given je suis sur "API syncs"
+  Then je vois un tableau paginé avec les colonnes :
+    | Colonne | Description                                       |
+    | Source  | Nom de la source (Unity, Iron, IMDb, VDM C)       |
+    | Date    | Date et heure (format: 21/12/2026 12:25)          |
+    | Trigger | ⚡ System (automatique) ou 👤 John Doe (manuel)   |
+    | Errors  | "None" (vert) ou "X errors" (rouge)               |
+    | Updates | "X titles · Y fields"                             |
+  And les lignes avec erreurs affichent une icône 🔄 pour relancer
 
-  # --- Vue File imports (imports fichiers) ---
+# --- Vue File imports ---
 
-  Scenario: Navigation vers les imports fichiers
-    When je clique sur "File importer" dans la sidebar
-    Then je vois la page "File imports" avec :
-      | Élément | Description |
-      | Header | "File imports · X in the last month" |
-      | Cartes mappings | Liste des mappings fichiers configurés (ex: test-mappings, ROD-july-2026) |
-      | Bouton | "New import" pour importer un nouveau fichier |
-      | Tableau | Liste des imports paginée |
+Scenario: Navigation vers les imports fichiers
+  When je clique sur "File importer" dans la sidebar
+  Then je vois la page "File imports" avec :
+    | Élément        | Description                                              |
+    | Header         | "File imports · X in the last month"                     |
+    | Cartes mappings | Liste des mappings fichiers configurés (ex: test-mappings, ROD-july-2026) |
+    | Bouton         | "New import" pour importer un nouveau fichier            |
+    | Tableau        | Liste des imports paginée                                |
 
-  Scenario: Affichage des cartes mappings fichiers
-    Given je suis sur "File importer"
-    Then je vois les cartes des mappings fichiers configurés
-    And chaque carte affiche :
-      | Élément | Format |
-      | Nom du mapping | "test-mappings", "ROD-july-2026", etc. |
-      | Période | "last week" |
-      | Compteur imports | "X imports" |
-      | Compteur erreurs | Nombre d'erreurs (ou 0) |
+Scenario: Affichage des cartes mappings fichiers
+  Given je suis sur "File importer"
+  Then je vois les cartes des mappings fichiers configurés
+  And chaque carte affiche :
+    | Élément           | Format                                 |
+    | Nom du mapping    | "test-mappings", "ROD-july-2026", etc. |
+    | Période           | "last week"                            |
+    | Compteur imports  | "X imports"                            |
+    | Compteur erreurs  | Nombre d'erreurs (ou 0)                |
 
-  Scenario: Affichage du tableau des imports fichiers
-    Given je suis sur "File importer"
-    Then je vois un tableau paginé avec les colonnes :
-      | Colonne | Description |
-      | File | Nom du fichier importé |
-      | Date | Date et heure de l'import |
-      | Mapping | Nom du mapping utilisé (test-mapping, etc.) |
-      | Trigger | 👤 John Doe (utilisateur qui a importé) |
-      | Errors | "Loaded" (vert) ou "X errors" (rouge) |
-      | Entries | Nombre d'entrées traitées |
-      | Update | "X titles" mis à jour |
+Scenario: Affichage du tableau des imports fichiers
+  Given je suis sur "File importer"
+  Then je vois un tableau paginé avec les colonnes :
+    | Colonne | Description                              |
+    | File    | Nom du fichier importé                   |
+    | Date    | Date et heure de l'import                |
+    | Mapping | Nom du mapping utilisé (test-mapping...) |
+    | Trigger | 👤 John Doe (utilisateur qui a importé)  |
+    | Errors  | "Loaded" (vert) ou "X errors" (rouge)    |
+    | Entries | Nombre d'entrées traitées                |
+    | Update  | "X titles" mis à jour                    |
 
-  # --- Fonctionnalités communes ---
+# --- Fonctionnalités communes ---
 
-  Scenario: Filtrage du tableau par source/mapping
-    When je clique sur le filtre "Source" (API) ou "Mapping" (fichiers)
-    And je sélectionne un élément
-    Then seuls les éléments correspondants sont affichés
+Scenario: Filtrage du tableau par source ou mapping
+  When je clique sur le filtre "Source" (API) ou "Mapping" (fichiers)
+  And je sélectionne un élément
+  Then seuls les éléments correspondants sont affichés
 
-  Scenario: Filtrage par erreurs uniquement
-    When j'active le toggle "Errors only"
-    Then seuls les éléments avec erreurs sont affichés
+Scenario: Filtrage du tableau via un clic sur une card source
+  When je clique sur la card "Unity"
+  Then seules les synchronisations Unity sont affichées
+  And un badge "Unity x" apparaît dans le tableau pour indiquer le filtre actif
 
-  Scenario: Export des données
-    When je clique sur le bouton "Export"
-    Then les données filtrées sont exportées au format CSV/Excel
+Scenario: Filtrage du tableau via le dropdown "Source"
+  When je clique sur le filtre "Source" et je sélectionne "Unity"
+  Then seules les synchronisations Unity sont affichées
+  And un badge "Unity x" apparaît pour indiquer le filtre actif
 
-  Scenario: Pagination du tableau
-    Given il y a plus de 20 éléments
-    Then la pagination affiche "1 - 20 of X" en bas du tableau
-    And je peux naviguer entre les pages
-    And je peux choisir "20 per page" via un sélecteur
+Scenario: Filtrage par erreurs uniquement
+  When j'active le toggle "Errors only"
+  Then seuls les éléments avec erreurs sont affichés
+
+Scenario: Export des données
+  When je clique sur le bouton "Export"
+  Then les données filtrées sont exportées au format CSV/Excel
+
+Scenario: Pagination du tableau
+  Given il y a plus de 20 éléments
+  Then la pagination affiche "1 - 20 of X" en bas du tableau
+  And je peux naviguer entre les pages
+  And je peux choisir "20 per page" via un sélecteur
+
+Scenario: Suppression d'un filtre actif
+  Given j'ai filtré le tableau par source "Unity"
+  When je clique sur le badge "Unity x"
+  Then le filtre est retiré et toutes les synchronisations sont affichées
+
+# ── Cas alternatifs ───────────────────────────────────────────────────────────
+
+Scenario: Combinaison filtre Source et toggle Errors only
+  When je filtre par source "Unity"
+  And j'active le toggle "Errors only"
+  Then seules les synchronisations Unity avec erreurs sont affichées
+
+Scenario: Navigation entre pages avec filtre actif
+  Given j'ai filtré le tableau par source "Iron"
+  When je navigue vers la page 2
+  Then le filtre "Iron" est toujours actif
+  And seules les synchronisations Iron sont affichées sur la page 2
+
+# ── Cas d'erreur ──────────────────────────────────────────────────────────────
+
+Scenario: Chargement du dashboard impossible
+  Given le service de monitoring est indisponible
+  When j'accède à "External sources > Synchronizations"
+  Then un message d'erreur s'affiche indiquant que les données ne peuvent pas être chargées
+  # ⚠️ À clarifier (Dev) : comportement si API down (cache ? état vide ?)
+
+Scenario: Export échoue
+  When je clique sur le bouton "Export"
+  And le service d'export retourne une erreur
+  Then un message d'erreur s'affiche
+  And aucun fichier n'est téléchargé
+
+Scenario: Accès refusé (rôle non habilité)
+  Given je suis connecté avec le rôle "Gestionnaire Catalogue"
+  When j'accède à "External sources > Synchronizations"
+  Then l'accès m'est refusé (cf. matrice ACL FR46/FR47)
+  And je vois une page 403 avec un message "Accès refusé"
+
+Scenario: Aucun résultat avec filtres combinés
+  Given aucune synchronisation ne correspond aux filtres actifs
+  Then un message "Aucun résultat" s'affiche dans le tableau
+  And le bouton Export est désactivé
+
+# ── Cas limites ───────────────────────────────────────────────────────────────
+
+Scenario: Source jamais synchronisée
+  Given une source est configurée mais n'a jamais été synchronisée
+  Then sa carte affiche un état neutre pour "Last sync"
+  And la carte affiche "Never" en dessous de Last sync
+
+Scenario: Export volumétrique
+  Given le tableau contient plus de 100 000 synchronisations sans filtre actif
+  When je clique sur le bouton "Export"
+  Then l'export se déclenche sans blocage pour l'utilisateur
+  # ⚠️ À clarifier (Dev) : synchrone (téléchargement direct) ou asynchrone (lien par email) ?
 ```
 
 **FRs couverts :** FR31, FR32
@@ -968,59 +1034,126 @@ So that **je diagnostique rapidement la cause d'un problème et je sais exacteme
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Détails de synchronisation et erreurs typées
+Background:
+  Given je suis sur le dashboard "External sources > Synchronizations"
 
-  Background:
-    Given je suis sur le dashboard "External sources > Synchronizations"
+# ── Cas nominaux ──────────────────────────────────────────────────────────────
 
-  Scenario: Ouvrir la modale "Sync details" depuis le tableau
-    When je clique sur une ligne de synchronisation
-    Then une modale "Sync details" s'ouvre
-    And le header affiche :
-      | Élément | Exemple |
-      | Source | "Unity" |
-      | Date/heure | "21/12/2026 12:25" |
-      | Trigger | "⚡ System" ou "👤 John Doe" |
-    And le résumé affiche "X titles · Y fields · Z errors" (erreurs en rouge)
+Scenario: Ouvrir la modale "Sync details" depuis le tableau
+  When je clique sur une ligne de synchronisation
+  Then une modale "Sync details" s'ouvre
+  And le header affiche :
+    | Élément    | Exemple                        |
+    | Source     | "Unity"                        |
+    | Date/heure | "21/12/2026 12:25"             |
+    | Trigger    | "⚡ System" ou "👤 John Doe"   |
+  And le résumé affiche "X titles · Y fields · Z errors" (erreurs en rouge)
 
-  Scenario: Liste des titres synchronisés avec accordéon
-    Given la modale "Sync details" est ouverte
-    Then je vois la liste des titres impactés avec :
-      | Élément | Format |
-      | Thumbnail | Image miniature du titre |
-      | Nom du titre | "Stranger Things" |
-      | ID externe | "#123456" |
-      | Compteur | "X fields · Y errors" ou "X fields · No errors" |
-    And chaque titre est un accordéon dépliable
+Scenario: Liste des titres synchronisés avec accordéon
+  Given la modale "Sync details" est ouverte
+  Then je vois la liste des titres impactés avec :
+    | Élément       | Format                                           |
+    | Thumbnail     | Image miniature du titre                         |
+    | Nom du titre  | "Stranger Things"                                |
+    | ID externe    | "#123456"                                        |
+    | Compteur      | "X fields · Y errors" ou "X fields · No errors" |
+  And chaque titre est un accordéon dépliable
 
-  Scenario: Détail des champs synchronisés pour un titre
-    When je déplie l'accordéon d'un titre
-    Then je vois un tableau avec les colonnes :
-      | Colonne | Description |
-      | Field | Nom du champ (director, OAR, localizedTitle, genres, originalTitle) |
-      | New value | Valeur importée (code style monospace) |
-      | Details | Message d'erreur ou vide si OK |
-    And les champs en erreur sont mis en évidence (texte rouge)
-    And un toggle "Errors only" permet de filtrer
+Scenario: Détail des champs synchronisés pour un titre
+  When je déplie l'accordéon d'un titre
+  Then je vois un tableau avec les colonnes :
+    | Colonne   | Description                                                           |
+    | Field     | Nom du champ (director, OAR, localizedTitle, genres, originalTitle)   |
+    | New value | Valeur importée (code style monospace)                                |
+    | Details   | Message d'erreur ou vide si OK                                        |
+  And les champs en erreur sont mis en évidence (texte rouge)
+  And un toggle "Errors only" permet de filtrer
 
-  Scenario: Types d'erreurs affichés dans la colonne Details
-    Given un titre a des erreurs de synchronisation
-    Then les types d'erreurs suivants sont affichés :
-      | Type d'erreur | Message exemple |
-      | Wrong data format | "Field localizedTitle should be a string" |
-      | Mapping option manquante | "Option 'sci-fi' is not in mapping options" |
-      | Champ non mappé | "Not mapped" avec icône ⚠️ |
-    And les valeurs problématiques sont affichées en rouge dans "New value"
+Scenario: Fermeture de la modale "Sync details"
+  Given la modale "Sync details" est ouverte
+  When je clique sur l'icône "×" de fermeture
+  Then la modale se ferme
+  And je reviens sur le dashboard "Synchronizations"
 
-  Scenario: Identification des champs verrouillés
-    Given un champ a "Lock source" activé
-    Then le champ affiche une icône cadenas 🔒 à côté du nom
-    And la colonne Details peut afficher "Not synced - Field sourced by mediaspot"
+Scenario: Types d'erreurs affichés dans la colonne Details
+  Given un titre a des erreurs de synchronisation
+  Then les types d'erreurs suivants sont affichés :
+    | Type d'erreur             | Message exemple                              |
+    | Wrong data format         | "Field localizedTitle should be a string"    |
+    | Mapping option manquante  | "Option 'sci-fi' is not in mapping options"  |
+    | Champ non mappé           | "Not mapped" avec icône ⚠️                   |
+  And les valeurs problématiques sont affichées en rouge dans "New value"
 
-  Scenario: Filtrage "Errors only" par titre
-    When j'active le toggle "Errors only" sur un titre déplié
-    Then seuls les champs avec erreurs sont affichés pour ce titre
-    And les champs sans erreur sont masqués
+Scenario: Type d'erreur "Formatting failed" affiché dans la colonne Details
+  Given un titre a un champ dont la transformation a échoué lors de la synchronisation
+  Then la colonne Details affiche un message du type "Formatting failed: no '&' found"
+  And la valeur dans "New value" est affichée avec une ligne en rouge + 'Formatting failed: ...'
+
+Scenario: Identification des champs non mappés
+  Given un champ désactivé dans le mapping de la source
+  Then le champ affiche une icône Unlinked à côté du nom
+  And la colonne Details peut afficher "Not mapped"
+
+Scenario: Identification des champs verrouillés
+  Given un champ a "Lock source" activé
+  Then le champ affiche une icône cadenas 🔒 à côté du nom
+  And la colonne Details peut afficher "Not synced - Field sourced by mediaspot"
+
+Scenario: Filtrage "Errors only" par titre
+  When j'active le toggle "Errors only" sur un titre déplié
+  Then seuls les champs avec erreurs sont affichés pour ce titre
+  And les champs sans erreur sont masqués
+
+# ── Cas alternatifs ───────────────────────────────────────────────────────────
+
+Scenario: Ouverture de la modale pour une synchronisation sans erreur
+  Given une ligne de synchronisation affiche "None" dans la colonne Errors
+  When je clique sur cette ligne
+  Then la modale "Sync details" s'ouvre
+  And le résumé affiche "X titles · Y fields" sans compteur d'erreurs
+  And aucun champ n'est mis en évidence en rouge
+
+Scenario: Dépliage d'un titre sans erreur
+  Given la modale "Sync details" est ouverte
+  And un titre affiche "X fields · No errors"
+  When je déplie l'accordéon de ce titre
+  Then je vois le tableau des champs synchronisés
+  And aucun champ n'est mis en évidence en rouge
+  And le toggle "Errors only" est désactivé et grisé
+
+Scenario: Synchronisation avec un grand nombre de titres
+  Given une synchronisation a impacté plus de 100 titres
+  When la modale "Sync details" s'ouvre
+  Then tous les titres sont accessibles via un scroll infini (si possible)
+
+Scenario: Valeur de champ très longue dans "New value"
+  Given un champ synchronisé contient une valeur textuelle très longue
+  Then la valeur est affichée de manière lisible dans la colonne "New value"
+  # avec 3 lignes max, puis troncature avec tooltip
+
+# ── Cas d'erreur ──────────────────────────────────────────────────────────────
+
+Scenario: Synchronisation avec 0 titre impacté
+  Given une synchronisation n'a mis à jour aucun titre
+  When je clique sur cette ligne dans le tableau
+  Then la modale "Sync details" s'ouvre
+  And le résumé affiche "0 titles · 0 fields"
+  And un message indique qu'aucune donnée n'a été modifiée lors de cette synchronisation
+  # ⏳ À clarifier (PO) : message exact ? La ligne est-elle même cliquable dans ce cas ?
+  # Empty state à designer
+
+Scenario: Données de synchronisation non disponibles
+  Given les logs détaillés d'une synchronisation ancienne ne sont plus disponibles
+  When je clique sur cette ligne dans le tableau
+  Then la modale s'ouvre avec un message indiquant que le détail n'est plus disponible
+  # ⚠️ À clarifier (Dev) : les logs sont-ils purgés après X jours ? Comportement attendu ?
+
+# ── Cas limites ───────────────────────────────────────────────────────────────
+
+Scenario: Titre sans thumbnail
+  Given un titre synchronisé n'a pas d'image associée
+  Then une image de fallback est affichée à la place du thumbnail dans la liste des titres
+  # ⚠️ À clarifier (Dev) : fallback prévu ? Placeholder générique ?
 ```
 
 **FRs couverts :** FR33, FR42, FR78
