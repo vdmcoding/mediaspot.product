@@ -1,0 +1,10 @@
+installation:
+  version: 6.0.0-alpha.23
+  installDate: 2026-01-21T18:36:07.135Z
+  lastUpdated: 2026-01-21T18:36:07.135Z
+modules:
+  - core
+  - bmm
+ides:
+  - claude-code
+  - cursor
