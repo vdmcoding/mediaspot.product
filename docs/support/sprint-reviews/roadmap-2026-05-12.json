@@ -1,0 +1,601 @@
+{
+  "capacity": 2,
+  "devs": [
+    {
+      "id": "BJ",
+      "name": "Benjamin",
+      "color": "#0891B2",
+      "role": "front"
+    },
+    {
+      "id": "LC",
+      "name": "Lucas",
+      "color": "#D97706",
+      "role": "back"
+    },
+    {
+      "id": "FA",
+      "name": "Fayçal",
+      "color": "#DB2777",
+      "role": "back"
+    },
+    {
+      "id": "AM",
+      "name": "Amine",
+      "color": "#2563EB",
+      "role": "back"
+    },
+    {
+      "id": "BR",
+      "name": "Brahim",
+      "color": "#DC2626",
+      "role": "back"
+    },
+    {
+      "id": "AN",
+      "name": "Antoine",
+      "color": "#65A30D",
+      "role": "front"
+    },
+    {
+      "id": "SM",
+      "name": "Samer",
+      "color": "#9333EA",
+      "role": "front"
+    },
+    {
+      "id": "DA",
+      "name": "David",
+      "color": "#3b82f6",
+      "role": "back"
+    }
+  ],
+  "sprints": [
+    {
+      "name": "Sprint 4.4.7",
+      "date": "28 avril → 19 mai 2026",
+      "mep": "MEP · 19 mai",
+      "status": "run",
+      "progress": 45
+    },
+    {
+      "name": "Sprint 4.4.8",
+      "date": "19 mai → 9 juin 2026",
+      "mep": "MEP · 16 juin",
+      "status": "plan",
+      "progress": 0
+    },
+    {
+      "name": "Sprint 4.4.9",
+      "date": "16 juin → 4 juil 2026",
+      "mep": "MEP · 7 juil",
+      "status": "plan",
+      "progress": 0
+    },
+    {
+      "name": "Sprint 4.4.10",
+      "date": "7 juil → 25 juil 2026",
+      "mep": "MEP · 28 juil",
+      "status": "plan",
+      "progress": 0
+    },
+    {
+      "name": "Sprint 4.4.11",
+      "date": "28 juil → 15 août 2026",
+      "mep": "MEP · 18 août",
+      "status": "plan",
+      "progress": 0
+    },
+    {
+      "name": "Sprint 4.4.12",
+      "date": "18 août → 5 sept 2026",
+      "mep": "MEP · 8 sept",
+      "status": "plan",
+      "progress": 0
+    },
+    {
+      "name": "Sprint 4.4.13",
+      "date": "8 sept → 26 sept 2026",
+      "mep": "MEP · 29 sept",
+      "status": "plan",
+      "progress": 0
+    },
+    {
+      "name": "Sprint 4.4.13",
+      "date": "29 sept → 17 oct 2026",
+      "mep": "MEP · 20 oct",
+      "status": "plan",
+      "progress": 0
+    },
+    {
+      "name": "Sprint 4.4.14",
+      "date": "20 oct → 7 nov 2026",
+      "mep": "MEP · 10 nov",
+      "status": "plan",
+      "progress": 0
+    }
+  ],
+  "clients": [
+    {
+      "name": "StudioCanal",
+      "sub": "Digital Factory",
+      "logo": "SC",
+      "color": "#1D4ED8",
+      "tasks": [
+        {
+          "si": 0,
+          "text": "Finalisation DCP — P10",
+          "done": true,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "projet"
+        },
+        {
+          "si": 1,
+          "text": "FULL QC (PAD) — P5",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "produit"
+        },
+        {
+          "si": 1,
+          "text": "Datas & exports fiables — P6",
+          "done": false,
+          "type": "back",
+          "nature": "produit",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "projet"
+        },
+        {
+          "si": 1,
+          "text": "CPP — Implémentation Checker",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 1,
+          "tp": "back",
+          "nat": "produit"
+        },
+        {
+          "si": 1,
+          "text": "Dolby ATMOS — commandes",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "produit"
+        },
+        {
+          "si": 5,
+          "text": "Reingest Clip — P5",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 6,
+          "text": "WF EXTERNE QC (PAD) — P7",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 2,
+          "text": "CPP — Workflow Ingest",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 2
+        },
+        {
+          "si": 0,
+          "text": "ATMOS & DOVI (PAD) — P2",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "nat": "produit",
+          "tp": "full"
+        },
+        {
+          "si": 0,
+          "text": "Correction export SLA",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 1
+        },
+        {
+          "si": 0,
+          "text": "Ref lang (globale)",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 4,
+          "text": "Finalisation ouverture client",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 5,
+          "text": "CPP — création",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 1
+        },
+        {
+          "si": 1,
+          "text": "Dolby VISION — commandes",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "produit"
+        },
+        {
+          "si": 0,
+          "text": "ASSET RUSHES (Paris) — P4",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 1,
+          "nat": "projet",
+          "tp": "back"
+        },
+        {
+          "si": 0,
+          "text": "Indexation IA",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 1,
+          "nat": "projet",
+          "tp": "back"
+        },
+        {
+          "si": 0,
+          "text": "CPP — Création Class & Type",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "produit"
+        },
+        {
+          "si": 7,
+          "text": "Quotes",
+          "done": false,
+          "type": "back",
+          "nature": "produit",
+          "devs": [],
+          "span": 0,
+          "tp": "full",
+          "nat": "produit"
+        },
+        {
+          "si": 0,
+          "text": "Ref langue (RFC5646)",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "projet"
+        }
+      ]
+    },
+    {
+      "name": "FranceTV Distribution",
+      "sub": "Plateforme FTD",
+      "logo": "FTV",
+      "color": "#059669",
+      "tasks": [
+        {
+          "si": 1,
+          "text": "Shares non Mezz",
+          "done": false,
+          "type": "front",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "full",
+          "nat": "projet"
+        }
+      ]
+    },
+    {
+      "name": "SND",
+      "sub": "mediaspot®",
+      "logo": "SND",
+      "color": "#D97706",
+      "tasks": [
+        {
+          "si": 0,
+          "text": "LTO Heritage — Dev (fin)",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "projet"
+        },
+        {
+          "si": 0,
+          "text": "RightsLine — Accompagnement",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 2,
+          "nat": "projet",
+          "tp": "none"
+        },
+        {
+          "si": 7,
+          "text": "RightsLine — Devs App Client",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 1,
+          "tp": "back",
+          "nat": "projet"
+        }
+      ]
+    },
+    {
+      "name": "CNC",
+      "sub": "mediaspot®",
+      "logo": "CNC",
+      "color": "#0891B2",
+      "tasks": [
+        {
+          "si": 0,
+          "text": "Intégration Garance ",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 0,
+          "tp": "back",
+          "nat": "projet"
+        },
+        {
+          "si": 1,
+          "text": "DCP DKDM",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 2,
+          "text": "Orders Improvements",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        }
+      ]
+    },
+    {
+      "name": "VDM",
+      "sub": "Plateforme",
+      "logo": "VDM",
+      "color": "#DC2626",
+      "tasks": [
+        {
+          "si": 7,
+          "text": "Migration OPEN de CTV FTV",
+          "done": false,
+          "type": "back",
+          "nature": "projet",
+          "devs": [],
+          "span": 1
+        },
+        {
+          "si": 1,
+          "text": "BMME — Définitions",
+          "done": false,
+          "tp": "front",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 2,
+          "text": "BMME — Design / Specs",
+          "done": false,
+          "tp": "front",
+          "nat": "produit",
+          "devs": [],
+          "span": 2
+        },
+        {
+          "si": 0,
+          "text": "Dette de donnée",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 8
+        },
+        {
+          "si": 0,
+          "text": "Billing 2.0",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 0,
+          "text": "Scission plateforme",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 0,
+          "text": "Multimodale IA",
+          "done": false,
+          "tp": "full",
+          "nat": "produit",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 5,
+          "text": "BMME PROD",
+          "done": false,
+          "tp": "full",
+          "nat": "produit",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 0,
+          "text": "BMME — Discovery",
+          "done": false,
+          "tp": "front",
+          "nat": "produit",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 1,
+          "text": "Billing refacto",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 0,
+          "text": "Drive 2.0 - Front",
+          "done": false,
+          "tp": "front",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 3,
+          "text": "Drive 2.0 - Back",
+          "done": false,
+          "tp": "back",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 0,
+          "text": "R128 2.0",
+          "done": false,
+          "tp": "back",
+          "nat": "none",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 6,
+          "text": "Plateforme Admin",
+          "done": false,
+          "tp": "full",
+          "nat": "produit",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 5,
+          "text": "RDD Tool",
+          "done": false,
+          "tp": "full",
+          "nat": "produit",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 8,
+          "text": "Sous titres (Global)",
+          "done": false,
+          "tp": "back",
+          "nat": "produit",
+          "devs": [],
+          "span": 0
+        },
+        {
+          "si": 7,
+          "text": "Copy platform 2.0",
+          "done": false,
+          "tp": "full",
+          "nat": "none",
+          "devs": [],
+          "span": 0
+        }
+      ]
+    },
+    {
+      "name": "ADAM",
+      "sub": "Plateforme",
+      "logo": "FTV",
+      "color": "#DC2626",
+      "tasks": [
+        {
+          "si": 3,
+          "text": "Migration Front",
+          "done": false,
+          "tp": "front",
+          "nat": "projet",
+          "devs": [],
+          "span": 0
+        }
+      ]
+    }
+  ],
+  "title": "Roadmap multi-clients — Charge équipe",
+  "sub": "9 sprints · Mai → Novembre 2026",
+  "eyebrow": "airlab · mediaspot®"
+}

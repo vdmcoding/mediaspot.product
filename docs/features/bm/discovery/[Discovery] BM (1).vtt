@@ -1,0 +1,5418 @@
+WEBVTT
+
+39df993b-a807-46d6-b023-bede55b376cb/6-0
+00:00:04.598 --> 00:00:05.398
+<v Benjamin Chareyron>Un jour, je dois.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/7-0
+00:00:04.798 --> 00:00:07.558
+<v Alexis Benatar>Il va falloir être brillant, c'est moche,
+ça va être fatiguant.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/9-0
+00:00:08.918 --> 00:00:13.478
+<v Benjamin Chareyron>C'est la seule chose que tu sais le faire
+Alexis, de toute façon être brillant donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/11-0
+00:00:12.358 --> 00:00:15.198
+<v Alexis Benatar>Ouais bah c'est parce que je c'est le
+manque de cheveux ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/13-0
+00:00:17.078 --> 00:00:22.026
+<v Benjamin Chareyron>Nous sommes ici pour comprendre en
+profondeur le workflow actuel des Power</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/12-0
+00:00:17.478 --> 00:00:18.278
+<v Alexis Benatar>J'ai plus de reflets.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/13-1
+00:00:22.026 --> 00:00:23.478
+<v Benjamin Chareyron>users de Bundle Maker.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/15-0
+00:00:24.438 --> 00:00:28.509
+<v Benjamin Chareyron>C'est vous, c'est pas fantastique ?
+Ouais c'est clair non mais du coup</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/14-0
+00:00:27.198 --> 00:00:28.238
+<v Fabrice Frantz>Ça fait de la peur.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/15-1
+00:00:28.509 --> 00:00:32.638
+<v Benjamin Chareyron>identifier tous les critiques,
+même si je les connais déjà un petit peu</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/15-2
+00:00:32.638 --> 00:00:35.677
+<v Benjamin Chareyron>Alexis, tu m'en as déjà parlé à l'époque,
+et cetera,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/15-3
+00:00:35.677 --> 00:00:40.207
+<v Benjamin Chareyron>mais comme ça on centralise et on en
+recause et ça se fera peut-être ressortir</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/15-4
+00:00:40.207 --> 00:00:40.838
+<v Benjamin Chareyron>des choses.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/16-0
+00:00:41.398 --> 00:00:45.714
+<v Benjamin Chareyron>Et pour mieux comprendre ce que vous
+attendez de bundlemaker en fait,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/16-1
+00:00:45.714 --> 00:00:49.414
+<v Benjamin Chareyron>vous et les clients,
+enfin vous et ce que vous savez de vos</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/16-2
+00:00:49.414 --> 00:00:54.101
+<v Benjamin Chareyron>clients grosso modo dans la V 2 une fois
+que BMME sera sortie. Pour rappel,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/16-3
+00:00:54.101 --> 00:00:59.158
+<v Benjamin Chareyron>nous sommes dans une interview où il n'y
+a pas de mauvaises réponses et où il n'y</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/16-4
+00:00:59.158 --> 00:01:00.638
+<v Benjamin Chareyron>a pas de choses débiles.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/17-0
+00:01:00.638 --> 00:01:05.334
+<v Benjamin Chareyron>C'est à dire l'objectif c'est vraiment de
+sortir le plus de valeur possible de ce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/17-1
+00:01:05.334 --> 00:01:08.198
+<v Benjamin Chareyron>que de vos connaissances et de votre
+utilisation.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/17-2
+00:01:08.198 --> 00:01:11.233
+<v Benjamin Chareyron>Donc n'hésitez pas à sortir tout ce que
+vous pouvez.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/17-3
+00:01:11.233 --> 00:01:15.299
+<v Benjamin Chareyron>C'est un petit peu l'objectif.
+On va commencer par une petite phase de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/17-4
+00:01:15.299 --> 00:01:15.758
+<v Benjamin Chareyron>warm up.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/18-0
+00:01:16.358 --> 00:01:21.097
+<v Benjamin Chareyron>De d'échauffement et puis après on aura
+une phase de sur votre workflow actuel,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/18-1
+00:01:21.097 --> 00:01:24.118
+<v Benjamin Chareyron>une phase sur le l'ordering et la
+commande client.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/21-0
+00:01:25.318 --> 00:01:31.355
+<v Benjamin Chareyron>Une phase sur le packaging,
+la fabrication et une dernière phase sur</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/21-1
+00:01:31.355 --> 00:01:38.530
+<v Benjamin Chareyron>2 dernières phases sur le monitoring et
+la configuration des providers si ça vous</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/19-0
+00:01:38.158 --> 00:01:38.438
+<v Fabrice Frantz>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/21-2
+00:01:38.530 --> 00:01:39.318
+<v Benjamin Chareyron>convient.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/20-0
+00:01:39.718 --> 00:01:39.998
+<v Alexis Benatar>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/22-0
+00:01:42.158 --> 00:01:44.242
+<v Benjamin Chareyron>Eh bien Messieurs, bienvenue à vous,
+fantastique.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/22-1
+00:01:44.242 --> 00:01:47.370
+<v Benjamin Chareyron>Est-ce que vous pouvez rapidement vous
+présenter et surtout me dire depuis</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/22-2
+00:01:47.370 --> 00:01:49.288
+<v Benjamin Chareyron>combien de temps vous utilisez bundle
+maker ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/23-0
+00:01:53.038 --> 00:01:53.638
+<v Fabrice Frantz>Vas-y Alexis.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/24-0
+00:01:53.958 --> 00:01:56.278
+<v Benjamin Chareyron>Vous avez pas besoin de vous présenter en
+vrai, je vous connais déjà bien.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/25-0
+00:02:00.598 --> 00:02:04.158
+<v Alexis Benatar>L'a utilisé en rêve pendant longtemps
+avant qu'il arrive.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/26-0
+00:02:03.158 --> 00:02:05.518
+<v Fabrice Frantz>Maker, on l'utilisait avant qu'il existe.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/27-0
+00:02:07.638 --> 00:02:08.758
+<v Alexis Benatar>Donc oui, voilà.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/28-0
+00:02:08.158 --> 00:02:09.168
+<v Benjamin Chareyron>que vous pouvez élaborer un peu ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/30-0
+00:02:09.798 --> 00:02:12.671
+<v Fabrice Frantz>On avait un tableau Excel,
+on avait un notepad plus plus,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/30-1
+00:02:12.671 --> 00:02:16.534
+<v Fabrice Frantz>on fabriquait nos petits XML à la main,
+puis un jour on en a eu plein le cul.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/30-2
+00:02:16.534 --> 00:02:19.952
+<v Fabrice Frantz>On a dit ce serait bien qu'il y ait
+bundle Maker qui fasse des trucs</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/30-3
+00:02:19.952 --> 00:02:22.875
+<v Fabrice Frantz>automatiquement,
+ce serait plus sécure plutôt que nous qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/30-4
+00:02:22.875 --> 00:02:25.798
+<v Fabrice Frantz>recopions tout manuellement ce qu'on fait
+depuis toujours.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/31-0
+00:02:26.958 --> 00:02:29.198
+<v Fabrice Frantz>Du coup, Bundle Maker est arrivé.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/32-0
+00:02:30.918 --> 00:02:33.878
+<v Benjamin Chareyron>Et vous faites toujours des Excel et des
+un peu de plus plus.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/33-0
+00:02:34.198 --> 00:02:35.973
+<v Fabrice Frantz>Oui mais ça c'est le problème des séries
+télé,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/33-1
+00:02:35.973 --> 00:02:38.278
+<v Fabrice Frantz>y a un mec qui a inventé la série télé et
+on était pas prêt.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/34-0
+00:02:39.118 --> 00:02:40.398
+<v Fabrice Frantz>On était pas prêt.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/35-0
+00:02:40.038 --> 00:02:42.518
+<v Alexis Benatar>Le mec qui a fait VDM Connect était pas
+prêt surtout.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/36-0
+00:02:42.878 --> 00:02:45.158
+<v Fabrice Frantz>Ouais c'est ça,
+mais on va pas le balancer lui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/37-0
+00:02:44.598 --> 00:02:46.038
+<v Alexis Benatar>Non, et moins de problèmes avec ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/38-0
+00:02:46.718 --> 00:02:47.238
+<v Fabrice Frantz>Tu m'étonnes.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/39-0
+00:02:48.438 --> 00:02:52.022
+<v Benjamin Chareyron>Du coup, si c'est ça votre utilisation,
+c'est quoi votre quotidien aujourd'hui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/39-1
+00:02:52.022 --> 00:02:53.248
+<v Benjamin Chareyron>avec bundle maker en fait ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/41-0
+00:02:55.038 --> 00:02:59.871
+<v Fabrice Frantz>En fait Benjamin Maker pour le coup c'est
+pour ce qui nous concerne en terme VDM,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/41-1
+00:02:59.871 --> 00:03:03.821
+<v Fabrice Frantz>exploit et ainsi de suite.
+C'est un outil partiellement abouti qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/40-0
+00:03:03.398 --> 00:03:03.718
+<v Benjamin Chareyron>Oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/41-2
+00:03:03.821 --> 00:03:08.478
+<v Fabrice Frantz>est abouti partiellement dans le sens où
+qu'il ne nous fabrique des livrables.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/43-0
+00:03:09.358 --> 00:03:14.231
+<v Fabrice Frantz>Des vidéos, des artworks,
+parfois des XML et il est partiellement</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/43-1
+00:03:14.231 --> 00:03:20.213
+<v Fabrice Frantz>abouti dans le sens où parfois des XML,
+ça sous-entend que parfois il y a pas de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/43-2
+00:03:20.213 --> 00:03:26.342
+<v Fabrice Frantz>XML et notamment pour les séries télé et
+que parfois ils nous fabriquent des trucs</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/42-0
+00:03:20.958 --> 00:03:22.158
+<v Alexis Benatar>Souvent, Julien.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/43-3
+00:03:26.342 --> 00:03:28.558
+<v Fabrice Frantz>un petit peu approximatif que.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/45-0
+00:03:28.838 --> 00:03:34.364
+<v Fabrice Frantz>On est obligé de soit compléter à la main,
+soit reprendre à la main si jamais ils</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/45-1
+00:03:34.364 --> 00:03:39.755
+<v Fabrice Frantz>avaient fabriqué un peu de la ***** et
+donc en vrai pour l'instant bundle Maker</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/44-0
+00:03:36.278 --> 00:03:36.598
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/45-2
+00:03:39.755 --> 00:03:45.146
+<v Fabrice Frantz>c'est une façon de réunir et de tracer
+les commandes de nos clients qui veulent</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/45-3
+00:03:45.146 --> 00:03:47.438
+<v Fabrice Frantz>livrer de la plateforme VOD au TT.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/46-0
+00:03:47.838 --> 00:03:53.970
+<v Fabrice Frantz>Over the top et c'est une façon pour nous
+de fabriquer des livrables vidéo, audio,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/46-1
+00:03:53.970 --> 00:03:58.478
+<v Fabrice Frantz>sous-titre et éventuellement artwork de
+manière automatisée.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/47-0
+00:03:59.758 --> 00:04:03.282
+<v Fabrice Frantz>C'est pas pour autant que le workflow est
+automatisé de bout en bout parce qu'il y</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/47-1
+00:04:03.282 --> 00:04:06.678
+<v Fabrice Frantz>a toujours une période de packaging et
+une période de livraison qui sont faites</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/47-2
+00:04:06.678 --> 00:04:07.358
+<v Fabrice Frantz>par des humains.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/48-0
+00:04:10.518 --> 00:04:15.453
+<v Benjamin Chareyron>OK, sur une échelle de un à 10,
+quel est votre niveau de satisfaction</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/48-1
+00:04:15.453 --> 00:04:18.768
+<v Benjamin Chareyron>avec vos outils actuels sur la livraison
+OTT ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/49-0
+00:04:20.398 --> 00:04:22.088
+<v Fabrice Frantz>Par rapport à un truc idéal ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/51-0
+00:04:22.838 --> 00:04:29.769
+<v Benjamin Chareyron>Par rapport à votre satisfaction,
+un étant j'ai envie de démissionner 10</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/50-0
+00:04:27.918 --> 00:04:29.288
+<v Fabrice Frantz>Moins 8, il y a moyen ou pas ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/51-1
+00:04:29.769 --> 00:04:32.998
+<v Benjamin Chareyron>étant vas-y si il faut au moins 8.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/54-0
+00:04:34.798 --> 00:04:38.324
+<v Fabrice Frantz>Moi 8 je me suis perdu 4 fois,
+j'ai toujours pas réussi à mourir.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/54-1
+00:04:38.324 --> 00:04:41.317
+<v Fabrice Frantz>Non je déconne, non je déconne,
+je déconne je sais pas.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/52-0
+00:04:38.918 --> 00:04:39.238
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/54-2
+00:04:41.317 --> 00:04:44.950
+<v Fabrice Frantz>4 je peux pas donner la moyenne,
+je peux pas donner la moyenne à ce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/53-0
+00:04:43.158 --> 00:04:43.638
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/54-3
+00:04:44.950 --> 00:04:47.622
+<v Fabrice Frantz>truc-là.
+Il enlève des épines dans les pieds mais</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/54-4
+00:04:47.622 --> 00:04:48.798
+<v Fabrice Frantz>il en laisse d'autres.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/55-0
+00:04:49.278 --> 00:04:51.838
+<v Fabrice Frantz>Et 4,
+parce que je suis générosité et amour.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/56-0
+00:04:55.478 --> 00:04:57.189
+<v Benjamin Chareyron>Alexis,
+t'es d'accord avec ça ou t'as un autre</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/56-1
+00:04:57.189 --> 00:04:57.408
+<v Benjamin Chareyron>avis ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/57-0
+00:04:57.798 --> 00:05:00.037
+<v Alexis Benatar>Non, non, je suis assez d'accord avec ça.
+Il manque.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/57-1
+00:05:00.037 --> 00:05:03.248
+<v Alexis Benatar>Il manque trop de choses actuellement
+pour espérer ne serait-ce qu'avoir la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/58-0
+00:05:02.918 --> 00:05:06.090
+<v Fabrice Frantz>Avoir la moyenne clairement et 4 on est
+sympa,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/57-2
+00:05:03.248 --> 00:05:03.798
+<v Alexis Benatar>moyenne quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/58-1
+00:05:06.090 --> 00:05:10.478
+<v Fabrice Frantz>on pourrait mettre 2 avec un pour le
+papier et un pour le stylo.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/59-0
+00:05:12.638 --> 00:05:13.558
+<v Benjamin Chareyron>OK.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/60-0
+00:05:13.918 --> 00:05:14.798
+<v Fabrice Frantz>C'est mon bon vieux temps.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/61-0
+00:05:16.758 --> 00:05:19.718
+<v Benjamin Chareyron>Ok, donc concrètement aujourd'hui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/62-0
+00:05:20.678 --> 00:05:24.839
+<v Benjamin Chareyron>Est-ce que vous pouvez me décrire votre
+journée type lorsque il y a une commande</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/62-1
+00:05:24.839 --> 00:05:28.538
+<v Benjamin Chareyron>demande de livraison qui arrive déjà,
+par où elle arrive, quels canaux,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/62-2
+00:05:28.538 --> 00:05:32.238
+<v Benjamin Chareyron>qu'est-ce que vous avez à faire,
+qu'est-ce qui est impliqué, et cetera.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/64-0
+00:05:33.118 --> 00:05:37.463
+<v Fabrice Frantz>C'est là où bundle Maker a quand même 4
+points sur cette échelle,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/64-1
+00:05:37.463 --> 00:05:42.796
+<v Fabrice Frantz>c'est que rien ne nous arrive pour que
+nous fassions le client passe lui même sa</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/64-2
+00:05:42.796 --> 00:05:47.998
+<v Fabrice Frantz>commande sur sa plateforme après avoir
+ouais oui pardon on parle dans l'idéal.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/63-0
+00:05:44.598 --> 00:05:45.558
+<v Alexis Benatar>Ça dépend du client.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/65-0
+00:05:48.878 --> 00:05:50.238
+<v Fabrice Frantz>Parce qu'il y a des clients qui nous.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/66-0
+00:05:48.958 --> 00:05:53.958
+<v Benjamin Chareyron>Ah non, on est pas sur l'idéal là Fabrice,
+on est vraiment sur votre usage quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/67-0
+00:05:52.478 --> 00:05:55.995
+<v Fabrice Frantz>Non mais c'est parce que ouais mais comme
+dit Alexis ça dépend du client,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/67-1
+00:05:55.995 --> 00:05:59.656
+<v Fabrice Frantz>c'est à dire qu'il y a des clients comme
+Studiocanal ou Newen ou Studiocanal</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/67-2
+00:05:59.656 --> 00:06:03.411
+<v Fabrice Frantz>pardon qui vont passer eux-mêmes leurs
+commandes bundlemaker et des clients de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/67-3
+00:06:03.411 --> 00:06:07.119
+<v Fabrice Frantz>type SND qui vont dire Bonjour Océane,
+voici mon ordre de fabrication avec un</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/67-4
+00:06:07.119 --> 00:06:08.118
+<v Fabrice Frantz>bon de commande à 0€.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/69-0
+00:06:08.318 --> 00:06:12.589
+<v Fabrice Frantz>Passe moi ma commande bundle Maker et là
+c'est quelqu'un de chez VDM qui passe une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/68-0
+00:06:10.278 --> 00:06:10.598
+<v Benjamin Chareyron>Je.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/69-1
+00:06:12.589 --> 00:06:15.728
+<v Fabrice Frantz>commande bundle Maker nous de notre
+fenêtre au niveau R Lab,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/69-2
+00:06:15.728 --> 00:06:19.999
+<v Fabrice Frantz>Support Onboarding et tout ce que tu veux.
+C'est un peu transparent pour nous bien</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/69-3
+00:06:19.999 --> 00:06:24.115
+<v Fabrice Frantz>que en effet parfois c'est le client et
+parfois c'est quelqu'un de chez VDM qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/69-4
+00:06:24.115 --> 00:06:26.637
+<v Fabrice Frantz>s'en occupe.
+Mais nous on récupère des commandes</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/69-5
+00:06:26.637 --> 00:06:27.718
+<v Fabrice Frantz>bundle Maker lancées.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/71-0
+00:06:28.318 --> 00:06:32.806
+<v Fabrice Frantz>Voire 99% du temps terminé dans la partie
+plateforme et donc la plateforme ne</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/71-1
+00:06:32.806 --> 00:06:37.409
+<v Fabrice Frantz>faisant que les choses partiellement.
+Une commande terminée dans la plateforme,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/71-2
+00:06:37.409 --> 00:06:41.955
+<v Fabrice Frantz>c'est une commande qui est qui a besoin
+d'être packagée et qui a besoin d'être</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/71-3
+00:06:41.955 --> 00:06:42.358
+<v Fabrice Frantz>livrée.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/70-0
+00:06:42.918 --> 00:06:43.278
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/72-0
+00:06:44.398 --> 00:06:50.866
+<v Fabrice Frantz>Donc toujours toujours ce côté c'est
+partiellement rattrapé par les équipes</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/72-1
+00:06:50.866 --> 00:06:55.377
+<v Fabrice Frantz>humaines de VDM,
+enfin partiellement terminé par les</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/72-2
+00:06:55.377 --> 00:06:59.718
+<v Fabrice Frantz>équipes humaines de VDM et à l'arrivée
+c'est nous.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/73-0
+00:07:00.158 --> 00:07:04.736
+<v Fabrice Frantz>Nous n'avons absolument rien à faire dans
+l'hypothèse où tout se passe pour le</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/73-1
+00:07:04.736 --> 00:07:09.082
+<v Fabrice Frantz>mieux dans le meilleur des mondes.
+Maintenant on a une commande qui arrive</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/73-2
+00:07:09.082 --> 00:07:13.023
+<v Fabrice Frantz>en manual delivery in progress,
+qui est supposée avoir généré de la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/73-3
+00:07:13.023 --> 00:07:14.878
+<v Fabrice Frantz>notification du BT et des trucs.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/75-0
+00:07:14.918 --> 00:07:17.197
+<v Fabrice Frantz>Comme ça,
+de manière à ce que le chargé de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/75-1
+00:07:17.197 --> 00:07:21.225
+<v Fabrice Frantz>clientèle qui suit les commandes de son
+client puisse faire le lien avec la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/75-2
+00:07:21.225 --> 00:07:24.988
+<v Fabrice Frantz>technique de VDM et terminer ses
+commandes en les packageant et en les</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/75-3
+00:07:24.988 --> 00:07:28.274
+<v Fabrice Frantz>livrant manuellement,
+puis en mettant la plateforme à jour en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/75-4
+00:07:28.274 --> 00:07:29.758
+<v Fabrice Frantz>disant Delivered, delivered.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/74-0
+00:07:30.358 --> 00:07:30.758
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/76-0
+00:07:38.118 --> 00:07:39.488
+<v Benjamin Chareyron>Alexis, t'as des choses à rajouter ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/77-0
+00:07:44.518 --> 00:07:46.598
+<v Alexis Benatar>Bah non mais moi pour résumer,
+en gros c'est.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/78-0
+00:07:47.958 --> 00:07:51.927
+<v Alexis Benatar>On est dans certains cas des équipes de
+VDM chargées de clientèle qui peuvent</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/78-1
+00:07:51.927 --> 00:07:54.217
+<v Alexis Benatar>passer des commandes,
+sinon c'est le client.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/78-2
+00:07:54.217 --> 00:07:58.135
+<v Alexis Benatar>Effectivement dans la plupart des cas ça
+retombe quand même sur le charge de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/78-3
+00:07:58.135 --> 00:08:02.206
+<v Alexis Benatar>clientèle comme le disait Fabrice pour
+parce qu'il y a 1BT qui est lié à ça qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/78-4
+00:08:02.206 --> 00:08:05.158
+<v Alexis Benatar>est généré automatiquement.
+Et dans ces mêmes cas il y a.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/79-0
+00:08:06.518 --> 00:08:10.518
+<v Alexis Benatar>Une phase de packaging qui est gérée par
+les équipes du labo.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/80-0
+00:08:11.278 --> 00:08:12.078
+<v Fabrice Frantz>Suite à la.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/82-0
+00:08:11.478 --> 00:08:14.656
+<v Alexis Benatar>Avec la livraison derrière,
+donc ça fait quand même beaucoup</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/81-0
+00:08:13.838 --> 00:08:14.238
+<v Fabrice Frantz>Suite.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/82-1
+00:08:14.656 --> 00:08:15.438
+<v Alexis Benatar>d'humains quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/83-0
+00:08:15.878 --> 00:08:16.198
+<v Benjamin Chareyron>Aurélien.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/84-0
+00:08:17.718 --> 00:08:20.984
+<v Alexis Benatar>Et ça,
+c'est parce que nos principaux problèmes</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/84-1
+00:08:20.984 --> 00:08:25.951
+<v Alexis Benatar>qu'on a nous, c'est pour l'instant,
+c'est la gestion des fabrications de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/84-2
+00:08:25.951 --> 00:08:29.558
+<v Alexis Benatar>métadonnées et autres,
+avec les outils qu'on a donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/86-0
+00:08:31.158 --> 00:08:35.558
+<v Alexis Benatar>Le la page de Liquid,
+tout ça machin qui est un enfer.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/85-0
+00:08:31.318 --> 00:08:32.118
+<v Benjamin Chareyron>Benjamin.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/87-0
+00:08:36.198 --> 00:08:40.478
+<v Benjamin Chareyron>Par contre toute la partie fabrication
+d'assets, ça y a pas de gros problèmes.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/88-0
+00:08:41.158 --> 00:08:46.206
+<v Alexis Benatar>Sur cette partie là ça va globalement on
+a quand même des trucs relou sur la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/88-1
+00:08:46.206 --> 00:08:51.255
+<v Alexis Benatar>gestion des tout ça c'est en lien avec
+les demandes des plateformes OTT type</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/88-2
+00:08:51.255 --> 00:08:56.435
+<v Alexis Benatar>Amazon qui veulent avoir des fichiers qui
+ont qu'on livre des paquets avec des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/88-3
+00:08:56.435 --> 00:08:57.878
+<v Alexis Benatar>fichiers c'est pareil.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/89-0
+00:08:58.758 --> 00:09:00.278
+<v Alexis Benatar>Qui ont exactement la même durée à
+l'image.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/90-0
+00:09:01.398 --> 00:09:05.042
+<v Alexis Benatar>Et que dans certains cas,
+c'est un peu compliqué de d'obtenir ce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/90-1
+00:09:05.042 --> 00:09:07.957
+<v Alexis Benatar>qu'on veut,
+mais on a quand même beaucoup progressé</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/90-2
+00:09:07.957 --> 00:09:08.518
+<v Alexis Benatar>là-dessus.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/92-0
+00:09:08.718 --> 00:09:13.134
+<v Fabrice Frantz>Ouais là je pense que on arrive dans un
+avenir radieux à ce sujet-là parce qu'on</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/92-1
+00:09:13.134 --> 00:09:16.896
+<v Fabrice Frantz>est beaucoup plus vigilent à l'entrée des
+assets dans la plateforme.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/92-2
+00:09:16.896 --> 00:09:21.257
+<v Fabrice Frantz>Du coup on va avoir tendance à refuser
+des trucs si ils font quelques images de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/91-0
+00:09:18.278 --> 00:09:18.758
+<v Benjamin Chareyron>D'accord.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/92-3
+00:09:21.257 --> 00:09:24.638
+<v Fabrice Frantz>trop ou de trop peu là où il y a une
+époque où on se faisait.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/95-0
+00:09:24.758 --> 00:09:28.817
+<v Fabrice Frantz>On s'inquiétait même pas de la question
+et on se mettait des balles dans les</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/93-0
+00:09:27.078 --> 00:09:27.318
+<v Benjamin Chareyron>Merci.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/95-1
+00:09:28.817 --> 00:09:31.716
+<v Fabrice Frantz>pieds et c'est des balles qu'on a arrêté
+de se mettre.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/95-2
+00:09:31.716 --> 00:09:35.986
+<v Fabrice Frantz>Donc a priori à terme l'avenir devrait
+pas avoir de problème de Ah on a fabriqué</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/95-3
+00:09:35.986 --> 00:09:40.203
+<v Fabrice Frantz>des trucs pas tout à fait en face les uns
+des autres parce que nos sources sont</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/95-4
+00:09:40.203 --> 00:09:40.678
+<v Fabrice Frantz>bancales.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/94-0
+00:09:41.158 --> 00:09:41.398
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/97-0
+00:09:42.118 --> 00:09:45.527
+<v Fabrice Frantz>Mais c'est vrai que y a encore le cas
+aujourd'hui et il peut nous arriver de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/97-1
+00:09:45.527 --> 00:09:48.937
+<v Fabrice Frantz>soit essuyer un refus de la plateforme,
+soit anticiper le truc nous-mêmes en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/97-2
+00:09:48.937 --> 00:09:51.372
+<v Fabrice Frantz>disant Ah tiens la plateforme elle a fait
+de la *****,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/97-3
+00:09:51.372 --> 00:09:55.048
+<v Fabrice Frantz>je vais corriger avant de livrer comme ça
+ce sera bien et encore une fois c'est un</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/96-0
+00:09:53.758 --> 00:09:53.878
+<v Benjamin Chareyron>De.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/97-4
+00:09:55.048 --> 00:09:55.358
+<v Fabrice Frantz>humain.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/98-0
+00:09:56.278 --> 00:09:58.520
+<v Alexis Benatar>Mais ouais mais ce qu'il faut retenir
+effectivement,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/98-1
+00:09:58.520 --> 00:10:01.187
+<v Alexis Benatar>c'est que techniquement sur la partie
+fabrication de fichiers,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/98-2
+00:10:01.187 --> 00:10:02.118
+<v Alexis Benatar>on est plutôt pas mal.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/100-0
+00:10:02.438 --> 00:10:06.642
+<v Benjamin Chareyron>OK, ça marche à part Media spot,
+quels sont les outils qui entrent dans ce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/100-1
+00:10:06.642 --> 00:10:09.558
+<v Benjamin Chareyron>workflow là aujourd'hui ?
+Je les connais déjà mais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/99-0
+00:10:08.278 --> 00:10:09.318
+<v Fabrice Frantz>VDM Connect.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/101-0
+00:10:10.758 --> 00:10:13.398
+<v Alexis Benatar>VDM Connect et Package Editor pour le
+packaging derrière.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/102-0
+00:10:13.798 --> 00:10:14.918
+<v Fabrice Frantz>Et Iris pour le bébé.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/103-0
+00:10:17.158 --> 00:10:18.918
+<v Fabrice Frantz>Et Outlook pour les gens qui se parlent.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/105-0
+00:10:21.638 --> 00:10:23.598
+<v Benjamin Chareyron>Bah non tu déconnes pas,
+c'est important si c'est le cas.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/106-0
+00:10:24.118 --> 00:10:27.718
+<v Fabrice Frantz>Bah enfin j'imagine que ça doit être le
+cas, mais dans ce cas y a teams aussi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/109-0
+00:10:28.958 --> 00:10:32.012
+<v Fabrice Frantz>Et on sait pas et on sait pas ce que les
+collègues font entre eux.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/107-0
+00:10:29.038 --> 00:10:29.238
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/109-1
+00:10:32.012 --> 00:10:35.249
+<v Fabrice Frantz>Est ce que le chargé de clientèle qui
+lance son BT va faire un mail au</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/109-2
+00:10:35.249 --> 00:10:38.805
+<v Fabrice Frantz>technicien ? Est ce qu'il va l'appeler ?
+Est ce qu'il va lui faire un teams ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/109-3
+00:10:38.805 --> 00:10:42.452
+<v Fabrice Frantz>Ou est ce qu'il va juste lancer son BT ?
+Je t'avoue que ça franchement mystère,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/108-0
+00:10:41.798 --> 00:10:42.358
+<v Benjamin Chareyron>Oui, bien sûr.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/109-4
+00:10:42.452 --> 00:10:43.638
+<v Fabrice Frantz>mystère et boule de gomme.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/112-0
+00:10:42.678 --> 00:10:47.625
+<v Alexis Benatar>Ouais mais enfin ça en plus c'est des
+considérations qui sont un peu hors scope</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/110-0
+00:10:45.758 --> 00:10:48.278
+<v Fabrice Frantz>Ouais, on s'en, on s'en fout un peu quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/112-1
+00:10:47.625 --> 00:10:50.718
+<v Alexis Benatar>total,
+là c'est en lien avec la génération de BT.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/111-0
+00:10:48.878 --> 00:10:49.078
+<v Benjamin Chareyron>Je.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/115-0
+00:10:52.758 --> 00:10:56.964
+<v Benjamin Chareyron>S'il fallait pointer le truc qui vous
+fait perdre le plus de temps dans tout ce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/113-0
+00:10:52.838 --> 00:10:53.158
+<v Alexis Benatar>Je</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/115-1
+00:10:56.964 --> 00:10:57.648
+<v Benjamin Chareyron>workflow là ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/116-0
+00:10:59.918 --> 00:11:02.278
+<v Fabrice Frantz>La récupération de méta et d'artworks
+localisés.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/117-0
+00:11:05.118 --> 00:11:05.718
+<v Fabrice Frantz>Y la.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/118-0
+00:11:08.198 --> 00:11:11.394
+<v Fabrice Frantz>L'exploitation de ces méta et hardwork
+localisés une fois qu'ils seront</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/118-1
+00:11:11.394 --> 00:11:11.838
+<v Fabrice Frantz>récupérés.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/119-0
+00:11:15.398 --> 00:11:16.438
+<v Fabrice Frantz>Je m'explique.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/120-0
+00:11:15.798 --> 00:11:17.798
+<v Benjamin Chareyron>Quand tu dis exploitation, ouais,
+je veux bien que tu.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/121-0
+00:11:17.518 --> 00:11:22.965
+<v Fabrice Frantz>Je m'explique sur c'est surtout une
+allusion aux artworks que je fais là il y</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/121-1
+00:11:22.965 --> 00:11:28.342
+<v Fabrice Frantz>a dans VDM Connect une partie où tes
+artworks tu les déclares genre ça c'est</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/121-2
+00:11:28.342 --> 00:11:33.859
+<v Fabrice Frantz>un artwork pour Amazon France donc c'est
+un artwork en français ou pour iTunes</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/121-3
+00:11:33.859 --> 00:11:34.558
+<v Fabrice Frantz>Worldwide.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/122-0
+00:11:34.758 --> 00:11:40.096
+<v Fabrice Frantz>Ou donc c'est de la VO ou pour iTunes
+Gabon ou Japon ou ce que tu veux comme</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/122-1
+00:11:40.096 --> 00:11:45.366
+<v Fabrice Frantz>pays et à chaque fois ça te fera un
+network localisé dans le la langue pour</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/122-2
+00:11:45.366 --> 00:11:50.635
+<v Fabrice Frantz>la destination machin depuis qu'on a fait
+le Link avec VDM Connect entre la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/122-3
+00:11:50.635 --> 00:11:51.398
+<v Fabrice Frantz>plateforme.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/123-0
+00:11:51.798 --> 00:11:55.354
+<v Fabrice Frantz>Où tu peux importer tes méta et importer
+tes artworks.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/123-1
+00:11:55.354 --> 00:12:00.397
+<v Fabrice Frantz>Il s'avère que parfois on va avoir des
+artworks Amazon qui vont être importés</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/123-2
+00:12:00.397 --> 00:12:05.117
+<v Fabrice Frantz>mais peut être que le Tag Allemagne ou
+France ou la localisation qui est</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/123-3
+00:12:05.117 --> 00:12:06.798
+<v Fabrice Frantz>présente dans VDM Connect.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/124-0
+00:12:06.998 --> 00:12:11.661
+<v Fabrice Frantz>Va sauter dans l'intégration dans Media
+spot je dis pas que l'Info disparaît</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/124-1
+00:12:11.661 --> 00:12:14.749
+<v Fabrice Frantz>toute seule.
+Peut être que c'est à la personne qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/124-2
+00:12:14.749 --> 00:12:19.594
+<v Fabrice Frantz>importe ses artworks de reporter l'info
+et peut être que la personne ne le fait</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/124-3
+00:12:19.594 --> 00:12:22.379
+<v Fabrice Frantz>pas.
+Encore une fois ça c'est nos clients qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/124-4
+00:12:22.379 --> 00:12:26.558
+<v Fabrice Frantz>le font parce que c'est leur page VDM
+Connect et leur plateforme et.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/125-0
+00:12:28.198 --> 00:12:32.696
+<v Fabrice Frantz>Et donc il peut arriver que tu fasses ton
+Link avec VDM Connect de ton œuvre,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/125-1
+00:12:32.696 --> 00:12:37.309
+<v Fabrice Frantz>que tu importes tous les artworks de la
+terre et que tu lances ton bundle Maker</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/125-2
+00:12:37.309 --> 00:12:41.461
+<v Fabrice Frantz>et que le bundle Maker il sache pas
+forcément choisir l'artwork le plus</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/125-3
+00:12:41.461 --> 00:12:42.038
+<v Fabrice Frantz>pertinent.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/127-0
+00:12:42.118 --> 00:12:46.231
+<v Fabrice Frantz>Pour le package que t'as lancé et qui
+prennent genre bah le premier qui passe</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/127-1
+00:12:46.231 --> 00:12:50.239
+<v Fabrice Frantz>parce que t'as 3 artwork Amazon mais y en
+a aucun qui est déclaré allemand,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/127-2
+00:12:50.239 --> 00:12:52.612
+<v Fabrice Frantz>français,
+anglais et donc le bah il prend le</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/126-0
+00:12:51.558 --> 00:12:51.678
+<v Benjamin Chareyron>Ah.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/127-3
+00:12:52.612 --> 00:12:53.878
+<v Fabrice Frantz>premier qui passe voilà.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/130-0
+00:12:53.678 --> 00:12:56.361
+<v Alexis Benatar>On a,
+on a 2 problématiques par rapport à ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/130-1
+00:12:56.361 --> 00:12:59.686
+<v Alexis Benatar>C'est la première,
+c'est une problématique d'input de la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/130-2
+00:12:59.686 --> 00:13:04.003
+<v Alexis Benatar>part de l'utilisateur côté VDM Connect
+parce que pour le coup le Link VDM</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/129-0
+00:13:01.878 --> 00:13:02.198
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/130-3
+00:13:04.003 --> 00:13:08.494
+<v Alexis Benatar>Connect Media Spot il fonctionne bien,
+il récupère bien toutes les infos qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/130-4
+00:13:08.494 --> 00:13:10.478
+<v Alexis Benatar>sont renseignées dans VDM Connect.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/132-0
+00:13:10.998 --> 00:13:13.383
+<v Alexis Benatar>Donc je pense que les territoires,
+quand ils manquent,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/132-1
+00:13:13.383 --> 00:13:15.118
+<v Alexis Benatar>c'est qu'ils ont-ils ont été simplement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/131-0
+00:13:13.718 --> 00:13:14.558
+<v Fabrice Frantz>Ah oui, ils sont peut-être.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/133-0
+00:13:15.438 --> 00:13:17.998
+<v Fabrice Frantz>Oui ils sont peut être pas dans VDM
+Connect déjà de base ouais effectivement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/134-0
+00:13:17.678 --> 00:13:21.202
+<v Alexis Benatar>C'est ça le truc.
+Ou alors ils ont sinon fait une action</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/134-1
+00:13:21.202 --> 00:13:24.541
+<v Alexis Benatar>post Link côté Media Spot donc c'est là
+c'est humain.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/134-2
+00:13:24.541 --> 00:13:29.487
+<v Alexis Benatar>Par contre l'autre problème qu'on a mais
+bon enfin c'est du c'est du temporaire</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/134-3
+00:13:29.487 --> 00:13:34.248
+<v Alexis Benatar>puisque c'est en lien que VDM Connect
+mais qu'on aura un problème le jour de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/134-4
+00:13:34.248 --> 00:13:35.238
+<v Alexis Benatar>RDD par exemple.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/135-0
+00:13:35.718 --> 00:13:39.047
+<v Alexis Benatar>Le canal au hasard,
+c'est qu'il y a un certain nombre de méta</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/135-1
+00:13:39.047 --> 00:13:41.518
+<v Alexis Benatar>sur les qui sont manquantes dans VDM
+Connect.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/136-0
+00:13:42.718 --> 00:13:46.438
+<v Alexis Benatar>Sur les types d'artworks par exemple,
+donc, mais ça pareil, c'est voilà.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/137-0
+00:13:44.678 --> 00:13:47.278
+<v Fabrice Frantz>Hero 6e série.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/138-0
+00:13:48.398 --> 00:13:49.078
+<v Fabrice Frantz>Quelque chose comme ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/141-0
+00:13:48.598 --> 00:13:52.869
+<v Alexis Benatar>Mais c'est une problématique plus
+exploitation qu'autre chose parce que ça</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/141-1
+00:13:52.869 --> 00:13:56.913
+<v Alexis Benatar>c'est des méta qu'on a côté Media Spot
+donc c'est du c'est un problème</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/139-0
+00:13:55.878 --> 00:13:56.158
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/141-2
+00:13:56.913 --> 00:14:01.128
+<v Alexis Benatar>actuellement mais c'est pas ça,
+n'en sera +1 dans le futur une fois qu'on</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/141-3
+00:14:01.128 --> 00:14:02.438
+<v Alexis Benatar>aura débranché tout ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/140-0
+00:14:02.998 --> 00:14:03.238
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/142-0
+00:14:05.478 --> 00:14:08.016
+<v Benjamin Chareyron>Concrètement, aujourd'hui,
+livrer une livraison standard on va dire,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/142-1
+00:14:08.016 --> 00:14:09.488
+<v Benjamin Chareyron>ça vous prend combien de temps en fait ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/143-0
+00:14:11.158 --> 00:14:11.878
+<v Benjamin Chareyron>De bout en bout.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/144-0
+00:14:16.598 --> 00:14:17.558
+<v Fabrice Frantz>Question de ouf.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/145-0
+00:14:16.838 --> 00:14:21.187
+<v Alexis Benatar>Une bonne, une bonne question.
+Bon après ça peut être fait,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/145-1
+00:14:21.187 --> 00:14:26.913
+<v Alexis Benatar>ça peut être fait en 48 h de bout à bout,
+enfin de porte à porte on va dire si</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/145-2
+00:14:26.913 --> 00:14:28.798
+<v Alexis Benatar>c'est un packaging simple.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/146-0
+00:14:30.838 --> 00:14:35.178
+<v Alexis Benatar>Qui est derrière et donc qui implique pas
+trop de travail de la part des équipes au</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/146-1
+00:14:35.178 --> 00:14:35.488
+<v Alexis Benatar>labo ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/148-0
+00:14:37.918 --> 00:14:42.729
+<v Fabrice Frantz>Oui et sachant que quand Alexis dit porte
+à porte la porte d'entrée c'est la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/147-0
+00:14:39.158 --> 00:14:39.558
+<v Alexis Benatar>O.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/148-1
+00:14:42.729 --> 00:14:47.727
+<v Fabrice Frantz>plateforme qui a généré les livrables,
+les moov enfin les fichiers vidéos audio</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/148-2
+00:14:47.727 --> 00:14:52.850
+<v Fabrice Frantz>sous-titres et qui les a mis à dispo de
+VDM et la porte de sortie c'est VDM qui a</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/148-3
+00:14:52.850 --> 00:14:54.038
+<v Fabrice Frantz>lancé la livraison.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/149-0
+00:14:55.958 --> 00:14:57.958
+<v Benjamin Chareyron>Ah oui d'accord, donc oui on parle pas de.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/152-0
+00:14:57.958 --> 00:15:02.087
+<v Fabrice Frantz>Après le truc c'est que ta commande ta
+commande Bundle Maker en soit elle va</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/150-0
+00:14:58.918 --> 00:14:59.158
+<v Alexis Benatar>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/152-1
+00:15:02.087 --> 00:15:06.484
+<v Fabrice Frantz>avoir une durée extrêmement relative dans
+le sens où est ce que on va désarchiver</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/152-2
+00:15:06.484 --> 00:15:10.988
+<v Fabrice Frantz>ou pas la source oui est ce que la source
+c'est un Dolby vision qui pèse 2 teras ou</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/152-3
+00:15:10.988 --> 00:15:12.758
+<v Fabrice Frantz>pas en fonction t'auras un délai.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/151-0
+00:15:11.838 --> 00:15:12.318
+<v Benjamin Chareyron>Priscilla.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/154-0
+00:15:13.078 --> 00:15:16.585
+<v Fabrice Frantz>Et t'auras forcément un délai de
+transcodage inhérent à ta source et après</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/154-1
+00:15:16.585 --> 00:15:19.811
+<v Fabrice Frantz>un délai de copie de fichier pour mise à
+dispo sur le Cumulo de VDM.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/154-2
+00:15:19.811 --> 00:15:23.693
+<v Fabrice Frantz>Mais en fait tout ça globalement ça peut
+se passer dans la nuit quoi c'est tu fais</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/154-3
+00:15:23.693 --> 00:15:27.480
+<v Fabrice Frantz>ta commande maintenant demain matin ta
+commande elle est faite et elle est dispo</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/153-0
+00:15:24.918 --> 00:15:25.718
+<v Benjamin Chareyron>OK.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/154-4
+00:15:27.480 --> 00:15:29.398
+<v Fabrice Frantz>et quand tu arrives au Taf elle t'attend.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/155-0
+00:15:29.958 --> 00:15:30.438
+<v Fabrice Frantz>Donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/156-0
+00:15:30.118 --> 00:15:33.243
+<v Benjamin Chareyron>Et concrètement, combien de sur ces 48 h,
+combien de temps sont passés sur du</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/156-1
+00:15:33.243 --> 00:15:35.446
+<v Benjamin Chareyron>travail humain,
+les fameuses étapes humaines dont vous</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/156-2
+00:15:35.446 --> 00:15:36.208
+<v Benjamin Chareyron>parliez plus haut ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/157-0
+00:15:36.558 --> 00:15:37.078
+<v Fabrice Frantz>48 h.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/158-0
+00:15:39.718 --> 00:15:40.358
+<v Fabrice Frantz>Non stop.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/159-0
+00:15:39.798 --> 00:15:42.055
+<v Benjamin Chareyron>Et si jamais,
+si jamais tout était automatisé, enfin,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/159-1
+00:15:42.055 --> 00:15:44.688
+<v Benjamin Chareyron>quel pourcentage en fait de ces 48 ans
+pourrait réduire quoi ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/160-0
+00:15:45.638 --> 00:15:46.238
+<v Fabrice Frantz>50.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/163-0
+00:15:49.798 --> 00:15:52.260
+<v Alexis Benatar>Ouais,
+ça pourrait même être même être pas mal</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/163-1
+00:15:52.260 --> 00:15:56.031
+<v Alexis Benatar>plus parce qu'en l'occurrence enfin c'est
+la partie packaging et autre,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/161-0
+00:15:52.758 --> 00:15:53.798
+<v Fabrice Frantz>Ouais, mais j'ose pas.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/163-2
+00:15:56.031 --> 00:15:59.017
+<v Alexis Benatar>c'est surtout la gestion des méta et des
+trucs comme ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/163-3
+00:15:59.017 --> 00:16:02.998
+<v Alexis Benatar>Donc c'est pas des choses qui sont
+longues à traiter en temps machine quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/162-0
+00:16:03.838 --> 00:16:04.678
+<v Benjamin Chareyron>OK.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/164-0
+00:16:05.118 --> 00:16:06.358
+<v Fabrice Frantz>En fait, c'est du temps humain que.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/166-0
+00:16:05.558 --> 00:16:08.604
+<v Alexis Benatar>Mais si tu veux,
+si tu veux avoir un ordre d'idée des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/166-1
+00:16:08.604 --> 00:16:12.214
+<v Alexis Benatar>temps de fabrication pour la partie par
+mon packaging et autre,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/166-2
+00:16:12.214 --> 00:16:16.726
+<v Alexis Benatar>je pense que il faudra que tu fasses un
+un coup d'interview avec Violaine ou un</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/166-3
+00:16:16.726 --> 00:16:19.434
+<v Alexis Benatar>truc comme ça,
+pourra te donner pas mal d'infos</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/166-4
+00:16:19.434 --> 00:16:19.998
+<v Alexis Benatar>là-dessus.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/165-0
+00:16:20.598 --> 00:16:21.158
+<v Benjamin Chareyron>Ok, ça marche.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/167-0
+00:16:21.478 --> 00:16:24.969
+<v Fabrice Frantz>Après par exemple,
+là je suis sur un c'est du Bundle Maker</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/167-1
+00:16:24.969 --> 00:16:29.348
+<v Fabrice Frantz>c'est du artos plus femme médecin.
+J'ai un petit client qui m'a envoyé un</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/167-2
+00:16:29.348 --> 00:16:33.431
+<v Fabrice Frantz>mail ce matin en me disant Hey,
+je viens de lancer une commande de 6</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/167-3
+00:16:33.431 --> 00:16:37.278
+<v Fabrice Frantz>épisodes de ma série pour artos.
+Il a lancé sa commande à 12h08.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/168-0
+00:16:37.958 --> 00:16:43.118
+<v Fabrice Frantz>Le dernier des transcodages,
+il était fini d'être livré à 14h09.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/170-0
+00:16:43.358 --> 00:16:46.737
+<v Benjamin Chareyron>Ok,
+et là artos artos on est sur un process</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/169-0
+00:16:44.198 --> 00:16:46.038
+<v Fabrice Frantz>Des archivages transcodage inclus.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/170-1
+00:16:46.737 --> 00:16:48.888
+<v Benjamin Chareyron>full auto, on est d'accord ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/171-0
+00:16:48.998 --> 00:16:51.398
+<v Alexis Benatar>Ouais, tout à fait, c'est l'exception.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/173-0
+00:16:49.158 --> 00:16:53.537
+<v Fabrice Frantz>90% voilà et puis 90% quand même parce
+qu'il y a quand même des méta à livrer.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/173-1
+00:16:53.537 --> 00:16:57.418
+<v Fabrice Frantz>Là je te parle d'une série télé.
+Donc les méta c'est toujours la même</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/173-2
+00:16:57.418 --> 00:17:00.134
+<v Fabrice Frantz>chose,
+elles ne sont pas dans la digital Factory</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/172-0
+00:16:59.798 --> 00:17:00.038
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/173-3
+00:17:00.134 --> 00:17:03.627
+<v Fabrice Frantz>vu qu'on parle dessus au canal parce que
+c'est une série télé.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/173-4
+00:17:03.627 --> 00:17:07.119
+<v Fabrice Frantz>Et moi j'ai hérité d'un petit tableau
+Excel avec des synopsis,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/173-5
+00:17:07.119 --> 00:17:08.838
+<v Fabrice Frantz>des ID et des ********* que je.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/176-0
+00:17:08.878 --> 00:17:11.930
+<v Fabrice Frantz>Je picole manuellement dans chaque XML
+généré par la plateforme.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/176-1
+00:17:11.930 --> 00:17:14.889
+<v Fabrice Frantz>Là la bonne nouvelle c'est que la
+plateforme fabrique des XML.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/174-0
+00:17:12.278 --> 00:17:12.598
+<v Benjamin Chareyron>D'accord.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/176-2
+00:17:14.889 --> 00:17:18.600
+<v Fabrice Frantz>Ils sont juste incomplets parce que il
+lui manque des infos à la plateforme et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/176-3
+00:17:18.600 --> 00:17:22.216
+<v Fabrice Frantz>c'est moi qui fait le lien entre Ah bah
+les infos que t'as pas moi je les ai</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/175-0
+00:17:18.918 --> 00:17:19.358
+<v Benjamin Chareyron>D'accord.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/176-4
+00:17:22.216 --> 00:17:24.518
+<v Fabrice Frantz>attends je vais les mettre dans ton XML
+partiel.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/177-0
+00:17:24.918 --> 00:17:31.536
+<v Fabrice Frantz>Et donc globalement en 02h00 ou 3 h de
+temps 2 h de temps elle a fait 6</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/177-1
+00:17:31.536 --> 00:17:38.798
+<v Fabrice Frantz>transcodage de 50 Min en HD avec 6XML
+avec du MD 5 et elle a livré tout ça sur</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/177-2
+00:17:38.798 --> 00:17:39.718
+<v Fabrice Frantz>1FTP donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/179-0
+00:17:39.718 --> 00:17:43.958
+<v Alexis Benatar>Et une demi-heure de reprise de méta
+derrière, c'est pas de livrer quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/178-0
+00:17:44.358 --> 00:17:44.758
+<v Fabrice Frantz>Voilà.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/180-0
+00:17:46.118 --> 00:17:46.438
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/181-0
+00:17:48.598 --> 00:17:50.376
+<v Benjamin Chareyron>Très bien,
+est-ce que vous avez d'autres choses à</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/181-1
+00:17:50.376 --> 00:17:51.408
+<v Benjamin Chareyron>dire sur le workflow actuel ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/182-0
+00:17:54.118 --> 00:17:54.598
+<v Fabrice Frantz>Ah non.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/183-0
+00:17:55.558 --> 00:17:56.878
+<v Fabrice Frantz>Nous, on attend le prochain.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/184-0
+00:17:56.958 --> 00:18:00.573
+<v Benjamin Chareyron>Oui, bien sûr, bien sûr,
+on parlera du prochain à la fin,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/184-1
+00:18:00.573 --> 00:18:01.758
+<v Benjamin Chareyron>en fin d'interview.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/185-0
+00:18:04.558 --> 00:18:07.801
+<v Benjamin Chareyron>Concrètement, aujourd'hui donc,
+si vous projetez sur vos clients qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/185-1
+00:18:07.801 --> 00:18:10.527
+<v Benjamin Chareyron>passent les commandes,
+est-ce que vous pouvez m'expliquer</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/185-2
+00:18:10.527 --> 00:18:13.958
+<v Benjamin Chareyron>comment ils passent la commande ?
+Comme si je connaissais pas mediaspot.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/186-0
+00:18:14.518 --> 00:18:16.998
+<v Fabrice Frantz>Tu prends ton œuvre,
+tu la mets dans ton basket.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/187-0
+00:18:18.438 --> 00:18:21.725
+<v Fabrice Frantz>Tu vas dans ton basket,
+tu choisis un produit qui s'appelle</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/187-1
+00:18:21.725 --> 00:18:22.438
+<v Fabrice Frantz>Bundle Maker.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/188-0
+00:18:23.798 --> 00:18:24.518
+<v Benjamin Chareyron>Maker.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/190-0
+00:18:25.318 --> 00:18:29.990
+<v Fabrice Frantz>Et une fois que tu as choisi ce produit,
+tu choisis le la plateforme de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/190-1
+00:18:29.990 --> 00:18:34.987
+<v Fabrice Frantz>destination de Bundle Maker donc t'en
+auras toute une liste qui va commencer</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/189-0
+00:18:32.358 --> 00:18:32.518
+<v Benjamin Chareyron>Je.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/190-2
+00:18:34.987 --> 00:18:40.438
+<v Fabrice Frantz>peut être par Amazon parce que y a 1A et
+en fonction donc tu choisis la plateforme.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/191-0
+00:18:40.518 --> 00:18:41.718
+<v Fabrice Frantz>Sur laquelle tu veux livrer.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/192-0
+00:18:43.638 --> 00:18:48.605
+<v Fabrice Frantz>Une fois que tu as fait ça,
+tu passes à la page d'après dans ton</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/192-1
+00:18:48.605 --> 00:18:52.503
+<v Fabrice Frantz>setting de order,
+tu as forcément les informations</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/192-2
+00:18:52.503 --> 00:18:57.318
+<v Fabrice Frantz>nécessaires de type Vendor ID,
+territoire à livrer, et cetera.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/193-0
+00:18:58.118 --> 00:19:03.227
+<v Fabrice Frantz>Tu remplis les informations nécessaires,
+tu configures ton truc en disant Je veux</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/193-1
+00:19:03.227 --> 00:19:06.717
+<v Fabrice Frantz>mon image en VO,
+je veux un audio alternatif dans telle</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/193-2
+00:19:06.717 --> 00:19:10.580
+<v Fabrice Frantz>langue ou des audio alternatifs dans
+telle langue au pluriel,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/193-3
+00:19:10.580 --> 00:19:13.198
+<v Fabrice Frantz>je veux des sous-titres complets partiels.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/194-0
+00:19:13.878 --> 00:19:17.525
+<v Fabrice Frantz>SDH ou SME éventuellement dans telle
+langue, au pluriel aussi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/194-1
+00:19:17.525 --> 00:19:21.635
+<v Fabrice Frantz>Et une fois que t'as tout configuré tout
+ça, tu fais Go touche écoute,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/194-2
+00:19:21.635 --> 00:19:25.398
+<v Fabrice Frantz>tu écoutes et tout va pour le mieux dans
+le meilleur des mondes.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/195-0
+00:19:25.638 --> 00:19:31.313
+<v Benjamin Chareyron>D'accord dans la config des différents
+contenus donc tu m'as parlé de langue à</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/195-1
+00:19:31.313 --> 00:19:36.486
+<v Benjamin Chareyron>l'écran de langue des sous-titres,
+je suppose que tu configures ça pour</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/195-2
+00:19:36.486 --> 00:19:39.648
+<v Benjamin Chareyron>chacun des territoires que tu veux livrer
+?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/197-0
+00:19:38.438 --> 00:19:42.365
+<v Fabrice Frantz>Alors en fait.
+Alors ouais et c'est là où bundlemaker</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/197-1
+00:19:42.365 --> 00:19:46.583
+<v Fabrice Frantz>est plutôt cool,
+c'est que dans l'étape une si tu veux-je</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/196-0
+00:19:46.438 --> 00:19:47.798
+<v Benjamin Chareyron>Absolument, c'est une très bonne idée.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/197-2
+00:19:46.583 --> 00:19:51.747
+<v Fabrice Frantz>peux peut être te partager un écran et
+TAC alors attends bouge pas ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/197-3
+00:19:51.747 --> 00:19:53.638
+<v Fabrice Frantz>Voilà on reste chez canal.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/198-0
+00:19:54.038 --> 00:19:57.518
+<v Fabrice Frantz>On prend un film au pif,
+j'ai envie de dire Terminator 2 3D.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/199-0
+00:19:58.918 --> 00:20:02.150
+<v Fabrice Frantz>Tiens voilà,
+ça fait longtemps que je l'ai pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/199-1
+00:20:02.150 --> 00:20:05.726
+<v Fabrice Frantz>commandé celui-là.
+Donc tu order ton œuvre. Pardon,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/199-2
+00:20:05.726 --> 00:20:10.678
+<v Fabrice Frantz>je suis pas du tout dans l'œuvre,
+je suis dans la tu clears ton basket.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/200-0
+00:20:12.878 --> 00:20:16.089
+<v Fabrice Frantz>Tu order ton œuvre, voilà,
+t'as orderé ton œuvre,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/200-1
+00:20:16.089 --> 00:20:17.438
+<v Fabrice Frantz>tu go to your basket.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/202-0
+00:20:19.678 --> 00:20:25.599
+<v Fabrice Frantz>Patiente patiemment là tu dis je voudrais
+faire un bundle Maker pour Amazon.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/202-1
+00:20:25.599 --> 00:20:31.598
+<v Fabrice Frantz>Allez Amazon on est des oufs Amazon et tu
+creates là tu patientes patiemment.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/203-0
+00:20:30.598 --> 00:20:32.668
+<v Benjamin Chareyron>Déjà,
+est-ce que tu sais m'expliquer Fabrice,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/203-1
+00:20:32.668 --> 00:20:34.198
+<v Benjamin Chareyron>pourquoi est-ce que y a autant de.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/206-0
+00:20:34.598 --> 00:20:38.370
+<v Fabrice Frantz>De tout ça là parce que j'ai fait tous
+ces profils là,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/204-0
+00:20:35.438 --> 00:20:35.718
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/206-1
+00:20:38.370 --> 00:20:43.996
+<v Fabrice Frantz>parce que ce sont toutes des plateformes
+différentes et parce que nous avons tout</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/206-2
+00:20:43.996 --> 00:20:49.278
+<v Fabrice Frantz>le temps une petite diff entre film et
+série TV, film et série TV, série TV.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/205-0
+00:20:46.598 --> 00:20:47.008
+<v Benjamin Chareyron>D'accord ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/209-0
+00:20:49.558 --> 00:20:53.227
+<v Fabrice Frantz>Donc c'est qu'il y a film ailleurs et à
+chaque fois j'ai un profil spécifique</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/209-1
+00:20:53.227 --> 00:20:57.037
+<v Fabrice Frantz>film et un profil spécifique série télé
+parce que ce sont pas les mêmes éléments</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/209-2
+00:20:57.037 --> 00:21:00.801
+<v Fabrice Frantz>qui sont attendus par les plateformes.
+Genre on parlait artwork tout à l'heure.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/207-0
+00:20:59.158 --> 00:20:59.838
+<v Benjamin Chareyron>Donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/209-3
+00:21:00.801 --> 00:21:02.918
+<v Fabrice Frantz>Un artwork de film c'est un artwork de
+film.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/208-0
+00:21:01.238 --> 00:21:01.598
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/212-0
+00:21:01.478 --> 00:21:04.666
+<v Alexis Benatar>Et y a un supplément,
+un supplément HDR aussi où on est dans</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/212-1
+00:21:04.666 --> 00:21:08.691
+<v Alexis Benatar>certains cas l'énormes étant différentes,
+on est obligé de faire des profils</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/212-2
+00:21:08.691 --> 00:21:11.148
+<v Alexis Benatar>différents.
+Donc ça c'est un point de un point</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/210-0
+00:21:10.638 --> 00:21:12.438
+<v Fabrice Frantz>En plus ? Ah oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/212-3
+00:21:11.148 --> 00:21:15.121
+<v Alexis Benatar>d'amélioration aussi potentiellement,
+c'est de pouvoir déplacer ce genre de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/212-4
+00:21:15.121 --> 00:21:15.958
+<v Alexis Benatar>choses ailleurs.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/211-0
+00:21:16.478 --> 00:21:17.438
+<v Benjamin Chareyron>OK.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/213-0
+00:21:16.758 --> 00:21:18.078
+<v Alexis Benatar>Et d'avoir moins de profil au début.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/215-0
+00:21:18.598 --> 00:21:21.363
+<v Benjamin Chareyron>Et ce truc-là,
+il est géré aujourd'hui par les fameux</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/215-1
+00:21:21.363 --> 00:21:22.848
+<v Benjamin Chareyron>XML de plateforme, c'est ça ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/216-0
+00:21:23.078 --> 00:21:23.558
+<v Fabrice Frantz>Tout à fait.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/217-0
+00:21:23.158 --> 00:21:23.878
+<v Alexis Benatar>Exactement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/219-0
+00:21:25.238 --> 00:21:27.918
+<v Benjamin Chareyron>Donc y a un XML par plateforme par
+provider.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/218-0
+00:21:25.558 --> 00:21:26.758
+<v Alexis Benatar>Donc c'est vrai que ça serait plus simple.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/220-0
+00:21:29.158 --> 00:21:29.358
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/221-0
+00:21:30.518 --> 00:21:31.008
+<v Alexis Benatar>C'est ça ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/222-0
+00:21:31.958 --> 00:21:36.067
+<v Benjamin Chareyron>Qui définit complètement la ******* du
+XML de sortie finale quoi et des assets</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/222-1
+00:21:36.067 --> 00:21:36.848
+<v Benjamin Chareyron>qui vont avec ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/224-0
+00:21:36.438 --> 00:21:39.728
+<v Fabrice Frantz>Qui définit le workflow,
+le workflow du Bundle ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/223-0
+00:21:37.238 --> 00:21:39.318
+<v Alexis Benatar>Et la fabrication de tout.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/225-0
+00:21:40.598 --> 00:21:40.878
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/226-0
+00:21:40.878 --> 00:21:42.638
+<v Alexis Benatar>Donc tout ce qui est fabrication de
+fichiers aussi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/227-0
+00:21:45.238 --> 00:21:50.438
+<v Benjamin Chareyron>Ok donc ensuite tu m'as dit les champs
+nécessaires, VDM et territoire notamment.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/228-0
+00:21:48.838 --> 00:21:50.678
+<v Fabrice Frantz>Donc ça c'est ton.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/229-0
+00:21:52.438 --> 00:21:57.441
+<v Fabrice Frantz>Des territoires ça va être il en faut au
+moins un mais on va mettre l'Allemagne en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/229-1
+00:21:57.441 --> 00:22:02.144
+<v Fabrice Frantz>plus comme ça tu verras pourquoi et en
+fait à chaque fois que tu rajoutes des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/229-2
+00:22:02.144 --> 00:22:06.122
+<v Fabrice Frantz>territoires ça va te t'enrichir la partie
+configuration required.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/229-3
+00:22:06.122 --> 00:22:09.318
+<v Fabrice Frantz>Je t'ai pas parlé de tous ces components
+différents.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/231-0
+00:22:09.358 --> 00:22:13.123
+<v Fabrice Frantz>On va le faire après.
+L'idée c'est que j'ai un trailer,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/231-1
+00:22:13.123 --> 00:22:16.351
+<v Fabrice Frantz>des artworks,
+un film et du carton de doublage.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/231-2
+00:22:16.351 --> 00:22:20.789
+<v Fabrice Frantz>Ça c'est le standard ultime.
+Dans l'absolu. Tu as mis tes 2 pays,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/230-0
+00:22:19.878 --> 00:22:20.278
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/231-3
+00:22:20.789 --> 00:22:25.631
+<v Fabrice Frantz>tu t'aperçois que tu as de l'audio et de
+l'audio pour la France et pour</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/231-4
+00:22:25.631 --> 00:22:26.438
+<v Fabrice Frantz>l'Allemagne.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/233-0
+00:22:26.678 --> 00:22:29.311
+<v Fabrice Frantz>Audiodesk audiodesk pour la France et
+pour l'Allemagne,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/233-1
+00:22:29.311 --> 00:22:32.038
+<v Fabrice Frantz>j'aurais mis que la France,
+j'aurais qu'une ligne France,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/232-0
+00:22:29.478 --> 00:22:29.878
+<v Benjamin Chareyron>Nathalie.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/233-2
+00:22:32.038 --> 00:22:34.483
+<v Fabrice Frantz>j'aurais mis 12 pays,
+j'aurais 12 lignes de chaque.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/233-3
+00:22:34.483 --> 00:22:37.916
+<v Fabrice Frantz>Là il faut que je trouve une image.
+A priori je vais prendre celle-là ou</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/233-4
+00:22:37.916 --> 00:22:41.395
+<v Fabrice Frantz>celle-là donc je vais prendre la
+restaurer et du fait que j'ai trouvé une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/233-5
+00:22:41.395 --> 00:22:41.678
+<v Fabrice Frantz>image.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/234-0
+00:22:42.518 --> 00:22:45.078
+<v Fabrice Frantz>Il a été capable de me trouver un son qui
+n'est pas dispo.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/235-0
+00:22:45.958 --> 00:22:49.360
+<v Fabrice Frantz>Mais il me l'a quand même mis valide.
+Donc là faut pas se formaliser,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/235-1
+00:22:49.360 --> 00:22:53.346
+<v Fabrice Frantz>c'est à toi d'être plus malin que la bête
+et de t'apercevoir que tu vas le mettre</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/235-2
+00:22:53.346 --> 00:22:53.638
+<v Fabrice Frantz>en VO.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/236-0
+00:22:54.918 --> 00:22:56.932
+<v Fabrice Frantz>Là,
+il se passe un truc depuis la dernière</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/236-1
+00:22:56.932 --> 00:22:59.180
+<v Fabrice Frantz>mise à jour,
+ça casse les couilles d'une force,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/236-2
+00:22:59.180 --> 00:23:00.398
+<v Fabrice Frantz>il me manque la moitié du.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/237-0
+00:23:02.198 --> 00:23:03.328
+<v Fabrice Frantz>La moitié du pop-up là ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/238-0
+00:23:04.838 --> 00:23:10.196
+<v Fabrice Frantz>Ah bah tiens il est revenu je sais pas
+pourquoi. Bref j'ai mon image restaurée,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/238-1
+00:23:10.196 --> 00:23:14.416
+<v Fabrice Frantz>j'ai mon audio BO 5120 comme la spec de
+la plateforme le veut.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/238-2
+00:23:14.416 --> 00:23:19.976
+<v Fabrice Frantz>Je suis content je passe à une en dessous
+audio français je dois select un langage</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/238-3
+00:23:19.976 --> 00:23:21.718
+<v Fabrice Frantz>alors je choisis français.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/239-0
+00:23:22.278 --> 00:23:24.598
+<v Fabrice Frantz>Là, il me dit, tu veux quoi ? Ah.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/240-0
+00:23:25.998 --> 00:23:26.758
+<v Fabrice Frantz>J'en ai pas quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/241-0
+00:23:28.198 --> 00:23:31.998
+<v Fabrice Frantz>J'ai pas pris le bon content.
+Non c'est pas possible. Audio allemand,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/241-1
+00:23:31.998 --> 00:23:35.309
+<v Fabrice Frantz>tu veux de l'Allemand,
+tu choisis ton allemand. J'en ai pas,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/241-2
+00:23:35.309 --> 00:23:36.558
+<v Fabrice Frantz>il est nul mon exemple.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/242-0
+00:23:39.558 --> 00:23:40.558
+<v Fabrice Frantz>Ouais, j'ai pas d'année non plus.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/243-0
+00:23:39.958 --> 00:23:44.214
+<v Alexis Benatar>Et en même temps ça c'est un des
+problèmes je pense quand tu passes des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/243-1
+00:23:44.214 --> 00:23:48.471
+<v Alexis Benatar>commandes de Maker enfin moi pour
+régulièrement quand je suis obligé de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/243-2
+00:23:48.471 --> 00:23:52.787
+<v Alexis Benatar>quand j'essaie de refaire des reproduire
+les problématiques des clients,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/243-3
+00:23:52.787 --> 00:23:57.575
+<v Alexis Benatar>je me demande dans quelle mesure ils sont
+pas obligés systématiquement d'avoir à</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/243-4
+00:23:57.575 --> 00:23:58.758
+<v Alexis Benatar>côté un onglet avec.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/244-0
+00:23:57.758 --> 00:24:00.638
+<v Fabrice Frantz>La, le catalogue, Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/245-0
+00:23:59.078 --> 00:24:02.861
+<v Alexis Benatar>Et avec l'œuvre pour faire le tri dans ce
+qui serait dispo ou autre pour s'y</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/245-1
+00:24:02.861 --> 00:24:03.648
+<v Alexis Benatar>retrouver quoi ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/247-0
+00:24:04.598 --> 00:24:07.033
+<v Fabrice Frantz>Soit c'est ils ont une gestion eux-mêmes
+les assets,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/247-1
+00:24:07.033 --> 00:24:10.524
+<v Fabrice Frantz>et ils savent très bien où ils sont.
+Soit c'est comme moi là tu t'es loupé,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/247-2
+00:24:10.524 --> 00:24:14.199
+<v Fabrice Frantz>tu as choisi le content restored with
+different teddit et t'aurais pas du parce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/247-3
+00:24:14.199 --> 00:24:17.507
+<v Fabrice Frantz>que tu as pas d'asset français ou pas
+d'asset allemand dans ce content.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/247-4
+00:24:17.507 --> 00:24:21.045
+<v Fabrice Frantz>Et bah c'est quand tu t'aperçois en
+configurant ton bundle que tu les as pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/247-5
+00:24:21.045 --> 00:24:21.918
+<v Fabrice Frantz>que tu reviens à 0.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/248-0
+00:24:22.078 --> 00:24:25.993
+<v Fabrice Frantz>Quand tu reviens à 0 t'as pu voir à quel
+point on a patienté là et à chaque fois</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/246-0
+00:24:22.358 --> 00:24:22.838
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/248-1
+00:24:25.993 --> 00:24:27.878
+<v Fabrice Frantz>que tu reviens à 0 tu patientes de ouf.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/249-0
+00:24:31.638 --> 00:24:34.417
+<v Fabrice Frantz>Sachant que j'étais pas forcément obligé
+de revenir à 0 mais je voulais te montrer</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/249-1
+00:24:34.417 --> 00:24:34.518
+<v Fabrice Frantz>ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/250-0
+00:24:35.718 --> 00:24:40.518
+<v Fabrice Frantz>Parce que c'est en choisissant cette
+image là que à priori tu vas choisir,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/250-1
+00:24:40.518 --> 00:24:45.126
+<v Fabrice Frantz>tu vas choisir un truc là par exemple tu
+vois j'ai de l'audio français.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/250-2
+00:24:45.126 --> 00:24:49.478
+<v Fabrice Frantz>Néanmoins je sais que pour Amazon je dois
+mettre une image VO avec.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/251-0
+00:24:53.718 --> 00:24:56.118
+<v Fabrice Frantz>Je dois mettre une image avec mon audio
+VO.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/252-0
+00:24:57.798 --> 00:25:02.358
+<v Fabrice Frantz>Donc bah ça c'est il est relou ce bug
+très relou.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/253-0
+00:25:06.198 --> 00:25:10.536
+<v Fabrice Frantz>Parce que ça c'est les sous-titres et en
+fait là sur cette ligne là vidéo là en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/253-1
+00:25:10.536 --> 00:25:14.983
+<v Fabrice Frantz>dessous de cette case je devrais avoir la
+case avec les audios et là la case avec</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/253-2
+00:25:14.983 --> 00:25:19.159
+<v Fabrice Frantz>les audios elle a disparu au-dessus je
+devrais avoir la case avec la version</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/253-3
+00:25:19.159 --> 00:25:20.678
+<v Fabrice Frantz>image, elle a disparu aussi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/254-0
+00:25:21.478 --> 00:25:24.123
+<v Fabrice Frantz>Je sais pas comment la faire réapparaître,
+je sais pas comment elle a réapparu tout</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/254-1
+00:25:24.123 --> 00:25:24.438
+<v Fabrice Frantz>à l'heure.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/255-0
+00:25:31.158 --> 00:25:34.730
+<v Fabrice Frantz>Ah bah là il est revenu.
+Voilà c'est une question d'humeur.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/255-1
+00:25:34.730 --> 00:25:39.017
+<v Fabrice Frantz>Donc là j'ai bien une image avec audio VO,
+un alternate audio français,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/255-2
+00:25:39.017 --> 00:25:43.840
+<v Fabrice Frantz>un alternate audio allemand qui lui n'est
+que en stéréo parce que j'ai pas de 5K</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/255-3
+00:25:43.840 --> 00:25:46.758
+<v Fabrice Frantz>visiblement alors que j'ai de la 5K en
+français.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/256-0
+00:25:47.798 --> 00:25:51.518
+<v Fabrice Frantz>Une audio desk dans chaque langue y en a
+pas, donc on va l'étage.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/257-0
+00:25:52.078 --> 00:25:52.318
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/258-0
+00:25:53.238 --> 00:25:57.911
+<v Fabrice Frantz>Les sous-titres full partial et SDH se
+s'implémentent eux-mêmes automatiquement</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/258-1
+00:25:57.911 --> 00:26:02.000
+<v Fabrice Frantz>à partir du moment où les plateformes les
+trouvent. Et ça c'est cool,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/258-2
+00:26:02.000 --> 00:26:06.557
+<v Fabrice Frantz>ça il y en a pas donc ça RIP et là il y
+en a pas. Sinon ils auraient été mis,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/258-3
+00:26:06.557 --> 00:26:09.478
+<v Fabrice Frantz>ils auraient été affichés là et ce serait
+valide.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/259-0
+00:26:09.918 --> 00:26:15.621
+<v Fabrice Frantz>Et là pareil il y en a pas donc ça les
+sous-titres SDH les sous-titres partiels</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/259-1
+00:26:15.621 --> 00:26:19.827
+<v Fabrice Frantz>ils sont en dur dans le package de base
+parce que dans 99,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/259-2
+00:26:19.827 --> 00:26:24.603
+<v Fabrice Frantz>9% de tes commandes tu en auras.
+Et c'est ça fait aussi un peu une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/259-3
+00:26:24.603 --> 00:26:25.958
+<v Fabrice Frantz>antisèche comme ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/260-0
+00:26:26.038 --> 00:26:27.238
+<v Fabrice Frantz>T'oublies pas de les mettre.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/263-0
+00:26:28.438 --> 00:26:32.392
+<v Fabrice Frantz>T'es forcé de les enlever quand ils sont
+pas dispo mais au moins t'oublies pas de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/263-1
+00:26:32.392 --> 00:26:35.960
+<v Fabrice Frantz>les mettre quand ils sont dispo.
+Carton de doublage il y en a pas donc tu</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/263-2
+00:26:35.960 --> 00:26:39.576
+<v Fabrice Frantz>peux virer le component et là le
+component carton de doublage il a ripé le</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/261-0
+00:26:37.758 --> 00:26:38.118
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/263-3
+00:26:39.576 --> 00:26:42.518
+<v Fabrice Frantz>Feature tu peux pas le virer c'est un
+component obligatoire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/262-0
+00:26:42.838 --> 00:26:43.278
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/264-0
+00:26:43.878 --> 00:26:46.924
+<v Fabrice Frantz>L'artwork,
+pareil que les audio et les sous-titres,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/264-1
+00:26:46.924 --> 00:26:49.678
+<v Fabrice Frantz>tu as des artworks qui sont déclinés par
+pays.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/265-0
+00:26:50.518 --> 00:26:50.878
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/266-0
+00:26:51.238 --> 00:26:54.478
+<v Fabrice Frantz>Et tu as des verticaux,
+tu as des horizontaux,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/266-1
+00:26:54.478 --> 00:26:59.374
+<v Fabrice Frantz>tu as des héros et tu as des 2/3.
+Le 2/3 là c'est un peu la même chose</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/266-2
+00:26:59.374 --> 00:27:02.959
+<v Fabrice Frantz>qu'un vertical, mais parfois pas trop.
+Par exemple,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/266-3
+00:27:02.959 --> 00:27:08.199
+<v Fabrice Frantz>tu pourrais avoir un artwork de série et
+un artwork de saison et un artwork</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/266-4
+00:27:08.199 --> 00:27:08.958
+<v Fabrice Frantz>d'épisodes.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/267-0
+00:27:09.878 --> 00:27:11.278
+<v Fabrice Frantz>Et les 3 verticaux.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/269-0
+00:27:12.358 --> 00:27:16.370
+<v Fabrice Frantz>Et là t'en aurais un vertical,
+puis là t'en auras un 2e vertical,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/269-1
+00:27:16.370 --> 00:27:20.990
+<v Fabrice Frantz>puis y en auras un 3e vertical qui
+s'appellerait série ou season Network et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/268-0
+00:27:20.358 --> 00:27:20.518
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/269-2
+00:27:20.990 --> 00:27:25.732
+<v Fabrice Frantz>donc là l'idée ça c'est la granularité
+dont parlait Alexis tout à l'heure qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/269-3
+00:27:25.732 --> 00:27:27.678
+<v Fabrice Frantz>dit que dans la plateforme on a.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/270-0
+00:27:28.278 --> 00:27:32.001
+<v Fabrice Frantz>Ça c'est un artwork poster Hero.
+Un Hero c'est la gueule du héros de ta</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/270-1
+00:27:32.001 --> 00:27:35.621
+<v Fabrice Frantz>série ou de ton film mais pas de titre,
+pas de texte sur ton artwork.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/270-2
+00:27:35.621 --> 00:27:38.051
+<v Fabrice Frantz>Un artwork horizontal ou un artwork
+vertical ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/270-3
+00:27:38.051 --> 00:27:41.878
+<v Fabrice Frantz>Bon bah déjà tu sais à quoi il ressemble
+et surtout eux ils ont le titre.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/271-0
+00:27:43.078 --> 00:27:48.166
+<v Fabrice Frantz>Alors que le Hero il a pas de titre et ça
+c'est une finesse qui a pas dans VDM</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/271-1
+00:27:48.166 --> 00:27:53.061
+<v Fabrice Frantz>Connect donc quand tu importes tes trucs
+de VDM Connect dans la plateforme,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/271-2
+00:27:53.061 --> 00:27:57.634
+<v Fabrice Frantz>ce subtype ne sera pas importé parce
+qu'il existe pas dans VDM Connect</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/271-3
+00:27:57.634 --> 00:27:58.278
+<v Fabrice Frantz>néanmoins.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/272-0
+00:27:58.358 --> 00:28:04.866
+<v Fabrice Frantz>Ça t'empêche pas d'aller choisir une
+Picture à chaque fois et de t'apercevoir</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/272-1
+00:28:04.866 --> 00:28:06.118
+<v Fabrice Frantz>que y en a pas.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/273-0
+00:28:07.238 --> 00:28:10.632
+<v Fabrice Frantz>Du coup celle-là ça va être compliqué
+parce qu'on peut pas la virer.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/273-1
+00:28:10.632 --> 00:28:14.519
+<v Fabrice Frantz>On a une option SET to Worldwide et là
+j'ai une image Worldwide et là elle est</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/273-2
+00:28:14.519 --> 00:28:18.258
+<v Fabrice Frantz>valide. Et si je set to to Worldwide,
+Ben en fait je m'aperçois que je vais</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/273-3
+00:28:18.258 --> 00:28:21.358
+<v Fabrice Frantz>peut être pouvoir les trouver mes
+artworks pour tout le monde.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/274-0
+00:28:22.038 --> 00:28:26.526
+<v Fabrice Frantz>Sauf ces 2 là OK ces 2 là très bien donc
+je pourrais avoir un Hero,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/274-1
+00:28:26.526 --> 00:28:31.278
+<v Fabrice Frantz>un horizontal et un vertical qui seraient
+tous plus ou moins les mêmes.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/275-0
+00:28:30.518 --> 00:28:32.566
+<v Benjamin Chareyron>Ok,
+tu peux n'importe quelle ligne de son</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/275-1
+00:28:32.566 --> 00:28:35.638
+<v Benjamin Chareyron>territoire actuel pour lui dire OK,
+c'est pas grave, c'est du.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/277-0
+00:28:36.518 --> 00:28:39.696
+<v Fabrice Frantz>Ouais parce que à priori Terminator 2,
+s'il y a pas de sous-titre,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/277-1
+00:28:39.696 --> 00:28:41.878
+<v Fabrice Frantz>le titre il marche dans le monde entier
+quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/278-0
+00:28:42.998 --> 00:28:45.385
+<v Alexis Benatar>Par contre comme tu peux le voir,
+si t'as fait ça,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/278-1
+00:28:45.385 --> 00:28:48.475
+<v Alexis Benatar>tu peux pas le refaire dans l'autre sens
+sur une ligne. Oh *****,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/278-2
+00:28:48.475 --> 00:28:49.318
+<v Alexis Benatar>je me suis planté.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/280-0
+00:28:49.798 --> 00:28:54.091
+<v Fabrice Frantz>Alors si ce qui sous-entend que tu
+cancelles toutes les modifs que tu avais</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/280-1
+00:28:54.091 --> 00:28:58.214
+<v Fabrice Frantz>fait dans tous tes onglets jusqu'à
+présent et tu vas retrouver et tu vas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/279-0
+00:28:54.518 --> 00:28:56.998
+<v Alexis Benatar>Ouais non mais c'est un peu ce que je
+disais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/280-2
+00:28:58.214 --> 00:29:02.903
+<v Fabrice Frantz>retrouver ça et tu vas recommencer à 0 tu
+vas kiffer et enfin tu as un trailer qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/280-3
+00:29:02.903 --> 00:29:05.558
+<v Fabrice Frantz>lui manque aussi pareil un bout de la
+case là.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/281-0
+00:29:05.958 --> 00:29:09.318
+<v Fabrice Frantz>Donc là je sais pas comment je vais faire
+pour pouvoir la faire apparaître, mais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/282-0
+00:29:14.198 --> 00:29:15.958
+<v Fabrice Frantz>Voilà donc là je devrais choisir.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/283-0
+00:29:15.078 --> 00:29:18.998
+<v Alexis Benatar>De toute façon la mécanique c'est la même
+que sur les donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/285-0
+00:29:19.318 --> 00:29:22.639
+<v Fabrice Frantz>Voilà et donc je devrais avoir ces 3
+lignes là ça c'est les sous-titres que</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/285-1
+00:29:22.639 --> 00:29:26.091
+<v Fabrice Frantz>j'incrusterais si j'avais envie de forcer
+de l'incrustage de sous-titres à mon</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/285-2
+00:29:26.091 --> 00:29:29.674
+<v Fabrice Frantz>transco et donc dans mon trailer je suis
+censé avoir pareil une version image une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/284-0
+00:29:26.158 --> 00:29:26.278
+<v Benjamin Chareyron>Ah.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/285-3
+00:29:29.674 --> 00:29:33.039
+<v Fabrice Frantz>version est ce que tu veux incruster des
+sous-titres ? Et ça c'est l'audio ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/285-4
+00:29:33.039 --> 00:29:34.438
+<v Fabrice Frantz>Ah non ça c'est les sous-titres.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/286-0
+00:29:34.758 --> 00:29:37.358
+<v Fabrice Frantz>Ah oula bah voilà, tu vois,
+c'est quand même simple.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/287-0
+00:29:40.638 --> 00:29:41.478
+<v Fabrice Frantz>C'est magnifique.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/288-0
+00:29:44.278 --> 00:29:47.638
+<v Fabrice Frantz>Je l'ai fait apparaître, il a redisparu,
+je saurais pas le faire revenir.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/289-0
+00:29:48.998 --> 00:29:49.238
+<v Fabrice Frantz>Monde.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/290-0
+00:29:50.918 --> 00:29:54.532
+<v Fabrice Frantz>Ah bah si voilà.
+Donc tu choisis une version image en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/290-1
+00:29:54.532 --> 00:29:58.415
+<v Fabrice Frantz>fonction de ta version image.
+T'as du son ou t'en as pas.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/290-2
+00:29:58.415 --> 00:30:02.297
+<v Fabrice Frantz>Si t'as pas de son,
+tu viens la langue forcée là et tu la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/290-3
+00:30:02.297 --> 00:30:04.038
+<v Fabrice Frantz>mets en version originale.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/291-0
+00:30:06.118 --> 00:30:09.118
+<v Fabrice Frantz>T'essayes de sortir de là pour retourner
+sur le bordel,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/291-1
+00:30:09.118 --> 00:30:11.798
+<v Fabrice Frantz>mais bon ça a pas l'air de chez marre des
+masses.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/292-0
+00:30:15.638 --> 00:30:17.824
+<v Fabrice Frantz>Voilà,
+c'est tout ce que j'ai à dire à propos de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/293-0
+00:30:17.318 --> 00:30:20.609
+<v Benjamin Chareyron>Ok, concrètement,
+toute cette configuration, grosso modo,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/292-1
+00:30:17.824 --> 00:30:17.958
+<v Fabrice Frantz>ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/293-1
+00:30:20.609 --> 00:30:22.198
+<v Benjamin Chareyron>si je comprends bien, c'est.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/296-0
+00:30:23.358 --> 00:30:27.836
+<v Benjamin Chareyron>S'assurer que pour chaque, territoire,
+on a ce qu'il faut côté assets,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/296-1
+00:30:27.836 --> 00:30:32.820
+<v Benjamin Chareyron>le fait que tu la fasses autant à la main,
+est-ce que c'est un requirements ou</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/295-0
+00:30:28.038 --> 00:30:28.398
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/296-2
+00:30:32.820 --> 00:30:34.208
+<v Benjamin Chareyron>est-ce que c'est une ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/297-0
+00:30:35.078 --> 00:30:37.286
+<v Benjamin Chareyron>Douleur en fait,
+parce que t'as quand même énormément de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/297-1
+00:30:37.286 --> 00:30:38.758
+<v Benjamin Chareyron>choses à input quoi j'ai l'impression.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/298-0
+00:30:39.238 --> 00:30:40.928
+<v Fabrice Frantz>Alors ça peut ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/299-0
+00:30:40.278 --> 00:30:43.219
+<v Alexis Benatar>C'est une douleur,
+imagine que t'as des livraisons qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/299-1
+00:30:43.219 --> 00:30:45.358
+<v Alexis Benatar>peuvent être sur 10, 15, 20 territoires.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/300-0
+00:30:46.518 --> 00:30:46.918
+<v Benjamin Chareyron>Benjamin.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/301-0
+00:30:46.598 --> 00:30:50.758
+<v Fabrice Frantz>Et d'une série de 10, 15,
+20 épisodes sur 15, 20 territoires.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/305-0
+00:30:50.238 --> 00:30:53.819
+<v Benjamin Chareyron>Parce qu'on est,
+on est d'accord qu'on est complètement en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/303-0
+00:30:50.278 --> 00:30:52.278
+<v Alexis Benatar>Bah même sur un film donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/305-1
+00:30:53.819 --> 00:30:58.614
+<v Benjamin Chareyron>capacité de nous remplir ce truc là,
+parce qu'en fait c'est déjà ce qu'on fait</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/305-2
+00:30:58.614 --> 00:31:02.984
+<v Benjamin Chareyron>concrètement en suggérant dans les
+différents drop down tout ce qui est</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/305-3
+00:31:02.984 --> 00:31:04.198
+<v Benjamin Chareyron>sélectionnable quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/306-0
+00:31:05.078 --> 00:31:07.446
+<v Alexis Benatar>Ouais bah oui,
+c'est juste qu'on n'est pas allé au bout</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/304-0
+00:31:06.118 --> 00:31:06.278
+<v Fabrice Frantz>Jero.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/306-1
+00:31:07.446 --> 00:31:08.758
+<v Alexis Benatar>de l'assistance là-dessus quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/308-0
+00:31:08.678 --> 00:31:12.237
+<v Fabrice Frantz>Et ça comme on a pu le voir sur les
+sous-titres, les sous-titres,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/308-1
+00:31:12.237 --> 00:31:16.012
+<v Fabrice Frantz>il y a absolument aucune sélection à
+faire. Si t'as choisi une image,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/307-0
+00:31:14.278 --> 00:31:14.638
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/308-2
+00:31:16.012 --> 00:31:20.219
+<v Fabrice Frantz>t'as choisi un content en fait parce que
+ça c'est a priori tes images y a des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/308-3
+00:31:20.219 --> 00:31:24.318
+<v Fabrice Frantz>chances qu'elles soient chacune dans un
+content. Donc quand tu dis je veux.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/309-0
+00:31:24.398 --> 00:31:28.873
+<v Fabrice Frantz>Cette image là l'image originale OAR du
+film Tu te retrouves dans le content qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/309-1
+00:31:28.873 --> 00:31:32.244
+<v Fabrice Frantz>contient cette image là.
+Dans ce content y a d'autres trucs,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/309-2
+00:31:32.244 --> 00:31:36.609
+<v Fabrice Frantz>tout ce qu'il va trouver genre pour les
+sous-titres qui match je veux des full</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/309-3
+00:31:36.609 --> 00:31:40.919
+<v Fabrice Frantz>french il va te les mettre d'office et
+cette ligne là je l'ai pas configurée,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/309-4
+00:31:40.919 --> 00:31:43.958
+<v Fabrice Frantz>elle était configurée toute seule
+celle-là aussi donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/310-0
+00:31:44.198 --> 00:31:47.813
+<v Fabrice Frantz>Tout ce qu'il trouve lui-même,
+il le fait par contre à partir du moment</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/310-1
+00:31:47.813 --> 00:31:48.918
+<v Fabrice Frantz>où là il y a un doute.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/311-0
+00:31:49.798 --> 00:31:53.407
+<v Fabrice Frantz>Et un choix possible.
+En fait il nous laisse le choix donc ça</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/311-1
+00:31:53.407 --> 00:31:57.017
+<v Fabrice Frantz>nous fait à nous une couche de config
+supplémentaire à faire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/311-2
+00:31:57.017 --> 00:32:01.558
+<v Fabrice Frantz>Après dans l'absolu t'es censé livrer le
+mieux à ta plateforme mais c'est pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/311-3
+00:32:01.558 --> 00:32:05.517
+<v Fabrice Frantz>parce que t'es censé livrer le mieux que
+t'as vendu un Dolby atmos,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/311-4
+00:32:05.517 --> 00:32:06.798
+<v Fabrice Frantz>un Dolby vision, un 7.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/312-0
+00:32:06.918 --> 00:32:09.839
+<v Fabrice Frantz>.
+1 et tout ça et machin t'as peut être</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/312-1
+00:32:09.839 --> 00:32:15.536
+<v Fabrice Frantz>vendu une version tout que de en SD et
+avec que de la Stéréo et donc tu as la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/312-2
+00:32:15.536 --> 00:32:20.356
+<v Fabrice Frantz>possibilité de d'adapter ton bundle à ton
+éventuel deal exotique.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/312-3
+00:32:20.356 --> 00:32:25.980
+<v Fabrice Frantz>Sauf que pareil ça c'est pour moi c'est
+supposé être à la marge de chez à la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/312-4
+00:32:25.980 --> 00:32:26.638
+<v Fabrice Frantz>marge et.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/313-0
+00:32:26.678 --> 00:32:30.630
+<v Fabrice Frantz>donc dans 99% du temps tu te retrouves à
+configurer ton bundle à la main là où tu</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/313-1
+00:32:30.630 --> 00:32:32.318
+<v Fabrice Frantz>mets tout le temps les mêmes infos.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/314-0
+00:32:33.798 --> 00:32:35.878
+<v Benjamin Chareyron>Ok,
+donc concrètement ça pourrait être</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/314-1
+00:32:35.878 --> 00:32:38.544
+<v Benjamin Chareyron>remplacé par une notion de configuration
+globale.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/314-2
+00:32:38.544 --> 00:32:41.318
+<v Benjamin Chareyron>Je veux livrer Terminator en France et en
+Belgique.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/315-0
+00:32:42.678 --> 00:32:46.438
+<v Benjamin Chareyron>En OR et 5 points.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/317-0
+00:32:47.078 --> 00:32:51.572
+<v Fabrice Frantz>Et ouais et enfin après y a les specs,
+y a les specs de ta plateforme qui font</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/316-0
+00:32:48.998 --> 00:32:49.558
+<v Alexis Benatar>Ch</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/317-1
+00:32:51.572 --> 00:32:56.009
+<v Fabrice Frantz>que si tu veux livrer du 5 un tu vas
+aussi livrer du 2 0 mais ça a priori ton</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/317-2
+00:32:56.009 --> 00:32:57.318
+<v Fabrice Frantz>back office il le sait.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/318-0
+00:32:56.198 --> 00:32:58.923
+<v Alexis Benatar>Non mais ça c'est pas la,
+ça devrait pas être la problématique du</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/319-0
+00:32:58.758 --> 00:33:02.847
+<v Fabrice Frantz>Voilà voilà et donc et donc ça c'est nous
+qui sommes censés le savoir et qui sommes</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/318-1
+00:32:58.923 --> 00:33:00.038
+<v Alexis Benatar>client en fait, c'est donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/319-1
+00:33:02.847 --> 00:33:06.790
+<v Fabrice Frantz>censés remplir les choses intelligemment
+par rapport à ce que le client demande.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/319-2
+00:33:06.790 --> 00:33:10.344
+<v Fabrice Frantz>Mais le client lui il dit Moi je veux de
+la HD, de l'Ultra HD, de la SD,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/319-3
+00:33:10.344 --> 00:33:12.826
+<v Fabrice Frantz>je veux de la VO,
+je veux de la VF et point Barre.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/319-4
+00:33:12.826 --> 00:33:15.358
+<v Fabrice Frantz>Je suis même pas sûr qu'il dise je veux
+de la 5 un.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/321-0
+00:33:16.998 --> 00:33:20.785
+<v Fabrice Frantz>Je pense que le gars il dit Ouais bah
+voilà mets-moi de la VO mets-moi de la VF</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/320-0
+00:33:17.558 --> 00:33:18.758
+<v Alexis Benatar>Bah c'est pas son problème ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/321-1
+00:33:20.785 --> 00:33:21.638
+<v Fabrice Frantz>fin de l'histoire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/322-0
+00:33:22.438 --> 00:33:23.318
+<v Benjamin Chareyron>LOR quand même.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/324-0
+00:33:24.278 --> 00:33:27.833
+<v Fabrice Frantz>Bah lui le client il s'en fout mais oui
+parce que c'est tout ce qu'on livre aux</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/323-0
+00:33:24.638 --> 00:33:26.358
+<v Alexis Benatar>Oui, oui, oui, oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/324-1
+00:33:27.833 --> 00:33:28.678
+<v Fabrice Frantz>plateformes, c'est.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/325-0
+00:33:29.438 --> 00:33:33.638
+<v Benjamin Chareyron>On s'en fout mais entre 1239 et un 77
+c'est quand même pas la même image.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/326-0
+00:33:33.878 --> 00:33:35.961
+<v Fabrice Frantz>Non mais c'est le 2 39 qu'on va livrer à
+la plateforme,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/326-1
+00:33:35.961 --> 00:33:37.078
+<v Fabrice Frantz>quelle que soit la plateforme.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/329-0
+00:33:37.638 --> 00:33:39.265
+<v Benjamin Chareyron>D'accord,
+donc en fait y a que la qualité quoi,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/329-1
+00:33:39.265 --> 00:33:40.758
+<v Benjamin Chareyron>y a que la qualité et les territoires
+quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/327-0
+00:33:39.558 --> 00:33:39.918
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/328-0
+00:33:40.998 --> 00:33:41.358
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/330-0
+00:33:41.318 --> 00:33:46.364
+<v Alexis Benatar>Mais bon, tu vois, tu viens de dire,
+on livre les plateformes que en pourtant</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/330-1
+00:33:46.364 --> 00:33:48.758
+<v Alexis Benatar>on propose les formats recadrés donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/331-0
+00:33:46.798 --> 00:33:50.065
+<v Fabrice Frantz>Oui oui et si tu vas celui-là,
+tu vas pas le livrer,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/331-1
+00:33:50.065 --> 00:33:52.038
+<v Fabrice Frantz>tu peux quand même le commander.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/333-0
+00:33:53.798 --> 00:33:56.198
+<v Alexis Benatar>Donc manque de sécurité, tout ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/332-0
+00:33:54.758 --> 00:33:55.638
+<v Fabrice Frantz>Mais en vrai, ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/334-0
+00:33:57.158 --> 00:34:01.162
+<v Fabrice Frantz>Non mais ça c'est parce que en fait au
+début du début du début bundle Maker il</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/334-1
+00:34:01.162 --> 00:34:05.217
+<v Fabrice Frantz>marchait tellement pas bien que on a été
+obligé d'ouvrir des trucs pour pouvoir</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/334-2
+00:34:05.217 --> 00:34:08.714
+<v Fabrice Frantz>réussir à arriver à nos fins.
+Si par exemple là tu regardes la liste</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/334-3
+00:34:08.714 --> 00:34:11.400
+<v Fabrice Frantz>des audios,
+en fait tous les audios que tu vois sauf</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/334-4
+00:34:11.400 --> 00:34:11.958
+<v Fabrice Frantz>le dernier.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/336-0
+00:34:12.358 --> 00:34:16.310
+<v Fabrice Frantz>Sont les langues qui sont qui
+correspondent au pays de destination,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/336-1
+00:34:16.310 --> 00:34:19.332
+<v Fabrice Frantz>donc français, Québécois, Breton,
+Corse et Occitan.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/335-0
+00:34:17.078 --> 00:34:17.438
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/336-2
+00:34:19.332 --> 00:34:23.285
+<v Fabrice Frantz>Tout ça c'est francophone.
+Donc toutes les langues francophones qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/336-3
+00:34:23.285 --> 00:34:26.598
+<v Fabrice Frantz>existent dans la base de données,
+elles apparaissent là.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/337-0
+00:34:27.158 --> 00:34:31.285
+<v Fabrice Frantz>Et tout en bas de cette drop down,
+j'ai fait rajouter un jour la version</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/337-1
+00:34:31.285 --> 00:34:35.186
+<v Fabrice Frantz>originale parce que parfois on a besoin
+de forcer l'audio à English,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/337-2
+00:34:35.186 --> 00:34:38.918
+<v Fabrice Frantz>parce que là si on le met pas,
+il se met à français spontanément.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/338-0
+00:34:40.838 --> 00:34:45.483
+<v Fabrice Frantz>Donc l'idée c'était mets moi la VO là
+tout en bas comme ça si jamais je suis un</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/338-1
+00:34:45.483 --> 00:34:49.141
+<v Fabrice Frantz>client un peu rock and roll et que j'ai
+pas d'image originale,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/338-2
+00:34:49.141 --> 00:34:53.845
+<v Fabrice Frantz>que j'ai que une image localisée ou que
+j'ai que une image en un 77 et localisée</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/338-3
+00:34:53.845 --> 00:34:57.678
+<v Fabrice Frantz>française de mon film américain,
+et Ben en fait il faudra que je.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/339-0
+00:34:57.758 --> 00:34:59.078
+<v Fabrice Frantz>Puisse choisir une image.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/341-0
+00:35:00.358 --> 00:35:05.265
+<v Fabrice Frantz>Localiser française de mon film américain
+et rajouter un audio VO parce que l'audio</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/341-1
+00:35:05.265 --> 00:35:09.996
+<v Fabrice Frantz>VO je l'ai et en fait l'idée c'était de
+pouvoir jongler entre qu'est ce que j'ai</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/340-0
+00:35:07.078 --> 00:35:07.398
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/341-2
+00:35:09.996 --> 00:35:13.209
+<v Fabrice Frantz>en version image,
+qu'est ce que j'ai en piste audio et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/341-3
+00:35:13.209 --> 00:35:17.999
+<v Fabrice Frantz>éventuellement en sous-titre et comment
+je peux faire pour configurer ça quel que</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/341-4
+00:35:17.999 --> 00:35:19.168
+<v Fabrice Frantz>soit mon catalogue ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/342-0
+00:35:20.118 --> 00:35:24.048
+<v Benjamin Chareyron>Qui a une notion de best efforts en fait
+à fournir par la plateforme ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/343-0
+00:35:24.838 --> 00:35:25.078
+<v Fabrice Frantz>Oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/344-0
+00:35:25.398 --> 00:35:27.398
+<v Benjamin Chareyron>En mode je livre le Max que je puisse.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/346-0
+00:35:28.558 --> 00:35:31.800
+<v Benjamin Chareyron>Dans la meilleure qualité que je puisse
+et si je peux pas, je t'avertis,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/345-0
+00:35:28.758 --> 00:35:30.518
+<v Fabrice Frantz>Ouais, le mieux, ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/346-1
+00:35:31.800 --> 00:35:34.998
+<v Benjamin Chareyron>ça veut pas dire que je te bloque,
+ça veut juste dire que je t'avertis.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/348-0
+00:35:37.398 --> 00:35:37.758
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/347-0
+00:35:37.638 --> 00:35:38.358
+<v Alexis Benatar>C'est pas mal ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/349-0
+00:35:40.918 --> 00:35:42.838
+<v Benjamin Chareyron>A l'air d'avoir des doutes sur ce que je
+viens de dire Fabrice.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/351-0
+00:35:42.758 --> 00:35:46.539
+<v Fabrice Frantz>Non j'ai pas des doutes c'est je suis en
+train de réfléchir sur le je te bloque ou</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/351-1
+00:35:46.539 --> 00:35:49.955
+<v Fabrice Frantz>je t'avertis et en fait je suis en train
+de me demander dans quelle mesure</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/351-2
+00:35:49.955 --> 00:35:53.645
+<v Fabrice Frantz>j'aurais intérêt à ce que tu me bloques
+genre j'ai commandé l'image en un 77 bah</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/351-3
+00:35:53.645 --> 00:35:57.153
+<v Fabrice Frantz>je m'en bats les couilles que tu me
+bloques laisse moi tranquille je fais ce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/351-4
+00:35:57.153 --> 00:35:59.158
+<v Fabrice Frantz>que je veux donc oui tu m'avertis ça me
+va.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/350-0
+00:35:59.958 --> 00:36:00.278
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/352-0
+00:36:00.998 --> 00:36:02.558
+<v Fabrice Frantz>Tu me bloques pas, tu m'avertis juste.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/353-0
+00:36:04.798 --> 00:36:09.278
+<v Benjamin Chareyron>Sachant que est-ce qu'il y a des cas où
+une livraison pourrait être refusée à</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/353-1
+00:36:09.278 --> 00:36:12.208
+<v Benjamin Chareyron>cause d'une mauvaise configuration de ce
+truc-là ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/354-0
+00:36:13.038 --> 00:36:14.848
+<v Fabrice Frantz>Oui,
+si jamais t'avais livré la mauvaise</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/354-1
+00:36:14.848 --> 00:36:15.158
+<v Fabrice Frantz>langue.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/355-0
+00:36:16.518 --> 00:36:20.776
+<v Fabrice Frantz>Ou une version de sous-titres en polonais
+alors que on t'attend des sous-titres en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/355-1
+00:36:20.776 --> 00:36:23.958
+<v Fabrice Frantz>français ou des comme ça,
+mais dans ce cas, c'est une erreur.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/357-0
+00:36:24.918 --> 00:36:28.667
+<v Alexis Benatar>Non mais c'est surtout que c'est là,
+c'est bordé par les profils et la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/357-1
+00:36:28.667 --> 00:36:31.835
+<v Alexis Benatar>mécanique de la plateforme.
+Si tu commandes pour la France,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/356-0
+00:36:28.678 --> 00:36:29.248
+<v Fabrice Frantz>C'est ça ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/357-2
+00:36:31.835 --> 00:36:35.638
+<v Alexis Benatar>tu vas pas livrer des sous-titres
+espagnols, tu peux pas le faire donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/358-0
+00:36:34.118 --> 00:36:37.133
+<v Fabrice Frantz>Voilà donc ton erreur,
+si tu voulais la faire,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/358-1
+00:36:37.133 --> 00:36:40.278
+<v Fabrice Frantz>tu t'appliquerais à réussir à la faire et
+c'est.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/360-0
+00:36:39.878 --> 00:36:41.993
+<v Benjamin Chareyron>Ah non, justement,
+il faut qu'on fasse attention à ça,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/359-0
+00:36:41.118 --> 00:36:43.318
+<v Alexis Benatar>Non, tu peux pas, tu peux pas le faire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/360-1
+00:36:41.993 --> 00:36:43.878
+<v Benjamin Chareyron>il faut pas,
+il faut pas le permettre justement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/361-0
+00:36:44.118 --> 00:36:44.918
+<v Fabrice Frantz>Oui, oui, non, mais oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/362-0
+00:36:44.598 --> 00:36:45.838
+<v Alexis Benatar>Là c'est pas permis actuellement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/363-0
+00:36:46.878 --> 00:36:50.033
+<v Alexis Benatar>Tout ce qui est tout ça c'est géré en
+amont par la création du profil qui est</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/363-1
+00:36:50.033 --> 00:36:53.188
+<v Alexis Benatar>en lien avec la plateforme donc tu peux
+pas commander des choses que t'es pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/363-2
+00:36:53.188 --> 00:36:54.038
+<v Alexis Benatar>censé pouvoir livrer.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/364-0
+00:36:55.118 --> 00:36:57.078
+<v Alexis Benatar>Et ça, faut que ça reste comme ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/365-0
+00:36:57.478 --> 00:36:57.758
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/366-0
+00:36:58.198 --> 00:37:01.220
+<v Benjamin Chareyron>Donc sachant qu'aujourd'hui lorsque cette
+config elle est mauvaise mais que le</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/366-1
+00:37:01.220 --> 00:37:04.166
+<v Benjamin Chareyron>client passe quand même la commande,
+ce qui peut pas arriver si je comprends</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/366-2
+00:37:04.166 --> 00:37:05.238
+<v Benjamin Chareyron>bien puisque tout est bordé.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/367-0
+00:37:07.558 --> 00:37:08.358
+<v Benjamin Chareyron>Point d'interrogation.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/368-0
+00:37:07.718 --> 00:37:09.318
+<v Alexis Benatar>C'est ça ? Oui, oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/369-0
+00:37:08.358 --> 00:37:09.478
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/370-0
+00:37:09.878 --> 00:37:10.198
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/371-0
+00:37:10.678 --> 00:37:10.838
+<v Fabrice Frantz>Oh.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/372-0
+00:37:11.478 --> 00:37:12.758
+<v Benjamin Chareyron>On va garder ce système.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/373-0
+00:37:12.758 --> 00:37:13.118
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/374-0
+00:37:15.558 --> 00:37:17.958
+<v Fabrice Frantz>Et puis là, par exemple,
+les sous-titres allemands.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/375-0
+00:37:17.078 --> 00:37:21.238
+<v Alexis Benatar>On veut l'améliorer par contre,
+parce qu'il est un peu pénible par moment.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/376-0
+00:37:22.198 --> 00:37:22.758
+<v Benjamin Chareyron>Tout à fait.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/377-0
+00:37:23.718 --> 00:37:26.510
+<v Fabrice Frantz>Là si je prends l'exemple des sous-titres
+allemands,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/377-1
+00:37:26.510 --> 00:37:30.250
+<v Fabrice Frantz>je vais avoir toutes les langues
+germanophones de mes sous-titres donc</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/377-2
+00:37:30.250 --> 00:37:33.517
+<v Fabrice Frantz>allemand en bas de ma dropdown je vais
+avoir la VO au cas où.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/377-3
+00:37:33.517 --> 00:37:37.784
+<v Fabrice Frantz>Parce que la VO on l'a mise partout tout
+en bas de chacune des dropdown de cette</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/377-4
+00:37:37.784 --> 00:37:38.838
+<v Fabrice Frantz>colonne language là.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/378-0
+00:37:39.398 --> 00:37:43.713
+<v Fabrice Frantz>Et si jamais je veux aller plus loin que
+mes sous-titres allemands ou anglais,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/378-1
+00:37:43.713 --> 00:37:48.137
+<v Fabrice Frantz>je peux set to worldwide et là j'aurai
+les sous-titres dans la version originale</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/378-2
+00:37:48.137 --> 00:37:50.923
+<v Fabrice Frantz>de l'œuvre,
+mais jamais je pourrais les choisir de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/378-3
+00:37:50.923 --> 00:37:55.238
+<v Fabrice Frantz>l'italien, de l'espagnol, du Portugais,
+sachant que c'est français, Allemagne.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/380-0
+00:37:55.638 --> 00:38:00.196
+<v Alexis Benatar>Bah là après on est dans le détail,
+mais même ce truc-là de pouvoir</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/379-0
+00:37:56.478 --> 00:37:58.518
+<v Fabrice Frantz>Voilà donc ça, on reste.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/380-1
+00:38:00.196 --> 00:38:05.158
+<v Alexis Benatar>sélectionner des sous-titres anglais
+quand t'es sur de l'allemand, c'est.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/382-0
+00:38:02.838 --> 00:38:06.032
+<v Fabrice Frantz>En vrai c'est là oui,
+mais c'est là que ça devient intéressant,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/382-1
+00:38:06.032 --> 00:38:08.478
+<v Fabrice Frantz>c'est là parce que là t'auras peut-être
+des SDH.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/381-0
+00:38:07.238 --> 00:38:08.598
+<v Alexis Benatar>C'est pas normal.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/384-0
+00:38:09.878 --> 00:38:12.406
+<v Benjamin Chareyron>Ouais mais du coup là t'es en train de
+livrer un sous-titre sur un territoire</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/383-0
+00:38:11.718 --> 00:38:14.598
+<v Alexis Benatar>Ouais, t'es en train de tordre et donc.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/384-1
+00:38:12.406 --> 00:38:14.838
+<v Benjamin Chareyron>français qui est un territoire anglais
+qui est un sous-titre anglais quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/385-0
+00:38:22.918 --> 00:38:23.398
+<v Fabrice Frantz>Pas que.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/386-0
+00:38:23.478 --> 00:38:25.008
+<v Alexis Benatar>Qui peut être problématique ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/387-0
+00:38:25.598 --> 00:38:30.013
+<v Fabrice Frantz>Parce que si je prends les Allemands, là,
+le fait de leur ****** des SDH anglais,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/387-1
+00:38:30.013 --> 00:38:32.598
+<v Fabrice Frantz>ça leur ira très bien. Nous,
+on va s'offusquer.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/390-0
+00:38:31.678 --> 00:38:34.631
+<v Alexis Benatar>Ouais mais c'est pas le cas pour tous les
+territoires et là tu vois pour la France</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/388-0
+00:38:33.798 --> 00:38:34.198
+<v Fabrice Frantz>No.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/390-1
+00:38:34.631 --> 00:38:36.518
+<v Alexis Benatar>tu peux faire la même chose et ça c'est
+un problème.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/389-0
+00:38:35.638 --> 00:38:35.958
+<v Fabrice Frantz>Oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/392-0
+00:38:37.718 --> 00:38:42.667
+<v Alexis Benatar>Donc y a quand même une gestion des
+droits et des limitations par territoire</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/392-1
+00:38:42.667 --> 00:38:47.809
+<v Alexis Benatar>qui là et dont on tient pas compte dans
+ces dans cette situation-là juste parce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/392-2
+00:38:47.809 --> 00:38:52.438
+<v Alexis Benatar>qu'on a voulu régler parce qu'il était un
+enfin contourner un problème.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/393-0
+00:38:53.118 --> 00:38:54.478
+<v Alexis Benatar>Toi que tu as réglé, je pense.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/394-0
+00:38:54.758 --> 00:38:58.338
+<v Fabrice Frantz>Ouais ou un problème de source pas
+original et uniquement localisé ou pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/394-1
+00:38:58.338 --> 00:39:01.918
+<v Fabrice Frantz>localisé et uniquement original en mode
+oui mais c'est bon mais c'est des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/394-2
+00:39:01.918 --> 00:39:05.256
+<v Fabrice Frantz>Allemands mais livre leur les sous-titres
+anglais, ils se démerdent.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/394-3
+00:39:05.256 --> 00:39:06.998
+<v Fabrice Frantz>Ça arrive que des clients disent ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/396-0
+00:39:07.158 --> 00:39:09.558
+<v Alexis Benatar>Oui mais sauf que c'est pas forcément
+possible,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/395-0
+00:39:07.878 --> 00:39:08.798
+<v Fabrice Frantz>Et donc c'est.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/400-0
+00:39:08.278 --> 00:39:11.527
+<v Benjamin Chareyron>Est-ce que est-ce que dans ce cas-là,
+est-ce que dans ce cas-là la solution ce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/396-1
+00:39:09.558 --> 00:39:11.558
+<v Alexis Benatar>ça doit pas être possible tout le temps.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/400-1
+00:39:11.527 --> 00:39:14.407
+<v Benjamin Chareyron>serait pas plutôt de laisser la
+possibilité de enfin de d'empêcher de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/400-2
+00:39:14.407 --> 00:39:17.574
+<v Benjamin Chareyron>mettre ça à Germany et plus d'avoir une
+case Worldwide où tu peux mettre tes</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/400-3
+00:39:17.574 --> 00:39:20.371
+<v Benjamin Chareyron>sous-titres par défaut quoi.
+Parce que c'est un peu ce que tu es en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/398-0
+00:39:19.798 --> 00:39:20.518
+<v Alexis Benatar>C'est oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/397-0
+00:39:20.038 --> 00:39:20.438
+<v Fabrice Frantz>No.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/400-4
+00:39:20.371 --> 00:39:21.318
+<v Benjamin Chareyron>train de faire en fait.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/399-0
+00:39:21.518 --> 00:39:22.118
+<v Fabrice Frantz>Alors oui et non.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/401-0
+00:39:21.638 --> 00:39:24.682
+<v Alexis Benatar>C'est exactement ça,
+c'est qu'on a tendu une mécanique là où</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/401-1
+00:39:24.682 --> 00:39:28.424
+<v Alexis Benatar>il faudrait pouvoir ajouter une ligne en
+disant Bah pour ce territoire-là,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/401-2
+00:39:28.424 --> 00:39:31.718
+<v Alexis Benatar>j'aimerais bien aussi livrer un truc en
+anglais avec par exemple.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/402-0
+00:39:32.918 --> 00:39:33.878
+<v Fabrice Frantz>Sachant qu'on peut.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/403-0
+00:39:32.998 --> 00:39:37.374
+<v Alexis Benatar>Et avec une quand même une sécurité qui
+dit que c'est possible ou pas parce que</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/403-1
+00:39:37.374 --> 00:39:40.438
+<v Alexis Benatar>c'est pas possible pour tous les
+territoires justement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/404-0
+00:39:40.038 --> 00:39:42.528
+<v Benjamin Chareyron>Et ça, c'est ça, c'est marqué par quoi ?
+Par les specs des providers ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/408-0
+00:39:43.238 --> 00:39:46.153
+<v Alexis Benatar>Ouais, je pense qu'on a ces genres d'info.
+Ouais,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/405-0
+00:39:44.198 --> 00:39:44.598
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/406-0
+00:39:44.358 --> 00:39:45.038
+<v Fabrice Frantz>Et encore.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/408-1
+00:39:46.153 --> 00:39:49.827
+<v Alexis Benatar>on pourrait retrouver Je pense que on a
+ce genre d'info aussi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/408-2
+00:39:49.827 --> 00:39:52.918
+<v Alexis Benatar>Côté package éditeur,
+c'est une mine d'informations.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/407-0
+00:39:51.638 --> 00:39:52.278
+<v Fabrice Frantz>Ça ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/409-0
+00:39:54.518 --> 00:39:55.318
+<v Fabrice Frantz>Et de.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/410-0
+00:39:54.518 --> 00:39:58.505
+<v Benjamin Chareyron>Donc en fait il y a une notion de
+fallback en fait si je comprends bien,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/410-1
+00:39:58.505 --> 00:40:02.547
+<v Benjamin Chareyron>t'as l'asset qui est attendue par la
+plateforme de base mais on permet de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/410-2
+00:40:02.547 --> 00:40:07.081
+<v Benjamin Chareyron>définir un fallback global global à tout
+ou global juste à cette ligne là première</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/410-3
+00:40:07.081 --> 00:40:11.396
+<v Benjamin Chareyron>question qui permet donc de quand même
+livrer quelque chose même si on n'a pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/410-4
+00:40:11.396 --> 00:40:12.598
+<v Benjamin Chareyron>l'asset original quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/411-0
+00:40:13.238 --> 00:40:14.518
+<v Benjamin Chareyron>Sur certains territoires uniquement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/412-0
+00:40:15.398 --> 00:40:19.131
+<v Alexis Benatar>Sur certains territoires et pour
+différents types d'assets,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/412-1
+00:40:19.131 --> 00:40:22.678
+<v Alexis Benatar>effectivement tu peux avoir cette option
+supplémentaire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/414-0
+00:40:23.358 --> 00:40:26.487
+<v Benjamin Chareyron>Du coup est-ce que c'est un asset
+fullback sur sous-titres vidéo et audio</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/414-1
+00:40:26.487 --> 00:40:29.869
+<v Benjamin Chareyron>qui s'applique à tous les territoires ou
+est-ce que c'est un asset fullback qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/414-2
+00:40:29.869 --> 00:40:33.168
+<v Benjamin Chareyron>s'applique au sur le sous-titre français
+sur le sous-titre German et cetera ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/413-0
+00:40:33.478 --> 00:40:34.358
+<v Fabrice Frantz>Alors je.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/415-0
+00:40:33.718 --> 00:40:36.038
+<v Alexis Benatar>C'est valable pour tous les types
+d'assets mais c'est par territoire,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/415-1
+00:40:36.038 --> 00:40:38.558
+<v Alexis Benatar>c'est à dire que tous les territoires
+n'accepteront pas ce genre de choses.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/417-0
+00:40:39.798 --> 00:40:43.755
+<v Fabrice Frantz>Et pour la petite histoire aussi,
+quel que soit le nombre de pays de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/417-1
+00:40:43.755 --> 00:40:47.828
+<v Fabrice Frantz>destination ou de territoire de
+destination que tu vas mettre dans ton</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/417-2
+00:40:47.828 --> 00:40:50.466
+<v Fabrice Frantz>basket,
+a priori t'auras qu'une seule version</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/417-3
+00:40:50.466 --> 00:40:53.105
+<v Fabrice Frantz>image,
+t'auras qu'une ligne avec une image et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/416-0
+00:40:51.238 --> 00:40:51.638
+<v Benjamin Chareyron>Oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/417-4
+00:40:53.105 --> 00:40:54.998
+<v Fabrice Frantz>t'auras X audio et X sous-titres.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/418-0
+00:40:55.478 --> 00:40:58.925
+<v Fabrice Frantz>Un par pays.
+Mais ton image a priori elle est supposée</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/418-1
+00:40:58.925 --> 00:41:02.185
+<v Fabrice Frantz>être unique.
+C'est l'intérêt de faire un package et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/418-2
+00:41:02.185 --> 00:41:06.134
+<v Fabrice Frantz>donc de bundle Maker.
+Et tout ça c'est que tu ne livres qu'une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/418-3
+00:41:06.134 --> 00:41:09.958
+<v Fabrice Frantz>seule vidéo originale,
+originale dans la mesure du possible.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/419-0
+00:41:10.438 --> 00:41:13.478
+<v Fabrice Frantz>Et après tu rajoutes tous tes audios
+alternatifs dans toutes les langues et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/419-1
+00:41:13.478 --> 00:41:14.598
+<v Fabrice Frantz>pareil avec tes sous-titres.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/420-0
+00:41:16.118 --> 00:41:20.377
+<v Fabrice Frantz>Donc ta question une de y a 3 secondes et
+demie qui disait est-ce que fallback</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/420-1
+00:41:20.377 --> 00:41:24.368
+<v Fabrice Frantz>ligne à ligne ou est-ce que fallback
+global moi je dirais ligne à ligne ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/421-0
+00:41:26.278 --> 00:41:28.398
+<v Alexis Benatar>C'est ça en fonction des territoires.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/422-0
+00:41:30.118 --> 00:41:30.848
+<v Alexis Benatar>Et les assiettes ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/424-0
+00:41:31.438 --> 00:41:34.339
+<v Benjamin Chareyron>OK ce que tu viens de dire Fabrice,
+c'est intéressant.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/424-1
+00:41:34.339 --> 00:41:38.348
+<v Benjamin Chareyron>Par contre c'est sur cette notion de
+vidéo tu on livre tout le temps qu'une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/424-2
+00:41:38.348 --> 00:41:42.041
+<v Benjamin Chareyron>seule vidéo du coup c'est ça ?
+Qu'est ce que vient faire le Territory</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/423-0
+00:41:40.598 --> 00:41:40.958
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/424-3
+00:41:42.041 --> 00:41:43.888
+<v Benjamin Chareyron>France sur cette ligne là du coup ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/425-0
+00:41:44.198 --> 00:41:48.008
+<v Fabrice Frantz>Bah c'est-à-dire que le problème c'est
+que le territory tu l'as mis avant</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/425-1
+00:41:48.008 --> 00:41:48.678
+<v Fabrice Frantz>d'arriver là.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/426-0
+00:41:49.078 --> 00:41:49.398
+<v Benjamin Chareyron>Oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/430-0
+00:41:49.798 --> 00:41:53.375
+<v Fabrice Frantz>Donc quand tu arrives là,
+il a fallu mettre un truc dans la case là</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/427-0
+00:41:50.038 --> 00:41:52.238
+<v Alexis Benatar>Là, c'est un manque de finesse je pense.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/430-1
+00:41:53.375 --> 00:41:57.530
+<v Fabrice Frantz>et le truc dans la case c'est le premier
+territoire que tu as mis parce que là</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/430-2
+00:41:57.530 --> 00:42:00.371
+<v Fabrice Frantz>c'est France.
+Mais si jamais je vire France et que je</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/430-3
+00:42:00.371 --> 00:42:03.422
+<v Fabrice Frantz>laisse Germanie en premier et que je
+remets France en 2e,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/428-0
+00:42:02.678 --> 00:42:03.078
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/430-4
+00:42:03.422 --> 00:42:05.158
+<v Fabrice Frantz>là et Ben là pouf c'est Germanie.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/429-0
+00:42:04.278 --> 00:42:04.838
+<v Benjamin Chareyron>C'est l'inverse.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/431-0
+00:42:05.758 --> 00:42:08.146
+<v Benjamin Chareyron>On est d'accord que cette notion de
+territoire sur la vidéo,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/431-1
+00:42:08.146 --> 00:42:09.008
+<v Benjamin Chareyron>elle n'a pas de sens ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/432-0
+00:42:09.318 --> 00:42:10.368
+<v Fabrice Frantz>Bah au début, non ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/435-0
+00:42:10.358 --> 00:42:14.056
+<v Alexis Benatar>Elle pourrait en avoir si ?
+Parce que là en plus en l'occurrence on</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/435-1
+00:42:14.056 --> 00:42:18.516
+<v Alexis Benatar>revient aussi dans un autre problématique
+de on a tendu le truc pour se faciliter</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/435-2
+00:42:18.516 --> 00:42:20.963
+<v Alexis Benatar>la vie.
+Si tu fais du multi territoire comme</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/433-0
+00:42:19.718 --> 00:42:19.958
+<v Fabrice Frantz>Oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/435-3
+00:42:20.963 --> 00:42:23.955
+<v Alexis Benatar>disait Fabrice,
+t'as qu'une seule vidéo et cette vidéo</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/435-4
+00:42:23.955 --> 00:42:25.478
+<v Alexis Benatar>elle devrait être originale.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/434-0
+00:42:26.038 --> 00:42:26.598
+<v Fabrice Frantz>Fin de l'histoire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/438-0
+00:42:26.398 --> 00:42:29.786
+<v Alexis Benatar>Donc si tu fais du multi territoire tu
+devrais pas avoir cette option-là,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/438-1
+00:42:29.786 --> 00:42:33.449
+<v Alexis Benatar>tu devrais être sur un Worldwide de base.
+Par contre ça peut avoir du sens dans</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/436-0
+00:42:30.958 --> 00:42:32.038
+<v Fabrice Frantz>Et en fait, tu devrais être comme ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/438-2
+00:42:33.449 --> 00:42:36.792
+<v Alexis Benatar>certains types d'exploitation pour
+certains clients qui font beaucoup de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/438-3
+00:42:36.792 --> 00:42:40.501
+<v Alexis Benatar>mono territoires et Ben typiquement SMD
+où ils ont beaucoup d'images localisées.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/438-4
+00:42:40.501 --> 00:42:43.478
+<v Alexis Benatar>Donc quand tu fais du mono territoire
+pour ton territoire cible.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/437-0
+00:42:41.318 --> 00:42:41.638
+<v Benjamin Chareyron>Oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/440-0
+00:42:43.558 --> 00:42:45.959
+<v Alexis Benatar>Tu peux envisager de livrer une image
+localisée,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/440-1
+00:42:45.959 --> 00:42:49.732
+<v Alexis Benatar>donc dans ces cas-là ça a du sens,
+mais dans le cas dans cet exemple qu'on a</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/439-0
+00:42:46.598 --> 00:42:46.758
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/440-2
+00:42:49.732 --> 00:42:52.918
+<v Alexis Benatar>ici du multi-territoire,
+on devrait même pas avoir cette option.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/441-0
+00:42:54.758 --> 00:42:56.318
+<v Fabrice Frantz>En fait,
+ça devrait être Worldwide de base.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/442-0
+00:42:56.878 --> 00:42:57.278
+<v Benjamin Chareyron>A veces.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/443-0
+00:42:57.558 --> 00:43:00.688
+<v Fabrice Frantz>Et image VO audio VO et rien d'incrusté à
+l'image.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/443-1
+00:43:00.688 --> 00:43:03.758
+<v Fabrice Frantz>Et en fait ça devrait être le
+comportement idéal.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/443-2
+00:43:03.758 --> 00:43:08.791
+<v Fabrice Frantz>Et ça sous-entend que tout le monde a les
+images en version originale de tout ses</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/443-3
+00:43:08.791 --> 00:43:09.958
+<v Fabrice Frantz>tout son catalogue.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/444-0
+00:43:11.958 --> 00:43:15.612
+<v Benjamin Chareyron>Bah pas forcément parce qu'encore une
+fois si on part sur une notion de best</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/444-1
+00:43:15.612 --> 00:43:19.503
+<v Benjamin Chareyron>effort de la part de Bundle Maker tu vois
+il va aller chercher la meilleure vidéo</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/444-2
+00:43:19.503 --> 00:43:22.872
+<v Benjamin Chareyron>possible de la feature et il peut
+remonter l'information à user que la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/444-3
+00:43:22.872 --> 00:43:26.478
+<v Benjamin Chareyron>meilleure vidéo c'est du original.
+Attention par contre pour ce film là y a</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/444-4
+00:43:26.478 --> 00:43:27.238
+<v Benjamin Chareyron>que une version.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/445-0
+00:43:28.278 --> 00:43:30.339
+<v Benjamin Chareyron>German,
+est-ce que tu veux livrer quand même la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/445-1
+00:43:30.339 --> 00:43:32.615
+<v Benjamin Chareyron>France avec ?
+On laisse le faire parce que c'est pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/445-2
+00:43:32.615 --> 00:43:34.719
+<v Benjamin Chareyron>interdit par la plateforme si je
+comprends bien,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/445-3
+00:43:34.719 --> 00:43:38.155
+<v Benjamin Chareyron>mais y a pas de notion de configuration
+de la part du user en fait concrètement</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/446-0
+00:43:37.798 --> 00:43:42.824
+<v Fabrice Frantz>En fait il y a une notion de pas interdit
+par la plateforme là que je peux pas te</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/445-4
+00:43:38.155 --> 00:43:38.928
+<v Benjamin Chareyron>derrière tout ça ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/446-1
+00:43:42.824 --> 00:43:47.789
+<v Fabrice Frantz>laisser dire parce qu'en fait il y a ce
+que les plateformes autorisent ou pas et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/446-2
+00:43:47.789 --> 00:43:52.448
+<v Fabrice Frantz>il y a ce que les clients tapent du poing
+sur la table ou pas. Donc quand ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/448-0
+00:43:52.838 --> 00:43:56.435
+<v Fabrice Frantz>Tu dis c'est autorisé par la plateforme
+en fait non mais le client qui est le</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/447-0
+00:43:55.798 --> 00:43:56.318
+<v Benjamin Chareyron>D'accord.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/448-1
+00:43:56.435 --> 00:44:00.170
+<v Fabrice Frantz>propriétaire de son œuvre il a dit non
+mais moi j'ai rien d'autre et il le dit à</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/448-2
+00:44:00.170 --> 00:44:02.291
+<v Fabrice Frantz>nous,
+il le dit à Amazon ou à iTunes ou à qui</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/448-3
+00:44:02.291 --> 00:44:04.597
+<v Fabrice Frantz>tu veux et c'est comme ça et c'est pas
+autrement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/448-4
+00:44:04.597 --> 00:44:07.318
+<v Fabrice Frantz>Donc je vais livrer ça sur votre Store.
+Fin de l'histoire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/450-0
+00:44:07.798 --> 00:44:12.038
+<v Benjamin Chareyron>Mais du coup là c'est nous qui nous ont
+défoncé, du coup c'est pas lui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/449-0
+00:44:07.878 --> 00:44:08.398
+<v Fabrice Frantz>Mais en fait.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/451-0
+00:44:11.558 --> 00:44:15.172
+<v Fabrice Frantz>Ou pas ou pas ? Parce que c'est lui,
+c'est lui qui quand même qui a des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/451-1
+00:44:15.172 --> 00:44:19.137
+<v Fabrice Frantz>comptes à rendre auprès de sa plateforme.
+Mais si il a dealé en amont que pour</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/451-2
+00:44:19.137 --> 00:44:22.952
+<v Fabrice Frantz>Terminator 2 il allait livrer une image
+allemande parce qu'il a Pas d'image</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/451-3
+00:44:22.952 --> 00:44:24.358
+<v Fabrice Frantz>originale, bah il l'a dealé.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/453-0
+00:44:25.958 --> 00:44:26.758
+<v Fabrice Frantz>Et.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/452-0
+00:44:26.278 --> 00:44:26.518
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/456-0
+00:44:26.478 --> 00:44:29.488
+<v Alexis Benatar>La,
+problématique qu'on a actuellement et en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/456-1
+00:44:29.488 --> 00:44:32.633
+<v Alexis Benatar>fait,
+elle se retranscrit dans les profils des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/456-2
+00:44:32.633 --> 00:44:37.316
+<v Alexis Benatar>plateformes justement concrets,
+c'est que dans ces profils à la base,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/456-3
+00:44:37.316 --> 00:44:41.398
+<v Alexis Benatar>on applique les specs de la plateforme
+qu'on doit livrer et.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/455-0
+00:44:40.758 --> 00:44:41.878
+<v Fabrice Frantz>Et après, il faut les tordre.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/454-0
+00:44:40.918 --> 00:44:41.238
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/457-0
+00:44:41.558 --> 00:44:45.490
+<v Alexis Benatar>Ça arrive souvent que on torde un peu,
+qu'on ajoute des options supplémentaires</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/457-1
+00:44:45.490 --> 00:44:49.177
+<v Alexis Benatar>parce que ils auraient dealé que ils
+pouvaient livrer telle ou telle chose</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/457-2
+00:44:49.177 --> 00:44:52.078
+<v Alexis Benatar>alors que c'est pas forcément
+spécialement dans les specs.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/459-0
+00:44:53.198 --> 00:44:55.918
+<v Alexis Benatar>Donc on fait, on fait du custom.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/458-0
+00:44:53.878 --> 00:44:54.198
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/460-0
+00:44:56.518 --> 00:45:00.734
+<v Fabrice Frantz>Et c'est pour ça que c'est set to
+Worldwide là ils existent et que sinon tu</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/460-1
+00:45:00.734 --> 00:45:05.283
+<v Fabrice Frantz>peux aller choisir parmi des dropdown là
+de toutes les langues et ainsi de suite.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/460-2
+00:45:05.283 --> 00:45:09.610
+<v Fabrice Frantz>Parce qu'il y a un moment il a fallu
+qu'on torde le cou à la machine un petit</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/460-3
+00:45:09.610 --> 00:45:11.718
+<v Fabrice Frantz>peu stricte qu'on avait fait au début.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/461-0
+00:45:12.078 --> 00:45:16.791
+<v Fabrice Frantz>Parce que on a des clients qui sortent de
+la strictitude des choses et qui exigent</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/461-1
+00:45:16.791 --> 00:45:20.198
+<v Fabrice Frantz>quand même de pouvoir avoir leur
+livraison qui aboutissent.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/463-0
+00:45:22.478 --> 00:45:24.649
+<v Benjamin Chareyron>Ok,
+c'est quelque chose qui arrive</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/462-0
+00:45:22.518 --> 00:45:23.878
+<v Fabrice Frantz>Et donc a priori.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/463-1
+00:45:24.649 --> 00:45:25.518
+<v Benjamin Chareyron>régulièrement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/464-0
+00:45:26.278 --> 00:45:27.158
+<v Fabrice Frantz>Chez SND, oui.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/465-0
+00:45:27.718 --> 00:45:28.118
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/468-0
+00:45:27.718 --> 00:45:31.851
+<v Alexis Benatar>Non mais CND ils font du mono-territoire.
+C'est là en fait où on se retrouve</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/466-0
+00:45:31.078 --> 00:45:31.398
+<v Fabrice Frantz>Benjamin.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/468-1
+00:45:31.851 --> 00:45:36.145
+<v Alexis Benatar>clairement très honnêtement le cas de
+multi-territoire où tu balances une balle</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/468-2
+00:45:36.145 --> 00:45:40.118
+<v Alexis Benatar>localisée qui a rien à voir avec la
+choucroute, ça doit ça arrive jamais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/467-0
+00:45:41.158 --> 00:45:41.398
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/469-0
+00:45:41.558 --> 00:45:42.198
+<v Alexis Benatar>Je pense.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/470-0
+00:45:43.158 --> 00:45:43.758
+<v Alexis Benatar>Très honnêtement.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/471-0
+00:45:45.918 --> 00:45:50.203
+<v Benjamin Chareyron>Donc on a un comportement encore une fois
+best effort qui est là pour convenir au</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/471-1
+00:45:50.203 --> 00:45:52.765
+<v Benjamin Chareyron>maximum et réduire la friction le plus
+possible.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/471-2
+00:45:52.765 --> 00:45:56.789
+<v Benjamin Chareyron>Mais il faut quand même permettre de
+sortir de ce comportement-là en settant</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/471-3
+00:45:56.789 --> 00:46:00.866
+<v Benjamin Chareyron>les trucs manuellement dans la mesure du
+possible des specs de la plateforme.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/471-4
+00:46:00.866 --> 00:46:01.598
+<v Benjamin Chareyron>Voire du coup.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/472-0
+00:46:02.518 --> 00:46:07.272
+<v Benjamin Chareyron>En sortant manuellement complètement de
+du cadre pour permettre de faire ce qu'on</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/472-1
+00:46:07.272 --> 00:46:07.968
+<v Benjamin Chareyron>veut, quoi ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/473-0
+00:46:08.678 --> 00:46:09.038
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/474-0
+00:46:10.678 --> 00:46:15.363
+<v Fabrice Frantz>Alors oui oui parce que t'as raison dans
+ce que tu dis et ouais parce que en fait</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/474-1
+00:46:15.363 --> 00:46:19.763
+<v Fabrice Frantz>ça donne pas envie de donner autant de
+latitude aux gens pour qu'ils fassent</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/474-2
+00:46:19.763 --> 00:46:21.878
+<v Fabrice Frantz>n'imp mais la réponse reste positive.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/475-0
+00:46:22.318 --> 00:46:23.318
+<v Benjamin Chareyron>Ok, ça marche.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/477-0
+00:46:25.718 --> 00:46:29.958
+<v Alexis Benatar>Faudrait verrouiller ça sur cette
+dernière option de fais ce que tu veux.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/476-0
+00:46:29.078 --> 00:46:29.798
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/478-0
+00:46:30.558 --> 00:46:31.798
+<v Benjamin Chareyron>Aurélien.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/479-0
+00:46:31.238 --> 00:46:33.638
+<v Fabrice Frantz>Tu fais ce que tu veux,
+mais seulement si t'es Imad.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/480-0
+00:46:34.198 --> 00:46:35.118
+<v Alexis Benatar>C'est la vie.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/481-0
+00:46:34.438 --> 00:46:36.375
+<v Benjamin Chareyron>Dans tout, dans tout,
+dans tout ce que vous venez de me</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/481-1
+00:46:36.375 --> 00:46:38.106
+<v Benjamin Chareyron>raconter,
+c'est quoi l'erreur de configuration la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/481-2
+00:46:38.106 --> 00:46:39.248
+<v Benjamin Chareyron>plus fréquente que vous croisez ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/482-0
+00:46:40.438 --> 00:46:41.238
+<v Fabrice Frantz>Non crois pas.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/483-0
+00:46:43.958 --> 00:46:44.448
+<v Benjamin Chareyron>D'accord ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/484-0
+00:46:46.118 --> 00:46:48.198
+<v Fabrice Frantz>En vrai, on n'en croise pas.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/485-0
+00:46:49.478 --> 00:46:50.048
+<v Benjamin Chareyron>Pourquoi ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/489-0
+00:46:50.918 --> 00:46:55.878
+<v Alexis Benatar>Ça sera peut-être des moi je dirais dans
+un truc de machin de.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/486-0
+00:46:51.158 --> 00:46:51.678
+<v Fabrice Frantz>Bah peut-être.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/487-0
+00:46:53.318 --> 00:46:54.198
+<v Fabrice Frantz>Ouais, voilà.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/488-0
+00:46:56.398 --> 00:46:57.878
+<v Fabrice Frantz>Ah, j'avais pas pensé à les sous-titres.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/490-0
+00:46:58.518 --> 00:47:02.089
+<v Alexis Benatar>J'ai viré les artwork j'ai viré ouais
+parce que t'as pas de truc qui te dit si</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/490-1
+00:47:02.089 --> 00:47:05.615
+<v Alexis Benatar>tu vires tous les là tu vois tu fais dans
+cet exemple là tu livres la France,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/490-2
+00:47:05.615 --> 00:47:06.158
+<v Alexis Benatar>l'Allemagne.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/492-0
+00:47:07.398 --> 00:47:11.910
+<v Alexis Benatar>Tu peux passer ta commande avec juste la
+vidéo 0 audio localisé 0 sous-titre</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/491-0
+00:47:11.078 --> 00:47:11.568
+<v Fabrice Frantz>Ah oui ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/492-1
+00:47:11.910 --> 00:47:12.438
+<v Alexis Benatar>localisé.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/493-0
+00:47:12.718 --> 00:47:14.638
+<v Fabrice Frantz>Là, si tu veux, on peut virer tout.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/494-0
+00:47:15.798 --> 00:47:18.878
+<v Alexis Benatar>Tu peux tout virer et balancer ta
+commande.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/495-0
+00:47:20.038 --> 00:47:21.238
+<v Fabrice Frantz>Tu seras obligé de garder ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/496-0
+00:47:22.518 --> 00:47:23.478
+<v Fabrice Frantz>Ça, tu vires.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/497-0
+00:47:24.278 --> 00:47:27.775
+<v Fabrice Frantz>Ça tu vires,
+ça tu vires et à la fin il te reste ton</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/497-1
+00:47:27.775 --> 00:47:31.339
+<v Fabrice Frantz>feature en VO.
+Bah tu valides et puis t'as plus qu'un</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/497-2
+00:47:31.339 --> 00:47:36.288
+<v Fabrice Frantz>component feature avec un seul item
+dedans et puis tu passes à la suite et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/497-3
+00:47:36.288 --> 00:47:38.598
+<v Fabrice Frantz>puis ça passe, y a pas de problème.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/498-0
+00:47:38.998 --> 00:47:40.608
+<v Benjamin Chareyron>Et ça, faut pas que ça passe, d'accord ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/499-0
+00:47:40.598 --> 00:47:44.475
+<v Fabrice Frantz>Bah c'est pas faut pas que ça passe.
+C'est que si jamais t'es en train de me</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/499-1
+00:47:44.475 --> 00:47:47.093
+<v Fabrice Frantz>valider un bundle dans lequel il y a que
+une image,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/499-2
+00:47:47.093 --> 00:47:51.172
+<v Fabrice Frantz>c'est qu'il y a quand même 99% de chance
+pour que tu fasses de la ***** là parce</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/499-3
+00:47:51.172 --> 00:47:54.445
+<v Fabrice Frantz>que t'as pas de partiel,
+t'as pas de sous-titres pour les sourds</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/499-4
+00:47:54.445 --> 00:47:57.718
+<v Fabrice Frantz>dans ton pays, t'as pas de complet,
+t'as pas d'audio alternatif.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/500-0
+00:47:57.878 --> 00:48:01.927
+<v Fabrice Frantz>T'as vraiment rien du tout. T'es sûr ?
+Bon bah si t'es vraiment sûr et t'as pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/500-1
+00:48:01.927 --> 00:48:05.066
+<v Fabrice Frantz>de trailer non plus.
+Eh bah dis donc qu'il est misheureux ton</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/500-2
+00:48:05.066 --> 00:48:06.838
+<v Fabrice Frantz>film mais vas y on te laisse faire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/501-0
+00:48:07.158 --> 00:48:08.928
+<v Benjamin Chareyron>Et la plateforme,
+elle sera faire aussi ou pas ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/502-0
+00:48:08.878 --> 00:48:09.958
+<v Fabrice Frantz>Là, la plateforme, elle est sur.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/503-0
+00:48:10.198 --> 00:48:12.118
+<v Benjamin Chareyron>Non, le provider à la fin en sortie.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/504-0
+00:48:12.918 --> 00:48:16.448
+<v Fabrice Frantz>Bah le provider, il va peut-être dire,
+Ah vous avez que ça, OK ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/505-0
+00:48:17.158 --> 00:48:18.118
+<v Benjamin Chareyron>D'accord, mais ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/506-0
+00:48:17.518 --> 00:48:19.078
+<v Fabrice Frantz>Sur le provider, le provider,
+la plateforme.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/507-0
+00:48:27.638 --> 00:48:27.878
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/508-0
+00:48:27.958 --> 00:48:29.958
+<v Alexis Benatar>Nous-mêmes on les laisse pas passer.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/510-0
+00:48:30.078 --> 00:48:33.642
+<v Fabrice Frantz>Voilà nous on va dire tiens tu m'as livré
+le film en VO mais tu veux le livrer en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/509-0
+00:48:30.598 --> 00:48:30.798
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/510-1
+00:48:33.642 --> 00:48:35.903
+<v Fabrice Frantz>France et en Allemagne ?
+T'as pas d'audio français,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/510-2
+00:48:35.903 --> 00:48:38.772
+<v Fabrice Frantz>t'as pas d'audio allemand,
+t'as pas de sous-titres ni français ni</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/510-3
+00:48:38.772 --> 00:48:40.598
+<v Fabrice Frantz>allemand. Ton package il est pas éligible.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/511-0
+00:48:39.238 --> 00:48:43.577
+<v Alexis Benatar>En fait on a pas de gestion fine du de ce
+qui est obligatoire ou pas en fonction</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/511-1
+00:48:43.577 --> 00:48:46.149
+<v Alexis Benatar>des territoires actuellement c'est le
+problème.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/511-2
+00:48:46.149 --> 00:48:48.078
+<v Alexis Benatar>Enfin c'est un des un des problèmes.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/512-0
+00:48:49.478 --> 00:48:53.270
+<v Fabrice Frantz>Et là ma commande elle est complètement
+faisable alors que tout ce que je fais</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/512-1
+00:48:53.270 --> 00:48:54.038
+<v Fabrice Frantz>c'est un prores.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/513-0
+00:48:55.438 --> 00:48:56.118
+<v Fabrice Frantz>VO.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/514-0
+00:48:56.838 --> 00:48:57.518
+<v Fabrice Frantz>Fin de l'histoire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/515-0
+00:48:57.318 --> 00:49:00.280
+<v Alexis Benatar>Techniquement pour livrer la France et
+l'Allemagne,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/515-1
+00:49:00.280 --> 00:49:04.381
+<v Alexis Benatar>là il faudrait que t'aies au choix au
+moins en +1 audio localisé ou des</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/515-2
+00:49:04.381 --> 00:49:08.198
+<v Alexis Benatar>sous-titres localisés donc il faudrait
+que ce soit Mandatory mais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/516-0
+00:49:09.798 --> 00:49:12.678
+<v Alexis Benatar>Mandatory,
+mais dépendant l'un de l'autre aussi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/519-0
+00:49:12.958 --> 00:49:16.302
+<v Fabrice Frantz>Voilà c'est soit l'un soit l'autre.
+Donc si à partir du moment où tu peux</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/517-0
+00:49:15.398 --> 00:49:16.038
+<v Alexis Benatar>Ou les 2.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/519-1
+00:49:16.302 --> 00:49:19.194
+<v Fabrice Frantz>être ou les 2 mais le minimum du minimum
+c'est l'un ou l'autre,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/519-2
+00:49:19.194 --> 00:49:21.408
+<v Fabrice Frantz>c'est pas les audios,
+c'est pas les sous-titres,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/519-3
+00:49:21.408 --> 00:49:23.939
+<v Fabrice Frantz>c'est l'un ou l'autre.
+Et à partir du moment où tu peux</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/519-4
+00:49:23.939 --> 00:49:26.741
+<v Fabrice Frantz>localiser ton film,
+que tu le localises avec du son ou que tu</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/519-5
+00:49:26.741 --> 00:49:28.278
+<v Fabrice Frantz>le localises avec des sous-titres.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/518-0
+00:49:28.038 --> 00:49:28.358
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/521-0
+00:49:28.438 --> 00:49:31.912
+<v Fabrice Frantz>Il est localisé c'est OK.
+Si tu peux faire les 2 bah qui peut plus</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/521-1
+00:49:31.912 --> 00:49:34.713
+<v Fabrice Frantz>peut moins.
+Et puis en plus tu pourras le mater en VO</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/521-2
+00:49:34.713 --> 00:49:38.447
+<v Fabrice Frantz>sous-titré si tu as envie ou que sais-je
+très bien mais si tu as pas de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/521-3
+00:49:38.447 --> 00:49:41.144
+<v Fabrice Frantz>sous-titres et un doublage bah tu mets le
+doublage.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/521-4
+00:49:41.144 --> 00:49:43.478
+<v Fabrice Frantz>Si tu as pas de doublage mets un
+sous-titre.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/522-0
+00:49:43.878 --> 00:49:46.038
+<v Fabrice Frantz>Tu mets le sous-titre, Si t'as les 2,
+tu mets les 2.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/523-0
+00:49:46.638 --> 00:49:47.078
+<v Benjamin Chareyron>Océane Thomas.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/526-0
+00:49:48.918 --> 00:49:52.009
+<v Benjamin Chareyron>Je commence à voir un petit peu comment
+ça pourrait s'articuler. C'est cool,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/526-1
+00:49:52.009 --> 00:49:55.220
+<v Benjamin Chareyron>il faut qu'on accélère parce qu'on a plus
+beaucoup de temps et je veux pas vous</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/525-0
+00:49:54.278 --> 00:49:54.678
+<v Fabrice Frantz>Vas-y.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/526-2
+00:49:55.220 --> 00:49:57.629
+<v Benjamin Chareyron>prendre trop de temps.
+Donc une fois que vous avez passé la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/526-3
+00:49:57.629 --> 00:49:59.716
+<v Benjamin Chareyron>commande,
+est-ce que vous pouvez me raconter un peu</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/526-4
+00:49:59.716 --> 00:50:02.004
+<v Benjamin Chareyron>ce qui se passe derrière,
+y compris côté système et côté</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/526-5
+00:50:02.004 --> 00:50:02.928
+<v Benjamin Chareyron>intervention manuelle ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/528-0
+00:50:03.518 --> 00:50:08.221
+<v Fabrice Frantz>Désarchivage transcodage mise en
+conformité des assets alternatifs avec la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/527-0
+00:50:03.678 --> 00:50:04.438
+<v Benjamin Chareyron>Rapidos.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/528-1
+00:50:08.221 --> 00:50:13.113
+<v Fabrice Frantz>vidéo sachant que ta vidéo elle est
+supposée te donner ta durée de référence.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/528-2
+00:50:13.113 --> 00:50:18.130
+<v Fabrice Frantz>Là on a fait des bidouilles pour que on
+calcule la durée de l'audio alternatif,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/528-3
+00:50:18.130 --> 00:50:21.078
+<v Fabrice Frantz>qu'on compare avec la durée de l'image de
+ref.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/531-0
+00:50:21.438 --> 00:50:25.467
+<v Fabrice Frantz>Qu'on fasse en sorte que ils durent
+exactement la même durée l'un que l'autre</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/531-1
+00:50:25.467 --> 00:50:29.703
+<v Fabrice Frantz>pour pas se faire refuser nos exports par
+la le la plateforme de destination donc</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/529-0
+00:50:29.318 --> 00:50:29.598
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/531-2
+00:50:29.703 --> 00:50:33.784
+<v Fabrice Frantz>transcodage de l'image transcodage du son
+transcodage des sous-titres aussi en</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/531-3
+00:50:33.784 --> 00:50:34.198
+<v Fabrice Frantz>passant.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/530-0
+00:50:34.478 --> 00:50:34.598
+<v Benjamin Chareyron>Ah.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/533-0
+00:50:35.798 --> 00:50:41.201
+<v Fabrice Frantz>Génération de tous ces assets là dans un
+dossier dans kumulo pour mise à dispo du</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/533-1
+00:50:41.201 --> 00:50:46.736
+<v Fabrice Frantz>packaging humain de VDM des gens qui font
+le packaging humain chez VDM en parallèle</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/532-0
+00:50:43.958 --> 00:50:44.238
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/533-2
+00:50:46.736 --> 00:50:52.073
+<v Fabrice Frantz>de ça génération d'un BT dans Iris une
+fois que les fichiers ont tous été copiés</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/533-3
+00:50:52.073 --> 00:50:52.798
+<v Fabrice Frantz>sur kumulo.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/534-0
+00:50:53.478 --> 00:50:58.614
+<v Fabrice Frantz>De manière à ce que on puisse faire un un
+rapprochement entre Iris et donc le</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/534-1
+00:50:58.614 --> 00:51:03.553
+<v Fabrice Frantz>travail de l'humain qui va livrer et puis
+livraison humaine et puis fin de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/534-2
+00:51:03.553 --> 00:51:04.278
+<v Fabrice Frantz>l'histoire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/535-0
+00:51:06.118 --> 00:51:09.919
+<v Benjamin Chareyron>Est-ce que est-ce que y a des outils de
+la plateforme Media Spot actuellement que</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/535-1
+00:51:09.919 --> 00:51:12.608
+<v Benjamin Chareyron>vous utilisez pour monitorer tout ce tout
+ce passage-là ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/536-0
+00:51:13.118 --> 00:51:15.758
+<v Fabrice Frantz>Les orders,
+la page de monitoring des orders.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/537-0
+00:51:18.678 --> 00:51:24.249
+<v Alexis Benatar>Mais ça s'arrête à partir du à partir du
+moment où la fabrication auto est</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/537-1
+00:51:24.249 --> 00:51:24.918
+<v Alexis Benatar>terminée.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/541-0
+00:51:25.798 --> 00:51:28.824
+<v Alexis Benatar>Y a plus de suivi,
+y a plus de suivi en fait,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/538-0
+00:51:26.038 --> 00:51:26.718
+<v Fabrice Frantz>Là, plus rien.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/539-0
+00:51:28.438 --> 00:51:28.678
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/541-1
+00:51:28.824 --> 00:51:34.087
+<v Alexis Benatar>simplement tu sais que c'est du Manuel
+derrière et ils mettront à jour à la fin</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/541-2
+00:51:34.087 --> 00:51:35.798
+<v Alexis Benatar>quand ils seront terminés.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/543-0
+00:51:36.198 --> 00:51:41.082
+<v Fabrice Frantz>Voilà typique là playing Nice épisode on
+s'en fout la machine elle est en train de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/543-1
+00:51:41.082 --> 00:51:45.320
+<v Fabrice Frantz>faire ses transcodages et trust me tous
+tes transcodages sont terminés.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/543-2
+00:51:45.320 --> 00:51:48.557
+<v Fabrice Frantz>Les fichiers sont à dispo du service
+packaging de VDM.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/542-0
+00:51:45.678 --> 00:51:45.958
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/543-3
+00:51:48.557 --> 00:51:52.794
+<v Fabrice Frantz>Le statut de la commande c'est Manuel
+delivery in Progress parce que la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/543-4
+00:51:52.794 --> 00:51:54.678
+<v Fabrice Frantz>plateforme ne fera rien de plus.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/544-0
+00:51:54.918 --> 00:51:58.584
+<v Fabrice Frantz>Automatiquement. Et là,
+la prochaine étape, c'est nous,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/544-1
+00:51:58.584 --> 00:52:03.690
+<v Fabrice Frantz>on livre et nous on met à la main le
+statut de cette commande en completed ou</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/544-2
+00:52:03.690 --> 00:52:07.488
+<v Fabrice Frantz>delivered ou on la, on la, on la,
+on la clôture. Pardon ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/545-0
+00:52:08.118 --> 00:52:13.718
+<v Benjamin Chareyron>Et du coup côté côté livraison manuelle,
+est ce que y a du suivi qui est fait ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/545-1
+00:52:13.718 --> 00:52:18.198
+<v Benjamin Chareyron>Est ce que y a des notifications du
+provider quand c'est reçu ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/545-2
+00:52:18.198 --> 00:52:23.938
+<v Benjamin Chareyron>Est ce que y a des du feedback de leur
+part sur la qualité du package, et cetera,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/545-3
+00:52:23.938 --> 00:52:25.408
+<v Benjamin Chareyron>comment ça se passe ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/546-0
+00:52:39.798 --> 00:52:40.038
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/548-0
+00:52:40.078 --> 00:52:44.794
+<v Fabrice Frantz>À priori t'auras pas forcément un retour
+de la part du destinataire qui dira Ah</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/548-1
+00:52:44.794 --> 00:52:49.158
+<v Fabrice Frantz>cool j'ai bien reçu en entier merci voilà
+ça va dépendre du destinataire.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/553-0
+00:52:45.998 --> 00:52:49.861
+<v Alexis Benatar>Ça dépend des plateformes.
+T'as des t'en as qui te notifient</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/553-1
+00:52:49.861 --> 00:52:55.118
+<v Alexis Benatar>d'autres non et t'en as qui te notifient
+même des différentes étapes de validation</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/549-0
+00:52:51.398 --> 00:52:51.678
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/550-0
+00:52:54.438 --> 00:52:54.718
+<v Fabrice Frantz>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/553-2
+00:52:55.118 --> 00:52:58.918
+<v Alexis Benatar>de leur côté. C'est très rare,
+c'est très rare, mais ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/551-0
+00:52:55.918 --> 00:52:58.038
+<v Fabrice Frantz>Ah là, on a reçu le package.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/554-0
+00:52:59.158 --> 00:53:02.167
+<v Fabrice Frantz>Là on va vérifier l'image,
+là on a vérifié le son, il est bien,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/554-1
+00:53:02.167 --> 00:53:05.318
+<v Fabrice Frantz>là on a vérifié les sous-titres,
+ils sont bien et c'est très rare.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/555-0
+00:53:04.758 --> 00:53:07.136
+<v Alexis Benatar>Le suivi,
+une fois que c'est envoyé à la plateforme,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/555-1
+00:53:07.136 --> 00:53:09.918
+<v Alexis Benatar>c'est globalement du pas de nouvelle.
+Bonne nouvelle en fait.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/556-0
+00:53:10.278 --> 00:53:10.758
+<v Benjamin Chareyron>D'accord.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/557-0
+00:53:10.998 --> 00:53:15.770
+<v Fabrice Frantz>Jusqu'au jour où 2 mois plus tard,
+t'as un un message de ton client qui dit</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/557-1
+00:53:15.770 --> 00:53:18.972
+<v Fabrice Frantz>Oh y a Amazon ou Netflix ou iTunes ou qui
+tu veux,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/557-2
+00:53:18.972 --> 00:53:21.798
+<v Fabrice Frantz>il nous a refusé tel film pour telle
+raison.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/559-0
+00:53:22.918 --> 00:53:26.544
+<v Fabrice Frantz>Et la raison ce serait un truc genre Ben
+les sous-titres allemands ils étaient pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/558-0
+00:53:23.238 --> 00:53:23.558
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/559-1
+00:53:26.544 --> 00:53:29.952
+<v Fabrice Frantz>en allemand ou ce serait un truc genre
+Ben l'audio alternatif il durerait une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/559-2
+00:53:29.952 --> 00:53:31.088
+<v Fabrice Frantz>2nde de plus que l'image ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/560-0
+00:53:34.398 --> 00:53:35.638
+<v Alexis Benatar>Je compte les clients, nos clients.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/562-0
+00:53:34.598 --> 00:53:38.980
+<v Benjamin Chareyron>Donc c'est soit une erreur humaine de
+configuration, soit une erreur technique,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/561-0
+00:53:38.918 --> 00:53:39.798
+<v Fabrice Frantz>De fabrication.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/562-1
+00:53:38.980 --> 00:53:40.678
+<v Benjamin Chareyron>non c'est ouais de fabrication.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/563-0
+00:53:41.478 --> 00:53:44.559
+<v Fabrice Frantz>Ouais et donc pour les erreurs techniques
+de fabrication,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/563-1
+00:53:44.559 --> 00:53:48.863
+<v Fabrice Frantz>on a mis en place tout ce qu'on a pu pour
+limiter le la possibilité de fabriquer</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/563-2
+00:53:48.863 --> 00:53:53.007
+<v Fabrice Frantz>des trucs qui nous qu'on va reprendre
+dans la gueule parce que ils durent une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/563-3
+00:53:53.007 --> 00:53:55.558
+<v Fabrice Frantz>2nde ou 5 secondes de trop ou quoi que ce
+soit.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/565-0
+00:53:55.918 --> 00:54:00.341
+<v Fabrice Frantz>On est confiant sur nos solutions à
+hauteur de un pourcentage que j'oserais</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/565-1
+00:54:00.341 --> 00:54:03.019
+<v Fabrice Frantz>meme pas exprimer.
+Et jusqu'ici tout va bien.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/565-2
+00:54:03.019 --> 00:54:06.802
+<v Fabrice Frantz>Et puis le jour où on nous annoncera que
+on a livré de la *****,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/565-3
+00:54:06.802 --> 00:54:10.993
+<v Fabrice Frantz>Ben on fera les mecs surpris.
+Mais au fond de nous on sera pas tant que</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/564-0
+00:54:09.878 --> 00:54:10.078
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/565-4
+00:54:10.993 --> 00:54:12.158
+<v Fabrice Frantz>ça quoi. Et donc ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/566-0
+00:54:13.478 --> 00:54:17.121
+<v Fabrice Frantz>Et après l'erreur de config,
+bah dans la limite de ce qu'on a autorisé</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/566-1
+00:54:17.121 --> 00:54:18.918
+<v Fabrice Frantz>ou pas en termes de souplesse quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/567-0
+00:54:21.638 --> 00:54:21.958
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/568-0
+00:54:21.798 --> 00:54:24.402
+<v Fabrice Frantz>Genre ton client peut pas mettre des
+sous-titres polonais s'il a pas mis la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/568-1
+00:54:24.402 --> 00:54:25.808
+<v Fabrice Frantz>Pologne comme territoire de destination ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/570-0
+00:54:27.638 --> 00:54:30.743
+<v Benjamin Chareyron>Concrètement bon ces erreurs de saisie je
+pense que c'est OK.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/570-1
+00:54:30.743 --> 00:54:34.849
+<v Benjamin Chareyron>Est ce que ce qu'on enfin c'est ce dont
+on a parlé précédemment ? Ouais c'est ça.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/569-0
+00:54:34.518 --> 00:54:35.318
+<v Fabrice Frantz>C'est verrouillé quoi.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/570-2
+00:54:34.849 --> 00:54:38.305
+<v Benjamin Chareyron>Côté erreur technique de Fab,
+on peut aussi peut être intervenir sur</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/570-3
+00:54:38.305 --> 00:54:42.411
+<v Benjamin Chareyron>des choses de feedback dans la plateforme.
+Attention là le sous-titre que tu as à</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/570-4
+00:54:42.411 --> 00:54:46.568
+<v Benjamin Chareyron>sélectionner il est plus long ou il a pas
+la bonne durée ou je sais pas quoi non ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/573-0
+00:54:47.078 --> 00:54:51.517
+<v Fabrice Frantz>Alors ça c'est chaud de chez chaud parce
+qu'en vrai l'idée c'est que le enfin le</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/571-0
+00:54:48.878 --> 00:54:49.118
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/573-1
+00:54:51.517 --> 00:54:55.683
+<v Fabrice Frantz>miracle un petit peu de la plateforme
+c'est que tu peux mettre des assets à</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/573-2
+00:54:55.683 --> 00:55:00.122
+<v Fabrice Frantz>n'importe quelle vitesse indépendamment
+les uns des autres dans cette plateforme</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/573-3
+00:55:00.122 --> 00:55:01.438
+<v Fabrice Frantz>là genre une image à 24.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/576-0
+00:55:01.558 --> 00:55:04.794
+<v Fabrice Frantz>Parce que c'est un truc natif.
+Et ton audio français Bah il est à 25</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/572-0
+00:55:01.718 --> 00:55:02.118
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/576-1
+00:55:04.794 --> 00:55:08.687
+<v Fabrice Frantz>parce que tu l'as récupéré de chez TF un
+qui avait fait 1PADYA 5 ans mais t'as pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/574-0
+00:55:08.118 --> 00:55:08.558
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/576-2
+00:55:08.687 --> 00:55:11.548
+<v Fabrice Frantz>d'autres audio français donc ton audio
+français il est à 25.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/576-3
+00:55:11.548 --> 00:55:14.175
+<v Fabrice Frantz>Quand tu vas faire ton package pour
+Amazon par exemple,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/576-4
+00:55:14.175 --> 00:55:17.318
+<v Fabrice Frantz>Bah tu vas prendre ton image à 24 et tu
+vas faire un package à 24.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/575-0
+00:55:17.558 --> 00:55:17.998
+<v Benjamin Chareyron>Ouais.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/579-0
+00:55:17.798 --> 00:55:21.005
+<v Fabrice Frantz>Donc ton audio français à 25 tu vas le
+voir speedé à 24.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/577-0
+00:55:20.598 --> 00:55:21.078
+<v Benjamin Chareyron>D'accord.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/579-1
+00:55:21.005 --> 00:55:25.394
+<v Fabrice Frantz>Du coup la durée de ton audio à 25 c'est
+pas du tout la durée de ton image et</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/579-2
+00:55:25.394 --> 00:55:29.276
+<v Fabrice Frantz>c'est pas du tout la durée de ton audio
+quand il sera fabriqué à 24.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/578-0
+00:55:25.438 --> 00:55:25.798
+<v Benjamin Chareyron>D'accord.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/579-3
+00:55:29.276 --> 00:55:33.215
+<v Fabrice Frantz>Donc anticiper le côté attention ton
+sous-titre ou ton audio sera pas</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/579-4
+00:55:33.215 --> 00:55:34.678
+<v Fabrice Frantz>compatible avec ton image.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/580-0
+00:55:35.158 --> 00:55:36.971
+<v Fabrice Frantz>Avant d'avoir fait les conversions de
+vitesse,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/580-1
+00:55:36.971 --> 00:55:38.438
+<v Fabrice Frantz>ça me paraît un petit peu rock'n'roll.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/581-0
+00:55:38.918 --> 00:55:39.318
+<v Benjamin Chareyron>Ok.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/582-0
+00:55:42.438 --> 00:55:44.981
+<v Alexis Benatar>Bah c'est surtout que ça de toute façon
+c'est déjà fait au moment de la</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/582-1
+00:55:44.981 --> 00:55:45.758
+<v Alexis Benatar>qualification en fait.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/584-0
+00:55:47.398 --> 00:55:51.316
+<v Fabrice Frantz>Ouais mais après on reparle alors les
+sous-titres c'est pas le c'est pas le</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/584-1
+00:55:51.316 --> 00:55:54.771
+<v Fabrice Frantz>sujet-là, ce serait plutôt les audios,
+ce serait plutôt ton audio.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/583-0
+00:55:53.318 --> 00:55:54.118
+<v Alexis Benatar>Benjamin sogno.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/584-2
+00:55:54.771 --> 00:55:58.278
+<v Fabrice Frantz>Il a une 2nde de silence en trop ou en
+plus à la fin que ton image.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/585-0
+00:55:59.078 --> 00:56:00.758
+<v Alexis Benatar>Mais ça,
+c'est tout l'objet de la qualification.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/586-0
+00:56:00.998 --> 00:56:03.936
+<v Fabrice Frantz>Voilà, et donc ça c'est pour les.
+C'est ce qu'on disait,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/586-1
+00:56:03.936 --> 00:56:08.060
+<v Fabrice Frantz>on a endigué le problème pour les trucs
+d'aujourd'hui et reste le gros passé de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/586-2
+00:56:08.060 --> 00:56:10.638
+<v Fabrice Frantz>le Front de catalogue de Studiocanal par
+exemple.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/589-0
+00:56:11.198 --> 00:56:14.640
+<v Benjamin Chareyron>OK bon,
+j'ai encore plein de questions à poser,</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/589-1
+00:56:14.640 --> 00:56:20.019
+<v Benjamin Chareyron>donc je vous propose qu'on s'arrête là
+pour ce soir et qu'on se recale une</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/589-2
+00:56:20.019 --> 00:56:23.318
+<v Benjamin Chareyron>demi-heure je pense.
+Un autre jour parce que.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/587-0
+00:56:21.518 --> 00:56:22.078
+<v Fabrice Frantz>Quand tu veux.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/588-0
+00:56:24.998 --> 00:56:25.558
+<v Fabrice Frantz>Quand tu veux.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/590-0
+00:56:24.998 --> 00:56:25.958
+<v Alexis Benatar>Tu parles trop Fabrice.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/592-0
+00:56:25.558 --> 00:56:28.495
+<v Benjamin Chareyron>Non, c'est très bien,
+on a plein de plein d'informations trop</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/591-0
+00:56:28.278 --> 00:56:31.278
+<v Fabrice Frantz>Pour une fois qu'il y a un mec qui est
+content, moi je profite.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/592-1
+00:56:28.495 --> 00:56:30.580
+<v Benjamin Chareyron>trop bien,
+mais j'ai envie de j'ai envie de</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/592-2
+00:56:30.580 --> 00:56:31.718
+<v Benjamin Chareyron>continuer à les creuser.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/593-0
+00:56:32.438 --> 00:56:33.718
+<v Fabrice Frantz>Moi je profite, c'est pas tous les jours.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/595-0
+00:56:34.518 --> 00:56:37.449
+<v Benjamin Chareyron>Sur toute la partie,
+notamment configuration des providers</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/595-1
+00:56:37.449 --> 00:56:40.431
+<v Benjamin Chareyron>dont on va parler là,
+toutes les spécifications, et cetera.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/595-2
+00:56:40.431 --> 00:56:44.058
+<v Benjamin Chareyron>Et je pense que c'est un gros sujet et on
+a plus le temps de le creuser.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/595-3
+00:56:44.058 --> 00:56:45.798
+<v Benjamin Chareyron>Donc je vous propose de reschédule.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/594-0
+00:56:46.198 --> 00:56:46.678
+<v Fabrice Frantz>Vas-y.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/596-0
+00:56:47.558 --> 00:56:51.798
+<v Benjamin Chareyron>À votre à votre bon cœur dispo quand vous
+voulez.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/597-0
+00:56:52.158 --> 00:56:53.158
+<v Fabrice Frantz>Invite-moi, je serai dispo.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/598-0
+00:56:54.198 --> 00:56:55.488
+<v Benjamin Chareyron>Alexis, t'as des contraintes demain ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/599-0
+00:56:55.958 --> 00:56:57.798
+<v Alexis Benatar>Non, demain aprèm, c'est bien.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/600-0
+00:56:59.158 --> 00:57:00.718
+<v Alexis Benatar>Demain matin, c'est pas possible.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/601-0
+00:57:02.038 --> 00:57:03.958
+<v Fabrice Frantz>C'est le jour des enfants.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/603-0
+00:57:04.838 --> 00:57:08.118
+<v Alexis Benatar>Voilà, c'est ça,
+et le jour de Studiocanal le matin.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/604-0
+00:57:07.078 --> 00:57:09.318
+<v Benjamin Chareyron>Tu m'as dit, demain c'est bien,
+le matin c'est bien.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/602-0
+00:57:07.718 --> 00:57:08.208
+<v Fabrice Frantz>C'est ça ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/605-0
+00:57:09.638 --> 00:57:10.278
+<v Fabrice Frantz>Aprèm, aprèm.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/606-0
+00:57:09.718 --> 00:57:10.598
+<v Alexis Benatar>Non après.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/607-0
+00:57:10.478 --> 00:57:11.728
+<v Benjamin Chareyron>14 h, ça te va ?</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/608-0
+00:57:12.878 --> 00:57:13.238
+<v Alexis Benatar>Vas-y.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/610-0
+00:57:14.518 --> 00:57:18.329
+<v Benjamin Chareyron>C'est envoyé. Merci beaucoup Messieurs,
+je ne prends pas plus de temps.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/609-0
+00:57:18.238 --> 00:57:18.758
+<v Fabrice Frantz>Pas de souci.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/610-1
+00:57:18.329 --> 00:57:21.558
+<v Benjamin Chareyron>Je vous souhaite une excellente soirée et
+vous dis à demain.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/615-0
+00:57:21.478 --> 00:57:25.398
+<v Fabrice Frantz>À demain, amuse-toi bien, salut bye.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/613-0
+00:57:22.558 --> 00:57:23.998
+<v Benjamin Chareyron>Ouais, merci.</v>
+
+39df993b-a807-46d6-b023-bede55b376cb/612-0
+00:57:23.798 --> 00:57:24.198
+<v Alexis Benatar>C'est.</v>

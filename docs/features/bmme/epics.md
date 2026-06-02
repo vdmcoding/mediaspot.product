@@ -1,9 +1,9 @@
 ---
-stepsCompleted: ['step-01-validate-prerequisites', 'step-02-design-epics', 'step-03-create-stories', 'step-04-final-validation']
+
+## stepsCompleted: ['step-01-validate-prerequisites', 'step-02-design-epics', 'step-03-create-stories', 'step-04-final-validation']
 inputDocuments:
   - 'docs/features/bmme/prd.md'
   - 'docs/features/bmme/ux-design-specification.md'
----
 
 # BMME v2 - Epic Breakdown
 
@@ -201,94 +201,96 @@ Ce document fournit le découpage complet en epics et stories pour BMME v2 (Bund
 
 ### FR Coverage Map
 
-| FR | Epic | Description |
-|----|------|-------------|
-| FR1 | Epic 1 | Création métadonnées Title |
-| FR2 | Epic 1 | Création métadonnées par langue |
-| FR3 | Epic 1 | Création métadonnées par territoire |
-| FR4 | Epic 1 | Propagation automatique (héritage) |
-| FR5 | Epic 1 | Vue bulk édition multi-langues/territoires |
-| FR6 | Epic 1 | Visualisation hiérarchie Title → Langues → Territoires |
-| FR7 | Epic 3 | Synchronisation depuis VDM Connect |
-| FR8 | Epic 3 | Synchronisation depuis systèmes externes |
-| FR9 | Epic 2 | Création packages par provider |
-| FR10 | Epic 2 | Association métadonnées localisées à package |
-| FR11 | Epic 2 | Édition métadonnées package |
-| FR12 | Epic 2 | Suppression package |
-| FR13 | Epic 2 | Visualisation statut complétion (compteur) |
-| FR14 | Epic 2 | Identification champs manquants |
-| FR15 | Epic 2 | Définition shared metadata |
-| FR16 | Epic 2 | Application shared metadata au provider |
-| FR17 | Epic 2 | Validation temps réel contre specs provider |
-| FR18 | Epic 2 | Marquage automatique VALID |
-| FR19 | Epic 2 | État draft pour packages incomplets |
-| FR20 | Epic 2 | Duplication package |
-| FR21 | Epic 3 | Migration packages depuis VDM Connect |
-| FR22 | Epic 4 | Éditeur centralisé specs providers |
-| FR23 | Epic 4 | Édition mappings mediaspot → provider |
-| FR24 | Epic 4 | Édition formats champs providers |
-| FR25 | Epic 4 | Validation temps réel mappings |
-| FR26 | Epic 4 | Prévisualisation XML |
-| FR27 | Epic 4 | Déploiement instantané sans code |
-| FR28 | Epic 4 | Versionning specs avec rollback |
-| FR31 | Epic 3 | Dashboard monitoring synchronisations |
-| FR32 | Epic 3 | Statut temps réel synchros |
-| FR33 | Epic 3 | Logs détaillés et friendly |
-| FR34 | Epic 3 | Mode diagnostic live API |
-| FR35 | Epic 3 | Éditeur mapping visuel |
-| FR36 | Epic 3 | Édition mappings externe → mediaspot |
-| FR38 | Epic 3 | Resynchronisation manuelle 1 clic |
-| FR39 | Epic 3 | Progression resync avec ETA |
-| FR42 | Epic 3 | Historisation synchronisations |
-| FR43 | Epic 4 | Génération XML conformes |
-| FR45 | Epic 6 | Définition permissions ACL |
-| FR46 | Epic 6 | Application permissions par rôle |
-| FR47 | Epic 6 | Blocage actions non autorisées |
-| FR48 | Epic 6 | Isolation données multi-tenancy |
-| FR49 | Epic 6 | Dashboard administration cross-plateformes |
-| FR50 | Epic 6 | Gestion centralisée specs providers |
-| FR51 | Epic 6 | Gestion centralisée specs externes |
-| FR52 | Epic 6 | Audit logs actions critiques |
-| FR55 | Epic 1 | Activation langue pour Title |
-| FR56 | Epic 1 | Langue original title par défaut |
-| FR57 | Epic 1 | Affichage champs localisables uniquement |
-| FR58 | Epic 1 | Héritage territoire depuis langue |
-| FR59 | Epic 5 | Affichage source métadonnée |
-| FR60 | Epic 5 | Synchronisation manuelle depuis source |
-| FR61 | Epic 5 | Preview changements avant application |
-| FR62 | Epic 5 | Vue multi-source par métadonnée |
-| FR63 | Epic 5 | Historisation modifications |
-| FR64 | Epic 5 | Catégorisation types modification |
-| FR65 | Epic 5 | Consultation historique complet |
-| FR66 | Epic 2 | Gestion shared metadata cross-platforms |
-| FR67 | Epic 2 | Propagation shared metadata aux packages |
-| FR68 | Epic 2 | Création package Platform + Territories |
-| FR69 | Epic 2 | Pré-remplissage packages |
-| FR70 | Epic 2 | Structure package hiérarchique |
-| FR71 | Epic 3 | Formatting options mapping |
-| FR72 | Epic 3 | Mapping options enums |
-| FR73 | Epic 3 | Application formatting import |
-| FR74 | Epic 3 | Application mapping enums |
-| FR75 | Epic 3 | Définition default source |
-| FR76 | Epic 3 | Activation lock source |
-| FR77 | Epic 3 | Blocage changement source |
-| FR78 | Epic 3 | Notes erreur typées |
-| FR79 | Epic 3 | Resync depuis source |
-| FR80 | Epic 3 | Bulk resync |
-| FR81 | Epic 4 | Provider mappings cross-platform |
-| FR82 | Epic 4 | Formatting options export |
-| FR83 | Epic 4 | Mapping options enums export |
-| FR84 | Epic 4 | Test mappings sur packages réels |
-| FR85 | Epic 4 | Affichage résultats test transformés |
-| FR86 | Epic 4 | Source of truth table partagée |
-| FR87 | Epic 7 | Synchronisation auto vers DbMetadataFieldInfo |
-| FR88 | Epic 7 | Transparence pour modules consommateurs |
-| FR89 | Epic 7 | Configuration mapping legacy |
-| FR90 | Epic 7 | Application mapping par modification |
-| FR91 | Epic 7 | Continuité lecture DbMetadataFieldInfo |
-| FR92 | Epic 7 | Garantie cohérence source/projection |
-| FR93 | Epic 7 | Monitoring sync legacy |
-| FR94 | Epic 7 | Alerte échec sync legacy |
+
+| FR   | Epic   | Description                                            |
+| ---- | ------ | ------------------------------------------------------ |
+| FR1  | Epic 1 | Création métadonnées Title                             |
+| FR2  | Epic 1 | Création métadonnées par langue                        |
+| FR3  | Epic 1 | Création métadonnées par territoire                    |
+| FR4  | Epic 1 | Propagation automatique (héritage)                     |
+| FR5  | Epic 1 | Vue bulk édition multi-langues/territoires             |
+| FR6  | Epic 1 | Visualisation hiérarchie Title → Langues → Territoires |
+| FR7  | Epic 3 | Synchronisation depuis VDM Connect                     |
+| FR8  | Epic 3 | Synchronisation depuis systèmes externes               |
+| FR9  | Epic 2 | Création packages par provider                         |
+| FR10 | Epic 2 | Association métadonnées localisées à package           |
+| FR11 | Epic 2 | Édition métadonnées package                            |
+| FR12 | Epic 2 | Suppression package                                    |
+| FR13 | Epic 2 | Visualisation statut complétion (compteur)             |
+| FR14 | Epic 2 | Identification champs manquants                        |
+| FR15 | Epic 2 | Définition shared metadata                             |
+| FR16 | Epic 2 | Application shared metadata au provider                |
+| FR17 | Epic 2 | Validation temps réel contre specs provider            |
+| FR18 | Epic 2 | Marquage automatique VALID                             |
+| FR19 | Epic 2 | État draft pour packages incomplets                    |
+| FR20 | Epic 2 | Duplication package                                    |
+| FR21 | Epic 3 | Migration packages depuis VDM Connect                  |
+| FR22 | Epic 4 | Éditeur centralisé specs providers                     |
+| FR23 | Epic 4 | Édition mappings mediaspot → provider                  |
+| FR24 | Epic 4 | Édition formats champs providers                       |
+| FR25 | Epic 4 | Validation temps réel mappings                         |
+| FR26 | Epic 4 | Prévisualisation XML                                   |
+| FR27 | Epic 4 | Déploiement instantané sans code                       |
+| FR28 | Epic 4 | Versionning specs avec rollback                        |
+| FR31 | Epic 3 | Dashboard monitoring synchronisations                  |
+| FR32 | Epic 3 | Statut temps réel synchros                             |
+| FR33 | Epic 3 | Logs détaillés et friendly                             |
+| FR34 | Epic 3 | Mode diagnostic live API                               |
+| FR35 | Epic 3 | Éditeur mapping visuel                                 |
+| FR36 | Epic 3 | Édition mappings externe → mediaspot                   |
+| FR38 | Epic 3 | Resynchronisation manuelle 1 clic                      |
+| FR39 | Epic 3 | Progression resync avec ETA                            |
+| FR42 | Epic 3 | Historisation synchronisations                         |
+| FR43 | Epic 4 | Génération XML conformes                               |
+| FR45 | Epic 6 | Définition permissions ACL                             |
+| FR46 | Epic 6 | Application permissions par rôle                       |
+| FR47 | Epic 6 | Blocage actions non autorisées                         |
+| FR48 | Epic 6 | Isolation données multi-tenancy                        |
+| FR49 | Epic 6 | Dashboard administration cross-plateformes             |
+| FR50 | Epic 6 | Gestion centralisée specs providers                    |
+| FR51 | Epic 6 | Gestion centralisée specs externes                     |
+| FR52 | Epic 6 | Audit logs actions critiques                           |
+| FR55 | Epic 1 | Activation langue pour Title                           |
+| FR56 | Epic 1 | Langue original title par défaut                       |
+| FR57 | Epic 1 | Affichage champs localisables uniquement               |
+| FR58 | Epic 1 | Héritage territoire depuis langue                      |
+| FR59 | Epic 5 | Affichage source métadonnée                            |
+| FR60 | Epic 5 | Synchronisation manuelle depuis source                 |
+| FR61 | Epic 5 | Preview changements avant application                  |
+| FR62 | Epic 5 | Vue multi-source par métadonnée                        |
+| FR63 | Epic 5 | Historisation modifications                            |
+| FR64 | Epic 5 | Catégorisation types modification                      |
+| FR65 | Epic 5 | Consultation historique complet                        |
+| FR66 | Epic 2 | Gestion shared metadata cross-platforms                |
+| FR67 | Epic 2 | Propagation shared metadata aux packages               |
+| FR68 | Epic 2 | Création package Platform + Territories                |
+| FR69 | Epic 2 | Pré-remplissage packages                               |
+| FR70 | Epic 2 | Structure package hiérarchique                         |
+| FR71 | Epic 3 | Formatting options mapping                             |
+| FR72 | Epic 3 | Mapping options enums                                  |
+| FR73 | Epic 3 | Application formatting import                          |
+| FR74 | Epic 3 | Application mapping enums                              |
+| FR75 | Epic 3 | Définition default source                              |
+| FR76 | Epic 3 | Activation lock source                                 |
+| FR77 | Epic 3 | Blocage changement source                              |
+| FR78 | Epic 3 | Notes erreur typées                                    |
+| FR79 | Epic 3 | Resync depuis source                                   |
+| FR80 | Epic 3 | Bulk resync                                            |
+| FR81 | Epic 4 | Provider mappings cross-platform                       |
+| FR82 | Epic 4 | Formatting options export                              |
+| FR83 | Epic 4 | Mapping options enums export                           |
+| FR84 | Epic 4 | Test mappings sur packages réels                       |
+| FR85 | Epic 4 | Affichage résultats test transformés                   |
+| FR86 | Epic 4 | Source of truth table partagée                         |
+| FR87 | Epic 7 | Synchronisation auto vers DbMetadataFieldInfo          |
+| FR88 | Epic 7 | Transparence pour modules consommateurs                |
+| FR89 | Epic 7 | Configuration mapping legacy                           |
+| FR90 | Epic 7 | Application mapping par modification                   |
+| FR91 | Epic 7 | Continuité lecture DbMetadataFieldInfo                 |
+| FR92 | Epic 7 | Garantie cohérence source/projection                   |
+| FR93 | Epic 7 | Monitoring sync legacy                                 |
+| FR94 | Epic 7 | Alerte échec sync legacy                               |
+
 
 ## Epic List
 
@@ -836,6 +838,18 @@ Feature: Propagation Shared Metadata aux packages
 
 **UI References:** [docs/features/bmme/ui/](docs/features/bmme/ui/)
 
+**ACL Requirements (from Event Storming - Input Mapping BC):**
+
+| Action | Permission requise |
+|--------|-------------------|
+| Créer/modifier/supprimer une source | "CRUD Level User" + Droit "Gestion des Sources" |
+| Configurer les mappings | "CRUD Level User" |
+| Configurer la répétition de synchro | "CRUD Level User" |
+| Importer un fichier | "CRUD Level User" |
+| Trigger une API | "CRUD Level User" |
+
+**Note :** "CRUD Level User" est le niveau de base. Le droit "Gestion (CRUD) des Sources" est un droit spécifique attribuable dans les ACL (cf. Epic 6).
+
 #### Story 3.1 : Dashboard de monitoring des synchronisations
 
 As a **Admin Interne VDM**,
@@ -851,23 +865,30 @@ Feature: Dashboard de monitoring des synchronisations
 
   Background:
     Given je suis connecté en tant qu'Admin Interne VDM
-    And j'accède à "External sources > Synchronizations"
+    And j'accède à "External sources"
 
-  Scenario: Affichage des cartes sources en haut du dashboard
+  # --- Vue API syncs (synchronisations API) ---
+
+  Scenario: Navigation vers les synchronisations API
+    When je clique sur "API syncs" dans la sidebar
+    Then je vois la page "Synchronizations" avec :
+      | Élément | Description |
+      | Header | "Synchronizations · X in the last month" |
+      | Cartes sources | Unity, Iron, IMDb, MovieLibrary, VDM C |
+      | Tableau | Liste des synchronisations paginée |
+
+  Scenario: Affichage des cartes sources API en haut du dashboard
+    Given je suis sur "API syncs"
     Then je vois 5 cartes sources : Unity, Iron, IMDb, MovieLibrary, VDM C
     And chaque carte affiche :
       | Élément | Format |
       | Nom de la source | "Unity", "Iron", etc. |
       | Badge statut | 🟢 (vert) ou 🔴 (rouge) selon état |
       | Last sync | Temps relatif (ex: "2h. ago") avec icône ⏱️ |
-      | Last week | "X syncs" avec compteur d'erreurs coloré (ex: "🔴 2") |
+      | Last week | "X syncs" avec compteurs syncs/erreurs (ex: "12 0" ou "12 2") |
 
-  Scenario: Filtrage des sources par statut
-    When une source Unity a des erreurs récentes
-    Then la carte Unity affiche un badge rouge
-    And le compteur "Last week" affiche le nombre d'erreurs en rouge
-
-  Scenario: Affichage du tableau des synchronisations
+  Scenario: Affichage du tableau des synchronisations API
+    Given je suis sur "API syncs"
     Then je vois un tableau paginé avec les colonnes :
       | Colonne | Description |
       | Source | Nom de la source (Unity, Iron, IMDb, VDM C) |
@@ -877,22 +898,56 @@ Feature: Dashboard de monitoring des synchronisations
       | Updates | "X titles · Y fields" |
     And les lignes avec erreurs affichent une icône 🔄 pour relancer
 
-  Scenario: Filtrage du tableau des synchronisations
-    When je clique sur le filtre "Source"
-    And je sélectionne "Unity"
-    Then seules les synchronisations Unity sont affichées
-    And un badge "Unity ×" apparaît pour indiquer le filtre actif
+  # --- Vue File imports (imports fichiers) ---
+
+  Scenario: Navigation vers les imports fichiers
+    When je clique sur "File importer" dans la sidebar
+    Then je vois la page "File imports" avec :
+      | Élément | Description |
+      | Header | "File imports · X in the last month" |
+      | Cartes mappings | Liste des mappings fichiers configurés (ex: test-mappings, ROD-july-2026) |
+      | Bouton | "New import" pour importer un nouveau fichier |
+      | Tableau | Liste des imports paginée |
+
+  Scenario: Affichage des cartes mappings fichiers
+    Given je suis sur "File importer"
+    Then je vois les cartes des mappings fichiers configurés
+    And chaque carte affiche :
+      | Élément | Format |
+      | Nom du mapping | "test-mappings", "ROD-july-2026", etc. |
+      | Période | "last week" |
+      | Compteur imports | "X imports" |
+      | Compteur erreurs | Nombre d'erreurs (ou 0) |
+
+  Scenario: Affichage du tableau des imports fichiers
+    Given je suis sur "File importer"
+    Then je vois un tableau paginé avec les colonnes :
+      | Colonne | Description |
+      | File | Nom du fichier importé |
+      | Date | Date et heure de l'import |
+      | Mapping | Nom du mapping utilisé (test-mapping, etc.) |
+      | Trigger | 👤 John Doe (utilisateur qui a importé) |
+      | Errors | "Loaded" (vert) ou "X errors" (rouge) |
+      | Entries | Nombre d'entrées traitées |
+      | Update | "X titles" mis à jour |
+
+  # --- Fonctionnalités communes ---
+
+  Scenario: Filtrage du tableau par source/mapping
+    When je clique sur le filtre "Source" (API) ou "Mapping" (fichiers)
+    And je sélectionne un élément
+    Then seuls les éléments correspondants sont affichés
 
   Scenario: Filtrage par erreurs uniquement
     When j'active le toggle "Errors only"
-    Then seules les synchronisations avec erreurs sont affichées
+    Then seuls les éléments avec erreurs sont affichés
 
   Scenario: Export des données
     When je clique sur le bouton "Export"
     Then les données filtrées sont exportées au format CSV/Excel
 
   Scenario: Pagination du tableau
-    Given il y a plus de 20 synchronisations
+    Given il y a plus de 20 éléments
     Then la pagination affiche "1 - 20 of X" en bas du tableau
     And je peux naviguer entre les pages
     And je peux choisir "20 per page" via un sélecteur
@@ -972,57 +1027,88 @@ Feature: Détails de synchronisation et erreurs typées
 
 ---
 
-#### Story 3.3 : Mode diagnostic live des APIs externes
+#### Story 3.3 : Mode diagnostic live des sources externes (API et fichiers)
 
 As a **Admin Interne VDM**,
-I want **tester une API externe en temps réel pour diagnostiquer un problème**,
-So that **je comprends rapidement si le problème vient de l'API ou du mapping**.
+I want **tester une source externe (API ou fichier) en temps réel pour diagnostiquer un problème**,
+So that **je comprends rapidement si le problème vient de la source ou du mapping**.
 
 **UI Reference:** [3.3 - Mode diagnostic live des APIs externes/](docs/features/bmme/ui/3.3%20-%20Mode%20diagnostic%20live%20des%20APIs%20externes/)
 
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Mode diagnostic live API (External system troubleshoot)
+Feature: Mode diagnostic live (External system troubleshoot / File mapping troubleshoot)
 
   Background:
     Given je suis connecté en tant qu'Admin Interne VDM
 
-  Scenario: Accéder au mode troubleshoot depuis le dashboard
-    Given je suis sur le dashboard "Synchronizations"
+  # --- Mode API : External system troubleshoot ---
+
+  Scenario: Accéder au mode troubleshoot API depuis le dashboard
+    Given je suis sur le dashboard "API syncs"
     When je clique sur l'icône de diagnostic d'une source (ex: Unity)
     Then une modale "External system troubleshoot" s'ouvre
 
-  Scenario: Interface de la modale troubleshoot
+  Scenario: Interface de la modale troubleshoot API
     Given la modale "External system troubleshoot" est ouverte
     Then je vois :
       | Élément | Description |
-      | Sélecteur source | Dropdown avec "Unity" présélectionné |
-      | Sélecteur titre | Dropdown pour choisir un titre ou "Random title" |
+      | Indicateur source | "• Unity" avec statut (point coloré) |
+      | Sélecteur titre | Dropdown avec "Random title" ou titre spécifique |
       | Bouton Trigger | Bouton violet "Trigger ⚡" |
       | Zone de résultat | Affichage JSON avec coloration syntaxique |
 
   Scenario: Tester l'API avec un titre aléatoire
-    Given je suis dans la modale troubleshoot
-    When je sélectionne "Random title" dans le sélecteur de titre
+    Given je suis dans la modale troubleshoot API
+    When je sélectionne "Random title" dans le sélecteur
     And je clique sur "Trigger ⚡"
     Then le système appelle l'API externe pour un titre aléatoire
     And la réponse JSON brute s'affiche avec coloration syntaxique
 
   Scenario: Tester l'API avec un titre spécifique
-    When je sélectionne un titre (ex: "Stranger Things Season 4")
+    When je sélectionne un titre (ex: "Stranger Things Season 4") dans le dropdown
     And je clique sur "Trigger ⚡"
     Then l'API est appelée pour ce titre spécifique
     And la réponse JSON s'affiche
 
+  # --- Mode Fichier : File mapping troubleshoot ---
+
+  Scenario: Accéder au mode troubleshoot fichier depuis le dashboard
+    Given je suis sur le dashboard "File importer" ou l'éditeur de mapping fichier
+    When je clique sur "Test file" ou l'icône de diagnostic d'un mapping fichier
+    Then une modale "File mapping troubleshoot" s'ouvre
+
+  Scenario: Interface de la modale troubleshoot fichier
+    Given la modale "File mapping troubleshoot" est ouverte
+    Then je vois :
+      | Élément | Description |
+      | Indicateur mapping | "📄 test-mappings" (icône fichier + nom) |
+      | Sélecteur fichier | "Select a CSV file" avec bouton upload |
+      | Bouton Test | Bouton violet "Test" |
+      | Zone de résultat | Vide avec message "Import a JSON file to get started" |
+
+  Scenario: Tester un mapping fichier avec upload
+    Given je suis dans la modale troubleshoot fichier
+    And la zone affiche "Import a JSON file to get started" avec bouton "Upload file"
+    When je clique sur "Upload file" ou "Select a CSV file"
+    And je sélectionne un fichier test (ex: test.json)
+    Then le fichier est chargé
+    And le nom du fichier apparaît dans le header (ex: "test.json ×")
+    When je clique sur "Test"
+    Then le système parse le fichier avec le mapping configuré
+    And la réponse JSON s'affiche avec les données mappées
+
+  # --- Affichage des erreurs (commun aux deux modes) ---
+
   Scenario: Affichage des erreurs de mapping inline dans le JSON
-    Given l'API a retourné une réponse JSON
+    Given le résultat JSON est affiché (API ou fichier)
     Then les champs problématiques sont annotés avec un badge rouge ⚠️
     And les erreurs détectées incluent :
-      | Type d'erreur | Annotation |
-      | Valeur non mappée | ⚠️ à côté de la valeur (ex: "SND" non reconnu) |
-      | Format incorrect | ⚠️ à côté du champ |
-      | Champ manquant | ⚠️ indication de champ attendu |
+      | Type d'erreur | Annotation inline |
+      | Valeur non mappée | ⚠️ "Value 'SND' missing from mapped options" |
+      | Format incorrect | ⚠️ format de date invalide |
+      | Champ non reconnu | ⚠️ champ surligné en rouge |
 
   Scenario: Tooltip explicatif au survol d'une erreur
     Given le JSON affiche des badges d'erreur ⚠️
@@ -1031,12 +1117,13 @@ Feature: Mode diagnostic live API (External system troubleshoot)
     And le message indique la cause (ex: "Value 'SND' missing from mapped options")
 
   Scenario: Structure JSON avec erreurs multiples
-    Given l'API retourne un objet complexe
+    Given la source retourne un objet complexe
     Then la structure JSON est affichée avec indentation :
       | Chemin | Exemple d'erreur |
       | summary.productionCompanies | ⚠️ "SND" non mappé |
       | dates.releaseDate | ⚠️ format de date invalide |
       | languagesAndInternationalization.originalCountry | ⚠️ valeur non reconnue |
+    And les champs en erreur sont surlignés en magenta/rouge
     And je peux identifier rapidement tous les problèmes
 ```
 
@@ -1044,10 +1131,305 @@ Feature: Mode diagnostic live API (External system troubleshoot)
 
 ---
 
-#### Story 3.4 : Éditeur de mappings avec Formatting et Mapping options
+#### Story 3.4 : Création et configuration des mappings externes
 
 As a **Admin Interne VDM**,
-I want **configurer visuellement les mappings entre un système externe et mediaspot, incluant les transformations et correspondances d'enums**,
+I want **créer et configurer des mappings pour des sources externes (API ou fichiers)**,
+So that **je peux connecter de nouvelles sources de données sans intervention technique**.
+
+**UI Reference:** [3.4, 3.5 - Éditeur visuel de mappings/](docs/features/bmme/ui/3.4%2C%203.5%20-%20%C3%89diteur%20visuel%20de%20mappings%2C%20Configuration%20des%20Formatting%20et%20Mapping%20options/)
+
+**Acceptance Criteria:**
+
+```gherkin
+Feature: Création et configuration des mappings externes
+
+  Background:
+    Given je suis connecté en tant qu'Admin Interne VDM
+    And j'accède à "External sources"
+
+  # --- Navigation et liste des mappings ---
+
+  Scenario: Navigation vers la section Mappings
+    Given je suis dans le menu "External sources"
+    Then je vois une section "Mappings" dans la sidebar avec :
+      | Mapping | Icône |
+      | Iron | 🌐 (globe - API) |
+      | Unity | 🌐 (globe - API) |
+      | IMDb | 🌐 (globe - API) |
+      | VDM Connect | 🌐 (globe - API) |
+      | test-mappings | 📄 (fichier - File-based) |
+    And je vois un bouton "+ New mapping" en bas de la liste
+
+  # --- Création d'un nouveau mapping ---
+
+  Scenario: Ouvrir la modale de création de mapping
+    When je clique sur "+ New mapping"
+    Then une modale "Create a new mapping" s'ouvre
+    And je vois les champs :
+      | Champ | Description |
+      | Input type | Dropdown avec "API or file-based" |
+      | System name | Champ texte (ex: "IMDb") |
+    And les boutons "Cancel" et "Next →"
+
+  Scenario: Créer un mapping de type API
+    Given la modale "Create a new mapping" est ouverte
+    When je sélectionne "API" dans le dropdown "Input type"
+    And je saisis "CustomAPI" dans "System name"
+    And je clique sur "Next →"
+    Then je suis redirigé vers la page de configuration du mapping API
+    And je vois l'onglet "Configuration" actif avec :
+      | Champ | Description |
+      | Input type | "API" (dropdown) |
+      | Default URL | Champ texte avec placeholder "{id}" |
+      | API Key | Champ texte (optionnel) |
+    And je vois les boutons "Test API" et "Save"
+    And le badge "Not configured" s'affiche
+
+  Scenario: Créer un mapping de type fichier
+    Given la modale "Create a new mapping" est ouverte
+    When je sélectionne "File-based" dans le dropdown "Input type"
+    And je saisis "ROD-import" dans "System name"
+    And je clique sur "Next →"
+    Then je suis redirigé vers la page de configuration du mapping fichier
+    And je vois l'onglet "Configuration" actif avec :
+      | Champ | Description |
+      | Input type | "File-based" (dropdown) |
+      | Extension | Dropdown avec "CSV", "JSON", etc. |
+    And je vois les boutons "Test file" et "Save"
+    And le badge "Not configured" s'affiche
+
+  # --- Configuration d'un mapping API ---
+
+  Scenario: Configurer l'URL et la clé API
+    Given je suis sur la configuration d'un mapping API
+    When je saisis "api.imdb.com/title/{id}" dans "Default URL"
+    And je saisis ma clé API dans "API Key"
+    And je clique sur "Save"
+    Then la configuration est sauvegardée
+    And le badge passe de "Not configured" à "X/Y fields mapped"
+
+  Scenario: Détecter les champs via appel API (mapping API)
+    Given je suis sur l'onglet "Mappings" d'un mapping API
+    And aucun champ n'est détecté
+    Then je vois le message "Trigger an API call with a given ID"
+    And le sous-texte "We will use it to detect the API's response and fields"
+    And un champ "Title ID" avec bouton "⚡ Trigger"
+    When je saisis un ID de titre
+    And je clique sur "⚡ Trigger"
+    Then le système appelle l'API avec cet ID
+    And les champs détectés s'affichent (ex: stream-id, title, tmp-id)
+    And chaque champ affiche son type détecté (number, string, etc.)
+    And les champs sont marqués "→ unused" par défaut
+
+  # --- Configuration d'un mapping fichier ---
+
+  Scenario: Détecter les champs via upload fichier (mapping fichier)
+    Given je suis sur l'onglet "Mappings" d'un mapping fichier
+    And aucun champ n'est détecté
+    Then je vois le message "Import a test file to get started"
+    And le sous-texte "We will use it to detect your base file structure and fields"
+    And un bouton "Upload file"
+    When je clique sur "Upload file"
+    And je sélectionne un fichier CSV/JSON de test
+    Then le système parse le fichier
+    And les champs détectés s'affichent (ex: stream-id, title, tmp-id)
+    And chaque champ affiche son type détecté (number, string, etc.)
+    And les champs sont marqués "→ unused" par défaut
+
+  # --- NOUVEAU (Event Storming - Input Validation BC) : Validation des formats de fichiers ---
+
+  Scenario: Validation d'un fichier JSON valide
+    Given le mapping est configuré pour des fichiers JSON
+    When j'importe un fichier JSON bien formé
+    Then le fichier est validé avec succès
+    And la data est extraite
+    And le fichier temporaire est supprimé après extraction
+    And les données sont disponibles pour le mapping
+
+  Scenario: Rejet d'un fichier JSON invalide
+    Given le mapping est configuré pour des fichiers JSON
+    When j'importe un fichier avec une syntaxe JSON invalide
+    Then un message d'erreur s'affiche : "Invalid JSON format: [détail de l'erreur]"
+    And la ligne/position de l'erreur est indiquée si possible
+    And le fichier est rejeté
+    And aucune donnée n'est importée
+
+  Scenario: Rejet d'un fichier au mauvais format
+    Given le mapping est configuré pour des fichiers CSV
+    When j'importe un fichier XML
+    Then un message d'erreur s'affiche : "Format mismatch: expected CSV, got XML"
+    And le fichier est rejeté
+
+  Scenario: Validation d'un fichier CSV avec headers
+    Given le mapping est configuré pour des fichiers CSV
+    When j'importe un fichier CSV
+    Then le système détecte automatiquement le séparateur (virgule, point-virgule, tab)
+    And les headers sont extraits comme noms de champs
+    And les types sont inférés depuis les premières lignes de données
+
+  Scenario: Validation d'un fichier XML avec structure
+    Given le mapping est configuré pour des fichiers XML
+    When j'importe un fichier XML bien formé
+    Then le système parse la structure hiérarchique
+    And les éléments/attributs sont présentés comme champs mappables
+
+  # --- Test des mappings ---
+
+  Scenario: Tester le mapping API
+    Given je suis sur un mapping de type API
+    When je clique sur "Test API" dans le header
+    Then la modale "External system troubleshoot" s'ouvre (cf. Story 3.3)
+    And je peux vérifier que la connexion API fonctionne
+
+  Scenario: Tester le mapping fichier
+    Given je suis sur un mapping de type fichier
+    When je clique sur "Test file" dans le header
+    Then la modale "File mapping troubleshoot" s'ouvre (cf. Story 3.3)
+    And je peux uploader un fichier test pour vérifier la structure
+
+  # --- NOUVEAU (Event Storming) : Règles de validation à l'entrée ---
+
+  Scenario: Validation du nom de source unique
+    Given je crée une nouvelle source
+    When je saisis un nom déjà utilisé par une autre source
+    Then un message d'erreur s'affiche : "Ce nom de source existe déjà"
+    And le bouton "Next →" reste désactivé
+
+  Scenario: Validation des champs obligatoires pour une source API
+    Given je crée une source de type "API"
+    Then les champs suivants sont obligatoires :
+      | Champ | Validation |
+      | System name | Non vide, unique |
+      | Default URL | Format URL valide avec placeholder {id} |
+    And le champ "API Key" est optionnel
+
+  Scenario: Validation des champs obligatoires pour une source File
+    Given je crée une source de type "File-based"
+    Then les champs suivants sont obligatoires :
+      | Champ | Validation |
+      | System name | Non vide, unique |
+      | Extension | Sélection parmi CSV, JSON, XML |
+
+  # --- NOUVEAU (Event Storming) : Gestion du changement de structure API ---
+
+  Scenario: Détection de changement de structure API
+    Given un mapping API existe avec des champs détectés
+    When je déclenche un nouveau "⚡ Trigger" avec un ID
+    And la structure de l'API a changé (nouveaux champs, champs supprimés)
+    Then le système affiche un avertissement : "La structure de l'API a changé"
+    And les nouveaux champs sont affichés avec badge "NEW"
+    And les champs disparus sont marqués "⚠️ Missing in API"
+
+  Scenario: Remplacement de la structure API (écrasement)
+    Given la structure de l'API a changé
+    When je clique sur "Update structure"
+    Then la nouvelle structure remplace l'ancienne
+    And les champs non mappés disparaissent de la liste
+    And les mappings existants sont préservés si le champ existe toujours
+    And un log enregistre "Structure updated - X fields added, Y fields removed"
+```
+
+**FRs couverts :** FR35, FR71
+
+**Event Storming Reference:** Input Mapping BC - Commandes "Créer une nouvelle source", "Paramétrer la source", "Importer la structure des champs"
+
+---
+
+#### Story 3.4bis : Configuration de la répétition de synchronisation automatique
+
+As a **Admin Interne VDM**,
+I want **configurer la répétition automatique des synchronisations pour les sources API**,
+So that **les données sont mises à jour régulièrement sans intervention manuelle**.
+
+**Acceptance Criteria:**
+
+```gherkin
+Feature: Configuration de la répétition de synchronisation automatique
+
+  Background:
+    Given je suis connecté en tant qu'Admin Interne VDM
+    And j'accède à la configuration d'une source de type "API"
+
+  # --- Activation de la synchro auto ---
+
+  Scenario: Activer la synchronisation automatique
+    Given je suis sur l'onglet "Configuration" d'une source API
+    Then je vois une section "Automatic synchronization" avec :
+      | Élément | Description |
+      | Toggle | "Enable auto-sync" (ON/OFF) |
+      | Section config | Masquée si toggle OFF |
+
+  Scenario: Configuration de la périodicité
+    Given le toggle "Enable auto-sync" est activé
+    Then je vois les champs de configuration :
+      | Champ | Type | Options/Format |
+      | Every | Number input + Dropdown | 1, 2, 3... + hour/day/week/month |
+      | On | Dropdown (conditionnel) | Jours de semaine (si week) ou jour du mois (si month) |
+      | At | Time picker | Format HH:MM:SS |
+
+  Scenario: Configuration d'une synchro quotidienne
+    Given je configure la répétition
+    When je sélectionne "Every 1 day"
+    And je définis l'heure à "02:00:00"
+    And je clique sur "Save"
+    Then la synchro automatique est programmée tous les jours à 02h00
+    And le badge affiche "Auto-sync: Daily at 02:00"
+
+  Scenario: Configuration d'une synchro hebdomadaire
+    Given je configure la répétition
+    When je sélectionne "Every 1 week"
+    Then le champ "On" apparaît avec les jours de la semaine
+    When je sélectionne "Monday"
+    And je définis l'heure à "03:00:00"
+    And je clique sur "Save"
+    Then la synchro est programmée tous les lundis à 03h00
+    And le badge affiche "Auto-sync: Weekly on Monday at 03:00"
+
+  Scenario: Configuration d'une synchro mensuelle
+    Given je configure la répétition
+    When je sélectionne "Every 1 month"
+    Then le champ "On" apparaît avec les jours du mois (1-31)
+    When je sélectionne "15"
+    And je définis l'heure à "04:00:00"
+    And je clique sur "Save"
+    Then la synchro est programmée le 15 de chaque mois à 04h00
+    And le badge affiche "Auto-sync: Monthly on day 15 at 04:00"
+
+  # --- Restrictions et validation ---
+
+  Scenario: Répétition disponible uniquement pour les sources API
+    Given je suis sur la configuration d'une source "File-based"
+    Then la section "Automatic synchronization" n'est PAS affichée
+    And un message explique : "Auto-sync is only available for API sources"
+
+  Scenario: Validation des inputs de répétition
+    Given je configure la répétition
+    When je saisis une valeur invalide (ex: 0 ou négatif)
+    Then un message d'erreur s'affiche
+    And le bouton "Save" reste désactivé
+
+  # --- Affichage dans le dashboard ---
+
+  Scenario: Indicateur de synchro planifiée dans les cartes sources
+    Given une source a une synchro automatique configurée
+    When je consulte le dashboard "API syncs"
+    Then la carte de la source affiche :
+      | Élément | Format |
+      | Badge | "Auto" avec icône ⏰ |
+      | Next sync | "Next: Tomorrow at 02:00" |
+```
+
+**FRs couverts :** FR32 (enrichi), FR42 (enrichi)
+
+**Event Storming Reference:** Input Mapping BC - Commande "Paramétrer la répétition de la synchronisation"
+
+---
+
+#### Story 3.5 : Éditeur visuel de mappings - Correspondances de champs
+
+As a **Admin Interne VDM**,
+I want **configurer visuellement les correspondances entre les champs d'une source externe et les champs mediaspot, incluant les transformations et correspondances d'enums**,
 So that **je n'ai pas besoin de modifier du code pour corriger un mapping ou ajouter des transformations**.
 
 **UI Reference:** [3.4, 3.5 - Éditeur visuel de mappings/](docs/features/bmme/ui/3.4%2C%203.5%20-%20%C3%89diteur%20visuel%20de%20mappings%2C%20Configuration%20des%20Formatting%20et%20Mapping%20options/)
@@ -1055,41 +1437,52 @@ So that **je n'ai pas besoin de modifier du code pour corriger un mapping ou ajo
 **Acceptance Criteria:**
 
 ```gherkin
-Feature: Éditeur de mappings avec Formatting et Mapping options
+Feature: Éditeur visuel de mappings - Correspondances de champs
 
   Background:
     Given je suis connecté en tant qu'Admin Interne VDM
-    And j'accède à "External sources > Mappings > Unity" (ou autre source)
+    And j'accède à un mapping existant (ex: "External sources > Mappings > Unity")
 
-  Scenario: Navigation vers l'éditeur de mappings
-    Given je suis dans le menu "External sources"
-    Then je vois une section "Mappings" avec les sources configurées :
-      | Source |
-      | Iron |
-      | Unity |
-      | IMDb |
-      | VDM Connect |
-    And je peux cliquer sur "+ New mapping" pour ajouter une source
+  # --- Vue des mappings ---
 
   Scenario: Affichage de la vue hiérarchique des mappings
     When je clique sur "Unity" dans la section Mappings
-    Then je vois la page "Unity mappings" avec :
+    Then je vois la page "Unity" avec :
       | Élément | Description |
-      | Header | "Unity mappings" avec compteur "(X/Y fields mapped)" |
+      | Header | "🌐 Unity" avec compteur "X/Y fields mapped" |
+      | Onglets | "Configuration" et "Mappings" |
       | Boutons | "Test API" et "Save" |
-      | Filtre | Champ de recherche "Mapped fields ▾" |
+    And l'onglet "Mappings" affiche les champs en structure arborescente
+
+  Scenario: Liste des champs avec filtres
+    Given je suis sur l'onglet "Mappings"
+    Then je vois :
+      | Élément | Description |
+      | Recherche | Champ "Rechercher un champ" |
+      | Toggle | "Mapped fields only" pour filtrer |
     And les champs sont affichés en structure arborescente (JSON-like)
 
-  Scenario: Structure hiérarchique des champs à mapper
+  Scenario: Structure des champs simples à mapper
     Given je suis sur la page "Unity mappings"
-    Then je vois les champs organisés hiérarchiquement :
+    Then je vois les champs simples :
       | Niveau | Exemple |
-      | Racine | artistCode, catalog, originCountry |
-      | Objet | isan (avec sous-champs episode, root, version) |
-      | Localisé | keywords ARRAY Localized (avec fr, en, de, etc.) |
-      | Service | service ARRAY (avec titleAlternatives) |
-    And chaque champ affiche son type (string, ARRAY, Localized, etc.)
-    And la notation "→" indique le champ cible mediaspot
+      | Source tagname | artistCode, catalog, originCountry |
+      | Source type | string, number |
+      | mediaspot tagname | artistCode, catalog, originCountry ou "unused" si non mappé |
+      | mediaspot type | string, number |
+      | indication de localisation si le champ est un champ localisable | localized |
+
+  Scenario: Structure des champs complexes à mapper
+    Given je suis sur la page "Unity mappings"
+    Then je vois les champs complexes organisés hiérarchiquement :
+      | Niveau | Exemple |
+      | Collapse / Expand | accordion afin d'ouvrir la hiérarchie de l'objet |
+      | Source tagname | artistCode, catalog, originCountry |
+      | Source type | object |
+    And je vois les enfants de cet objet sous la forme de champs simples
+
+
+  # --- Configuration des champs ---
 
   Scenario: Ouvrir la modale "Field mapping settings"
     When je clique sur un champ (ex: "productionYear")
@@ -1112,6 +1505,15 @@ Feature: Éditeur de mappings avec Formatting et Mapping options
       | titleNationalities | CountryCode | - |
     And je peux filtrer par nom de champ
 
+  Scenario: Champ non mappé (désactivé)
+    Given je clique sur un champ non mappé
+    Then le toggle est OFF (grisé)
+    And aucune configuration n'est affichée
+    When j'active le toggle
+    Then les options de configuration apparaissent
+
+  # --- Formatting options ---
+
   Scenario: Ajouter une Formatting option
     Given la modale "Field mapping settings" est ouverte
     When je survole la zone sous le champ
@@ -1123,6 +1525,40 @@ Feature: Éditeur de mappings avec Formatting et Mapping options
       | trim | Supprime les espaces |
       | join | Fusionne un tableau en chaîne |
       | format | Applique un format (dates, etc.) |
+      | Custom Liquid | Script Liquid personnalisé |
+
+  # --- NOUVEAU (Event Storming) : Scripts Liquid pour formatting ---
+
+  Scenario: Ouvrir l'éditeur de script Liquid
+    Given je suis dans la modale "Field mapping settings"
+    When je clique sur "+ add formatting"
+    And je sélectionne "Custom Liquid"
+    Then un éditeur de code s'ouvre avec coloration syntaxique
+    And un champ "Preview input" affiche la dernière valeur sauvegardée du champ
+    And un champ "Preview output" affiche le résultat en temps réel
+
+  Scenario: Écrire un script Liquid avec prévisualisation temps réel
+    Given l'éditeur Liquid est ouvert
+    And le champ source a une valeur sauvegardée (ex: "John Doe, Jane Doe")
+    When je saisis le script : `{{ value | split: ", " | first }}`
+    Then la prévisualisation s'affiche en temps réel :
+      | Input | Output |
+      | "John Doe, Jane Doe" | "John Doe" |
+    And l'output est mis à jour à chaque modification du script
+
+  Scenario: Validation du script Liquid - erreur de syntaxe
+    Given je saisis un script Liquid invalide (erreur de syntaxe)
+    Then un message d'erreur s'affiche : "Liquid syntax error: ..."
+    And la ligne en erreur est mise en évidence en rouge
+    And le bouton "Save" reste désactivé
+
+  Scenario: Validation du type de sortie du script
+    Given le champ mediaspot cible est de type "number"
+    And mon script Liquid retourne une chaîne "abc"
+    Then un avertissement s'affiche : "Output type mismatch: expected number, got string"
+    And je dois corriger le script ou forcer la sauvegarde avec warning
+
+  # --- Value mappings (correspondances d'enums) ---
 
   Scenario: Ajouter des Value mappings (correspondances d'enums)
     Given la modale "Field mapping settings" est ouverte pour un champ avec enums
@@ -1142,6 +1578,33 @@ Feature: Éditeur de mappings avec Formatting et Mapping options
     When je sélectionne "French"
     Then les valeurs input/output sont affichées en français
 
+  # --- NOUVEAU (Event Storming) : Mapping 1 champ → N champs (duplication) ---
+
+  Scenario: Mapper un champ source vers plusieurs champs mediaspot
+    Given je suis dans la modale "Field mapping settings" pour le champ "fullName"
+    When je clique sur "+ Add another target"
+    Then un second sélecteur de champ cible apparaît
+    And je peux configurer des transformations différentes pour chaque cible :
+      | Cible | Transformation |
+      | firstName | `{{ value | split: " " | first }}` |
+      | lastName | `{{ value | split: " " | last }}` |
+
+  Scenario: Duplication des options de mapping pour multi-cibles
+    Given un champ source est mappé vers 2 champs mediaspot
+    Then chaque cible a ses propres :
+      | Option | Indépendant par cible |
+      | Formatting option | ✅ Oui |
+      | Value mapping | ✅ Oui |
+    And les modifications d'une cible n'affectent pas l'autre
+
+  Scenario: Supprimer une cible de mapping
+    Given un champ source est mappé vers 2 champs mediaspot
+    When je clique sur "🗑️ Remove" sur la seconde cible
+    Then la seconde cible est supprimée
+    And le mapping vers la première cible reste intact
+
+  # --- Objets complexes ---
+
   Scenario: Gérer les objets complexes imbriqués
     Given je clique sur un champ de type "object" (ex: "version")
     Then la modale affiche la structure hiérarchique :
@@ -1150,12 +1613,38 @@ Feature: Éditeur de mappings avec Formatting et Mapping options
     And chaque sous-champ a son propre toggle actif/inactif
     And les objets imbriqués (ex: country > fr, en) sont également configurables
 
-  Scenario: Champ non mappé (désactivé)
-    Given je clique sur un champ non mappé
-    Then le toggle est OFF (grisé)
-    And aucune configuration n'est affichée
-    When j'active le toggle
-    Then les options de configuration apparaissent
+  # --- NOUVEAU (Event Storming) : Règles de validation du mapping ---
+
+  Scenario: Value mapping obligatoire si le champ cible est un enum
+    Given je mappe un champ source vers un champ mediaspot de type "enum" (ex: genres)
+    And je n'ai pas configuré de value mapping
+    When je tente de sauvegarder
+    Then un message d'erreur s'affiche : "Value mapping required for enum fields"
+    And le bouton "Save" reste désactivé
+    And un lien "+ add mappings" est mis en évidence
+
+  Scenario: Formatting option recommandée si les types diffèrent
+    Given je mappe un champ source de type "string" vers un champ cible de type "date"
+    And je n'ai pas configuré de formatting option
+    When je tente de sauvegarder
+    Then un avertissement s'affiche : "Type mismatch: consider adding a formatting option"
+    And je peux forcer la sauvegarde avec un warning badge sur le champ
+
+  Scenario: Indicateur de compatibilité des types
+    Given je suis dans la modale "Field mapping settings"
+    Then je vois un indicateur de compatibilité :
+      | Source type | Target type | Indicateur |
+      | string | string | ✅ Compatible |
+      | string | number | ⚠️ Formatting recommended |
+      | string | enum | ⚠️ Value mapping required |
+      | object | string | ❌ Incompatible - flatten required |
+
+  Scenario: Blocage des mappings incompatibles
+    Given je tente de mapper un champ "object" vers un champ "string" sans flatten
+    Then un message d'erreur s'affiche : "Cannot map object to string directly"
+    And une suggestion propose : "Use a Liquid script to extract specific values"
+
+  # --- Indicateurs et sauvegarde ---
 
   Scenario: Indicateur de formatting/mapping activés
     Given un champ a des transformations configurées
@@ -1169,18 +1658,15 @@ Feature: Éditeur de mappings avec Formatting et Mapping options
     When je clique sur "Save" dans la modale ou la page principale
     Then les modifications sont sauvegardées
     And le système valide le mapping contre un échantillon de données
-
-  Scenario: Tester le mapping
-    When je clique sur "Test API" dans le header
-    Then le mode troubleshoot s'ouvre (cf. Story 3.3)
-    And je peux vérifier que mes mappings fonctionnent correctement
 ```
 
-**FRs couverts :** FR35, FR36, FR71, FR72, FR73, FR74
+**FRs couverts :** FR36, FR72, FR73, FR74
+
+**Event Storming Reference:** Input Mapping BC - Commandes "Définir le champ comme actif", "Associer un champ de mediaspot", "Ajouter une Formatting option", "Ajouter un Value mapping", "Coder le script Liquid", "Sauvegarder le mapping du champ"
 
 ---
 
-#### Story 3.5 : Inventory settings - Configuration des sources par champ
+#### Story 3.6 : Inventory settings - Configuration des sources par champ
 
 As a **Admin Interne VDM**,
 I want **configurer la source par défaut et le verrouillage de source pour chaque champ de métadonnée**,
@@ -1270,7 +1756,7 @@ Feature: Inventory settings - Configuration des sources par champ
 
 ---
 
-#### Story 3.6 : Resynchronisation manuelle en 1 clic
+#### Story 3.7 : Resynchronisation manuelle en 1 clic
 
 As a **Admin Interne VDM**,
 I want **déclencher une resynchronisation manuelle depuis une synchronisation précédente avec suivi de progression**,
@@ -1342,13 +1828,126 @@ Feature: Resynchronisation manuelle en 1 clic
     Then la modale se ferme
     And le tableau des synchronisations montre une nouvelle ligne avec la resync
     And le trigger indique "👤 John Doe" (ou l'utilisateur connecté)
+
+  # --- NOUVEAU (Event Storming - Synchro BC) : Synchronisation partielle ---
+
+  Scenario: Synchronisation partielle - certains champs en erreur
+    Given une synchronisation est lancée
+    When certains champs sont valides et d'autres en erreur
+    Then les champs valides sont mis à jour normalement
+    And les champs en erreur ne sont PAS mis à jour
+    And les champs en erreur sont marqués avec le type d'erreur
+    And la synchronisation est marquée comme "Partial" dans le tableau
+
+  Scenario: Affichage d'une synchronisation partielle dans le tableau
+    Given une synchronisation s'est terminée partiellement
+    Then la ligne du tableau affiche :
+      | Colonne | Valeur |
+      | Errors | "X errors" (badge orange/rouge) |
+      | Status | Badge "Partial" (jaune) |
+    And l'icône 🔄 permet de relancer uniquement les champs en erreur
+
+  Scenario: Relancer une synchronisation partielle
+    Given une synchronisation est marquée "Partial"
+    When je clique sur 🔄 pour relancer
+    Then seuls les champs en erreur sont resynchronisés
+    And les champs déjà synchronisés ne sont pas re-traités
+    And si tous les champs réussissent, le statut passe à "Complete"
 ```
 
 **FRs couverts :** FR38, FR39, FR79, FR80
 
+**Event Storming Reference:** Synchro BC - Commande "Relancer une synchronisation", événement "La synchronisation a été marquée comme partielle"
+
 ---
 
-#### Story 3.7 : Synchronisation depuis VDM Connect et systèmes externes (Backend)
+#### Story 3.7bis : Mode Dry Run - Test de synchronisation sans mise à jour
+
+As a **Admin Interne VDM**,
+I want **exécuter un "dry run" pour tester une synchronisation sans réellement mettre à jour les données**,
+So that **je peux valider mon mapping et voir les changements prévus avant de les appliquer**.
+
+**Acceptance Criteria:**
+
+```gherkin
+Feature: Mode Dry Run - Test de synchronisation
+
+  Background:
+    Given je suis connecté en tant qu'Admin Interne VDM
+    And j'accède à un mapping configuré (API ou File)
+
+  # --- Dry Run pour source API ---
+
+  Scenario: Lancer un dry run sur une source API
+    Given je suis sur la configuration d'un mapping API (ex: Unity)
+    And le mapping est configuré avec des champs actifs
+    When je clique sur "Dry run" (ou "Test sync")
+    Then une modale "Dry run results" s'ouvre
+    And le système appelle l'API pour un échantillon de titres
+    And les résultats montrent ce qui SERAIT mis à jour (sans mise à jour réelle)
+
+  Scenario: Affichage des résultats dry run API
+    Given le dry run API s'est exécuté
+    Then je vois les résultats avec :
+      | Colonne | Description |
+      | Title | Nom du titre testé |
+      | Field | Champ concerné |
+      | Current value | Valeur actuelle dans mediaspot |
+      | New value | Valeur qui serait importée |
+      | Status | ✅ OK, ⚠️ Warning, ❌ Error |
+    And les changements sont mis en évidence (diff visuel)
+    And aucune donnée n'est modifiée dans la base
+
+  # --- Dry Run pour source fichier ---
+
+  Scenario: Lancer un dry run sur une source fichier
+    Given je suis sur la configuration d'un mapping fichier
+    When je clique sur "Dry run"
+    Then une modale me demande d'uploader un fichier test
+    When j'uploade un fichier CSV/JSON/XML
+    Then le système parse le fichier avec le mapping configuré
+    And les résultats montrent ce qui SERAIT mis à jour
+
+  Scenario: Affichage des résultats dry run fichier
+    Given le dry run fichier s'est exécuté
+    Then je vois les résultats avec :
+      | Colonne | Description |
+      | Row/Entry | Numéro de ligne ou entrée du fichier |
+      | Title matched | Titre mediaspot correspondant (ou "Not found") |
+      | Fields to update | Liste des champs qui seraient mis à jour |
+      | Errors | Erreurs de parsing ou de mapping |
+    And aucune donnée n'est modifiée dans la base
+
+  # --- Actions post dry run ---
+
+  Scenario: Passer du dry run à la synchronisation réelle
+    Given les résultats du dry run sont satisfaisants
+    When je clique sur "Apply changes" ou "Run real sync"
+    Then une confirmation est demandée : "This will update X titles with Y fields"
+    And après confirmation, la synchronisation réelle s'exécute
+    And les données sont effectivement mises à jour
+
+  Scenario: Annuler après dry run
+    Given les résultats du dry run montrent des problèmes
+    When je clique sur "Cancel" ou "Close"
+    Then la modale se ferme
+    And aucune donnée n'est modifiée
+    And je peux corriger mon mapping avant de réessayer
+
+  Scenario: Exporter les résultats du dry run
+    Given les résultats du dry run sont affichés
+    When je clique sur "Export results"
+    Then un fichier CSV/JSON est téléchargé avec tous les changements prévus
+    And je peux l'analyser hors ligne avant de décider
+```
+
+**FRs couverts :** FR34 (enrichi), FR42 (enrichi)
+
+**Event Storming Reference:** Synchro BC - Commandes "Configurer un Dry run sur une source file", "Lancer un Dry run sur une source API"
+
+---
+
+#### Story 3.8 : Synchronisation depuis VDM Connect et systèmes externes (Backend)
 
 As a **Système**,
 I want **synchroniser les métadonnées Title depuis VDM Connect, Unity, Iron et MovieLibrary**,
@@ -1381,9 +1980,123 @@ Feature: Synchronisation des métadonnées externes
     Then les packages sont créés dans mediaspot
     And les métadonnées sont mappées vers le nouveau modèle
     And le compteur de complétion est calculé
+
+  # --- NOUVEAU (Event Storming - Synchro BC) : Gestion de la synchronisation partielle ---
+
+  Scenario: Synchronisation partielle - traitement champ par champ
+    Given une synchronisation est en cours
+    When un champ est valide
+    Then le champ est mis à jour dans mediaspot
+    And l'historique enregistre la modification
+    When un champ est en erreur (format, mapping, etc.)
+    Then le champ n'est PAS mis à jour
+    And l'erreur est enregistrée avec le type et le message
+    And le traitement continue sur les autres champs
+
+  Scenario: Marquage d'une synchronisation comme partielle
+    Given une synchronisation s'est terminée
+    When au moins un champ est en erreur
+    Then la synchronisation est marquée avec le statut "Partial"
+    And le compteur d'erreurs est mis à jour
+    And les champs en erreur sont identifiables pour resync future
+
+  Scenario: Synchronisation de fichier - validation ligne par ligne
+    Given un fichier avec plusieurs entrées est importé
+    When une ligne est valide
+    Then les données de cette ligne sont mises à jour
+    When une ligne est invalide
+    Then la ligne est ignorée et loggée en erreur
+    And le traitement continue sur les lignes suivantes
+    And le résultat final indique "X/Y entries processed"
 ```
 
 **FRs couverts :** FR7, FR8, FR21
+
+**Event Storming Reference:** Synchro BC - Événements "Les champs valides ont été mis à jour", "Les champs en erreur ont été marqués en erreur", "La synchronisation a été marquée comme partielle"
+
+---
+
+#### Story 3.9 : Service de validation des inputs (Backend)
+
+As a **Système**,
+I want **valider les fichiers et réponses API avant traitement**,
+So that **les données corrompues ou mal formatées sont rejetées avec des messages d'erreur clairs**.
+
+**Note :** Cette story est purement backend/système et n'a pas de maquette UI associée.
+
+**Acceptance Criteria:**
+
+```gherkin
+Feature: Service de validation des inputs
+
+  # --- Validation des fichiers ---
+
+  Scenario: Validation et extraction d'un fichier JSON
+    Given un fichier JSON est importé
+    When le service de validation reçoit le fichier
+    Then il vérifie la syntaxe JSON
+    And si valide, il extrait les données
+    And il supprime le fichier temporaire après extraction
+    And il renvoie les données aux services consommateurs
+
+  Scenario: Validation et extraction d'un fichier CSV
+    Given un fichier CSV est importé
+    When le service de validation reçoit le fichier
+    Then il détecte le séparateur (virgule, point-virgule, tab)
+    And il parse les headers et les lignes
+    And si valide, il renvoie les données structurées
+
+  Scenario: Validation et extraction d'un fichier XML
+    Given un fichier XML est importé
+    When le service de validation reçoit le fichier
+    Then il vérifie que le XML est bien formé
+    And il parse la structure hiérarchique
+    And si valide, il renvoie les données structurées
+
+  Scenario: Rejet d'un fichier au format incorrect
+    Given un fichier est importé
+    When le format ne correspond pas au mapping configuré
+    Then le service renvoie une erreur : "Format mismatch"
+    And le fichier est supprimé
+    And une notification est envoyée aux consommateurs
+
+  # --- Validation des APIs ---
+
+  Scenario: Validation d'une réponse API OK
+    Given une API externe est appelée
+    When la réponse HTTP est 200 OK
+    And le body contient des données valides
+    Then les données sont extraites et renvoyées aux services consommateurs
+
+  Scenario: Gestion d'une réponse API en erreur
+    Given une API externe est appelée
+    When la réponse HTTP est une erreur (4xx, 5xx)
+    Then le service capture le code et le message d'erreur
+    And il notifie les consommateurs avec le détail de l'erreur
+    And l'erreur est loggée pour diagnostic
+
+  Scenario: Gestion d'un timeout API
+    Given une API externe est appelée
+    When le délai de réponse dépasse le timeout configuré
+    Then le service annule la requête
+    And il notifie les consommateurs : "API timeout after X seconds"
+
+  # --- Notification aux consommateurs ---
+
+  Scenario: Notification d'erreur aux services consommateurs
+    Given une erreur de validation survient
+    Then le service publie un événement d'erreur avec :
+      | Champ | Valeur |
+      | source | Nom de la source (Unity, fichier, etc.) |
+      | errorType | Type d'erreur (format, timeout, parsing) |
+      | errorMessage | Message détaillé |
+      | timestamp | Date/heure de l'erreur |
+    And les services consommateurs reçoivent la notification
+```
+
+**FRs couverts :** FR73 (enrichi), FR78 (enrichi)
+
+**Event Storming Reference:** Input Validation BC - Flux complet de validation fichier et API
 
 ---
 
@@ -1941,11 +2654,13 @@ Feature: Consultation de l'historique complet
 
 ### Epic 6 : Administration et Multi-Tenancy
 
-**SuperAdmin VDM peut** gérer les permissions ACL, administrer les plateformes clients et monitorer l'activité cross-plateformes.
+**SuperAdmin VDM peut** gérer les permissions ACL, administrer les plateformes clients, gérer le catalogue de métadonnées et monitorer l'activité cross-plateformes.
 
 **FRs couverts :** FR45, FR46, FR47, FR48, FR49, FR50, FR51, FR52
 
-**Valeur livrée :** SuperAdmin configure les ACL par rôle (Gestionnaire Catalogue, Admin Interne, Labo), gère l'isolation des données clients multi-tenancy, et accède au dashboard cross-plateformes avec audit logs.
+**Valeur livrée :** SuperAdmin configure les ACL par rôle (Gestionnaire Catalogue, Admin Interne, Labo), gère l'isolation des données clients multi-tenancy, administre le catalogue de métadonnées (CRUD champs + valeurs enum), et accède au dashboard cross-plateformes avec audit logs.
+
+**Event Storming Reference:** Metadata Catalog BC
 
 #### Story 6.1 : Définition des permissions ACL par action
 
@@ -2225,6 +2940,173 @@ Feature: Audit logs actions critiques
 ```
 
 **FRs couverts :** FR52
+
+---
+
+#### Story 6.9 : Gestion du catalogue de métadonnées (CRUD)
+
+As a **SuperAdmin VDM**,
+I want **créer, modifier et supprimer des définitions de métadonnées dans le catalogue**,
+So that **je peux faire évoluer le modèle de données mediaspot sans intervention technique**.
+
+**Acceptance Criteria:**
+
+```gherkin
+Feature: Gestion du catalogue de métadonnées (CRUD)
+
+  Background:
+    Given je suis connecté en tant que SuperAdmin VDM
+    And j'accède à "Inventory settings > Metadata Fields"
+
+  # --- Création d'une métadonnée ---
+
+  Scenario: Créer une nouvelle métadonnée
+    When je clique sur "Add" dans le tableau des champs
+    Then une modale "Create metadata field" s'ouvre avec :
+      | Champ | Type | Obligatoire |
+      | Field name | Text input | ✅ |
+      | Type | Dropdown (string, number, date, enum, etc.) | ✅ |
+      | Level | Dropdown (title, localized) | ✅ |
+      | Default source | Dropdown (Unity, mediaspot, etc.) | ❌ |
+      | Description | Text area | ❌ |
+
+  Scenario: Validation du nom de métadonnée unique
+    Given je crée une nouvelle métadonnée
+    When je saisis un nom déjà utilisé
+    Then un message d'erreur s'affiche : "Ce nom de champ existe déjà"
+    And le bouton "Create" reste désactivé
+
+  # --- Modification d'une métadonnée ---
+
+  Scenario: Modifier le label d'une métadonnée
+    Given je clique sur "Edit" pour une métadonnée existante
+    When je modifie le label (ex: "Original Title" → "Titre Original")
+    And je clique sur "Save"
+    Then le label est mis à jour dans tout le système
+    And un log audit enregistre la modification
+
+  # --- Suppression d'une métadonnée ---
+
+  Scenario: Vérification des dépendances avant suppression
+    Given je clique sur "Delete" pour une métadonnée
+    When la métadonnée est utilisée dans des mappings
+    Then un message d'avertissement s'affiche :
+      | Type | Détail |
+      | Input mappings | "Utilisée dans 3 mappings sources (Unity, Iron, IMDb)" |
+      | Output mappings | "Utilisée dans 2 mappings providers (iTunes, Amazon)" |
+    And le bouton "Delete" est remplacé par "Cannot delete - In use"
+
+  Scenario: Suppression d'une métadonnée inutilisée
+    Given la métadonnée n'est utilisée dans aucun mapping
+    When je clique sur "Delete"
+    Then une confirmation est demandée : "Cette action est irréversible"
+    And après confirmation, la métadonnée est supprimée
+    And un log audit enregistre la suppression
+
+  # --- Consultation des usages ---
+
+  Scenario: Consulter où une métadonnée est utilisée
+    Given je clique sur une métadonnée dans le tableau
+    Then un panneau latéral affiche :
+      | Section | Contenu |
+      | Properties | Type, Level, Default source, Lock source |
+      | Used in Input mappings | Liste des sources utilisant ce champ |
+      | Used in Output mappings | Liste des providers utilisant ce champ |
+    And chaque usage est cliquable pour naviguer vers le mapping concerné
+```
+
+**FRs couverts :** FR50, FR51 (enrichis)
+
+**Event Storming Reference:** Metadata Catalog BC - Commandes "Créer une méta", "Modifier la label d'une métadata", "Supprimer une méta", "Consulter les infos d'une méta"
+
+---
+
+#### Story 6.10 : Gestion des valeurs d'énumérations
+
+As a **SuperAdmin VDM**,
+I want **gérer les valeurs possibles des métadonnées de type enum (genres, pays, etc.)**,
+So that **je peux ajouter, modifier ou supprimer des options sans intervention technique**.
+
+**Acceptance Criteria:**
+
+```gherkin
+Feature: Gestion des valeurs d'énumérations
+
+  Background:
+    Given je suis connecté en tant que SuperAdmin VDM
+    And j'accède à "Inventory settings > Metadata values"
+
+  # --- Liste des enums ---
+
+  Scenario: Consulter la liste des métadonnées enum
+    When j'accède à "Metadata values"
+    Then je vois la liste des métadonnées de type enum :
+      | Champ | Nombre de valeurs |
+      | genres | 45 values |
+      | countries | 195 values |
+      | languages | 50 values |
+      | contentRatings | 12 values |
+
+  Scenario: Consulter les valeurs d'un enum
+    When je clique sur "genres"
+    Then je vois la liste des valeurs :
+      | Value | Translations | Used in |
+      | Action | FR: Action, DE: Aktion | 234 titles |
+      | Comedy | FR: Comédie, DE: Komödie | 456 titles |
+      | Drama | FR: Drame, DE: Drama | 789 titles |
+
+  # --- Ajout d'une valeur ---
+
+  Scenario: Ajouter une nouvelle valeur d'enum
+    Given je suis sur les valeurs de "genres"
+    When je clique sur "Add value"
+    And je saisis "Thriller" comme valeur
+    And je saisis les traductions (FR: "Thriller", DE: "Thriller")
+    And je clique sur "Save"
+    Then la valeur est ajoutée à la liste
+    And elle est disponible dans les mappings et l'édition de métadonnées
+
+  Scenario: Validation de l'unicité des valeurs
+    Given je tente d'ajouter une valeur existante
+    Then un message d'erreur s'affiche : "Cette valeur existe déjà"
+    And le bouton "Save" reste désactivé
+
+  # --- Modification d'une valeur ---
+
+  Scenario: Modifier une valeur d'enum
+    Given je clique sur "Edit" pour une valeur existante
+    When je modifie le label ou les traductions
+    And je clique sur "Save"
+    Then les modifications sont propagées à tous les titres utilisant cette valeur
+
+  # --- Suppression d'une valeur ---
+
+  Scenario: Vérification des dépendances avant suppression (value mappings)
+    Given je clique sur "Delete" pour une valeur d'enum
+    When cette valeur est utilisée dans des value mappings
+    Then un message d'avertissement s'affiche :
+      "Cette valeur est utilisée dans 2 value mappings (Unity → genres, Iron → genres)"
+    And je dois choisir :
+      | Option | Action |
+      | "Remove from mappings" | Supprime la valeur et les correspondances de mapping |
+      | "Cancel" | Annule la suppression |
+
+  Scenario: Suppression d'une valeur utilisée par des titres
+    Given je clique sur "Delete" pour une valeur utilisée par des titres
+    Then un message d'avertissement s'affiche :
+      "Cette valeur est utilisée par 234 titres"
+    And je dois choisir une valeur de remplacement avant de supprimer
+    When je sélectionne "Drama" comme remplacement
+    And je confirme
+    Then tous les titres sont mis à jour avec la nouvelle valeur
+    And la valeur originale est supprimée
+```
+
+**FRs couverts :** FR50 (enrichi)
+
+**Event Storming Reference:** Metadata Catalog BC - Commande "Modifier les valeurs d'une métadonnée Enum"
+
+**Hotspot résolu:** "Suppression d'une option: suppression des mappings l'utilisant ou blocage ?" → Choix proposé à l'utilisateur
 
 ---
 
