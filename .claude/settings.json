@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/jgue/OneDrive - Groupe Transatlantic/mediaspot/Claude/_bmad/bmm/**)",
+      "mcp__atlassian__searchJiraIssuesUsingJql"
+    ]
+  }
+}
