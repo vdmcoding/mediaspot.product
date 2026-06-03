@@ -1046,11 +1046,189 @@ Julie peut maintenant maintenir les 4 providers MVP + ajouter de nouveaux provid
 - Versionning des specs (rollback possible si problème)
 - Impact analysis (combien de plateformes impactées par un changement)
 
+### Journey 1.3: Sophie - Upload et localisation des artworks
+
+**Contexte: Sophie doit préparer les artworks pour "Le Dernier Métro Redux"**
+
+Sophie a terminé les métadonnées du film. Maintenant elle doit uploader les artworks pour les 4 providers (iTunes, Amazon, Google, Netflix) et les 15 territoires européens.
+
+---
+
+**Avant (la galère VDM Connect) :**
+
+14h00 - Sophie ouvre VDM Connect. Elle doit uploader :
+- 1 poster Portrait (2000x3000)
+- 1 Landscape (1920x1080)
+- 1 Hero (1920x1080)
+
+**Pour chaque territoire.** 15 territoires × 3 artworks = **45 uploads manuels**.
+
+Elle upload le premier fichier. Formulaire : sélectionner le type, sélectionner le territoire, sélectionner la langue... **Répéter 45 fois.**
+
+Pire : certains providers demandent des formats différents. Netflix veut un format carré. Google veut du 1000x1440. Elle doit ressortir Photoshop, exporter les variantes, les renommer, les uploader séparément.
+
+16h30 - Elle découvre qu'un artwork fait 1919x1080 (dimension impaire). VDM Connect l'a accepté. **Erreur découverte à la livraison.**
+
+**Résultat : 2-3 heures de travail répétitif. Erreurs non détectées.**
+
+---
+
+**Avec BMME v2 (workflow productif) :**
+
+**14h00 - Bulk upload intelligent**
+
+Sophie ouvre l'onglet Artworks du Title. Elle drag & drop **15 fichiers d'un coup** :
+
+```
+lederniermero_poster_fr.png
+lederniermero_poster_en.png
+lederniermero_poster_de.png
+lederniermero_landscape_fr_itunes.png
+lederniermero_landscape_fr_netflix.png
+...
+```
+
+Le système **analyse les filenames** et pré-remplit automatiquement :
+- Type : poster / landscape / hero (détecté depuis le nom)
+- Langue : fr / en / de (détecté depuis le nom)
+- Provider : itunes / netflix / all (détecté depuis le nom)
+
+Sophie voit un preview :
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│ Bulk upload - 15 files                                              │
+├─────────────────────────────────────────────────────────────────────┤
+│ File                              │ Type      │ Lang │ Provider     │
+├───────────────────────────────────┼───────────┼──────┼──────────────┤
+│ lederniermero_poster_fr.png       │ Portrait  │ FR   │ All platforms│
+│ lederniermero_poster_en.png       │ Portrait  │ EN   │ All platforms│
+│ lederniermero_landscape_fr_itunes │ Landscape │ FR   │ iTunes       │
+│ ...                               │           │      │              │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**14h05 - Validation automatique à l'upload**
+
+Le système valide **instantanément** chaque fichier :
+
+```
+✅ lederniermero_poster_fr.png - 2000x3000 - Portrait 2/3 valid
+✅ lederniermero_landscape_fr.png - 1920x1080 - Landscape 16/9 valid
+❌ lederniermero_hero_de.png - 1919x1080 - REJECTED: odd dimension (1919)
+```
+
+**Réaction de Sophie :** "Ah, dimension impaire ! Je corrige tout de suite avant d'aller plus loin."
+
+**14h10 - Vue d'ensemble des artworks**
+
+Sophie voit tous les artworks du Title dans une **vue grille avec navigation hiérarchique** :
+
+```
+┌─────────────────────┬──────────────────────────────────────────────────────────┐
+│ Title artworks      │ All artworks                        [Group: Type ▼]     │
+│                     │                                                          │
+│ All artworks    32  │ Landscape  5                                             │
+│                     │ ┌─────────┐ ┌─────────┐ ┌─────────┐                      │
+│ ▼ English       32  │ │ [thumb] │ │ [thumb] │ │ [thumb] │  [+]                 │
+│   Original Lang     │ │ land_en │ │ land_en │ │ hero_en │                      │
+│   United Kingdom 1  │ │Worldwide│ │Worldwide│ │   EN    │                      │
+│   United States  0  │ └─────────┘ └─────────┘ └─────────┘                      │
+│   Canada         0  │                                                          │
+│                     │ Portraits  5                                             │
+│ ▽ French        12  │ ┌─────────┐ ┌─────────┐ ┌─────────┐                      │
+│ ▽ Portuguese     4  │ │ [thumb] │ │ [thumb] │ │ [thumb] │  [+]                 │
+│   Portugal       1  │ │ port_en │ │ port_pt │ │ port_pt │                      │
+│                     │ │Worldwide│ │Portugese│ │Portugal │                      │
+│                     │ └─────────┘ └─────────┘ └─────────┘                      │
+└─────────────────────┴──────────────────────────────────────────────────────────┘
+```
+
+**Deux modes de groupement :**
+- **Par type** (défaut) : Landscape / Portraits / Hero / Squares — chaque card affiche sa source (Worldwide, EN, Portugal...)
+- **Par langue** : English / French / Portuguese... — chaque card affiche son type (Landscape, Portrait...)
+
+Sophie navigue via la **sidebar hiérarchique** (Langues → Territoires). Quand elle clique sur "United Kingdom", un breadcrumb affiche "Global > English > United Kingdom" et seuls les artworks UK sont visibles.
+
+Elle peut sélectionner plusieurs artworks pour des **bulk actions** (delete, copy to, move to, change provider).
+
+**14h15 - Stockage des artworks par niveau**
+
+Sophie uploade un artwork `poster_en.png` avec langue = EN.
+
+Cet artwork reste **uniquement au niveau EN**. Il n'apparaît pas automatiquement sur en-UK, en-US, etc.
+
+Si Sophie veut un artwork pour en-UK, elle doit :
+- Soit uploader un artwork spécifique `poster_en-UK.png`
+- Soit copier manuellement l'artwork EN vers en-UK (bulk copy to)
+
+**Note importante :** L'héritage s'applique uniquement à la création du Package (étape suivante).
+
+**14h20 - Bulk copy / move**
+
+Sophie sélectionne 3 artworks et clique "Copy to...". Elle sélectionne les territoires IT, PT. **Les 3 artworks sont dupliqués en 2 clics.**
+
+**14h25 - Provider-specific artworks**
+
+Netflix demande un format carré. Sophie uploade `lederniermero_square_netflix.png`. À l'upload, elle sélectionne "Netflix only".
+
+Le système valide : ✅ 1000x1000 - Carré 1/1 valid (Netflix spec)
+
+**14h30 - Import des artworks dans le Package**
+
+Sophie crée un package iTunes pour le territoire UK. À l'étape d'import des artworks :
+
+```
+Package creation - Artwork import
+┌─────────────────────────────────────────────────────────────────────┐
+│ Territory: UK                                                        │
+│                                                                      │
+│ Portrait artwork:                                                    │
+│   ○ poster_en-UK.png (exact match)     ← priorité 1                 │
+│   ● poster_en.png (inherited from EN)  ← priorité 2 (auto-selected) │
+│                                                                      │
+│ Landscape artwork:                                                   │
+│   ○ No exact match for en-UK                                        │
+│   ● landscape_en.png (inherited from EN)                            │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+C'est au moment de l'import dans le Package que le système applique la logique :
+1. Cherche artwork exact (en-UK)
+2. Si pas trouvé → hérite de la langue parent (EN)
+3. Worldwide = config manuelle dans BundleMaker (hors scope BMME)
+
+---
+
+**Climax - Le moment "aha!"**
+
+**14h35** - Sophie regarde la vue d'ensemble. **15 territoires × 3 types × 4 providers = tous les artworks uploadés, validés, localisés en 35 minutes.**
+
+**"Avant je passais 3 heures à uploader un par un. Là c'est fait en 35 minutes, et je SAIS que les dimensions sont bonnes."**
+
+---
+
+**Capabilities révélées par ce journey:**
+
+- Bulk upload avec drag & drop multi-fichiers
+- Analyse de filename pour auto-remplissage (type, langue, provider)
+- Validation automatique à l'upload (dimensions, ratio, parité)
+- Rejet automatique des dimensions impaires (non négociable)
+- Vue grille avec navigation hiérarchique (sidebar Langues → Territoires)
+- Deux modes de groupement : par type (défaut) ou par langue
+- Breadcrumb contextuel (Global > English > United Kingdom)
+- Support de plusieurs artworks du même type par langue
+- Pas d'héritage automatique dans la vue Artworks (stockage au niveau exact)
+- Héritage appliqué uniquement à l'import dans le Package (Territoire ← Langue)
+- Bulk copy to / Bulk move to
+- Provider-specific artworks (All platforms / Multi platforms / Provider unique)
+- Support séries : artworks déclinables Série → Saison → Épisode (sans héritage)
+
 ### Journey Requirements Summary
 
-Les quatre user journeys (1, 1.2, 2, 3) révèlent les capabilities suivantes pour BMME v2:
+Les cinq user journeys (1, 1.2, 1.3, 2, 3) révèlent les capabilities suivantes pour BMME v2:
 
-**Pour les utilisateurs clients (Sophie - Journey 1 & 1.2):**
+**Pour les utilisateurs clients (Sophie - Journey 1, 1.2 & 1.3):**
 
 - Hiérarchie Title → Langues → Territoires avec héritage automatique
 - Activation explicite des langues
@@ -1064,6 +1242,19 @@ Les quatre user journeys (1, 1.2, 2, 3) révèlent les capabilities suivantes po
 - Source tracking par métadonnée (affichage de la source actuelle)
 - Synchronisation manuelle avec preview des changements
 - Historique complet des modifications avec traçabilité
+- **Artworks (Journey 1.3):**
+  - Bulk upload avec drag & drop multi-fichiers
+  - Analyse de filename pour auto-remplissage (type, langue, provider)
+  - Validation automatique à l'upload (dimensions, ratio, parité)
+  - Rejet automatique des dimensions impaires (non négociable)
+  - Vue grille avec navigation hiérarchique (sidebar Langues → Territoires)
+  - Deux modes de groupement : par type ou par langue
+  - Support de plusieurs artworks du même type par langue
+  - Pas d'héritage dans la vue Artworks (stockage au niveau exact)
+  - Héritage appliqué uniquement à l'import dans le Package
+  - Bulk copy to / Bulk move to
+  - Provider-specific artworks (All / Multi / Unique)
+  - Support séries : artworks déclinables Série → Saison → Épisode
 
 **Pour les admins internes (Marc - Journey 2):**
 
@@ -1174,6 +1365,52 @@ Les quatre user journeys (1, 1.2, 2, 3) révèlent les capabilities suivantes po
 - **Taux d'erreur à la livraison < 5%** (défini dans Success Criteria)
 - **Temps de mise à jour d'une spec provider < 1 jour** (vs plusieurs semaines actuellement)
 - **Zero blacklist provider** durant toute la vie de BMME v2
+
+### Artwork Specifications
+
+**Types d'artworks et formats requis :**
+
+| Type | Ratio | Dimensions idéales | Dimensions acceptées |
+|------|-------|-------------------|---------------------|
+| Portrait (vertical) | 2/3 | 2000×3000 px | Variable selon provider |
+| Portrait alternatif | 3/4 | 1200×1600 à 1920×2560 px | Google: 1000×1440 px |
+| Landscape (horizontal) | 16/9 | 1920×1080 à 3840×2160 px | 1280×720 à 4000×2250 px |
+| Hero | 16/9 | 1920×1080 px | Variable selon provider |
+| Carré | 1/1 | Variable | 800×800 à 4000×4000 px (Google) |
+
+**Règle stricte de validation :**
+
+- **Dimensions impaires = rejet automatique** : Tout artwork avec une dimension impaire (largeur OU hauteur) est rejeté sans exception
+- Exemples rejetés : 1919×1080, 1920×1081, 1279×721
+- Cette règle est non négociable et appliquée systématiquement à l'upload
+
+**Hiérarchie de stockage des artworks :**
+
+- **Worldwide (WW)** : Langue originale de l'œuvre
+- **Langue (EN, FR, DE...)** : Artworks localisés par langue
+- **Langue localisée / Territoire (en-UK, fr-CA...)** : Artworks spécifiques à un territoire
+
+**Règles d'héritage :**
+
+- Pas d'héritage automatique dans la vue Artworks (stockage au niveau exact)
+- Héritage appliqué uniquement à l'import dans le Package :
+  1. Priorité 1 : Artwork exact pour le territoire (en-UK)
+  2. Priorité 2 : Artwork de la langue parente (EN)
+  3. Worldwide : Configuration manuelle dans BundleMaker (hors scope BMME)
+
+**Provider-specific artworks :**
+
+- Un artwork peut être défini comme :
+  - **All platforms** : Utilisable par tous les providers
+  - **Multi platforms** : Sélection de plusieurs providers spécifiques
+  - **Provider unique** : Réservé à un seul provider (ex: Netflix only)
+- Plusieurs artworks du même type peuvent coexister pour une même langue
+
+**Support des séries TV :**
+
+- Artworks déclinables à 3 niveaux : Série → Saison → Épisode
+- Pas d'héritage automatique entre les niveaux (chaque niveau gère ses propres artworks)
+- Artworks saison/épisode peuvent être marqués comme "optionnels"
 
 ## SaaS B2B Specific Requirements
 
@@ -1689,6 +1926,28 @@ BMME v2 résout un problème opérationnel critique: la fragmentation des métad
 - FR90: Système applique le mapping lors de chaque modification de métadonnée dans BMME v2
 - FR91: Modules mediaspot existants continuent à lire les métadonnées via `DbMetadataFieldInfo` sans modification
 - FR92: Système garantit la cohérence entre BMME v2 (source) et DbMetadataFieldInfo (projection)
-- FR93: Admin Internes VDM peu_vent monitorer le statut de synchronisation BMME v2 → DbMetadataFieldInfo
+- FR93: Admin Internes VDM peuvent monitorer le statut de synchronisation BMME v2 → DbMetadataFieldInfo
 - FR94: Système alerte en cas d'échec de synchronisation vers le modèle legacy
+
+### 14. Artwork Management
+
+- FR95: Gestionnaires de catalogue peuvent uploader des artworks via drag & drop multi-fichiers (bulk upload)
+- FR96: Système analyse les filenames pour auto-remplir type, langue et provider (ex: `title_poster_fr_netflix.png`)
+- FR97: Système valide automatiquement les dimensions et le ratio de chaque artwork à l'upload
+- FR98: Système rejette automatiquement tout artwork avec une dimension impaire (largeur OU hauteur)
+- FR99: Gestionnaires de catalogue peuvent visualiser tous les artworks d'un Title dans une vue liste filtrable
+- FR100: Gestionnaires de catalogue peuvent filtrer les artworks par type, langue et provider
+- FR101: Gestionnaires de catalogue peuvent sélectionner plusieurs artworks pour des bulk actions (delete, copy to, move to)
+- FR102: Gestionnaires de catalogue peuvent copier des artworks vers d'autres langues ou territoires (bulk copy to)
+- FR103: Gestionnaires de catalogue peuvent déplacer des artworks vers d'autres langues ou territoires (bulk move to)
+- FR104: Gestionnaires de catalogue peuvent définir un artwork comme "All platforms", "Multi platforms" ou "Provider unique"
+- FR105: Système stocke les artworks au niveau exact défini (Worldwide, Langue, ou Territoire) sans héritage automatique
+- FR106: Système applique l'héritage des artworks uniquement à l'import dans le Package (Territoire ← Langue)
+- FR107: Système propose automatiquement l'artwork de la langue parente si aucun artwork exact n'existe pour le territoire
+- FR108: Gestionnaires de catalogue peuvent uploader plusieurs artworks du même type pour une même langue
+- FR109: Gestionnaires de catalogue peuvent uploader des artworks aux niveaux Série, Saison et Épisode
+- FR110: Système ne propage pas automatiquement les artworks entre les niveaux Série/Saison/Épisode
+- FR111: Gestionnaires de catalogue peuvent marquer les artworks Saison/Épisode comme "optionnels"
+- FR112: Système affiche un preview thumbnail de chaque artwork dans la vue liste
+- FR113: Système valide les formats spécifiques par provider (ex: carré 1/1 pour Netflix, 1000×1440 pour Google)
 
