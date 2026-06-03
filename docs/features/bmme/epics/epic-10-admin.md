@@ -1,19 +1,19 @@
 <!-- TRACABILITE: Ancien Epic 6 -->
 <!-- JIRA: DF-11138 -->
 
-# Epic 9 : Administration et Multi-Tenancy
+# Epic 10 : Administration et Multi-Tenancy
 
-**SuperAdmin VDM peut** gérer les permissions ACL, administrer les plateformes clients, gérer le catalogue de métadonnées et monitorer l'activité cross-plateformes.
+**SuperAdmin VDM peut** gérer les permissions ACL, administrer les plateformes clients et monitorer l'activité cross-plateformes.
 
-**FRs couverts :** FR45, FR46, FR47, FR48, FR49, FR50, FR51, FR52
+**FRs couverts :** FR45, FR46, FR47, FR48, FR49, FR52
 
-**Valeur livrée :** SuperAdmin configure les ACL par rôle (Gestionnaire Catalogue, Admin Interne, Labo), gère l'isolation des données clients multi-tenancy, administre le catalogue de métadonnées (CRUD champs + valeurs enum), et accède au dashboard cross-plateformes avec audit logs.
+**Valeur livrée :** SuperAdmin configure les ACL par rôle (Gestionnaire Catalogue, Admin Interne, Labo), gère l'isolation des données clients multi-tenancy, et accède au dashboard cross-plateformes avec audit logs.
 
 **Event Storming Reference:** Metadata Catalog BC
 
 ---
 
-## Story 9.1 : Définition des permissions ACL par action
+## Story 10.1 : Définition des permissions ACL par action
 
 As a **SuperAdmin VDM**,
 I want **définir les permissions ACL par action (création métadonnées, édition packages, gestion mappings)**,
@@ -52,7 +52,7 @@ Feature: Définition des permissions ACL
 
 ---
 
-## Story 9.2 : Application des permissions par rôle utilisateur
+## Story 10.2 : Application des permissions par rôle utilisateur
 
 As a **Système**,
 I want **appliquer les permissions ACL selon le rôle de l'utilisateur connecté**,
@@ -84,7 +84,7 @@ Feature: Application des permissions par rôle
 
 ---
 
-## Story 9.3 : Blocage des actions non autorisées
+## Story 10.3 : Blocage des actions non autorisées
 
 As a **Système**,
 I want **bloquer les actions non autorisées selon les permissions de l'utilisateur**,
@@ -117,7 +117,7 @@ Feature: Blocage des actions non autorisées
 
 ---
 
-## Story 9.4 : Isolation des données par plateforme client (Multi-tenancy)
+## Story 10.4 : Isolation des données par plateforme client (Multi-tenancy)
 
 As a **Système**,
 I want **isoler les données par plateforme client**,
@@ -150,7 +150,7 @@ Feature: Isolation des données multi-tenancy
 
 ---
 
-## Story 9.5 : Dashboard administration cross-plateformes
+## Story 10.5 : Dashboard administration cross-plateformes
 
 As a **SuperAdmin VDM**,
 I want **accéder à un dashboard d'administration cross-plateformes**,
@@ -189,7 +189,7 @@ Feature: Dashboard administration cross-plateformes
 
 ---
 
-## Story 9.6 : Gestion centralisée des specs providers
+## Story 10.6 : Gestion centralisée des specs providers
 
 As a **SuperAdmin VDM**,
 I want **gérer centralement les specs providers appliquées à toutes les plateformes**,
@@ -224,7 +224,7 @@ Feature: Gestion centralisée specs providers
 
 ---
 
-## Story 9.7 : Gestion centralisée des specs systèmes externes
+## Story 10.7 : Gestion centralisée des specs systèmes externes
 
 As a **SuperAdmin VDM**,
 I want **gérer centralement les specs de connexion aux systèmes externes (Unity, Iron, etc.)**,
@@ -255,7 +255,7 @@ Feature: Gestion centralisée specs systèmes externes
 
 ---
 
-## Story 9.8 : Audit logs pour actions critiques
+## Story 10.8 : Audit logs pour actions critiques
 
 As a **SuperAdmin VDM**,
 I want **consulter des audit logs pour toutes les actions critiques**,
@@ -291,170 +291,3 @@ Feature: Audit logs actions critiques
 ```
 
 **FRs couverts :** FR52
-
----
-
-## Story 9.9 : Gestion du catalogue de métadonnées (CRUD)
-
-As a **SuperAdmin VDM**,
-I want **créer, modifier et supprimer des définitions de métadonnées dans le catalogue**,
-So that **je peux faire évoluer le modèle de données mediaspot sans intervention technique**.
-
-**Acceptance Criteria:**
-
-```gherkin
-Feature: Gestion du catalogue de métadonnées (CRUD)
-
-  Background:
-    Given je suis connecté en tant que SuperAdmin VDM
-    And j'accède à "Inventory settings > Metadata Fields"
-
-  # --- Création d'une métadonnée ---
-
-  Scenario: Créer une nouvelle métadonnée
-    When je clique sur "Add" dans le tableau des champs
-    Then une modale "Create metadata field" s'ouvre avec :
-      | Champ | Type | Obligatoire |
-      | Field name | Text input | ✅ |
-      | Type | Dropdown (string, number, date, enum, etc.) | ✅ |
-      | Level | Dropdown (title, localized) | ✅ |
-      | Default source | Dropdown (Unity, mediaspot, etc.) | ❌ |
-      | Description | Text area | ❌ |
-
-  Scenario: Validation du nom de métadonnée unique
-    Given je crée une nouvelle métadonnée
-    When je saisis un nom déjà utilisé
-    Then un message d'erreur s'affiche : "Ce nom de champ existe déjà"
-    And le bouton "Create" reste désactivé
-
-  # --- Modification d'une métadonnée ---
-
-  Scenario: Modifier le label d'une métadonnée
-    Given je clique sur "Edit" pour une métadonnée existante
-    When je modifie le label (ex: "Original Title" → "Titre Original")
-    And je clique sur "Save"
-    Then le label est mis à jour dans tout le système
-    And un log audit enregistre la modification
-
-  # --- Suppression d'une métadonnée ---
-
-  Scenario: Vérification des dépendances avant suppression
-    Given je clique sur "Delete" pour une métadonnée
-    When la métadonnée est utilisée dans des mappings
-    Then un message d'avertissement s'affiche :
-      | Type | Détail |
-      | Input mappings | "Utilisée dans 3 mappings sources (Unity, Iron, IMDb)" |
-      | Output mappings | "Utilisée dans 2 mappings providers (iTunes, Amazon)" |
-    And le bouton "Delete" est remplacé par "Cannot delete - In use"
-
-  Scenario: Suppression d'une métadonnée inutilisée
-    Given la métadonnée n'est utilisée dans aucun mapping
-    When je clique sur "Delete"
-    Then une confirmation est demandée : "Cette action est irréversible"
-    And après confirmation, la métadonnée est supprimée
-    And un log audit enregistre la suppression
-
-  # --- Consultation des usages ---
-
-  Scenario: Consulter où une métadonnée est utilisée
-    Given je clique sur une métadonnée dans le tableau
-    Then un panneau latéral affiche :
-      | Section | Contenu |
-      | Properties | Type, Level, Default source, Lock source |
-      | Used in Input mappings | Liste des sources utilisant ce champ |
-      | Used in Output mappings | Liste des providers utilisant ce champ |
-    And chaque usage est cliquable pour naviguer vers le mapping concerné
-```
-
-**FRs couverts :** FR50, FR51 (enrichis)
-
-**Event Storming Reference:** Metadata Catalog BC - Commandes "Créer une méta", "Modifier la label d'une métadata", "Supprimer une méta", "Consulter les infos d'une méta"
-
----
-
-## Story 9.10 : Gestion des valeurs d'énumérations
-
-As a **SuperAdmin VDM**,
-I want **gérer les valeurs possibles des métadonnées de type enum (genres, pays, etc.)**,
-So that **je peux ajouter, modifier ou supprimer des options sans intervention technique**.
-
-**Acceptance Criteria:**
-
-```gherkin
-Feature: Gestion des valeurs d'énumérations
-
-  Background:
-    Given je suis connecté en tant que SuperAdmin VDM
-    And j'accède à "Inventory settings > Metadata values"
-
-  # --- Liste des enums ---
-
-  Scenario: Consulter la liste des métadonnées enum
-    When j'accède à "Metadata values"
-    Then je vois la liste des métadonnées de type enum :
-      | Champ | Nombre de valeurs |
-      | genres | 45 values |
-      | countries | 195 values |
-      | languages | 50 values |
-      | contentRatings | 12 values |
-
-  Scenario: Consulter les valeurs d'un enum
-    When je clique sur "genres"
-    Then je vois la liste des valeurs :
-      | Value | Translations | Used in |
-      | Action | FR: Action, DE: Aktion | 234 titles |
-      | Comedy | FR: Comédie, DE: Komödie | 456 titles |
-      | Drama | FR: Drame, DE: Drama | 789 titles |
-
-  # --- Ajout d'une valeur ---
-
-  Scenario: Ajouter une nouvelle valeur d'enum
-    Given je suis sur les valeurs de "genres"
-    When je clique sur "Add value"
-    And je saisis "Thriller" comme valeur
-    And je saisis les traductions (FR: "Thriller", DE: "Thriller")
-    And je clique sur "Save"
-    Then la valeur est ajoutée à la liste
-    And elle est disponible dans les mappings et l'édition de métadonnées
-
-  Scenario: Validation de l'unicité des valeurs
-    Given je tente d'ajouter une valeur existante
-    Then un message d'erreur s'affiche : "Cette valeur existe déjà"
-    And le bouton "Save" reste désactivé
-
-  # --- Modification d'une valeur ---
-
-  Scenario: Modifier une valeur d'enum
-    Given je clique sur "Edit" pour une valeur existante
-    When je modifie le label ou les traductions
-    And je clique sur "Save"
-    Then les modifications sont propagées à tous les titres utilisant cette valeur
-
-  # --- Suppression d'une valeur ---
-
-  Scenario: Vérification des dépendances avant suppression (value mappings)
-    Given je clique sur "Delete" pour une valeur d'enum
-    When cette valeur est utilisée dans des value mappings
-    Then un message d'avertissement s'affiche :
-      "Cette valeur est utilisée dans 2 value mappings (Unity → genres, Iron → genres)"
-    And je dois choisir :
-      | Option | Action |
-      | "Remove from mappings" | Supprime la valeur et les correspondances de mapping |
-      | "Cancel" | Annule la suppression |
-
-  Scenario: Suppression d'une valeur utilisée par des titres
-    Given je clique sur "Delete" pour une valeur utilisée par des titres
-    Then un message d'avertissement s'affiche :
-      "Cette valeur est utilisée par 234 titres"
-    And je dois choisir une valeur de remplacement avant de supprimer
-    When je sélectionne "Drama" comme remplacement
-    And je confirme
-    Then tous les titres sont mis à jour avec la nouvelle valeur
-    And la valeur originale est supprimée
-```
-
-**FRs couverts :** FR50 (enrichi)
-
-**Event Storming Reference:** Metadata Catalog BC - Commande "Modifier les valeurs d'une métadonnée Enum"
-
-**Hotspot résolu:** "Suppression d'une option: suppression des mappings l'utilisant ou blocage ?" → Choix proposé à l'utilisateur

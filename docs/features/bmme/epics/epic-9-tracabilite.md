@@ -1,7 +1,7 @@
 <!-- TRACABILITE: Ancien Epic 5 -->
 <!-- JIRA: DF-11137 -->
 
-# Epic 8 : Traçabilité et Historique des Métadonnées
+# Epic 9 : Traçabilité et Historique des Métadonnées
 
 **Sophie peut** voir la source de chaque métadonnée, comparer les valeurs entre sources, et consulter l'historique des modifications.
 
@@ -11,7 +11,7 @@
 
 ---
 
-## Story 8.1 : Affichage de la source de chaque métadonnée
+## Story 9.1 : Affichage de la source de chaque métadonnée
 
 As a **Gestionnaire de catalogue**,
 I want **voir la source actuelle de chaque métadonnée (Unity, mediaspot, IMDb, etc.)**,
@@ -48,7 +48,7 @@ Feature: Affichage de la source de chaque métadonnée
 
 ---
 
-## Story 8.2 : Synchronisation manuelle depuis une source externe
+## Story 9.2 : Synchronisation manuelle depuis une source externe
 
 As a **Gestionnaire de catalogue**,
 I want **déclencher manuellement une synchronisation depuis une source externe pour un champ**,
@@ -84,7 +84,7 @@ Feature: Synchronisation manuelle depuis source
 
 ---
 
-## Story 8.3 : Preview des changements avant application
+## Story 9.3 : Preview des changements avant application
 
 As a **Gestionnaire de catalogue**,
 I want **voir un preview des changements avant de les appliquer (Old value vs New value)**,
@@ -120,7 +120,7 @@ Feature: Preview des changements
 
 ---
 
-## Story 8.4 : Vue multi-source par métadonnée
+## Story 9.4 : Vue multi-source par métadonnée
 
 As a **Gestionnaire de catalogue**,
 I want **voir toutes les valeurs d'une métadonnée par source disponible**,
@@ -157,7 +157,7 @@ Feature: Vue multi-source par métadonnée
 
 ---
 
-## Story 8.5 : Historisation des modifications
+## Story 9.5 : Historisation des modifications
 
 As a **Gestionnaire de catalogue**,
 I want **que toutes les modifications de métadonnées soient historisées**,
@@ -194,7 +194,7 @@ Feature: Historisation des modifications
 
 ---
 
-## Story 8.6 : Catégorisation des types de modification
+## Story 9.6 : Catégorisation des types de modification
 
 As a **Gestionnaire de catalogue**,
 I want **que les modifications soient catégorisées par type (Source changed, Manual Edit, Periodic sync)**,
@@ -234,7 +234,7 @@ Feature: Catégorisation des types de modification
 
 ---
 
-## Story 8.7 : Consultation de l'historique complet
+## Story 9.7 : Consultation de l'historique complet
 
 As a **Gestionnaire de catalogue**,
 I want **consulter l'historique complet d'une métadonnée**,

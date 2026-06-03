@@ -1,7 +1,7 @@
 <!-- TRACABILITE: Ancien Epic 4 -->
 <!-- JIRA: DF-11135 -->
 
-# Epic 7 : Gestion des Specs Providers (Labo)
+# Epic 8 : Gestion des Specs Providers (Labo)
 
 **Julie peut** maintenir et déployer les specifications providers (iTunes, Amazon, Google, Netflix) de manière centralisée, sans modification de code.
 
@@ -11,7 +11,7 @@
 
 ---
 
-## Story 7.1 : Éditeur centralisé des specs providers
+## Story 8.1 : Éditeur centralisé des specs providers
 
 As a **Technicienne Labo VDM**,
 I want **accéder à un éditeur centralisé pour les specs de chaque provider (iTunes, Amazon, Google, Netflix)**,
@@ -44,7 +44,7 @@ Feature: Éditeur centralisé des specs providers
 
 ---
 
-## Story 7.2 : Édition des mappings mediaspot → provider
+## Story 8.2 : Édition des mappings mediaspot → provider
 
 As a **Technicienne Labo VDM**,
 I want **éditer les mappings entre les champs mediaspot et les champs provider**,
@@ -81,7 +81,7 @@ Feature: Édition des mappings provider
 
 ---
 
-## Story 7.3 : Formatting et Mapping options pour l'export
+## Story 8.3 : Formatting et Mapping options pour l'export
 
 As a **Technicienne Labo VDM**,
 I want **configurer des transformations (join, format dates) et des correspondances d'enums pour l'export**,
@@ -115,7 +115,7 @@ Feature: Formatting et Mapping options export
 
 ---
 
-## Story 7.4 : Test des mappings sur packages réels
+## Story 8.4 : Test des mappings sur packages réels
 
 As a **Technicienne Labo VDM**,
 I want **tester les mappings sur des packages réels avant de déployer**,
@@ -153,7 +153,7 @@ Feature: Test des mappings sur packages réels
 
 ---
 
-## Story 7.5 : Prévisualisation XML avant livraison
+## Story 8.5 : Prévisualisation XML avant livraison
 
 As a **Technicienne Labo VDM**,
 I want **prévisualiser le XML qui sera généré pour un package**,
@@ -187,7 +187,7 @@ Feature: Prévisualisation XML
 
 ---
 
-## Story 7.6 : Déploiement instantané sans modification de code
+## Story 8.6 : Déploiement instantané sans modification de code
 
 As a **Technicienne Labo VDM**,
 I want **déployer les changements de specs instantanément sans passer par le CI/CD**,
@@ -221,7 +221,7 @@ Feature: Déploiement instantané
 
 ---
 
-## Story 7.7 : Versionning des specs avec rollback
+## Story 8.7 : Versionning des specs avec rollback
 
 As a **Technicienne Labo VDM**,
 I want **versionner les specs et pouvoir rollback en cas de problème**,
@@ -255,7 +255,7 @@ Feature: Versionning et rollback
 
 ---
 
-## Story 7.8 : Source of Truth table partagée
+## Story 8.8 : Source of Truth table partagée
 
 As a **Admin Interne ou Labo VDM**,
 I want **que la Source of Truth table soit partagée entre les mappings entrants et sortants**,
