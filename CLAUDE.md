@@ -66,3 +66,28 @@ Stories in JIRA use custom fields instead of the native `description` field:
 | OAuth flow doesn't start | Ensure you have access to https://vdmdev.atlassian.net/ |
 | "Site admin must authorize" | Ask your Atlassian admin to complete initial OAuth consent |
 | Connection times out | Check VPN/network connectivity to Atlassian Cloud |
+
+---
+
+## Acceptance Criteria — Writing Guidelines
+
+When generating or reviewing acceptance criteria (Gherkin scenarios), **always cover all four case types** :
+
+| Type | Description | Exemples |
+|------|-------------|---------|
+| **Cas nominaux** | Le flux principal, tout se passe bien | Créer une entité, sauvegarder un formulaire valide, afficher une liste |
+| **Cas alternatifs** | Des variantes légitimes du flux nominal | Annuler une action, sélectionner une option différente, flux secondaire |
+| **Cas d'erreur** | Données invalides, contraintes violées, permissions manquantes | Champ obligatoire vide, valeur déjà existante, utilisateur non autorisé |
+| **Cas limites** | Frontières, états edge-case, comportements idempotents | Valeur max atteinte, champ sans valeur, source déjà sélectionnée, suppression sans dépendances |
+
+### Instructions
+
+1. **Lis toujours l'epic parent** avant de rédiger les critères d'une story, pour respecter les règles métier et décisions déjà prises.
+2. **Pose des questions si des informations manquent** avant de générer les scénarios — ne devine pas. En particulier :
+   - Comportement exact en cas d'erreur (message affiché ? bouton désactivé ? redirection ?)
+   - Gestion des permissions (quels rôles peuvent effectuer l'action ?)
+   - Impact sur d'autres entités ou BC (propagation, logs, notifications ?)
+   - Limites techniques (longueur max, nombre max de valeurs, etc.)
+3. **Groupe les scénarios par thème** avec des commentaires `# ---` pour la lisibilité.
+4. **Ne duplique pas** un scénario déjà couvert dans une autre story de la même epic.
+5. **Un scénario = un comportement** : évite les scénarios fourre-tout, préfère plusieurs scénarios courts et ciblés.
