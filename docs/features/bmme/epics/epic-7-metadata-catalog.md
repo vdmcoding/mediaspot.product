@@ -88,6 +88,32 @@ Feature: Gestion du catalogue de métadonnées (CRUD)
       | Used in Input mappings | Liste des sources utilisant ce champ |
       | Used in Output mappings | Liste des providers utilisant ce champ |
     And chaque usage est cliquable pour naviguer vers le mapping concerné
+
+  # --- Cas alternatifs et limites ---
+
+  Scenario: Annuler la création d'une métadonnée
+    Given la modale "Create metadata field" est ouverte
+    When je clique sur "Cancel"
+    Then la modale se ferme
+    And aucune métadonnée n'est créée
+
+  Scenario: Tentative de création sans remplir les champs obligatoires
+    Given la modale "Create metadata field" est ouverte
+    When je clique sur "Create" sans avoir rempli tous les champs obligatoires
+    Then chaque champ manquant est mis en évidence
+    And un message d'erreur s'affiche sous chaque champ : "Ce champ est obligatoire"
+    And la métadonnée n'est pas créée
+
+  Scenario: Caractères non autorisés dans le nom de métadonnée
+    Given la modale "Create metadata field" est ouverte
+    When je saisis un nom contenant des espaces ou caractères spéciaux (ex: "my field!")
+    Then un message d'erreur s'affiche : "Seuls les caractères alphanumériques et underscores sont autorisés"
+    And le bouton "Create" reste désactivé
+
+  Scenario: Restriction de modification du type et du level
+    Given je clique sur "Edit" pour une métadonnée
+    Then les champs "Type" et "Level" sont désactivés (non modifiables)
+    And un message d'information s'affiche : "Le type et le niveau ne peuvent pas être modifiés une fois la métadonnée créée"
 ```
 
 **FRs couverts :** FR50, FR51 (enrichis)
@@ -175,6 +201,33 @@ Feature: Gestion des valeurs d'énumérations
     And je confirme
     Then tous les titres sont mis à jour avec la nouvelle valeur
     And la valeur originale est supprimée
+
+  # --- Cas alternatifs et limites ---
+
+  Scenario: Suppression d'une valeur d'enum inutilisée
+    Given la valeur "Thriller" n'est utilisée ni dans des titres ni dans des mappings
+    When je clique sur "Delete" pour cette valeur
+    Then une confirmation simple est demandée : "Supprimer la valeur Thriller ?"
+    And après confirmation, la valeur est supprimée
+    And elle disparaît de la liste
+
+  Scenario: Annuler la suppression d'une valeur d'enum
+    Given je clique sur "Delete" pour une valeur utilisée par des titres
+    When je choisis "Cancel" dans la modale de confirmation
+    Then la valeur n'est pas supprimée
+    And tous les titres et mappings conservent cette valeur
+
+  Scenario: Annuler le retrait des value mappings lors d'une suppression
+    Given je clique sur "Delete" pour une valeur utilisée dans des value mappings
+    When je clique sur "Cancel" dans le message d'avertissement
+    Then la valeur n'est pas supprimée
+    And les value mappings sont conservés intacts
+
+  Scenario: Ajouter une valeur d'enum sans traduction
+    Given je suis sur les valeurs de "genres"
+    When j'ajoute une valeur sans renseigner de traductions
+    Then la valeur est créée avec uniquement sa valeur principale
+    And un message d'information s'affiche : "Aucune traduction fournie — la valeur principale sera utilisée pour toutes les langues"
 ```
 
 **FRs couverts :** FR50 (enrichi)
@@ -216,22 +269,28 @@ Feature: Changer la source par défaut d'une métadonnée
     When je clique sur "Save"
     Then un message de confirmation s'affiche : "La source par défaut a été mise à jour"
     And les nouveaux Titles créés utiliseront IMDb comme source par défaut
-    And les Titles existants conservent leur source actuelle
+    And les titles existants dont la source n'a pas été modifiée manuellement utiliseront IMDb comme source par défaut
+    And les Titles existants dont la source a été modifiée manuellement conservent leur source actuelle
 
-  Scenario: Impact du changement de source par défaut
-    Given je change la source par défaut d'une métadonnée
-    Then un panneau "Impact analysis" affiche :
-      | Élément | Valeur |
-      | Titles existants | Non affectés (conservent leur source actuelle) |
-      | Nouveaux Titles | Utiliseront la nouvelle source par défaut |
-      | Mappings Input | Inchangés |
-      | Mappings Output | Inchangés |
-    And un log audit enregistre le changement
+  # --- Cas alternatifs et limites ---
 
-  Scenario: Interaction avec le verrouillage de source
-    Given une métadonnée a sa source verrouillée (Lock source = true)
-    Then le changement de source par défaut n'affecte PAS les Titles avec source verrouillée
-    And seuls les Titles avec source non verrouillée peuvent utiliser la nouvelle source
+  Scenario: Annuler le changement de source par défaut
+    Given la modale de changement de source est ouverte
+    When je clique sur "Cancel"
+    Then la modale se ferme
+    And la source par défaut reste inchangée
+
+  Scenario: Sélectionner la même source par défaut
+    Given la source par défaut actuelle est "Unity"
+    When je sélectionne à nouveau "Unity" et clique sur "Save"
+    Then un message d'information s'affiche : "La source par défaut est déjà Unity"
+    And aucun changement n'est enregistré ni aucun log créé
+
+  Scenario: Source désactivée non proposée à la sélection
+    Given une source "Iron" a été désactivée dans le système
+    When j'ouvre la modale de changement de source par défaut
+    Then "Iron" n'apparaît pas dans la liste des sources disponibles
+    And seules les sources actives sont sélectionnables
 ```
 
 **FRs couverts :** FR50 (enrichi)
@@ -283,6 +342,27 @@ Feature: Verrouiller la source d'une métadonnée
     Given je verrouille/déverrouille une source
     Then l'action est enregistrée dans l'historique du Title
     And je vois : "Source verrouillée par admin@vdm.fr" ou "Source déverrouillée par admin@vdm.fr"
+
+  # --- Cas alternatifs et limites ---
+
+  Scenario: Tentative de verrouillage d'un champ sans valeur
+    Given le champ "director" n'a pas de valeur renseignée pour ce Title
+    When j'affiche la fiche du Title
+    Then l'icône "Lock source" est désactivée pour ce champ
+    And un tooltip s'affiche : "Aucune valeur à verrouiller"
+
+  Scenario: Synchronisation API bloquée par verrouillage
+    Given le champ "director" est verrouillé sur un Title
+    When une requête de mise à jour du champ "director" est reçue via synchro externe (ex: Unity push)
+    Then le champ "director" n'est pas mis à jour
+    And la réponse API contient un avertissement : "Field 'director' is locked and cannot be overwritten"
+    And un log technique enregistre la tentative bloquée avec le timestamp et la source
+
+  Scenario: Tentative de verrouillage par un utilisateur non autorisé
+    Given je suis connecté en tant qu'Admin VDM (pas SuperAdmin)
+    When j'affiche la fiche d'un Title
+    Then l'icône "Lock source" n'est pas visible ou est désactivée
+    And je ne peux pas modifier le verrouillage d'une source
 ```
 
 **FRs couverts :** FR50 (enrichi)
@@ -337,3 +417,50 @@ Les hotspots identifiés dans l'Event Storming ont été résolus comme suit :
 | **Suppression d'une option enum : suppression des mappings l'utilisant ou blocage ?** | L'utilisateur choisit : (1) Retirer des mappings, (2) Annuler, ou (3) Remplacer par une autre valeur |
 | **Que fait le changement de source par défaut ?** | Ne change que les nouveaux Titles ; les existants conservent leur source actuelle |
 | **Modèle du message d'attention** | Message standardisé : "Cette métadonnée est utilisée dans X input mappings et Y output mappings" avec détail cliquable |
+
+---
+
+## Questions ouvertes
+
+### Story 7.1 — CRUD métadonnées
+
+❓ (DEV) **Format du nom de métadonnée** : Y a-t-il une convention imposée (camelCase, snake_case) et une longueur max définie ?
+
+❓ (Benjamin) **Modification du type et du level après création** : Peut-on les changer ? Si oui, que se passe-t-il sur les valeurs existantes des Titles et des mappings ? Si non, à partir de quel moment le changement est-il bloqué (dès la création ou uniquement si en usage) ?
+-> Pas de modification du type ni du level après création. Seules modifs possibles : values, label. Je mets à jour les CA
+
+❓ (Benjamin) **Suppression si utilisée par des Titles mais pas dans les mappings** : Est-ce aussi bloqué, ou est-ce supprimable ? (un scénario de blocage a été ajouté mais ce n'est pas explicite dans l'epic)
+-> Par définition, une métadonne du Catalog est utilisée dans un title, puisque c'est cette liste qui fait foi dans le modèle. C'est donc supprimable, SuperAdmins uniquement
+
+❓ (Benjamin) **Audit log** : Visible où dans l'UI ? Accessible uniquement par le SuperAdmin, ou par tous les Admin ?
+-> Je ne vois pas de quoi tu parles :(
+
+### Story 7.2 — Gestion des valeurs d'énumérations
+
+❓ (Benjamin) **Traductions des valeurs enum** : Sont-elles obligatoires ? Pour quelles langues ? Si absentes, la valeur principale est-elle utilisée en fallback ou est-ce bloquant à la sauvegarde ?
+-> Pas obligatoires, mais fortement recommandées. Toutes les options disponibles par défaut
+
+❓ (Benjamin) **Ordre des valeurs d'un enum** : L'ordre est-il alphabétique automatique, ou l'utilisateur peut-il réordonner manuellement ?
+-> Alphabétique
+
+❓ (DEV) **Remplacement de valeur sur les Titles** : Quand on remplace une valeur utilisée par des centaines de titres, le traitement est-il synchrone (l'utilisateur attend) ou asynchrone (job en arrière-plan avec indicateur de progression) ?
+-> Pas de mise à jour des titles à prévoir, les titres référencent la métadonnée par son ID, pas par sa valeur
+
+### Story 7.3 — Source par défaut
+
+❓ (Benjamin) **Périmètre de "nouveaux Titles"** : Cela inclut-il les Titles créés par import ou synchro automatique, ou uniquement ceux créés manuellement ?
+-> Oui, toutes les nouvelles entrées qu'elles soient créées manuellement ou automatiquement
+
+❓ (Benjamin) **Title existant avec source manuelle** : Si un Title existant a le champ rempli avec source "mediaspot" (saisie manuelle), le changement de source par défaut l'affecte-t-il ?
+-> Non. Le changement de Source par défaut n'affecte que les champs dont la Source actuelle est la source par défaut, et qui n'ont pas subi un changement de source manuel
+
+### Story 7.4 — Verrouillage de source
+
+❓ (Benjamin) **Périmètre du verrouillage** : Le verrou est-il uniquement par-Title par-champ, ou peut-on verrouiller un champ globalement pour tous les Titles en une seule action ?
+-> Uniquement par champ global, pas par Title. Ça se passe au niveau du Catalog, et s'applique à tous les champs de tous les titles.
+
+❓ (DEV) **Synchro partielle avec champs verrouillés** : Si une synchro met à jour 100 champs d'un Title et que 3 sont verrouillés, la synchro réussit pour les 97 autres et ignore les 3 verrouillés ? Ou l'ensemble de la synchro échoue ?
+-> La synchro n'échouera pas, et les champs importés seront mis à jour **pour la source**. Si celle-ci n'est pas utilisée par un title, ça ne change rien.
+
+❓ (Benjamin) **Visibilité du verrou pour les Admin VDM** : Un Admin (non-SuperAdmin) peut-il voir l'état du verrou sans pouvoir le modifier ?
+-> Oui, l'accès au métada catalog est possible par les ADmins, mais en read-only
