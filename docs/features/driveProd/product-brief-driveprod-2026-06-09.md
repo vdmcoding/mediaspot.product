@@ -67,6 +67,39 @@ Architecture de stockage au choix de l'utilisateur :
 
 ---
 
+## Architecture & Infrastructure
+
+### Types de plateformes mediaspot
+
+DriveProd doit être compatible avec les deux types d'infrastructures opérées par VDM :
+
+| Type | Infrastructure | Caractéristiques |
+|------|---------------|------------------|
+| **On-premises** | LTO sur étagères + LTO robotisées (datacenters VDM) | Coûts maîtrisés, capacité importante |
+| **Cloud** | AWS | Flexibilité, scalabilité |
+
+### Implications pour DriveProd
+
+| Aspect | On-prem | Cloud |
+|--------|---------|-------|
+| **Pricing NOL/OFL** | 3,50€ / 9€ To/mois (validé) | À définir (probablement plus élevé) |
+| **Fonctionnement** | Identique | Identique |
+| **Cible lancement** | Prioritaire (Spica pilote) | Secondaire |
+
+### Contraintes techniques
+
+- Le système de tiering (choix NOL/OFL à l'ingest, migration inter-tiers) doit fonctionner de manière identique sur les deux types de plateformes
+- Chaque client est sur un seul type d'infrastructure (pas d'hybride par client)
+- Le billing doit supporter des grilles tarifaires différentes selon l'infrastructure
+
+### État actuel du parc
+
+- Majorité des plateformes : **on-prem**
+- Minorité : **cloud (AWS)**
+- SpicaProductions (client pilote) : **on-prem**
+
+---
+
 ## Target Users
 
 ### Primary Users
@@ -179,6 +212,8 @@ Architecture de stockage au choix de l'utilisateur :
 | **Choix NOL/OFL à l'ingest** | Sélection de la destination de stockage lors de l'upload | Petit dev |
 | **Migration inter-tiers** | Changement de mode NOL↔OFL à la demande, avec facturation prorata | À valider (existe en distribution) |
 | **Billing différencié** | Affichage des consommations par tier dans le reporting mensuel | À valider (supposé natif) |
+| **Compatibilité on-prem / cloud** | Fonctionnement identique sur les deux types d'infra | À valider |
+| **Grilles tarifaires par infra** | Support de pricing différent selon on-prem ou cloud | À intégrer au billing |
 
 #### Existant à intégrer (pas de dev)
 
